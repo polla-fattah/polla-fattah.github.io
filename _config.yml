@@ -1,25 +1,25 @@
-title:              Polla Fattah
-email:              polla.fattah@gmail.com
-description:        My Personl Website
-author:             Start Bootstrap
-baseurl:            ""
-url:                "https://polla-fattah.github.io"
+title: Polla Fattah
+email: polla.fattah@gmail.com
+description: My Personl Website
+author: Start Bootstrap
+baseurl: ""
+url: "https://polla-fattah.github.io"
 
 # Social Profiles
-twitter_username:   FattahPolla
-github_username:    polla-fattah
-facebook_username:  
-instagram_username:  
+twitter_username: FattahPolla
+github_username: polla-fattah
+facebook_username:
+instagram_username:
 linkedin_username: polla-fattah-57617b23
-#researchgate_username: Polla-Fattah
+researchgate_username: Polla-Fattah
 
 # Add your google-analytics ID here to activate google analytics
-google_analytics:   UA-XXXXXXXXX-X # out your google-analytics code
+google_analytics: UA-XXXXXXXXX-X # out your google-analytics code
 
 # Build settings
-markdown:           kramdown
-paginate:           10
-paginate_path:      "/posts/page:num/"
+markdown: kramdown
+paginate: 10
+paginate_path: "/posts/page:num/"
 plugins:
   - jekyll-feed
   - jekyll-paginate
