@@ -1,82 +1,84 @@
 ---
 layout: home
-background: '/img/bg-index.jpg'
+background: '/img/ai.jpg'
 ---
 <style>
-    * {
-      box-sizing: border-box;
-    }
-    
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-    }
-    
-    /* Float four columns side by side */
-    .column {
-      width: 230px;
-    }
-    
-    /* Remove extra left and right margins, due to padding */
-    .row {
-        margin: 15px -10px;
-        display: flex;
-        justify-content:space-between;
+  * {
+    box-sizing: border-box;
+  }
 
-    }
-    
+  /* Float four columns side by side */
+  .column {
+    width: 230px;
+  }
 
+  
+  /* Remove extra left and right margins, due to padding */
+  .row {
+      display: flex;
+      justify-content:space-between;
+      text-decoration:none;
+  }
+  
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+    text-decoration:none;
+  }
+  .card:hover {
+    text-decoration: none;
+  }
+  .floating-image{
+      position: relative;
+      top: -55px;
+      height: 100px;
+  }
+  .normal-card-text{
+      font-size: 1rem;
+      text-decoration:none;
+  }
+  .normal-card-text:hover{
+      font-size: 1rem;
+      text-decoration:none;
+  }
+  </style>
+  
+  <div class="row">
+      <div class="column">
+        <a href="/pages/programming" class="card">
+          <span class="floating-image">
+              <img src='/img/programming-icon.png'/>
+          </span>
+          <h4>Programming</h4>
+          <p class="normal-card-text">
+              Some text Some text Some text Some text Some text Some text Some text Some text 
+          </p>
+        </a>
+      </div>
     
-    
-    /* Style the counter cards */
-    .card {
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-      padding: 16px;
-      text-align: center;
-      background-color: #f1f1f1;
-    }
-    .floating-image{
-        position: relative;
-        top: -55px;
-        height: 100px;
-    }
-    .normal-card-text{
-        font-size: 1rem;
-    }
-    </style>
-    
-    <div class="row">
-        <div class="column">
-          <div class="card">
-            <span class="floating-image">
-                <img src='/img/programming-icon.png'/>
-            </span>
-            <h4>Programming</h4>
-            <p class="normal-card-text">
-                Some text Some text Some text Some text Some text Some text Some text Some text 
-            </p>
-          </div>
-        </div>
-      
-        <div class="column">
-          <div class="card">
-            <span class="floating-image">
-                <img src='/img/academic-icon.png'/>
-            </span>
-            <h4>Research</h4>
-            <p class="normal-card-text">Some text</p>
-          </div>
-        </div>
-        
-        <div class="column">
-          <div class="card">
-            <span class="floating-image">
-                <img src='/img/data-mining-icon.png'/>
-            </span>
-            <h4>Data Mining</h4>
-            <p class="normal-card-text">Some text</p>
-          </div>
-        </div>
-        
-
+      <div class="column">
+        <a href="/pages/academy" class="card">
+          <span class="floating-image">
+              <img src='/img/academic-icon.png'/>
+          </span>
+          <h4>Academy</h4>
+          <p class="normal-card-text">Some text</p>
+        </a>
       </div>
       
+      <div class="column">
+        <a href="/pages/data-mining" class="card">
+          <span class="floating-image">
+              <img src='/img/data-mining-icon.png'/>
+          </span>
+          <h4>Data Mining</h4>
+          <p class="normal-card-text">Some text</p>
+        </a>
+      </div>
+      
+
+    </div>
+    

@@ -13,9 +13,6 @@ instagram_username:
 linkedin_username: polla-fattah-57617b23
 researchgate_username: Polla-Fattah
 
-# Add your google-analytics ID here to activate google analytics
-google_analytics: UA-XXXXXXXXX-X # out your google-analytics code
-
 # Build settings
 markdown: kramdown
 paginate: 10
