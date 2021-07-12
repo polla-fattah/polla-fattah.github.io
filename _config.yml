@@ -29,9 +29,9 @@ collections:
   researches:
     output: true
     permalink: /researches/:path/
-  papers:
+  publications:
     output: true
-    permalink: /papers/:path/
+    permalink: /publications/:path/
   teachingExperiences:
     output: true
     permalink: /teachingExperiences/:path/
