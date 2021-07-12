@@ -32,3 +32,6 @@ collections:
   papers:
     output: true
     permalink: /papers/:path/
+  teachingExperiences:
+    output: true
+    permalink: /teachingExperiences/:path/
