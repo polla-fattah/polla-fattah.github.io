@@ -21,3 +21,14 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
   - jekyll-sitemap ## Uncomment this line to silently generate a sitemaps.org compliant sitemap for your Jekyll site
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+  researches:
+    output: true
+    permalink: /researches/:path/
+  papers:
+    output: true
+    permalink: /papers/:path/
