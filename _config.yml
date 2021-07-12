@@ -35,3 +35,6 @@ collections:
   teachingExperiences:
     output: true
     permalink: /teachingExperiences/:path/
+  educations:
+    output: true
+    permalink: /educations/:path/

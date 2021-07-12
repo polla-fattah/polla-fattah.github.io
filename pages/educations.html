@@ -1,0 +1,25 @@
+---
+layout: page
+title: Educations
+background: '/img/bg-index.jpg'
+---
+
+{% for education in site.educations %}
+
+<article class="education-preview">
+  <a href="{{ education.url | prepend: site.baseurl | replace: '//', '/' }}">
+    <h2 class="education-title">{{ education.title }}</h2>
+    {% if education.subtitle %}
+    <h3 class="education-subtitle">{{ education.subtitle }}</h3>
+    {% else %}
+    <h3 class="education-subtitle">{{ education.excerpt | strip_html | truncatewords: 15 }}</h3>
+    {% endif %}
+  </a>
+  <p class="education-meta">
+    Completed at {{ education.date | date: '%B %d, %Y' }}
+  </p>
+</article>
+
+<hr>
+
+{% endfor %}
