@@ -18,7 +18,7 @@ background: '/img/ai.jpg'
 
   
   /* Remove extra left and right margins, due to padding */
-  .row {
+  .rowCustom {
       display: flex;
       justify-content:space-between;
       text-decoration:none;
@@ -52,36 +52,94 @@ background: '/img/ai.jpg'
       font-size: 1rem;
       text-decoration:none;
   }
+  .navbar {
+    display: none;
+  }
+  @media only screen and (max-width: 768px) {
+    .rowCustom{
+      display: none;
+    }
+    .navbarCustom {
+      overflow: hidden;
+      background-color: rgb(210, 217, 231);
+      position: fixed;
+      bottom: 0;
+      width: 102%;
+      margin-left: -20px;
+      border-top: 1px solid rgb(186, 205, 229);
+    }
+
+    .navbarCustom a {
+      float: left;
+      display: block;
+      color: #000;
+      width: 33%;
+      text-align: center;
+      padding: 5px 16px;
+      text-decoration: none;
+      font-size: 11px;
+    }
+
+    .navbarCustom a:hover {
+      background: #9bb3e7;
+      color: rgb(91, 125, 199);
+    }
+
+    .navbarCustom a.active {
+      background-color: #4c6faf;
+      color: white;
+    }
+    .image-tiny{
+        width: 40px;
+        height: 40px;
+    }
+  }
   </style>
-  
-  <div class="row">
+  <div class="navbarCustom">
+    <a href="/pages/programming">
+      <img class="image-tiny" src='/img/programming-icon.png'/>
+
+      Deviloper
+    </a>
+    <a href="#news">
+      <img class="image-tiny" src='/img/academic-icon.png'/>
+
+      Academy
+    </a>
+    <a href="#contact">
+      <img class="image-tiny" src='/img/data-mining-icon.png'/>
+
+      Data&nbsp;Mining
+    </a>
+  </div>
+
+  <div class="rowCustom">
       <div class="column">
         <a href="/pages/programming" class="card">
           <span class="floating-image">
-              <img src='/img/programming-icon.png'/>
+              <img class="image-icon" src='/img/programming-icon.png'/>
           </span>
-          <h4>Programming</h4>
+           <h4 class="icon-title">Programming</h4>
         </a>
       </div>
     
       <div class="column">
         <a href="/pages/academy" class="card">
           <span class="floating-image">
-              <img src='/img/academic-icon.png'/>
+              <img class="image-icon" src='/img/academic-icon.png'/>
           </span>
-          <h4>Academy</h4>
+           <h4 class="icon-title">Academy</h4>
         </a>
       </div>
       
       <div class="column">
         <a href="/pages/data-mining" class="card">
           <span class="floating-image">
-              <img src='/img/data-mining-icon.png'/>
+              <img class="image-icon" src='/img/data-mining-icon.png'/>
           </span>
-          <h4>Data Mining</h4>
+           <h4 class="icon-title">Data Mining</h4>
         </a>
       </div>
       
 
     </div>
-    
