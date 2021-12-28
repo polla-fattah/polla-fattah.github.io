@@ -3,7 +3,9 @@ layout: default
 ---
 
 <!-- Page Header -->
+
 {% if page.background %}
+
 <header class="masthead" style="background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')">
   {% else %}
   <header class="masthead">
@@ -42,7 +44,7 @@ layout: default
             {% endif %}
           </a>
           <p class="post-meta">
-            {{ post.date | date: '%B %d, %Y' }} &middot; {% include read_time.html content=post.content %}            
+            {{ post.date | date: '%B %d, %Y' }} &middot; {% include read_time.html content=post.content %}
           </p>
         </article>
 
@@ -57,4 +59,5 @@ layout: default
 
       </div>
     </div>
+
   </div>
