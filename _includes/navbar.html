@@ -1,11 +1,58 @@
 <!-- Navigation -->
+<style>
+  .navbarCustom{
+    display: none;
+
+  }
+@media only screen and (max-width: 768px) {
+  .navbar{
+    display: none;
+  }
+  .navbarCustom {
+    z-index: 1000;
+    display: block;
+    overflow: hidden;
+    background-color: rgb(210, 217, 231);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid rgb(186, 205, 229);
+
+  }
+  .navbarCustom a {
+    float: left;
+    display: block;
+    color: #000;
+    width: 24%;
+    text-align: center;
+    padding: 14px 10px;
+    text-decoration: none;
+    font-size: 12px;
+  }
+
+  .navbarCustom a:hover {
+    background: #9bb3e7;
+
+    color: rgb(91, 125, 199);
+  }
+
+  .navbarCustom a.active {
+    background-color: #4c6faf;
+    color: white;
+  }
+
+}
+</style>
+
+<div class="navbarCustom">
+  <a href="{{"/" | relative_url }}">Home</a>
+  <a href="{{"/pages/about" | relative_url }}">About</a>
+  <a href="{{ "/posts" | relative_url }}">Posts</a>
+  <a href="{{"/pages/contact" | relative_url }}">Contact</a>
+</div>
+
 <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
   <div class="container">
-    <a class="navbar-brand" href="{{"/" | relative_url }}">{{ site.title | escape }}</a>
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-      Menu
-      <i class="fa fa-bars"></i>
-    </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
