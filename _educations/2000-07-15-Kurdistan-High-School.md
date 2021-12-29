@@ -24,12 +24,4 @@ background: "/img/education/kurdistanyKwran.jpg"
 - History
 - Geography
 
-<iframe
-  width="600"
-  height="450"
-  style="border:0"
-  loading="lazy"
-  allowfullscreen
-  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBaSdaAcIQyD9BsuDZ-8tMNtCd6SaGWiV0
-    &q=Space+Needle,Seattle+WA">
-</iframe>
+<iframe width="600" height="450" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/view?zoom=17&center=36.1436%2C44.0232&key=AIzaSyBaSdaAcIQyD9BsuDZ-8tMNtCd6SaGWiV0"></iframe>
