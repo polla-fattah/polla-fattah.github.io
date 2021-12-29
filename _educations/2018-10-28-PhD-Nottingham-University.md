@@ -1,12 +1,12 @@
 ---
 layout: education
-title: "PhD at the University of Nottingham"
-establishment: "University of Nottingham"
+title: "PhD: Data Mining and Machine Learning"
+establishment: "Compute Science"
 rank: "PhD"
-subtitle: "Data Mining and Machine Learning"
-date: 2018-07-15 23:45:13
-startDate: 1996-09-01 23:45:13
-endDate: 2000-07-01 23:45:13
+subtitle: "University of Nottingham"
+date: 2018-07-15
+startDate: 2012-10-01
+endDate: 2018-09-15
 
 background: "/img/education/kurdistanyKwran.jpg"
 ---

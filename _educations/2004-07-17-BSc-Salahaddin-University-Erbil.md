@@ -1,12 +1,12 @@
 ---
 layout: education
-title: "BSc-Salahaddin University-Erbil"
-establishment: "Salahaddin University-Erbil"
+title: "BSc: Software Engineering"
+establishment: "Software Engineering Dept."
 rank: "BSc"
-subtitle: "Software Engineering"
-date: 2004-07-15 23:45:13 
-startDate: 1996-09-01 23:45:13
-endDate: 2000-07-01 23:45:13
+subtitle: "Salahaddin University-Erbil"
+date: 2004-07-15
+startDate: 2000-10-01
+endDate: 2004-07-15
 
 background: "/img/education/kurdistanyKwran.jpg"
 ---
