@@ -24,4 +24,12 @@ background: "/img/education/kurdistanyKwran.jpg"
 - History
 - Geography
 
+<div class="mapouter"><div class="gmap_canvas">
 <iframe width="600" height="450" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/view?zoom=17&center=36.1436%2C44.0232&key=AIzaSyBaSdaAcIQyD9BsuDZ-8tMNtCd6SaGWiV0"></iframe>
+</div>
+<style>
+.mapouter{position:relative;text-align:right;width:100%;height:385px;}
+.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:385px;}
+.gmap_iframe {height:385px!important;}
+</style>
+</div>
