@@ -55,3 +55,7 @@ On successful completion of the module students should be able to demonstrate:
 - Decision Trees
 - Support Vector Machines
 - Classification Assessment
+
+[Polla Fattah](/){:class="float-right"}
+&nbsp;
+&nbsp;

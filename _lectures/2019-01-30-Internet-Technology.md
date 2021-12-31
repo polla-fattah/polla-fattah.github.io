@@ -4,7 +4,7 @@ title: Internet Technology
 subtitle: ""
 date: 2009-01-30
 background: /img/lecture/internet.jpg
-university: University of Koya
+university: Koya University
 department: Computer Engineeing Dept.
 level: BSc
 year: 2009-2011
@@ -47,3 +47,7 @@ This course teaches the students the basic concepts of internet technology. It w
 - Javascript control flow and loops
 - Javascript objects
 - Manipulating the DOM
+
+[Polla Fattah](/){:class="float-right"}
+&nbsp;
+&nbsp;

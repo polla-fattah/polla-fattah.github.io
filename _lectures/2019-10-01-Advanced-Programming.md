@@ -43,3 +43,7 @@ On successful completion of the module students should be able to demonstrate a 
 - Java Reflection API
 - Design Patterns
 - Swing GUI
+
+[Polla Fattah](/){:class="float-right"}
+&nbsp;
+&nbsp;

@@ -4,7 +4,7 @@ title: Distributed Systems
 subtitle: ""
 date: 2019-02-15
 background: /img/lecture/distributed-systems.jpg
-university: University of Tishik
+university: Tishk International University
 department: Department of Computer Engineeing
 level: BSc
 year: 2019
@@ -49,3 +49,7 @@ Demonstrate diverse types of distributed systems like database replication, dist
 - Consistency & Replication
 - Distributed File Systems
 - Security
+
+[Polla Fattah](/){:class="float-right"}
+&nbsp;
+&nbsp;

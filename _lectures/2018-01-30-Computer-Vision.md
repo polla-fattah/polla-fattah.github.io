@@ -48,3 +48,7 @@ On successful completion of the module students should be able to demonstrate:
 - Detection and Segmentation
 - Visualizing and Understanding
 - Generative Models
+
+[Polla Fattah](/){:class="float-right"}
+&nbsp;
+&nbsp;

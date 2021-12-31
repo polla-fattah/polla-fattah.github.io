@@ -49,3 +49,7 @@ Up on completion of the course students should be able to demonstrate a hands on
 - Searching
 - Sorting
 - Calculating big O for sorting and searching
+
+[Polla Fattah](/){:class="float-right"}
+&nbsp;
+&nbsp;

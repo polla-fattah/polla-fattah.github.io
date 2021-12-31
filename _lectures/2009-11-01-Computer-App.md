@@ -43,3 +43,7 @@ The aim of thies course was to introduce the basic concepts of computer applicat
 - How to use Microsoft Office PowerPoint for Presentation.
 - Microsoft Office Excel.
 - Engineering Applications of MS Excel.
+
+[Polla Fattah](/){:class="float-right"}
+&nbsp;
+&nbsp;
