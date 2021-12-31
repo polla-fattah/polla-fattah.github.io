@@ -19,10 +19,10 @@ layout: default
             {% endif %}
             <span class="meta">
               Working on from on {{ page.date | date: '%B %d, %Y' }} &middot; 
-              {% if page.endDate %} {{ page.date | date: '%B %d, %Y' }} &middot; {% endif %} 
-              {% include read_time.html content=page.content %}
+              {% if page.endDate %} {{ page.date | date: '%B %d, %Y' }} &middot; {% endif %}
             </span>
           </div>
+          <a class="btn btn-primary float-left" href="/academy/lectures/">&larr; Lectures</a>
         </div>
       </div>
     </div>

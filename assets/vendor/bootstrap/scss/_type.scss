@@ -20,6 +20,8 @@ h4, .h4 { @include font-size($h4-font-size); }
 h5, .h5 { @include font-size($h5-font-size); }
 h6, .h6 { @include font-size($h6-font-size); }
 
+@media only screen and (max-width: 768px) {
+}
 .lead {
   @include font-size($lead-font-size);
   font-weight: $lead-font-weight;
