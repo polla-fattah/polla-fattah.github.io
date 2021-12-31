@@ -1,24 +1,25 @@
 ---
 layout: page
 title: Projects
-background: '/img/bg-post.jpg'
+background: '/img/education/background.jpg'
+permalink: /business/projects
+
 ---
 
-{% for project in site.projects %}
-
-<article class="project-preview">
-  <a href="{{ project.url | prepend: site.baseurl | replace: '//', '/' }}">
-    <h2 class="project-title">{{ project.title }}</h2>
-    {% if project.subtitle %}
-    <h3 class="project-subtitle">{{ project.subtitle }}</h3>
+{% for item in site.educations reversed  %}
+<article class="post-preview">
+  <a href="{{ item.url | prepend: site.baseurl | replace: '//', '/' }}">
+    <h2 class="post-title">{{ item.title }}</h2>
+    {% if item.subtitle %}
+    <h3 class="post-subtitle">{{ item.subtitle }}</h3>
     {% else %}
-    <h3 class="project-subtitle">{{ project.excerpt | strip_html | truncatewords: 15 }}</h3>
+    <h3 class="post-subtitle">{{ item.excerpt | strip_html | truncatewords: 15 }}</h3>
     {% endif %}
   </a>
-  <p class="project-meta">
-    Completed at {{ project.date | date: '%B %d, %Y' }}
+  <p class="post-meta">
+    Published on {{ item.date | date: '%B %d, %Y' }} &middot; {% include read_time.html content=item.content %}
   </p>
-</article>
+</article> 
 
 <hr>
 

@@ -1,24 +1,26 @@
 ---
 layout: page
 title: Educations
-background: '/img/bg-index.jpg'
+background: '/img/education/background.jpg'
+permalink: /academy/educations/
+
 ---
 
-{% for education in site.educations %}
-
-<article class="education-preview">
-  <a href="{{ education.url | prepend: site.baseurl | replace: '//', '/' }}">
-    <h2 class="education-title">{{ education.title }}</h2>
-    {% if education.subtitle %}
-    <h3 class="education-subtitle">{{ education.subtitle }}</h3>
+{% for item in site.educations reversed  %}
+<article class="post-preview">
+  <a href="{{ item.url | prepend: site.baseurl | replace: '//', '/' }}">
+    <h2 class="post-title">{{ item.title }}</h2>
+    {% if item.subtitle %}
+    <h3 class="post-subtitle">{{ item.subtitle }}</h3>
     {% else %}
-    <h3 class="education-subtitle">{{ education.excerpt | strip_html | truncatewords: 15 }}</h3>
+    <h3 class="post-subtitle">{{ item.excerpt | strip_html | truncatewords: 15 }}</h3>
     {% endif %}
   </a>
-  <p class="education-meta">
-    Completed at {{ education.date | date: '%B %d, %Y' }}
+  <p class="post-meta">
+    Published on {{ item.date | date: '%B %d, %Y' }} &middot; {% include read_time.html content=item.content %}
   </p>
-</article>
+</article> 
+
 <hr>
 
 {% endfor %}
