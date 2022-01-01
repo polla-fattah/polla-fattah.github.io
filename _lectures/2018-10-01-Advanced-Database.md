@@ -52,7 +52,3 @@ At the end of the course, students will be able to:
 - Data Streams
 - Spatial Data
 - NoSQL & NewSQL
-
-[Polla Fattah](/){:class="float-right"}
-&nbsp;
-&nbsp;

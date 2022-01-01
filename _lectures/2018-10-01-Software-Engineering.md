@@ -47,7 +47,3 @@ Software Engineering is the discipline of streamlining the coding and converting
 - Software Evolution
 - Agile Development Case Study
 - Research Issues in Software Engineering
-
-[Polla Fattah](/){:class="float-right"}
-&nbsp;
-&nbsp;

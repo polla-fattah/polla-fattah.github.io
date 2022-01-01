@@ -47,7 +47,3 @@ This course teaches the students the basic concepts of internet technology. It w
 - Javascript control flow and loops
 - Javascript objects
 - Manipulating the DOM
-
-[Polla Fattah](/){:class="float-right"}
-&nbsp;
-&nbsp;

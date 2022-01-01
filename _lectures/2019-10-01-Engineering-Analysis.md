@@ -41,7 +41,3 @@ Calculus, Fourier Transform, Random Variables, Simulating Physical Systems, floc
 - Simulating autonomous tracking
 - Steering and Arrival
 - Flock Behavior
-
-[Polla Fattah](/){:class="float-right"}
-&nbsp;
-&nbsp;

@@ -25,16 +25,16 @@ plugins:
 collections:
   projects:
     output: true
-    permalink: /project/:path/
+    permalink: /business/project/:path/
   researches:
     output: true
-    permalink: /research/:path/
+    permalink: /academy/research/:path/
   publications:
     output: true
-    permalink: /publication/:path/
+    permalink: /academy/publication/:path/
   lectures:
     output: true
-    permalink: /lecture/:path/
+    permalink: /academy/lecture/:path/
   educations:
     output: true
-    permalink: /education/:path/
+    permalink: /academy/education/:path/

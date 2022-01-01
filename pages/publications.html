@@ -2,21 +2,26 @@
 layout: page
 title: Publications
 background: '/img/bg-index.jpg'
+permalink: /academy/publications/
+
 ---
 
 {% for publication in site.publications %}
 
 <article class="publication-preview">
   <a href="{{ publication.url | prepend: site.baseurl | replace: '//', '/' }}">
-    <h2 class="publication-title">{{ publication.title }}</h2>
-    {% if publication.subtitle %}
-    <h3 class="publication-subtitle">{{ publication.subtitle }}</h3>
-    {% else %}
-    <h3 class="publication-subtitle">{{ publication.excerpt | strip_html | truncatewords: 15 }}</h3>
+
+    <h2 class="publication-title">
+      {{ publication.title }}
+
+      </span>
+    </h2>
+    {% if publication.authors %}
+    <h3 class="publication-subtitle">{{ publication.authors }}</h3>
     {% endif %}
   </a>
   <p class="publication-meta">
-    Completed at {{ publication.date | date: '%B %d, %Y' }}
+    Type: {{ publication.type }}
   </p>
 </article>
 

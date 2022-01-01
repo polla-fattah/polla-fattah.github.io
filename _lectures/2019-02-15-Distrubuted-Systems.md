@@ -49,7 +49,3 @@ Demonstrate diverse types of distributed systems like database replication, dist
 - Consistency & Replication
 - Distributed File Systems
 - Security
-
-[Polla Fattah](/){:class="float-right"}
-&nbsp;
-&nbsp;
