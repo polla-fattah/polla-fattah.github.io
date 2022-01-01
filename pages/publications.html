@@ -6,7 +6,7 @@ permalink: /academy/publications/
 
 ---
 
-{% for publication in site.publications %}
+{% for publication in site.publications reversed %}
 
 <article class="publication-preview">
   <a href="{{ publication.url | prepend: site.baseurl | replace: '//', '/' }}">
@@ -21,7 +21,7 @@ permalink: /academy/publications/
     {% endif %}
   </a>
   <p class="publication-meta">
-    Type: {{ publication.type }}
+    Type: {{ publication.type }} &middot; Date: {{ publication.date | date: '%B %d, %Y'}}
   </p>
 </article>
 
