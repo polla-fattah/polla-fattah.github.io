@@ -5,12 +5,266 @@ description: This is what I do.
 background: "/img/about-me.jpg"
 permalink: /about/
 ---
+<style>
+    .about-wrapper{
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    .about-me-text{
+        text-align: justify;
+        flex-grow: 1;
+        padding: 5px 10px;
+        max-width: 500px;
 
-<img class="floating-image" width="150" src="/img/polla2.png" alt="">
-<img class="floating-image" width="150" src="/img/me3.png" alt="">
+    }
+    @media only screen and (max-width: 1200px) {
+        .about-me-text{
+            max-width: 100%;
+        }
+    }
+    .about-me-image{
+        text-align: center;
+        flex-grow: 1;
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed quisquam ut perspiciatis, repudiandae nulla animi iste vel, praesentium repellendus molestias aliquid consequatur, earum rem qui error voluptates eius enim consequuntur!</p>
+    }
+</style>
+<div class="about-wrapper">
+    <div class="about-me-text">
+        <h1>About Me</h1>
+        <p>
+            In my carries I mostly consider myself as a problem solver. This covers both my professional life 
+            the academic and business. As both of them are really focussing on solving interesting problems. 
+            You can get in touch wtih my carrier in other parts of this website. 
+            However, this page is mostly about my other traits outside my professional life. 
+        </p>
+    </div>    
+    <div class="about-me-image">
+        <img class="floating-image" width="180" src="/img/me3.png" alt="Polla Fattah">
+    </div>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex alias, earum consectetur quia natus ducimus voluptate explicabo, hic porro reprehenderit, quasi? Tenetur ipsum distinctio laboriosam perspiciatis officiis dolore, architecto id.</p>
+</div>
 
-<p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam inventore aspernatur repellendus incidunt adipisci modi voluptates recusandae iste eligendi, repudiandae corporis quod aut, optio! Explicabo quaerat unde voluptatem! Itaque, eum!</p>
+<hr  style="margin: 0px 30px 20px 30px;">
+<div style="display:inline-block;">
+<h1>My Hobbies</h1>
+
+<p>
+    Due to the nature of my work and the life style you can consider me a bit geeky. 
+    This is also true for my hobbies. In my spare time I love to play chess, read books and watch movies, series and YouTube videos. 
+    <!--
+        The nature of my reading has changed during my life as I went from reading philosophy and fictional literature 
+    to reading productivity, management and my profession domain books. I usually follow scientific channels
+     on YouTube specially the ones that have a touch of philosophy in them.  
+     The movies that I watch are mostly fantasy, sci-fi and action movies and series.
+    -->
+</p>
+
+<style>
+    .grid {
+	position: relative;
+	margin: 0 auto;
+	padding: 1em 0 4em;
+	max-width: 1000px;
+	list-style: none; 
+	text-align: center;
+}
+
+/* Common style */
+.grid figure {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	margin: 10px 1%;
+	min-width: 300px;
+	max-width: 480px;
+	max-height: 360px;
+	width: 48%;
+	background: #3085a3;
+	text-align: center;
+	cursor: pointer;
+}
+
+.grid figure img {
+	position: relative;
+	display: block;
+	min-height: 100%;
+	max-width: 100%;
+	opacity: 0.8;
+}
+
+.grid figure figcaption {
+	padding: 2em;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+	pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.grid figure figcaption > a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+}
+
+.grid figure h2 {
+	word-spacing: -0.15em;
+	font-weight: 300;
+}
+
+.grid figure h2 span {
+	font-weight: 800;
+}
+
+.grid figure h2,
+.grid figure p {
+	margin: 0;
+}
+
+.grid figure p {
+	letter-spacing: 1px;
+	font-size: 68.5%;
+}
+
+/*---------------*/
+/***** Sarah *****/
+/*---------------*/
+
+figure.effect-sarah {
+	background: #42a3b0;
+}
+
+figure.effect-sarah img {
+	max-width: none;
+	width: -webkit-calc(100% + 20px);
+	width: calc(100% + 20px);
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(-10px,0,0);
+	transform: translate3d(-10px,0,0);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+figure.effect-sarah:hover img {
+	opacity: 0.4;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+figure.effect-sarah figcaption {
+	text-align: left;
+}
+
+figure.effect-sarah h2 {
+	position: relative;
+	overflow: hidden;
+	padding: 0.5em 0;
+}
+
+figure.effect-sarah h2::after {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 3px;
+	background: #fff;
+	content: '';
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(-100%,0,0);
+	transform: translate3d(-100%,0,0);
+}
+
+figure.effect-sarah:hover h2::after {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+figure.effect-sarah p {
+	padding: 1em 0;
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(100%,0,0);
+	transform: translate3d(100%,0,0);
+}
+
+figure.effect-sarah:hover p {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+</style>
+<div class="grid">
+    <figure class="effect-sarah">
+        <img src="/img/about/chess.jpg" alt="img13"/>
+        <figcaption>
+            <h2>Playing <span>Chess</span></h2>
+            <p>Chess is my favorate type of board games</p>
+            <a href="https://lichess.org/@/PollaFattah" target="lichess">View more</a>
+        </figcaption>			
+    </figure>
+    <figure class="effect-sarah">
+        <img src="/img/about/popcorn.jpg" alt="img14"/>
+        <figcaption>
+            <h2>Popcrn <span>Time</span></h2>
+            <p>Watching Movies, Sieris and Anime with My family.</p>
+            <a href="#">View more</a>
+        </figcaption>			
+    </figure>
+</div>
+<div class="grid">
+    <figure class="effect-sarah">
+        <img src="/img/about/youtube.jpg" alt="img13"/>
+        <figcaption>
+            <h2>Intersting <span>Videos</span></h2>
+            <p>I love to watch and share quality science and thought provoking videos</p>
+            <a href="#">View more</a>
+        </figcaption>			
+    </figure>
+    <figure class="effect-sarah">
+        <img src="/img/about/reading.jpg" alt="img14"/>
+        <figcaption>
+            <h2>Reading <span>Books</span></h2>
+            <p>Whenever have time, I love to read a well written book.</p>
+            <a href="https://www.goodreads.com/review/list/4364790-polla-fattah?view=covers&per_page=200" target="goodread">View more</a>
+        </figcaption>			
+    </figure>
+</div>
+</div>
+
+<hr  style="margin: 20px 30px 20px 30px;">
+
+<h1>My Habits</h1>
+<p>
+    Anybody who know me a little bit, they know that I really enjoy drinking tea. My habit with tea can be described as addictive, 
+    But I think it is a very good trade from me 
+    while I am working on computer for prolonged time it keeps me a bit alerted and hydrated. 
+    
+    Another habit that I have, I really love walking while I am thinking, even when people are seated in meetings
+     I tend to find an excuse to have a small stroll before making my mind. 
+</p>
