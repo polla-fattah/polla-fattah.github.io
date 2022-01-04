@@ -23,6 +23,9 @@ plugins:
   - jekyll-sitemap
 
 collections:
+  awards:
+    output: true
+    permalink: /academy/award/:path/
   projects:
     output: true
     permalink: /business/project/:path/

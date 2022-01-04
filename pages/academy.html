@@ -1,17 +1,516 @@
 ---
 layout: page
 title: Academy
-description: This is what I do.
+description: Searching for mMeaning
 background: '/img/academy.jpg'
 permalink: /academy/
 
 ---
 
-http://localhost:4000/educations
+<style>
+  
+.main_heading {
+    margin: 50px 0px;
+}
+
+.main_heading h1
+{
+	font-size: 45px;
+    font-weight: 300;
+    text-align: center;
+    line-height: 45px;
+    color: #777;
+}
+
+.underline
+{
+    display: inline-block;
+    width: 160px;
+    height: 2px;
+    background-color: #00b5cd;
+}
 
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed quisquam ut perspiciatis, repudiandae nulla animi iste vel, praesentium repellendus molestias aliquid consequatur, earum rem qui error voluptates eius enim consequuntur!</p>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex alias, earum consectetur quia natus ducimus voluptate explicabo, hic porro reprehenderit, quasi? Tenetur ipsum distinctio laboriosam perspiciatis officiis dolore, architecto id.</p>
+/* Features CSS */
+.features-div
+{
+  cursor: arrow;
+	text-align: center;
+    -webkit-transition: all .15s linear;
+    -moz-transition: all .15s linear;
+    -ms-transition: all .15s linear;
+    -o-transition: all .15s linear;
+    transition: all .15s linear;
+}
 
-<p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam inventore aspernatur repellendus incidunt adipisci modi voluptates recusandae iste eligendi, repudiandae corporis quod aut, optio! Explicabo quaerat unde voluptatem! Itaque, eum!</p>
+.features-div:hover
+{
+	margin-top: -10px;
+}
+
+.features-div p{
+  text-align: justify;
+
+}
+.features-div i
+{
+	font-size: 35px;
+    font-weight: 300;
+    color: #00b5cd;
+}
+
+.features-div h4
+{
+    color: #393939;
+    font-weight: 400;
+}
+
+.features-div p
+{
+    color: #636363;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 25px;
+}
+
+.more-features-div
+{
+    margin-top: 40px;
+	overflow: hidden;
+}
+
+.more-feature-div
+{
+    background: #f8f8f8;
+  /*  border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;	*/
+    box-shadow: 2px 2px 2px #ddd;
+    margin: 70px 0px;
+    margin-bottom: 0px;      
+    padding: 50px 0px;  
+}
+
+.more-feature-div .col-md-6 img
+{
+    width: 100%;
+}
+
+
+.more-features-div-icon {
+    float: left;
+    width: 60px;
+    height: 60px;
+    padding-top: 6px;
+    background: #00b5cd;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    font-size: 30px;
+    color: #fff;
+    line-height: 45px;
+    text-align: center;
+}
+
+.more-features-div-heading {
+    float: right;
+    width: 86%;
+    margin-top: 0;
+    font-weight: 400;    
+}
+
+.more-features-div-description
+{
+	float: right;
+    width: 86%;
+    font-weight: 300;
+}
+
+/* Services CSS */
+.services-box-gray {
+    background: #f8f8f8;
+    box-shadow: 1px 1px 1px #ddd;
+}
+
+.services-box
+{
+    text-align: center;
+    padding: 15px 0px;
+}
+
+.services-box i
+{
+    line-height: 75px;
+    font-size: 50px;
+}
+
+.services-box h4
+{
+	font-size: 18px;
+  font-weight: 400;
+  padding-top: 15px;
+  color:#009dcd;
+  text-shadow: 1px 1px 3px #D6D9CA;
+
+}
+
+.services-box p
+{
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 25px;
+}
+
+/* Honours & Awards CSS */
+
+.pricing-box {
+    background: #f8f8f8;
+    text-align: center;
+    margin-bottom: 0px;
+    box-shadow: 2px 2px 2px #ddd;
+}
+
+.pricing-box-price {
+    position: relative;
+    padding: 40px 0 5px 0;
+    background: #eee;
+    font-size: 25px;
+    color: #555;
+    line-height: 25px;
+}
+
+
+.pricing-box h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 5px 20px 50px 20px;
+    background: #eee;
+    color: #888;
+    font-size: 18px;
+}
+
+.pricing-box h4 {
+    margin-top: 0;
+    margin-bottom: 2px;
+    padding: 10px 20px;
+    background: #e8e8e8;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+
+
+.pricing-box-sign-up {
+    padding: 25px 0;
+}
+
+.pricing-box-best .pricing-box-price, .pricing-box-best div{ 
+    background: #00b5cd;
+    color: #fff;
+}
+
+
+
+.pricing-box-best .pricing-box-price span {
+    color: #fff;
+}
+
+.pricing-box-best h3 {
+    background: #00b5cd;
+    color: #fff;
+}
+
+.pricing-box-best h4 {
+    background: #009dcd;
+    color: #fff;
+}
+
+/* Publication */
+.publication-bg
+{
+	background-image: url(/img/academy/publications_bg4.png);
+	margin:60px 0px; 
+    text-align: center;
+    padding-bottom: 50px;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 300;
+	background-size: cover;
+
+}
+
+.link-no-decoration{
+  text-decoration: none;
+}
+.link-no-decoration:hover{
+  text-decoration: none;
+}
+
+/* Universities */
+.Universities-box {
+    padding-top: 30px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.Universities-box:hover{
+  text-decoration: none;
+}
+
+.Universities-box h3
+{
+	font-size: 16px;
+  font-weight: 400;
+}
+
+.Universities-box p
+{
+	padding: 0px;
+  margin: 0px;
+}
+.curson_default{
+  cursor: default;
+}
+</style>
+
+
+  <div class="container" id="features">
+    <div class="row">
+      <div class="col-md-12 ">
+        <div class="main_heading">
+          <h1>Research Interests</h1>
+          <div  class="text-center"><span class="underline"></span></div>
+        </div>
+      </div><!-- End col-md-12 -->
+    </div><!-- End row -->
+    <div class="row">
+      <div class="col-md-4 col-sm-6 curson_default">
+        <div class="features-div">
+          <img src="/img/academy/data-mining-icon.png" alt="Data Mining" width="70">
+           <h4 style="margin-top: 15px;">Data Mining</h4>
+           <p>
+             I have a strong background in data mining and have worked on a wide range of researches. 
+            </p>
+        </div>
+      </div><!-- End col-md-4-->
+      <div class="col-md-4 col-sm-6 curson_default">
+        <div class="features-div">
+          <img src="/img/academy/ai-icon.png" alt="AI" width="70">
+           <h4 style="margin-top: 15px;">AI & ML</h4>
+           <p>
+             I have invested my time and research in machine learning and AI as they are the primary tools for the data mining.
+           </p>
+        </div>
+      </div><!-- End col-md-4-->
+      <div class="col-md-4 col-sm-6 curson_default">
+        <div class="features-div">
+          <img src="/img/academy/deepl-learning-icon.png" alt="Deep Learning" width="115">
+           <h4 style="margin-top: 15px;">Deep Learning</h4>
+           <p>
+              I have used deep learning in my researches mainly for computer vision, handwriting recognition, and sound generation.
+           </p>
+        </div>			
+      </div><!-- End col-md-4-->
+    </div><!-- End row -->
+  </div><!-- End Container -->
+  <a href="/academy/educations" class="link-no-decoration">  
+  <div class="more-feature-div">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="/img/academy/education3.png">
+        </div><!-- End col-md-6-->
+        <div class="col-md-6">
+          <div class="more-features-div">
+          <h3 class="more-features-div-heading">Education</h3>
+
+            <div class="more-features-div-description">
+                    My BSc Study was in Salahaddin University-Erbil; I was among the first graduates in the software engineering department.
+                    My MSc Study was in the same university but in Electrical Engineering department. and my PhD Study was in the university of Nottingham, school of computer science.
+                  </div>
+          </div>
+  
+        </div><!-- End col-md-6-->
+      </div><!-- End row -->
+    </div><!-- ENd container -->
+  </div>
+  </a>
+  <!-- End Feature -->
+  
+  
+  <!-- Services -->
+  
+  <div class="container" id="Services">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="main_heading">
+          <a href="/academy/lectures/" class="link-no-decoration">
+            <h1>Lectures</h1>
+          </a>
+          <div  class="text-center"><span class="underline"></span></div>
+        </div>
+      </div><!-- End col-md-12 -->
+    </div><!-- End row -->
+  
+    <div class="row">
+    <a class="col-md-4 col-sm-6 link-no-decoration" href="/academy/lecture/data-mining/">
+      <div class="services-box">
+        <h4>Data Mining</h4>
+        <p>Data Mining studies algorithms and computational paradigms that allow computers to find patterns and regularities in databases</p>
+      </div>
+    </a><!-- End col-md-4-->
+    <a class="col-md-4 services-box-gray col-sm-6  link-no-decoration"  href="/academy/lecture/computer-vision/">
+      <div class="services-box">
+        <h4>Computer Vision</h4>
+        <p>The aim is to give students a firm understanding of the theory underlying the processing and interpretation of visual information</p>
+      </div>
+    </a><!-- End col-md-4-->
+    <a class="col-md-4 col-sm-6 link-no-decoration" href="/academy/lecture/advanced-programming/">
+      <div class="services-box">
+        <h4>Advanced Prog.</h4>
+        <p>This cource introduces  advanced concepts of programming languages. It also introduces many tools that are used in software eng</p>
+      </div>
+    </a><!-- End col-md-4-->
+    <a class="col-md-4 services-box-gray col-sm-6  link-no-decoration"  href="/academy/lecture/advanced-database/">
+      <div class="services-box">
+        <h4>Advanced Database</h4>
+        <p>This course is a comprehensive study of the internals of modern database management systems </p>
+      </div>
+    </a><!-- End col-md-4-->
+    <a class="col-md-4 col-sm-6 link-no-decoration" href="/academy/lecture/data-structure/">
+      <div class="services-box">
+        <h4>Data Structure</h4>
+        <p>This course is an introductory course to various data structures that can be used in computer science with different algorithms</p>
+      </div>
+    </a><!-- End col-md-4-->
+    <a class="col-md-4 services-box-gray col-sm-6  link-no-decoration"  href="/academy/lecture/ai/">
+      <div class="services-box">
+        <h4>Artificial Intelligence</h4>
+        <p>This is an introductory course converging basic Artificial Intelligence (AI) concepts and its implementation</p>
+      </div>
+    </a><!-- End col-md-4-->
+  </div>
+  
+  </div><!-- End container -->
+  
+  <!-- End Services -->
+  
+  <!-- Publications -->
+  <div class="publication-bg" id="Call-to-Publication" >
+    <a class="container link-no-decoration"  href="/academy/publications">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="main_heading">
+            <h1>Publications</h1>
+            <div  class="text-center"><span class="underline"></span></div>
+          </div>
+        </div><!-- End col-md-12 -->
+      </div><!-- End row -->
+  
+      <div class="col-md-12">
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type</p>
+      </div><!-- End col-md-12-->
+  
+    </a><!-- End container -->	
+  </div>
+  
+  <!-- End Publications -->
+  
+  <!-- Honours & Awards -->
+  
+  <div class="container" id="Price">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="main_heading">
+          <a href="/academy/awards/" class="link-no-decoration"><h1>Honours & Awards</h1></a>
+          <div  class="text-center"><span class="underline"></span></div>
+        </div>
+      </div><!-- End col-md-12 -->
+    </div><!-- End row -->
+  
+    <div class="row">
+      <div class="col-md-4">
+        <div class="pricing-box">
+          <div class="pricing-box-price">
+          Grant
+          </div>
+          <div style="background-color: #eeeeee;">from</div>
+            <h3>DAAD</h3>
+            <h4>2010</h4>
+        </div>
+      </div><!-- End col-dm-4 -->
+      <div class="col-md-4 pricing-box-best">
+        <div class="pricing-box">
+                <div class="pricing-box-price">
+                  Scholarship
+                </div>
+                <div>from</div>
+                  <h3>Twanasazi</h3>
+                  <h4>2012</h4>
+              </div>
+      </div><!-- End col-dm-4 -->
+      <div class="col-md-4">
+        <div class="pricing-box">
+                <div class="pricing-box-price">Appreciation</div>
+                <div style="background-color: #eeeeee;">from</div>
+                  <h3>Minister</h3>
+                  <h4>2021</h4>
+              </div>
+      </div><!-- End col-dm-4 -->
+    </div><!-- End row -->
+  
+  </div><!-- End container -->
+  
+  <!-- End Honours & Awards -->
+  
+  <!-- Universities -->
+  <div class="container" id="Universities">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="main_heading">
+          <h1>Universities</h1>
+          <div  class="text-center"><span class="underline"></span></div>
+        </div>
+      </div><!-- End col-md-12 -->
+    </div><!-- End row -->
+  
+  
+    <div class="row">
+      <a class="col-md-4 Universities-box" href="https://su.edu.krd/" target="Salahaddin_University-Erbil">
+          <p>
+            <img src="/img/academy/sue-logo.png" alt="Salahaddin University-Erbil" width="150">
+          </p>
+      </a>
+      <a class="col-md-4 Universities-box" href="https://nottingham.ac.uk/" target="University_Nottingham">
+        <p>
+          <img src="/img/academy/nottingham-logo.png" alt="University of Nottingham" width="150">
+        </p>
+    </a>
+    <a class="col-md-4 Universities-box" href="https://www.tu.berlin/en/" target="Technische_Universität_Berlin">
+      <p>
+        <img src="/img/academy/tub-logo.png" alt="Technische Universität Berlin" width="150">
+      </p>
+    </a>
+    <a class="col-md-4 Universities-box" href="https://tiu.edu.iq/" target="Tishk_International_Univesity">
+      <p>
+        <img src="/img/academy/tiu-logo.png" alt="Tishk International Univesity"width="150">
+      </p>
+  </a>
+  <a class="col-md-4 Universities-box" href="https://www.ukh.edu.krd/" target="Kurdistan">
+    <p>
+      <img src="/img/academy/ukh-logo.png" alt="University of Kurdistan Hawler" width="150">
+    </p>
+</a>
+
+<a class="col-md-4 Universities-box" href="https://koyauniversity.org/" target="koyauniversity">
+  <p>
+    <img src="/img/academy/koya-logo.png" alt="koya university" width="150">
+  </p>
+</a>
+
+
+    </div><!-- End row -->
+  
+  </div><!-- End container -->	

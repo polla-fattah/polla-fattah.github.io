@@ -22,7 +22,7 @@ permalink: /academy/lecture/data-structure/
 
 ## Course Description
 
-This course is an introductory course to various data structures that can be used in computer science and different algorithms. The course emphasises on the elegancy and efficiency of the codes. This course is important to understand the underlying mathematics to measure the big O.
+This course is an introductory course to various data structures that can be used in computer science with different algorithms. The course emphasises on the elegancy and efficiency of the codes. This course is important to understand the underlying mathematics to measure the big O.
 
 ## Course Objectives
 

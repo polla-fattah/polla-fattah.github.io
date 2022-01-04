@@ -22,7 +22,7 @@ permalink: /academy/lecture/data-mining/
 
 ## Course Description
 
-The aim of this module is to give students a firm understanding of the theory underlying the processing and interpretation of visual information and the ability to apply that understanding to ubiquitous computing and entertainment related problems. The module is based around problems so that the technology is always presented in context and during some tutorials students work in groups to design solutions to real world problems using the techniques that they have been taught. In addition, the module has a significant practical component so that students can appreciate how difficult it can be to apply the technology.
+Data Mining studies algorithms and computational paradigms that allow computers to find patterns and regularities in databases, perform prediction and forecasting, and generally improve their performance through interaction with data. It is currently regarded as the key element of a more general process called Knowledge Discovery that deals with extracting useful knowledge from raw data. The knowledge discovery process includes data selection, cleaning, coding, using different statistical and machine learning techniques, and visualization of the generated structures. The course will cover all these issues and will illustrate the whole process by examples. Special emphasis will be give to the Machine Learning methods as they provide the real knowledge discovery tools. Important related technologies, as data warehousing and on-line analytical processing (OLAP) will be also discussed. The students will use recent Data Mining software. Enrollment in this course is limited to 15 students.
 
 ## Course Objectives
 

@@ -1,0 +1,26 @@
+---
+layout: page
+title: Honors & Awards
+background: '/img/awards/awards_bg.jpg'
+permalink: /academy/awards/
+
+---
+
+{% for item in site.awards reversed  %}
+<article class="post-preview">
+  <a href="{{ item.url | prepend: site.baseurl | replace: '//', '/' }}">
+    <h2 class="post-title">{{ item.title }}</h2>
+    {% if item.subtitle %}
+    <h3 class="post-subtitle">{{ item.subtitle }}</h3>
+    {% else %}
+    <h3 class="post-subtitle">{{ item.excerpt | strip_html | truncatewords: 15 }}</h3>
+    {% endif %}
+  </a>
+  <p class="post-meta">
+    Published on {{ item.date | date: '%B %d, %Y' }} &middot; {% include read_time.html content=item.content %}
+  </p>
+</article> 
+
+<hr>
+
+{% endfor %}
