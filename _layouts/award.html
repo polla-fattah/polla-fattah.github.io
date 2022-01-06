@@ -1,0 +1,51 @@
+---
+layout: default
+---
+
+<!-- Page Header -->
+{% if page.background %}
+<header class="masthead" style="background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')">
+  {% else %}
+  <header class="masthead">
+    {% endif %}
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h2 class="heading">{{ page.title }}</h2>
+            <span class="meta">
+              On  {{ page.date | date: '%B %d, %Y' }}
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+
+        {{ content }}
+        <br/>
+        <a href="/" style="display:block; text-align: right;">Polla Fattah</a>
+        <hr>
+
+        <div class="clearfix" style="display:flex; justify-content:space-evenly">
+
+          {% if page.previous.url %}
+          <a class="btn btn-sm" style="flex-grow: 1;" href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{ page.previous.title }}">&laquo;Previous<span class="d-none d-md-inline"></span></a>
+          {% endif %}
+
+          <a class="btn btn-sm" style="flex-grow: 1;" href="/academy/awards">Awards</a>
+
+          {% if page.next.url %}
+          <a class="btn btn-sm" style="flex-grow: 1;" href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{ page.next.title }}">Next&raquo;<span class="d-none d-md-inline"></span></a>
+          {% endif %}
+
+        </div>
+
+      </div>
+    </div>
+  </div>

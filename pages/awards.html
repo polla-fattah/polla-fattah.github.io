@@ -17,7 +17,7 @@ permalink: /academy/awards/
     {% endif %}
   </a>
   <p class="post-meta">
-    Published on {{ item.date | date: '%B %d, %Y' }} &middot; {% include read_time.html content=item.content %}
+    Awarded at {{ item.date | date: '%B %d, %Y' }} by {{ item.awardingbody }}
   </p>
 </article> 
 
