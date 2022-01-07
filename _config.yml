@@ -41,3 +41,6 @@ collections:
   educations:
     output: true
     permalink: /academy/education/:path/
+  jobs:
+    output: true
+    permalink: /job/:path

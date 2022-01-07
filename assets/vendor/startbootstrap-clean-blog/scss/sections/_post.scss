@@ -1,5 +1,14 @@
 // Styling for the post page
+.post-preview:hover{
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
 .post-preview {
+    flex-grow: 1;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    margin-bottom: 20px;
     >a {
         color: $gray-900;
         &:focus,

@@ -4,6 +4,7 @@ title: "Classification Algorithms"
 subtitle: "How to classify data."
 date: 2020-01-26
 background: "/img/posts/01.jpg"
+categories: classification
 ---
 
 <style>
