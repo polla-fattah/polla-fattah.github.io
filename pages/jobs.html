@@ -7,6 +7,7 @@ permalink: /jobs/
 ---
 <style>
 .job-card {
+
   flex-grow: 1;
   background: #fff;
   border-radius: 5px;
@@ -19,7 +20,15 @@ permalink: /jobs/
   width: 100%;
 }
 .job-card:hover {
+  -webkit-transition: background-color 1000ms linear;
+  -moz-transition: background-color 1000ms linear;
+  -o-transition: background-color 1000ms linear;
+  -ms-transition: background-color 1000ms linear;
+  transition: background-color 1000ms linear;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  background: rgb(144,177,205);
+background: linear-gradient(0deg, rgba(144,177,205,1) 0%, rgba(146,194,203,1) 53%, rgba(167,215,219,0.8886905103838411) 100%);
+
 }
 .job-card a {
   text-align: center;

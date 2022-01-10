@@ -3,6 +3,7 @@
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
 }
 .post-preview {
+    transition: all 0.5s linear;
     flex-grow: 1;
     background: #fff;
     border-radius: 5px;

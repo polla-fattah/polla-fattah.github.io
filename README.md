@@ -186,5 +186,5 @@ Copyright 2013-2021 Start Bootstrap LLC. Code released under the [MIT](https://g
 # How to Start Jekyll
 
 ```bash
-bundle exec jekyll serve
+bundle exec jekyll serve --livereload
 ```
