@@ -5,7 +5,7 @@ organisation: "University of Salahuddin-Erbil, Software Engineering"
 date: 2002-06-01
 background: "/img/projects/library.jpg"
 category: application # application, webapp, website, game
-myrole: "Devilopment Team Leader"
+myrole: "Development Team Leader"
 source: ""
 technologies:
   - fa: false
