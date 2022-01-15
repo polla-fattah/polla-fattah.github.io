@@ -2,6 +2,7 @@
 layout: post
 title: "Classification Algorithms"
 subtitle: "How to classify data."
+excerpt: "Classification is an instance of supervised learning. Supervised learning classification process includes a training phase to create a model (classifier)."
 date: 2020-01-26
 background: "/img/posts/01.jpg"
 categories: classification
@@ -23,7 +24,7 @@ categories: classification
 
 # Classification
 
-As mentioned previously, Classification is an instance of supervised learning. Supervised learning classification process includes a training phase to create a model (classifier). The entire process of using a supervised classification method is illustrated by Kotsiantis [^1] as shown in Figure \ref{fig:supervisedLearning}, with the training step being an important part of it.
+Classification is an instance of supervised learning. Supervised learning classification process includes a training phase to create a model (classifier). The entire process of using a supervised classification method is illustrated by Kotsiantis [^1] as shown in Figure \ref{fig:supervisedLearning}, with the training step being an important part of it.
 
 Different classifier models are created by using different classification algorithms, which can be divided into four main categories: Decision Tree Classifier, Probabilistic Classification, Support Vector Machines and Linear Discriminant Analysis [^2]. These classifiers are discussed in the following subsections, with particular consideration of Decision Tree Classifiers deployed in this research.
 

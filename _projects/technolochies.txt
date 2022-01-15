@@ -1,0 +1,73 @@
+technologies:
+  - fa: true
+    icon: "fab fa-java"
+    name: "Java"
+  - fa: ture
+    icon: "far fa-file-alt"
+    name: "File based database"
+  - fa: ture
+    icon: "fas fa-project-diagram"
+    name: "Diagram"
+  - fa: ture
+    icon: "fas fa-network-wired"
+    name: "Netwrorking"
+  - fa: true
+    icon: "fab fa-js-square"
+    name: "JavaScript"
+  - fa: ture
+    icon: "far fa-file-alt"
+    name: "Text File"
+  - fa: ture
+    icon: "fas fas fa-terminal"
+    name: "Bash Script"
+  - fa: ture
+    icon: "fas fa-database"
+    name: "MySql"
+  - fa: true
+    icon: "fab fa-php"
+    name: "PHP"
+  - fa: ture
+    icon: "fas fa-server"
+    name: "Server"
+  - fa: ture
+    icon: "fas fa-code"
+    name: "HTML Code"
+  - fa: ture
+    icon: "fab fa-css3-alt"
+    name: "CSS"
+  - fa: true
+    icon: "fab fa-vuejs"
+    name: "VueJs"
+  - fa: ture
+    icon: "far fa-file-alt"
+    name: "File based database"
+  - fa: ture
+    icon: "fas fa-project-diagram"
+    name: "Netwrorking"
+  - fa: ture
+    icon: "fas fa-project-diagram"
+    name: "Netwrorking"
+  - fa: true
+    icon: "fab fa-java"
+    name: "Java"
+  - fa: ture
+    icon: "far fa-file-alt"
+    name: "File based database"
+  - fa: ture
+    icon: "fas fa-project-diagram"
+    name: "Netwrorking"
+  - fa: ture
+    icon: "fas fa-project-diagram"
+    name: "Netwrorking"
+  - fa: true
+    icon: "fab fa-java"
+    name: "Java"
+  - fa: ture
+    icon: "far fa-file-alt"
+    name: "File based database"
+  - fa: ture
+    icon: "fas fa-project-diagram"
+    name: "Netwrorking"
+ - fa: ture
+    icon: "fas fa-project-diagram"
+    name: "Netwrorking"
