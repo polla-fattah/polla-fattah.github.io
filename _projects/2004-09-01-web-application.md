@@ -1,7 +1,7 @@
 ---
 layout: project
 title: "Web App"
-organisation: "University of Salahuddin-Erbil, Software Engineering"
+organization: "University of Salahuddin-Erbil, Software Engineering"
 date: 2004-09-01
 background: "/img/projects/library.jpg"
 category: application # application, webapp, website,
@@ -28,7 +28,7 @@ technologies:
 ## Highlights
 
 - **Project Title:** _{{page.title}}_
-- **Organisation:** _{{page.organisation}}_
+- **Organization:** _{{page.organization}}_
 - **My Role:** _{{page.myrole}}_
 - **Tools:** _{% for item in page.technologies %}{{ item.name }}&nbsp;&middot;&nbsp;{% endfor %}_
 - **Completed Date**: _{{page.date  | date: '%B-%Y'}}_{% if page.source %}

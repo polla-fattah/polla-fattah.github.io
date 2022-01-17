@@ -2,7 +2,7 @@
 layout: award
 title: "Ranked second on the College"
 awardingbody: "College of Engineering"
-subtitle: "Ranked second on BSc Graduate comptition at the level of the University of Salahaddin-Erbil"
+subtitle: "Ranked second on BSc Graduate comptition at the level of the Salahaddin University-Erbil"
 date: 2005-08-01
 background: "/img/awards/awards_bg.jpg"
 ---

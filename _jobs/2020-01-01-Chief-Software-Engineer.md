@@ -1,7 +1,8 @@
 ---
 layout: job
 title: "Chief Software Engineer"
-organisation: "SmartGate Company"
+organization: "SmartGate Company"
+organization-short: "SmartGate"
 date: 2020-01-01
 startdate: 2020
 enddate: Now
@@ -12,7 +13,7 @@ category: business # business academy
 ## Highlights
 
 - **Job Title:** _{{page.title}}_
-- **Organisation:** _{{page.organisation}}_
+- **Organization:** _{{page.organization-short}}_
 - **Start Date:** _{{page.startdate}}_
 - **End Date**: _{{page.enddate}}_
 
@@ -20,7 +21,7 @@ category: business # business academy
 
 Mintaining computers, Clean installing OSs on customers computers, teaching customers how to use cirtian aspecits of a software product, advising customers on how to use the software, and providing support.
 
-## Acquired Experience
+## Acquired Experiences
 
 I have learned a great deal of how to deal with customers, as well as many aspects of computer technician while I was helping customers
 
