@@ -1,14 +1,14 @@
 ---
 layout: job
-title: "Visiting Lecturer"
-organization: "Tishk International University"
-organization-short: "TIU"
-date: 2018-01-01
-startdate: 2018
-enddate: 2020
+title: "Assistant Lecturer"
+organization: "Salahaddin University-Erbil"
+organization-short: "SUE"
+date: 2008-01-01
+startdate: 2008
+enddate: 2010
 background: "/img/jobs/academy.jpg" # business.jpg academy.jpg
 category: academy # business academy
-permalink: /job/visiting-lecturer-tiu
+permalink: /job/assistant-lecturer-sue
 ---
 
 ## Highlights

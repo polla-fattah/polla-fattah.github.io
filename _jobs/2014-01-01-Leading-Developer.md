@@ -8,18 +8,19 @@ startdate: 2014
 enddate: 2017
 background: "/img/jobs/business.jpg" # business.jpg academy.jpg
 category: business # business academy
+permalink: /job/leading-developer
 ---
 
 ## Highlights
 
 - **Job Title:** _{{page.title}}_
-- **Organization:** _{{page.organization-short}}_
+- **Organization:** _{{page.organization}}_
 - **Start Date:** _{{page.startdate}}_
 - **End Date**: _{{page.enddate}}_
 
-## Job Dueties
+## Job Duties
 
-Mintaining computers, Clean installing OSs on customers computers, teaching customers how to use cirtian aspecits of a software product, advising customers on how to use the software, and providing support.
+Maintaining computers, Clean installing OSs on customers computers, teaching customers how to use certain aspects of a software product, advising customers on how to use the software, and providing support.
 
 ## Acquired Experiences
 

@@ -8,23 +8,28 @@ startdate: 2006
 enddate: 2007
 background: "/img/jobs/business.jpg" # business.jpg academy.jpg
 category: business # business academy
+permalink: /job/software-engineer-awrosoft
 ---
 
 ## Highlights
 
 - **Job Title:** _{{page.title}}_
-- **Organization:** _{{page.organization-short}}_
+- **Organization:** _{{page.organization}}_
 - **Start Date:** _{{page.startdate}}_
 - **End Date**: _{{page.enddate}}_
 
-## Job Dueties
+## Job Duties
 
-Mintaining computers, Clean installing OSs on customers computers, teaching customers how to use cirtian aspecits of a software product, advising customers on how to use the software, and providing support.
+The main duty was creating websites and simple web based systems for various clients. While doing so I had to accomplish the following:
+
+1. Requirement collection.
+1. Analysis of requirements.
+1. Designing and developing the websites and web based algorithms.
 
 ## Acquired Experiences
 
-I have learned a great deal of how to deal with customers, as well as many aspects of computer technician while I was helping customers
+I have created multiple websites mainly using LAMP stack plus HTML, CSS and JavaScript. I have learned a great deal of customer relation and support as well as technical skills like database management, Server maintenance and programming with these languages and tools.
 
 ## Why I Left
 
-I have Graduated and ready for an engineering job.
+I got a better job as IT manager at [Sefintel Company](/jobs/it-manager).

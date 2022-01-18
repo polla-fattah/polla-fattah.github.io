@@ -8,23 +8,33 @@ startdate: 2004
 enddate: 2006
 background: "/img/jobs/academy.jpg" # business.jpg academy.jpg
 category: academy # business academy
+permalink: /job/software-engineer-sue
 ---
 
 ## Highlights
 
 - **Job Title:** _{{page.title}}_
-- **Organization:** _{{page.organization-short}}_
+- **Organization:** _{{page.organization}}_
 - **Start Date:** _{{page.startdate}}_
 - **End Date**: _{{page.enddate}}_
 
-## Job Dueties
+## Job Duties
 
-Mintaining computers, Clean installing OSs on customers computers, teaching customers how to use cirtian aspecits of a software product, advising customers on how to use the software, and providing support.
+The main duties that I had with this job was as follows:
+
+1. Maintaining and developing parts of a portal to manage Software Engineering Department activities.
+1. Network infrastructure maintenance as technician.
+1. IT Support for staff and students.
+1. Helping lecturers with some practical lab subjects.
 
 ## Acquired Experiences
 
-I have learned a great deal of how to deal with customers, as well as many aspects of computer technician while I was helping customers.
+- better understanding of how to support clients.
+- Learning how to manage network infrastructure.
+- Practical hand on requirement collection.
+- Analysis of Requirements and converting them into codes in the system.
+- First time taking some duties of teaching students.
 
 ## Why I Left
 
-I have Graduated and ready for an engineering job.
+I did not really left instead my role has changed as I became an MSc student so according to the University's regulation I could't work in the Software Engineering Department as Engineer.
