@@ -28,4 +28,4 @@ I have learned a great deal of how to deal with customers, as well as many aspec
 
 ## Why I Left
 
-I have Graduated and ready for an engineering job.
+I had to travel to Germany for my Linux administration training grant. Then up on return I started a part time job as [Linux Administrator](/job/linux-administrator) at 7netlayers Company.

@@ -4,8 +4,8 @@ title: "Linux Administrator"
 organization: "7netlayers Company"
 organization-short: "7netlayers"
 date: 2012-01-01
-startdate: 2012
-enddate: 2011
+startdate: 2010
+enddate: 2012
 background: "/img/jobs/business.jpg" # business.jpg academy.jpg
 category: business # business academy
 permalink: /job/linux-administrator
@@ -28,4 +28,4 @@ I have learned a great deal of how to deal with customers, as well as many aspec
 
 ## Why I Left
 
-I have Graduated and ready for an engineering job.
+I was leaving Iraq to UK to pursue my PhD degree, so I had to leave my job with one month notice.

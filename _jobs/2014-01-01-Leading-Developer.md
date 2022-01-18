@@ -28,4 +28,4 @@ I have learned a great deal of how to deal with customers, as well as many aspec
 
 ## Why I Left
 
-I have Graduated and ready for an engineering job.
+My main job was developing the website which has been finished, and I was preparing for my viva and returning to my home town.

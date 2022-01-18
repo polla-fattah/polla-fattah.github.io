@@ -5,7 +5,7 @@ organization: "University of Nottingham"
 organization-short: "UoN"
 date: 2012-01-01
 startdate: 2012
-enddate: 2015
+enddate: 2016
 background: "/img/jobs/academy.jpg" # business.jpg academy.jpg
 category: academy # business academy
 permalink: /job/teaching-assistant
@@ -28,4 +28,4 @@ I have learned a great deal of how to deal with customers, as well as many aspec
 
 ## Why I Left
 
-I have Graduated and ready for an engineering job.
+The Phd program has finished and I was starting to write up my thesis.

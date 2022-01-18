@@ -1,8 +1,8 @@
 ---
 layout: job
 title: "IT Manager"
-organization: "Sefintel Company"
-organization-short: "Sefintel"
+organization: "SefinTel Company"
+organization-short: "SefinTel"
 date: 2007-01-01
 startdate: 2007
 enddate: 2008

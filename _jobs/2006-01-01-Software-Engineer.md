@@ -32,4 +32,4 @@ I have created multiple websites mainly using LAMP stack plus HTML, CSS and Java
 
 ## Why I Left
 
-I got a better job as IT manager at [Sefintel Company](/jobs/it-manager).
+I got a better job as IT manager at [SefinTel Company](/jobs/it-manager).

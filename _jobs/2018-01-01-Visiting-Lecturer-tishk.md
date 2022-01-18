@@ -28,4 +28,4 @@ I have learned a great deal of how to deal with customers, as well as many aspec
 
 ## Why I Left
 
-I have Graduated and ready for an engineering job.
+I have started working at [InfoRR Company](/job/software-consultant) which was a bit demanding job. So I just did not renew my contract as visiting lecturer.

@@ -25,7 +25,3 @@ Maintaining computers, Clean installing OSs on customers computers, teaching cus
 ## Acquired Experiences
 
 I have learned a great deal of how to deal with customers, as well as many aspects of computer technician while I was helping customers
-
-## Why I Left
-
-I have Graduated and ready for an engineering job.

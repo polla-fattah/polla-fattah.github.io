@@ -5,7 +5,7 @@ organization: "Salahaddin University-Erbil"
 organization-short: "SUE"
 date: 2008-01-01
 startdate: 2008
-enddate: 2010
+enddate: 2012
 background: "/img/jobs/academy.jpg" # business.jpg academy.jpg
 category: academy # business academy
 permalink: /job/assistant-lecturer-sue
@@ -28,4 +28,4 @@ I have learned a great deal of how to deal with customers, as well as many aspec
 
 ## Why I Left
 
-I have Graduated and ready for an engineering job.
+I just took a lengthy study leave so that I can finish My PhD at the Nottingham University.
