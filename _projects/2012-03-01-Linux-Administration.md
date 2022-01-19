@@ -30,4 +30,4 @@ technologies:
 
 ## Project Description
 
-Mar-2012 Install and admin multiple Linux based servers for 7netlayers company.
+Mar-2012 Install and admin multiple Linux based servers for 7NetLayers company.

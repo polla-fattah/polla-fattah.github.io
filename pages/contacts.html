@@ -5,112 +5,6 @@ description: At Your Service
 background: '/img/bg-contact.jpg'
 permalink: /contacts/
 ---
-<style>
-.contact-header{
-  text-align: center;
-  display: block;
-  font-weight: 400;
-  font-size: 2.5em;
-  color: rgb(46, 72, 155);
-  width: 100%;
-  margin-bottom: 1em;
-}
-</style>
-
-
-<style>
-.my-middle{
-  width: 100%;
-  text-align: center;
-}
-.my-btn{
-  display: inline-block;
-  width: 90px;
-  height: 90px;
-  background: #f1f1f1;
-  margin: 10px;
-  border-radius: 30%;
-  box-shadow: 0 5px 15px -5px #00000070;
-  color: #3498db;
-  overflow: hidden;
-  position: relative;
-}
-.my-btn i{
-  line-height: 90px;
-  font-size: 26px;
-  transition: 0.2s linear;
-}
-.my-btn:hover .svg-inline--fa{
-  transform: scale(1.1);
-  transition: 0.4s linear;
-  color: #f1f1f1;
-}
-.my-btn::before{
-  content: "";
-  position: absolute;
-  width: 120%;
-  height: 120%;
-  background: #3498db;
-  transform: rotate(45deg);
-  left: -110%;
-  top: 90%;
-}
-.my-btn:hover::before{
-  animation: aaa 0.7s 1;
-  top: -10%;
-  left: -10%;
-}
-
-.my-btn .svg-inline--fa {
-    display: inline-block;
-    font-size: 3rem;
-    height: 2em;
-    overflow: visible;
-    vertical-align: -.7em;
-}
-
-@keyframes aaa {
-  0%{
-    left: -110%;
-    top: 90%;
-  }50%{
-    left: 10%;
-    top: -30%;
-  }100%{
-    top: -10%;
-    left: -10%;
-  }
-}
-</style>
-<div class="social-wrapper">
-  <div class="contact-header">Social</div>
-
-<div class="my-middle">
-  <a class="my-btn" href="https://www.facebook.com/{{ site.facebook_username }}" target="facebook">
-    <i class="fab fa-facebook-f"></i>
-  </a>
-  <a class="my-btn" href="https://www.researchgate.net/profile/{{ site.researchgate_username }}" target="researchgate">
-    <i class="fab fa-researchgate"></i>
-  </a>
-  <a class="my-btn" href="https://github.com/{{ site.github_username }}" target="github">
-    <i class="fab fa-github"></i>
-  </a>
-  <a class="my-btn"href="https://twitter.com/{{ site.twitter_username }}" target="twitter">
-    <i class="fab fa-twitter"></i>
-  </a>
-  <a class="my-btn"  href="https://www.linkedin.com/in/{{ site.linkedin_username }}" target="linkedin">
-    <i class="fab fa-linkedin"></i>
-  </a>
-  <a class="my-btn" href="https://scholar.google.com/citations?user=z1VwmhsAAAAJ&hl=en" target="scholar">
-    <i class="fab fa-google"></i>
-  </a>
-</div>
-</div>
-
-
-<br/>
-<hr  style="margin: 0px 0px 20px 0px;box-shadow: 0px 2px 5px 2px rgba(0,0,0,0.28);;height: 1px; color: #000000;">
-<br/>
 
 <style>
 
@@ -192,6 +86,126 @@ permalink: /contacts/
   </div>
 </div>
 
+<!--<hr style="margin: 100px 20px 100px 20px;box-shadow: 0px 2px 5px 2px rgba(0,0,0,0.28);height: 1px; color: #000000; width: 100%;">-->
+
+
+
+
+<style>
+  .contact-header{
+    text-align: center;
+    display: block;
+    font-weight: 400;
+    font-size: 2.5em;
+    color: rgb(46, 72, 155);
+    width: 100%;
+    margin-bottom: 1em;
+  }
+  </style>
+  
+  
+  <style>
+  .my-middle{
+    width: 100%;
+    text-align: center;
+  }
+  .social-wrapper{
+    width: 100%;
+    padding: 150px 0px;
+    margin: 50px 0px;
+    box-shadow: 0px 3px 3px 3px rgba(139, 134, 134, 0.034);
+  }
+  
+  .my-btn{
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    background: #f1f1f1;
+    margin: 10px;
+    border-radius: 30%;
+    box-shadow: 0 5px 15px -5px #00000070;
+    color: #3498db;
+    overflow: hidden;
+    position: relative;
+  }
+  .my-btn i{
+    line-height: 90px;
+    font-size: 26px;
+    transition: 0.2s linear;
+  }
+  .my-btn:hover .svg-inline--fa{
+    transform: scale(1.1);
+    transition: 0.4s linear;
+    color: #f1f1f1;
+  }
+  .my-btn::before{
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background: #3498db;
+    transform: rotate(45deg);
+    left: -110%;
+    top: 90%;
+  }
+  .my-btn:hover::before{
+    animation: aaa 0.7s 1;
+    top: -10%;
+    left: -10%;
+  }
+  
+  .my-btn .svg-inline--fa {
+      display: inline-block;
+      font-size: 3rem;
+      height: 2em;
+      overflow: visible;
+      vertical-align: -.7em;
+  }
+  
+  @keyframes aaa {
+    0%{
+      left: -110%;
+      top: 90%;
+    }50%{
+      left: 10%;
+      top: -30%;
+    }100%{
+      top: -10%;
+      left: -10%;
+    }
+  }
+  </style>
+  <div class="social-wrapper">
+    <div class="contact-header">Social</div>
+  
+  <div class="my-middle">
+    <a class="my-btn" href="https://www.facebook.com/{{ site.facebook_username }}" target="facebook">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a class="my-btn" href="https://www.researchgate.net/profile/{{ site.researchgate_username }}" target="researchgate">
+      <i class="fab fa-researchgate"></i>
+    </a>
+    <a class="my-btn" href="https://github.com/{{ site.github_username }}" target="github">
+      <i class="fab fa-github"></i>
+    </a>
+    <a class="my-btn"href="https://twitter.com/{{ site.twitter_username }}" target="twitter">
+      <i class="fab fa-twitter"></i>
+    </a>
+    <a class="my-btn"  href="https://www.linkedin.com/in/{{ site.linkedin_username }}" target="linkedin">
+      <i class="fab fa-linkedin"></i>
+    </a>
+    <a class="my-btn" href="https://scholar.google.com/citations?user=z1VwmhsAAAAJ&hl=en" target="scholar">
+      <i class="fab fa-google"></i>
+    </a>
+  </div>
+  </div>
+  
+ 
+  <!--<hr style="margin: 100px 20px 100px 20px;box-shadow: 0px 2px 5px 2px rgba(0,0,0,0.28);height: 1px; color: #000000; width: 100%;">-->
+
+
+
+
 <style>
   .address{
     display: flex;
@@ -217,10 +231,7 @@ permalink: /contacts/
   }
 </style>
 <div style="width: 100%">
-  <br/>
-  <hr  style="margin: 0px 0px 20px 0px;box-shadow: 0px 2px 5px 2px rgba(0,0,0,0.28);;height: 1px; color: #000000;">
 
-  <br/>
   <div class="contact-header">Address</div>
 <div class="address">
 

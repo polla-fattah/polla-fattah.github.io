@@ -5,8 +5,8 @@ establishment: "Electrical Engineering Dept"
 rank: "MSc"
 subtitle: "Salahaddin University-Erbil"
 date: 2008-07-15
-startDate: 2000-10-01
-endDate: 2008-07-15
+start_date: 2000-10-01
+end_date: 2008-07-15
 
 background: "/img/education/IT.jpg"
 ---

@@ -4,8 +4,8 @@ title: "Chief Software Engineer"
 organization: "SmartGate Company"
 organization-short: "SmartGate"
 date: 2020-01-01
-startdate: 2020
-enddate: Now
+start_date: 2020
+end_date: Now
 background: "/img/jobs/business.jpg" # business.jpg academy.jpg
 category: business # business academy
 permalink: /job/chief-software-engineer
@@ -15,13 +15,11 @@ permalink: /job/chief-software-engineer
 
 - **Job Title:** _{{page.title}}_
 - **Organization:** _{{page.organization}}_
-- **Start Date:** _{{page.startdate}}_
-- **End Date**: _{{page.enddate}}_
+- **Start Date:** _{{page.start_date}}_
+- **End Date**: _{{page.end_date}}_
 
 ## Job Duties
 
-Maintaining computers, Clean installing OSs on customers computers, teaching customers how to use certain aspects of a software product, advising customers on how to use the software, and providing support.
-
-## Acquired Experiences
-
-I have learned a great deal of how to deal with customers, as well as many aspects of computer technician while I was helping customers
+- Leading Software requirement collection and then design for big government projects.
+- project manager for developing multiple smaller projects.
+- Developing tools to automate software deployment.

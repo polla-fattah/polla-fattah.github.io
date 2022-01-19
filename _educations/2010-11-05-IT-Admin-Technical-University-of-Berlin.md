@@ -5,8 +5,8 @@ establishment: "Computer Science (Informatik)"
 rank: "IT Administrator"
 subtitle: "Technical University of Berlin"
 date: 2010-11-15
-startDate: 2010-04-15
-endDate: 2010-11-15
+start_date: 2010-04-15
+end_date: 2010-11-15
 
 background: "/img/education/TUBerlin.jpg"
 ---
@@ -60,31 +60,31 @@ The participation certificate is found [here](/img/education/Berlin.jpg){:target
 ## Address
 
 <div class="address">
-    <a style="text-decoration:none;" target="maplocation" href="https://goo.gl/maps/RdexsYAVP8Xg4Wy8A">
+    <a style="text-decoration:none;" target="map_location" href="https://goo.gl/maps/RdexsYAVP8Xg4Wy8A">
     <ul>
       <li style="list-style: none;">
           <i class="fas fa-map-marker"></i>
-          <span class="address-lable">Faculty IV - Electrical Engineering and Computer Science</span>
+          <span class="address-label">Faculty IV - Electrical Engineering and Computer Science</span>
       </li>
       <li style="list-style: none;">
           <i class="fas fa-university"></i>
-          <span class="address-lable">TU Tower Building (TEL)</span>
+          <span class="address-label">TU Tower Building (TEL)</span>
       </li>
       <li style="list-style: none;">
           <i class="fas fa-university"></i>
-          <span class="address-lable">Ernst-Reuter-Platz 7</span>
+          <span class="address-label">Ernst-Reuter-Platz 7</span>
       </li>
       <li style="list-style: none;">
           <i class="fas fa-road"></i>
-          <span class="address-lable">Marchstraße 23</span>
+          <span class="address-label">Marchstraße 23</span>
       </li>
       <li style="list-style: none;">
           <i class="fas fa-city"></i>
-          <span class="address-lable">10587 Berlin</span>
+          <span class="address-label">10587 Berlin</span>
       </li>
       <li style="list-style: none;">
           <i class="fas fa-map"></i>
-          <span class="address-lable">Deutschland</span>
+          <span class="address-label">Deutschland</span>
       </li>
     </ul>
   </a>

@@ -4,8 +4,8 @@ title: "IT Manager"
 organization: "SefinTel Company"
 organization-short: "SefinTel"
 date: 2007-01-01
-startdate: 2007
-enddate: 2008
+start_date: 2007
+end_date: 2008
 background: "/img/jobs/business.jpg" # business.jpg academy.jpg
 category: business # business academy
 permalink: /job/it-manager
@@ -15,8 +15,8 @@ permalink: /job/it-manager
 
 - **Job Title:** _{{page.title}}_
 - **Organization:** _{{page.organization}}_
-- **Start Date:** _{{page.startdate}}_
-- **End Date**: _{{page.enddate}}_
+- **Start Date:** _{{page.start_date}}_
+- **End Date**: _{{page.end_date}}_
 
 ## Job Duties
 

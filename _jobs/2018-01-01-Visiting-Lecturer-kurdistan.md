@@ -4,8 +4,8 @@ title: "Visiting Lecturer"
 organization: "University of Kurdistan Hewlêr"
 organization-short: "UKH"
 date: 2018-01-01
-startdate: 2018
-enddate: 2020
+start_date: 2018
+end_date: 2020
 background: "/img/jobs/academy.jpg" # business.jpg academy.jpg
 category: academy # business academy
 permalink: /job/visiting-lecturer-ukh
@@ -15,16 +15,22 @@ permalink: /job/visiting-lecturer-ukh
 
 - **Job Title:** _{{page.title}}_
 - **Organization:** _{{page.organization}}_
-- **Start Date:** _{{page.startdate}}_
-- **End Date**: _{{page.enddate}}_
+- **Start Date:** _{{page.start_date}}_
+- **End Date**: _{{page.end_date}}_
 
 ## Job Duties
 
-Maintaining computers, Clean installing OSs on customers computers, teaching customers how to use certain aspects of a software product, advising customers on how to use the software, and providing support.
+My Main duty was teaching, the subjects that I taught was:
+
+1. Human Computer Interaction for BSc Students.
+1. Distributed systems for BSc Students.
+1. [Computer Vision] for MSc Students.
+
+This opportunity provided me with new connections as we have conducted multiple researches together and published quite few of papers.
 
 ## Acquired Experiences
 
-I have learned a great deal of how to deal with customers, as well as many aspects of computer technician while I was helping customers
+More than experience this kind of visiting lecturer job expands my connections and networks of specialists in the field of computer science and software engineering.
 
 ## Why I Left
 

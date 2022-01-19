@@ -30,4 +30,4 @@ technologies:
 
 ## Project Description
 
-Jul-2012 Develop a video management web based system for 7netlayers company.
+Jul-2012 Develop a video management web based system for 7NetLayers company.

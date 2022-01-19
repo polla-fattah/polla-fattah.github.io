@@ -5,8 +5,8 @@ establishment: "Compute Science"
 rank: "PhD"
 subtitle: "University of Nottingham"
 date: 2018-07-15
-startDate: 2012-10-01
-endDate: 2018-09-15
+start_date: 2012-10-01
+end_date: 2018-09-15
 
 background: "/img/education/Nottingham-University-Jubilee-Campusc.jpg"
 ---

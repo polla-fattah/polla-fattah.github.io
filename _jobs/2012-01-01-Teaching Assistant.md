@@ -4,8 +4,8 @@ title: "Teaching Assistant"
 organization: "University of Nottingham"
 organization-short: "UoN"
 date: 2012-01-01
-startdate: 2012
-enddate: 2016
+start_date: 2012
+end_date: 2016
 background: "/img/jobs/academy.jpg" # business.jpg academy.jpg
 category: academy # business academy
 permalink: /job/teaching-assistant
@@ -15,16 +15,20 @@ permalink: /job/teaching-assistant
 
 - **Job Title:** _{{page.title}}_
 - **Organization:** _{{page.organization}}_
-- **Start Date:** _{{page.startdate}}_
-- **End Date**: _{{page.enddate}}_
+- **Start Date:** _{{page.start_date}}_
+- **End Date**: _{{page.end_date}}_
 
 ## Job Duties
 
-Maintaining computers, Clean installing OSs on customers computers, teaching customers how to use certain aspects of a software product, advising customers on how to use the software, and providing support.
+I was PhD student at the Nottingham University, So through out my study I could take the duty of assisting my supervisor and other professors in the lab for the following courses:
+
+- Data Modelling an analysis.
+- Computer Programming using Java
+- Database Systems
 
 ## Acquired Experiences
 
-I have learned a great deal of how to deal with customers, as well as many aspects of computer technician while I was helping customers
+It was my first time working with students with vibrant background, ethnicity and nationality which was exciting and full of new experience for me. I had acquired the knowledge about the teaching process and regulations of another country as well.
 
 ## Why I Left
 

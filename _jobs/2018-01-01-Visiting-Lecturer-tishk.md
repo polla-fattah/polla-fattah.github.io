@@ -4,8 +4,8 @@ title: "Visiting Lecturer"
 organization: "Tishk International University"
 organization-short: "TIU"
 date: 2018-01-01
-startdate: 2018
-enddate: 2020
+start_date: 2018
+end_date: 2020
 background: "/img/jobs/academy.jpg" # business.jpg academy.jpg
 category: academy # business academy
 permalink: /job/visiting-lecturer-tiu
@@ -15,16 +15,17 @@ permalink: /job/visiting-lecturer-tiu
 
 - **Job Title:** _{{page.title}}_
 - **Organization:** _{{page.organization}}_
-- **Start Date:** _{{page.startdate}}_
-- **End Date**: _{{page.enddate}}_
+- **Start Date:** _{{page.start_date}}_
+- **End Date**: _{{page.end_date}}_
 
 ## Job Duties
 
-Maintaining computers, Clean installing OSs on customers computers, teaching customers how to use certain aspects of a software product, advising customers on how to use the software, and providing support.
+My main duty was teaching, the subjects that I lectured was:
 
-## Acquired Experiences
+1. Linux Administration for BSc Students.
+1. Operating Systems for BSc Students.
 
-I have learned a great deal of how to deal with customers, as well as many aspects of computer technician while I was helping customers
+And again we have conducted multiple researches and published some papers with the staff of the TIU.
 
 ## Why I Left
 

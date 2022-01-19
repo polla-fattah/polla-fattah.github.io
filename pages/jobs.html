@@ -5,6 +5,18 @@ background: '/img/jobs/jobs.png'
 permalink: /jobs/
 
 ---
+
+<h1>An Explanation</h1>
+<p style="text-align: justify">
+  I have worked in multiple jobs throughout the years. An observant can notice that I have worked multiple jobs at the same time. I have
+  This is due to the nature of my main career at the university as it has flexible time requirements for our teaching and other activities. 
+  This enabled me to have other jobs specially if they were also had flexible time requirements. 
+</p>
+<p style="text-align: justify">
+  I personally believe that for the lecturer it is important to have a knowledge on the business side so he can provide practical knowledge 
+  to the students. And it is a plus side as a developer to have links with the university so I can provide businesses that I work for the
+  with new research aspects if needed and guarantee the best talents of new developers for them.
+</p>
 <style>
 .job-card {
 
@@ -69,14 +81,14 @@ permalink: /jobs/
     </h2>
     <h3 class="post-subtitle">At {{ item.organization-short }}</h3>
     <h3 class="post-subtitle">
-      From {{ item.startdate }} 
-      {% if item.enddate == 'Now' %}
+      From {{ item.start_date }} 
+      {% if item.end_date == 'Now' %}
         till 
       {% else %}
         to
       {% endif %}
 
-      {{ item.enddate }}</h3>
+      {{ item.end_date }}</h3>
 
   </a>    
 </article>

@@ -4,8 +4,8 @@ title: "Software Engineer"
 organization: "AwroSoft Company"
 organization-short: "AwroSoft"
 date: 2006-01-01
-startdate: 2006
-enddate: 2007
+start_date: 2006
+end_date: 2007
 background: "/img/jobs/business.jpg" # business.jpg academy.jpg
 category: business # business academy
 permalink: /job/software-engineer-awrosoft
@@ -15,8 +15,8 @@ permalink: /job/software-engineer-awrosoft
 
 - **Job Title:** _{{page.title}}_
 - **Organization:** _{{page.organization}}_
-- **Start Date:** _{{page.startdate}}_
-- **End Date**: _{{page.enddate}}_
+- **Start Date:** _{{page.start_date}}_
+- **End Date**: _{{page.end_date}}_
 
 ## Job Duties
 

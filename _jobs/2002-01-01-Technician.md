@@ -4,8 +4,8 @@ title: "Technician"
 organization: "Wan Computer and Internet Services"
 organization-short: "Wan"
 date: 2002-01-01
-startdate: 2002
-enddate: 2003
+start_date: 2002
+end_date: 2003
 background: "/img/jobs/business.jpg" # business.jpg academy.jpg
 category: business # business academy
 permalink: /job/technician
@@ -15,8 +15,8 @@ permalink: /job/technician
 
 - **Job Title:** _{{page.title}}_
 - **Organization:** _{{page.organization}}_
-- **Start Date:** _{{page.startdate}}_
-- **End Date**: _{{page.enddate}}_
+- **Start Date:** _{{page.start_date}}_
+- **End Date**: _{{page.end_date}}_
 
 ## Job Duties
 

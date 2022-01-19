@@ -4,8 +4,8 @@ title: "Software Engineer"
 organization: "Salahaddin University-Erbil"
 organization-short: "SUE"
 date: 2004-01-01
-startdate: 2004
-enddate: 2006
+start_date: 2004
+end_date: 2006
 background: "/img/jobs/academy.jpg" # business.jpg academy.jpg
 category: academy # business academy
 permalink: /job/software-engineer-sue
@@ -15,8 +15,8 @@ permalink: /job/software-engineer-sue
 
 - **Job Title:** _{{page.title}}_
 - **Organization:** _{{page.organization}}_
-- **Start Date:** _{{page.startdate}}_
-- **End Date**: _{{page.enddate}}_
+- **Start Date:** _{{page.start_date}}_
+- **End Date**: _{{page.end_date}}_
 
 ## Job Duties
 

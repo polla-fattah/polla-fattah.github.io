@@ -5,8 +5,8 @@ establishment: "Software Engineering Dept."
 rank: "BSc"
 subtitle: "Salahaddin University-Erbil"
 date: 2004-07-15
-startDate: 2000-10-01
-endDate: 2004-07-15
+start_date: 2000-10-01
+end_date: 2004-07-15
 
 background: "/img/education/software.png"
 ---

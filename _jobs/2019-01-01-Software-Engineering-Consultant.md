@@ -4,8 +4,8 @@ title: "Software Consultant"
 organization: "InfoRR Company"
 organization-short: "InfoRR"
 date: 2019-01-01
-startdate: 2019
-enddate: Now
+start_date: 2019
+end_date: Now
 background: "/img/jobs/business.jpg" # business.jpg academy.jpg
 category: business # business academy
 permalink: /job/software-consultant
@@ -15,14 +15,14 @@ permalink: /job/software-consultant
 
 - **Job Title:** _{{page.title}}_
 - **Organization:** _{{page.organization}}_
-- **Start Date:** _{{page.startdate}}_
-- **End Date**: _{{page.enddate}}_
+- **Start Date:** _{{page.start_date}}_
+- **End Date**: _{{page.end_date}}_
 
 ## Job Duties
 
-Maintaining computers, Clean installing OSs on customers computers, teaching customers how to use certain aspects of a software product, advising customers on how to use the software, and providing support.
-
-## Acquired Experiences
-
-I have learned a great deal of how to deal with customers, as well as many aspects of computer technician while I was helping customers
-
+- Writing and reviewing software proposals.
+- Planning for the software development.
+- Minting software development quality.
+- Working with the client to make sure that the software meets the requirements of the tasks.
+- Estimating the cost of new software development projects.
+- Interviewing and selecting the right software developers for the tasks.

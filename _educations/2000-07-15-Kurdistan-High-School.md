@@ -5,8 +5,8 @@ establishment: "Kurdistan High School – Hawler"
 rank: "Deploma"
 subtitle: "Kurdistan High School–Hawler "
 date: 2000-07-15 23:45:13  +0300
-startDate: 1996-09-01 23:45:13  +0300
-endDate: 2000-07-01 23:45:13 +0300
+start_date: 1996-09-01 23:45:13  +0300
+end_date: 2000-07-01 23:45:13 +0300
 
 background: "/img/education/kurdistanyKwran.jpg"
 ---

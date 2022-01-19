@@ -1,11 +1,11 @@
 ---
 layout: job
 title: "Linux Administrator"
-organization: "7netlayers Company"
-organization-short: "7netlayers"
-date: 2012-01-01
-startdate: 2010
-enddate: 2012
+organization: "7NetLayers Company"
+organization-short: "7NetLayers"
+date: 2010-01-01
+start_date: 2010
+end_date: 2012
 background: "/img/jobs/business.jpg" # business.jpg academy.jpg
 category: business # business academy
 permalink: /job/linux-administrator
@@ -15,16 +15,17 @@ permalink: /job/linux-administrator
 
 - **Job Title:** _{{page.title}}_
 - **Organization:** _{{page.organization}}_
-- **Start Date:** _{{page.startdate}}_
-- **End Date**: _{{page.enddate}}_
+- **Start Date:** _{{page.start_date}}_
+- **End Date**: _{{page.end_date}}_
 
 ## Job Duties
 
-Maintaining computers, Clean installing OSs on customers computers, teaching customers how to use certain aspects of a software product, advising customers on how to use the software, and providing support.
+I have just returned from the Germany's Linux course, I have took this job as a Linux Administrator at 7NetLayers Company. My main duty was to manage, install Linux servers as well as evaluating and minimizing some web servers and web sites that they had.
 
 ## Acquired Experiences
 
-I have learned a great deal of how to deal with customers, as well as many aspects of computer technician while I was helping customers
+- First time hand on practical experience with the knowledge of Linux administration.
+- Learn to maintain others code and create new parts that can communicate with archaic portions of the code.
 
 ## Why I Left
 
