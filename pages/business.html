@@ -1,13 +1,23 @@
 ---
 layout: page
 title: Business
-description: This is what I do.
 background: '/img/bg-business.jpeg'
 permalink: /business/
  
 ---
 <style>
-
+  .headers{
+    text-align: center;
+    display: block;
+    font-weight: 400;
+    font-size: 2.5em;
+    color: #19566a;
+    width: 100%;
+    margin: 1em 0px;
+  }
+  .headers:hover{
+      text-decoration: none;
+  }
 .custom-container{
     width: 100%;
     display: flex;
@@ -168,9 +178,6 @@ permalink: /business/
     .half-half-image-text{
       padding: 70px 0px;
     }
-    .half-half-image-text h1{
-        color: #800000;
-    }
     .half-half-image-text .content{
         height: 100%;
         display:flex;
@@ -193,7 +200,7 @@ permalink: /business/
         <div class="container">
           <div class="row">
             <div class="col-12">
-              <h1>Our Mission</h1>
+              <h1  class="headers">Our Mission</h1>
             </div>
           </div>
           <div class="row">
@@ -249,9 +256,7 @@ permalink: /business/
 
 
 <style>
-    header.masthead{
-        margin-bottom: 10px;
-    }
+
     :root {
     --red: hsl(0, 78%, 62%);
     --cyan: hsl(180, 62%, 55%);
@@ -275,10 +280,6 @@ permalink: /business/
     color: hsl(228, 45%, 44%); 
 }
 
-
-.strange-cards h1 {
-    color: #800000;;
-}
 
 @media (max-width: 400px) {
     .strange-cards h1 {
@@ -379,9 +380,7 @@ permalink: /business/
 
 
 <div class="strange-cards">
-  <div class="header">
-    <h1>Projects</h1>
-  </div>
+    <h1 class="headers">Projects</h1>
   <div class="row1-container">
     <div class="box box-down cyan">
       <h2>Supervisor</h2>
@@ -413,10 +412,7 @@ permalink: /business/
 
 
 <div>
-    <div style="color:#800000; padding: 20px;">
-        <h1>Tools</h1>
-    </div>
-    
+    <h1 class="headers">Tools</h1>
     <p style="padding: 20px; width: 100%; text-align: center;"></p>
 </div>
 
@@ -483,30 +479,28 @@ permalink: /business/
       font-family: 'Source Sans Pro', sans-serif;
     }
     
-  
-    
     </style>
   
-  <div style="color:#800000; padding: 20px;"><h1>
-      Jobs
-  </h1></div>
+  <a class="headers" href="/jobs?category=business">Jobs</a>
   <div class="Jobs-list">
     <a class="leaderboard">
       <main class="leaderboard__profiles">
-        <a class="leaderboard__profile" href="mailto:polla.fattah@gmail.com" target="mail">
-          <img src="/img/developer-icon.png" alt="Mark Zuckerberg" class="leaderboard__picture">
-          <span class="leaderboard__name">polla.fattah@gmail.com</span>
+
+
+        <a class="leaderboard__profile" href="/job/chief-software-engineer">
+          <img src="/img/color-a.png"  class="leaderboard__picture">
+          <span class="leaderboard__name">Chief Software Engineer at SmartGate Company</span>
         </a>
         
-        <a class="leaderboard__profile" href="mailto:polla.fattah@su.edu.krd" target="mail">
-          <img src="/img/academic-icon.png" alt="Dustin Moskovitz" class="leaderboard__picture">
-          <span class="leaderboard__name">polla.fattah@su.edu.krd</span>
+        <a class="leaderboard__profile" href="/job/software-consultant">
+          <img src="/img/color-b.png" class="leaderboard__picture">
+          <span class="leaderboard__name">Consultant at InfoRR Company</span>
         </a>
-        
-        <a class="leaderboard__profile" href="mailto:polla.fattah@inforr.co.uk" target="mail">
-          <img src="/img/business-icon.png" alt="Elizabeth Holmes" class="leaderboard__picture">
-          <span class="leaderboard__name">polla.fattah@inforr.co.uk</span>
-        </a>
+
+        <a class="leaderboard__profile" href="/job/leading-developer">
+            <img src="/img/color-c.png" class="leaderboard__picture">
+            <span class="leaderboard__name">Leading Developer at Salahaddin University</span> 
+          </a>
       </main>
     </div>
   </div>
