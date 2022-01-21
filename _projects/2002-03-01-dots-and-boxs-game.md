@@ -1,13 +1,14 @@
 ---
 layout: project
 title: "Dots-and-Boxes"
-organization: "University of Salahuddin-Erbil, Software Engineering"
+organization: "University of Salahaddin-Erbil, Software Engineering"
+description: "Creating Dots-and-Boxes Game using Visual Basic."
 date: 2002-03-01
 finish-date: 2003
 background: "/img/jobs/business.jpg" # business.jpg academy.jpg
-category: game # business academy
-myrole: "Developer"
-source: ""
+category: game # application, webapp, website, game
+my-role: "Developer"
+source: "https://github.com/polla-fattah/Dot-and-Box-The-Game"
 technologies:
   - fa: true
     icon: "fas fa-scroll"
@@ -18,10 +19,10 @@ technologies:
 
 - **Project Title:** _{{page.title}}_
 - **Organization:** _{{page.organization}}_
-- **My Role:** _{{page.myrole}}_
+- **My Role:** _{{page.my-role}}_
 - **Tools:** _{% for item in page.technologies %}{{ item.name }}&nbsp;&middot;&nbsp;{% endfor %}_
-- **Completed Date**: _{{page.date  | date: '%B-%Y'}}_{% if page.source %}
-- **Source**: [{{page.source}}]({{page.source}}){% endif %}
+- **Completed Date**: _{{page.date  | date: '%B-%Y'}}_{% if page.source != "" %}
+- **Source**: [{{page.source}}]({{page.source}}){:target="{{page.title}}"}{% endif %}
 
 ## Project Description
 

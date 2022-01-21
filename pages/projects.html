@@ -46,11 +46,8 @@ permalink: /business/projects
   </p>
   <a href="{{ item.url | prepend: site.baseurl | replace: '//', '/' }}">
     <h2 class="post-title">{{ item.title }}</h2>
-    {% if item.subtitle %}
-    <h3 class="post-subtitle">{{ item.subtitle }}</h3>
-    {% else %}
-    <h3 class="post-subtitle">{{ item.excerpt | strip_html | truncatewords: 15 }}</h3>
-    {% endif %}
+    <h3 class="post-subtitle">{{ item.description }}</h3>
+
   </a>
   <div class='technologies'>
     <hr style="border-color: #EEE;width: 100%;">

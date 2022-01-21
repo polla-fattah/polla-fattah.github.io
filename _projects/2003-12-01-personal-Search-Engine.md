@@ -1,13 +1,13 @@
 ---
 layout: project
-title: "Online Delivery System"
-organization: "For FRM Delivery Services"
-description: "Manage a development team Create an application for facilitating online deliveries."
-date: 2020-04-01
-background: "/img/projects/library.jpg"
+title: "Personal Search Engine"
+organization: "University of Salahaddin-Erbil, Software Engineering"
+description: "Creating Personal Search Engine using Java."
+date: 2003-12-01
+background: "/img/projects/search.jpg"
 category: application # application, webapp, website,
-my-role: "Developer & and development team manager"
-source: "https://github.com/polla-fattah/FRM_Delivery"
+my-role: "Developer"
+source: "https://github.com/polla-fattah/SearchEngine"
 technologies:
   - fa: true
     icon: "fab fa-java"
@@ -15,9 +15,6 @@ technologies:
   - fa: true
     icon: "far fa-file-alt"
     name: "File based database"
-  - fa: true
-    icon: "fas fa-project-diagram"
-    name: "Networking"
 ---
 
 ## Highlights
@@ -31,4 +28,4 @@ technologies:
 
 ## Project Description
 
-Apr-2020 Manage a development team Create an application for facilitating online deliveries.
+This project was created as part of requirements to pass the subject of Advanced Java programming in my final year at the BSc study. In this application we have demonstrated multiple programming capabilities such as Web scrapping and content traction from web pages and simple page ranking.

@@ -1,33 +1,43 @@
 ---
 layout: project
-title: "Salary Management System"
-organization: "University of Salahuddin-Erbil, Software Engineering"
+title: "HR Management System"
+organization: "University of Salahaddin-Erbil, College Engineering"
+description: "Human Resource Management Database for Engineering College at Salahaddin University."
 date: 2011-12-01
 background: "/img/projects/library.jpg"
 category: application # application, webapp, website,
-myrole: "Developer & Team Leader"
+my-role: "Database and System Designer"
 source: ""
 technologies:
   - fa: true
-    icon: "fab fa-java"
-    name: "Java"
-  - fa: ture
-    icon: "far fa-file-alt"
-    name: "File based database"
-  - fa: ture
+    icon: "fab fa-php"
+    name: "PHP"
+  - fa: true
+    icon: "fas fa-server"
+    name: "Server"
+  - fa: true
+    icon: "fas fa-code"
+    name: "HTML Code"
+  - fa: true
+    icon: "fab fa-css3-alt"
+    name: "CSS"
+  - fa: true
     icon: "fas fa-project-diagram"
-    name: "Netwrorking"
+    name: "ER Diagrams"
+  - fa: false
+    icon: "GWT"
+    name: "Google Web Toolkit"
 ---
 
 ## Highlights
 
 - **Project Title:** _{{page.title}}_
 - **Organization:** _{{page.organization}}_
-- **My Role:** _{{page.myrole}}_
+- **My Role:** _{{page.my-role}}_
 - **Tools:** _{% for item in page.technologies %}{{ item.name }}&nbsp;&middot;&nbsp;{% endfor %}_
-- **Completed Date**: _{{page.date  | date: '%B-%Y'}}_{% if page.source %}
-- **Source**: [{{page.source}}]({{page.source}}){% endif %}
+- **Completed Date**: _{{page.date  | date: '%B-%Y'}}_{% if page.source != "" %}
+- **Source**: [{{page.source}}]({{page.source}}){:target="{{page.title}}"}{% endif %}
 
 ## Project Description
 
-Dec-2011 Design salary management database for Engineering College at Salahaddin University
+A simplified version of HR of the College of Engineering, I have used PHP as , GWT

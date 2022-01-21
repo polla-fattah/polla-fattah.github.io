@@ -1,20 +1,14 @@
 ---
 layout: project
-title: "Webbased Interface for Linux Commands"
-organization: "TU Berlin"
-description: "Create a web-based interface for linux commands using GWT."
-date: 2004-10-01
+title: "Salahaddin University-Erbil's Website"
+organization: "University of Salahaddin-Erbil"
+description: "Design and implement Salahaddin University-Erbil website."
+date: 2014-10-01
 background: "/img/projects/library.jpg"
 category: application # application, webapp, website,
-my-role: "Developer"
-source: ""
+my-role: "Developer and development team manager."
+source: "https://github.com/polla-fattah/Salahaddin-University-Web"
 technologies:
-  - fa: true
-    icon: "fas fas fa-terminal"
-    name: "Bash Script"
-  - fa: true
-    icon: "fab fa-java"
-    name: "Java"
   - fa: true
     icon: "fab fa-php"
     name: "PHP"
@@ -24,6 +18,12 @@ technologies:
   - fa: true
     icon: "fab fa-css3-alt"
     name: "CSS"
+  - fa: true
+    icon: "fas fa-database"
+    name: "MySQL"
+  - fa: true
+    icon: "fas fa-server"
+    name: "Apache Web Server"
 ---
 
 ## Highlights
@@ -37,4 +37,4 @@ technologies:
 
 ## Project Description
 
-This was a requirement for finishing my training in TU Berlin. I have created a web-based interface for linux commands using GWT. Through this web application admins could issue commands to the server and see the output.
+Oct-2014 Design and implement Salahaddin University-Erbil website.
