@@ -6,7 +6,7 @@ description: "Lead a development team to create a web app to manage clinics."
 date: 2019-07-01
 background: "/img/projects/library.jpg"
 category: application # application, webapp, website,
-my-role: "Developer & and development team lead"
+my-role: "Developer & and development team leader"
 source: ""
 technologies:
   - fa: true

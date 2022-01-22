@@ -37,4 +37,4 @@ technologies:
 
 ## Project Description
 
-Design and implement the website of Ministry of Culture in Kurdistan Region Iraq.
+Design and implement the website of Ministry of Culture in Kurdistan Region Iraq. This was build using LAMP stack for the server side and HTML+CSS+JavaScript for the client side.

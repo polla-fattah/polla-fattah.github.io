@@ -31,4 +31,4 @@ technologies:
 
 ## Project Description
 
-Sep-2017 Create a framework to compare different methods of classification.
+Create a framework to compare different methods of classification.

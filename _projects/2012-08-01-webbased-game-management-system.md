@@ -1,26 +1,35 @@
 ---
 layout: project
-title: "web-based video management system"
+title: "web-based game management system"
 organization: "7NetLayers"
-description: "Develop a video management web based system for 7NetLayers company."
-date: 2012-07-01
+description: "Develop a game management web based system for 7NetLayers company."
+date: 2012-08-01
 background: "/img/projects/library.jpg"
 category: application # application, webapp, website,
 my-role: "Developer"
-source: ""
+source: "https://github.com/polla-fattah/Game-Portal"
 technologies:
-  - fa: true
-    icon: "fas fas fa-terminal"
-    name: "Bash Script"
   - fa: true
     icon: "fab fa-php"
     name: "PHP"
+  - fa: true
+    icon: "fab fa-js-square"
+    name: "JavaScript"
+  - fa: true
+    icon: "far fa-file-alt"
+    name: "Text File"
+  - fa: true
+    icon: "fas fas fa-terminal"
+    name: "Bash Script"
   - fa: true
     icon: "fab fa-html5"
     name: "HTML"
   - fa: true
     icon: "fab fa-css3-alt"
     name: "CSS"
+  - fa: true
+    icon: "fas fa-network-wired"
+    name: "Networking"
 ---
 
 ## Highlights
@@ -34,4 +43,4 @@ technologies:
 
 ## Project Description
 
-Jul-2012 Develop a video management web based system for 7NetLayers company.
+Develop a video management web based system for 7NetLayers company.

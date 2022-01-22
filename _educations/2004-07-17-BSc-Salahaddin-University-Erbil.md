@@ -67,11 +67,11 @@ During these four years I have worked on several interesting projects. Some of t
 
 ### 1- Chat Application
 
-For my final year project, I have used Java programming language to create a multithreaded, network-based and client/server chat system. the chat was the first chat project which was in Kurdish language. For the interface I have used Swing package and for the server I have used Java Socket programming. The code of the chat system is available in [Chat System](https://github.com/polla-fattah/Chat-Application){:target="chat"}
+For my final year project, I have used Java programming language to create a MultiThreaded, network-based and client/server chat system. the chat was the first chat project which was in Kurdish language. For the interface I have used Swing package and for the server I have used Java Socket programming. The code of the chat system is available in [Chat System](https://github.com/polla-fattah/Chat-Application){:target="chat"}
 
 ### 2- Sort Algorithm Visualizer
 
-I have deviloped this application using Java programming language. It is a visualizer for sorting algorithms. It is available in [Sort Algorithm Visualizer](https://github.com/polla-fattah/VisualiseSorting){:target="sort"}.
+I have developed this application using Java programming language. It is a visualizer for sorting algorithms. It is available in [Sort Algorithm Visualizer](https://github.com/polla-fattah/VisualiseSorting){:target="sort"}.
 
 ### 3- Personal Search Engine
 
@@ -79,7 +79,7 @@ This application was developed using Java programming language. It was ment to b
 
 ### 4- Domain Transformation
 
-For the subject of Engineering Analysis I have created a number of algorithmes guided by the mathematical concepts. The transformations was from Fast Fouriur Transform, fast fast fourior transform and z-transform. The codes can be found [here](https://github.com/polla-fattah/Collection-of-transformations){:target="transform"}.
+For the subject of Engineering Analysis I have created a number of algorithms guided by the mathematical concepts. The transformations was from Fast Fourier Transform, fast fast fourier transform and z-transform. The codes can be found [here](https://github.com/polla-fattah/Collection-of-transformations){:target="transform"}.
 
 ### 5- Dot-and-box Game
 

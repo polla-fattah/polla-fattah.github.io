@@ -37,4 +37,4 @@ technologies:
 
 ## Project Description
 
-Design and implement a website for ‘Kurdistan Chemists Syndicate’.
+Design and implement a website for ‘Kurdistan Chemists Syndicate’. This was build using LAMP stack for the server side and HTML+CSS+JavaScript for the client side.

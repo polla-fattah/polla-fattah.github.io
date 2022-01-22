@@ -12,6 +12,9 @@ technologies:
   - fa: true
     icon: "fab fa-java"
     name: "Java"
+  - fa: true
+    icon: "fab fa-android"
+    name: "Android Framework"
 ---
 
 ## Highlights
@@ -25,4 +28,4 @@ technologies:
 
 ## Project Description
 
-Feb-2016 Create a media player for Android using Java.
+Create a media player for Android using Java.

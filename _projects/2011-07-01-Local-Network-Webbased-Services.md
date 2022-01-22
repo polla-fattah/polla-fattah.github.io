@@ -12,8 +12,15 @@ technologies:
   - fa: true
     icon: "fas fas fa-terminal"
     name: "Bash Script"
-    icon: "fas fa-project-diagram"
+  - fa: true
+    icon: "fas fa-network-wired"
     name: "Networking"
+  - fa: true
+    icon: "fab fa-wikipedia-w"
+    name: "Wikimedia"
+  - fa: true
+    icon: "fab fa-wordpress-simple"
+    name: "Wordpress"
 ---
 
 ## Highlights

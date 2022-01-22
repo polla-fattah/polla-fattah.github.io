@@ -31,4 +31,4 @@ technologies:
 
 ## Project Description
 
-Apr-2020 Manage a development team Create an application for facilitating online deliveries.
+Manage a development team to Create an application for facilitating online deliveries.

@@ -42,8 +42,17 @@ technologies:
     icon: "far fa-file-alt"
     name: "File based database"
   - fa: true
-    icon: "fas fa-project-diagram"
+    icon: "fas fa-network-wired"
     name: "Networking"
   - fa: true
     icon: "fas fa-project-diagram"
     name: "ER Diagrams"
+  - fa: true
+    icon: "fab fa-wikipedia-w"
+    name: "Wikimedia"
+  - fa: true
+    icon: "fab fa-wordpress-simple"
+    name: "Wordpress"
+  - fa: true
+    icon: "fab fa-linux"
+    name: "Linux"

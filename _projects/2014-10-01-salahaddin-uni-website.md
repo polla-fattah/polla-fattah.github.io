@@ -37,4 +37,4 @@ technologies:
 
 ## Project Description
 
-Oct-2014 Design and implement Salahaddin University-Erbil website.
+Design and implement Salahaddin University-Erbil's website. This website has capability to build personal pages for the staff, manage websites for different colleges and departments as well as publications.

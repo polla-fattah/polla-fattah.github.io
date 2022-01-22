@@ -12,12 +12,6 @@ technologies:
   - fa: true
     icon: "fab fa-java"
     name: "Java"
-  - fa: true
-    icon: "far fa-file-alt"
-    name: "File based database"
-  - fa: true
-    icon: "fas fa-project-diagram"
-    name: "Networking"
 ---
 
 ## Highlights
@@ -31,4 +25,4 @@ technologies:
 
 ## Project Description
 
-Aug-2016 Leading a team for creating an AI method for playing Dots-and-Boxes game
+Leading a team for creating a framework to compare different A methods' performance in playing Dots-and-Boxes game

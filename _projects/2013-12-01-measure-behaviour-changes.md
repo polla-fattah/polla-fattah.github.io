@@ -1,6 +1,6 @@
 ---
 layout: project
-title: "measure changes of items behavior"
+title: "Measure Changes in Behavior"
 organization: "University of Nottingham"
 date: 2013-12-01
 background: "/img/projects/library.jpg"
@@ -30,4 +30,4 @@ technologies:
 
 ## Project Description
 
-Dec-2013 Propose an algorithm to measure changes of items behaviour over time.
+Developing a method to measure changes in behavior. It can work for any behavior of a temporal nature however I have been asked to use it to measure changes in behavior of players simulating contribution in public goods.

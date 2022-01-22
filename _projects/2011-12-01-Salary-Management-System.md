@@ -40,4 +40,4 @@ technologies:
 
 ## Project Description
 
-A simplified version of HR of the College of Engineering, I have used PHP as , GWT
+A simplified version of HR of the College of Engineering, I have used PHP as backend and GWT as frontend.

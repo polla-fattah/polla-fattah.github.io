@@ -1,23 +1,14 @@
 ---
 layout: project
-title: "Webbased Interface for Linux Commands"
-organization: "TU Berlin"
-description: "Create a web-based interface for linux commands using GWT."
-date: 2004-10-01
+title: "web-based video management system"
+organization: "7NetLayers"
+description: "Develop a video management web based system for 7NetLayers company."
+date: 2012-05-01
 background: "/img/projects/library.jpg"
 category: application # application, webapp, website,
 my-role: "Developer"
-source: ""
+source: "https://github.com/polla-fattah/Web-Portal"
 technologies:
-  - fa: true
-    icon: "fas fas fa-terminal"
-    name: "Bash Script"
-  - fa: true
-    icon: "fab fa-java"
-    name: "Java"
-  - fa: false
-    icon: "GWT"
-    name: "Google Web Toolkit"
   - fa: true
     icon: "fab fa-php"
     name: "PHP"
@@ -40,4 +31,4 @@ technologies:
 
 ## Project Description
 
-This was a requirement for finishing my training in TU Berlin. I have created a web-based interface for linux commands using GWT. Through this web application admins could issue commands to the server and see the output.
+Develop a video management web based system for 7NetLayers company.

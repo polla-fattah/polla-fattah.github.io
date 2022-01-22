@@ -37,4 +37,4 @@ technologies:
 
 ## Project Description
 
-Apr-2007 Design and implement the website of Ministry of Higher Education of KRG.
+Apr-2007 Design and implement the website of Ministry of Higher Education of KRG. This was build using LAMP stack for the server side and HTML+CSS+JavaScript for the client side.

@@ -31,4 +31,4 @@ technologies:
 
 ## Project Description
 
-May-2018 Supervise a project for university staff management system
+Supervise a project for university staff management system

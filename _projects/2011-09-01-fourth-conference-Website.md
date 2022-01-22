@@ -1,6 +1,6 @@
 ---
 layout: project
-title: "Chat Application"
+title: "Conference Website"
 organization: "University of Salahaddin-Erbil, Software Engineering"
 description: "Building a website for Salahaddin University-Erbil’s fourth conference."
 date: 2011-09-01
@@ -34,4 +34,4 @@ technologies:
 
 ## Project Description
 
-Building a website for Salahaddin University-Erbil’s fourth conference.
+Building a website for Salahaddin University-Erbil’s fourth conference. This was build using LAMP stack for the server side and HTML+CSS+JavaScript for the client side.

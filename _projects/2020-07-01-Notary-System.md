@@ -25,4 +25,4 @@ technologies:
 
 ## Project Description
 
-Jun-2020 Supervise the Quality of Services of the Notary system of the KRG
+Supervise the Quality of Services of the Notary system of the KRG

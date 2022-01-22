@@ -10,14 +10,17 @@ my-role: "IT Administrator"
 source: ""
 technologies:
   - fa: true
-    icon: "fab fa-java"
-    name: "Java"
+    icon: "fab fa-linux"
+    name: "Linux"
   - fa: true
-    icon: "far fa-file-alt"
-    name: "File based database"
+    icon: "fas fa-server"
+    name: "Server"
   - fa: true
-    icon: "fas fa-project-diagram"
+    icon: "fas fa-network-wired"
     name: "Networking"
+  - fa: true
+    icon: "fas fas fa-terminal"
+    name: "Bash Script"
 ---
 
 ## Highlights

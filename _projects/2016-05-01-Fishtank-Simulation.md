@@ -25,4 +25,4 @@ technologies:
 
 ## Project Description
 
-May-2016 Leading a team of developers to create a simulation for fish in a tank using openGL.
+Leading a team of developers to create a simulation for fish in a tank using openGL.

@@ -1,13 +1,13 @@
 ---
 layout: project
-title: "Python game"
+title: "Python Game"
 organization: "University of Nottingham"
 description: "Manage a team of developers at Nottingham to Implement a game using Python."
 date: 2015-09-01
 background: "/img/projects/library.jpg"
 category: application # application, webapp, website,
 my-role: "Developer & Team Leader"
-source: ""
+source: "https://github.com/polla-fattah/Flappy-Bird-Variation"
 technologies:
   - fa: true
     icon: "fab fa-python"
@@ -25,4 +25,4 @@ technologies:
 
 ## Project Description
 
-Nov-2015 Manage a team of developers at Nottingham to Implement a game using Python.
+Manage a team of developers at Nottingham to Implement a variation of flappy bird game using Python.
