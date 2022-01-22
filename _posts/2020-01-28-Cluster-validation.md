@@ -2,9 +2,12 @@
 layout: post
 title: "Cluster Validation"
 subtitle: "How to validate the resulted clusters"
-excerpt: "Many clustering methods exist to be used in different situations according to the underlying data to be analysed and clustered. There are many methods to assess clustering results and their initial configurations, which can be categorised into three main types: clustering tendency, cluster stability and cluster evaluation."
+excerpt: "Many clustering methods exist to be used in different situations according to the underlying data to be analysed and clustered."
 date: 2020-01-28 23:45:13 -0400
-background: "/img/posts/03.jpg"
+background: "/img/posts/2020-01-28-Cluster-validation/background.png"
+categories: ["data-mining", "Clustering"]
+
+author: "Polla Fattah"
 ---
 
 # Clustering Validation

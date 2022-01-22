@@ -2,9 +2,11 @@
 layout: post
 title: "Clustering Algorithms"
 subtitle: "Clustering Algorithms"
-excerpt: "Unsupervised machine learning methods aim to find patterns or groups (clusters) in data sets so that the most similar items in the data set will be gathered in the same cluster, and dissimilar items will be in different clusters."
+excerpt: "Unsupervised machine learning methods aim to find patterns or groups (clusters) in data sets so that the most similar items in the data set will be gathered in the same cluster"
 date: 2020-01-27
-background: "/img/posts/02.jpg"
+background: "/img/posts/2020-01-27-clustering/background.png"
+categories: ["data-mining", "clustering"]
+author: "Polla Fattah"
 ---
 
 # Clustering

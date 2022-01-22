@@ -4,7 +4,9 @@ title: "Temporal Data Analysis"
 subtitle: "How collected data over time affects analysis."
 excerpt: "Temporal data analysis is concerned with mining and analysing sequential data sets . A sequential data set is ordered according to some index."
 date: 2020-01-29 23:45:13 -0400
-background: "/img/posts/04.jpg"
+background: "/img/posts/2020-01-29-temporal-data-analysis/background.jpg"
+categories: ["data-mining", "Time Series"]
+author: "Polla Fattah"
 ---
 
 # Temporal Data Analysis

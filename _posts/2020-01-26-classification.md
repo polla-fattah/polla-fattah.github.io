@@ -4,8 +4,9 @@ title: "Classification Algorithms"
 subtitle: "How to classify data."
 excerpt: "Classification is an instance of supervised learning. Supervised learning classification process includes a training phase to create a model (classifier)."
 date: 2020-01-26
-background: "/img/posts/01.jpg"
-categories: classification
+background: "/img/posts/2020-01-26-classification/background.jpg"
+categories: ["data-mining", "classification"]
+author: "Polla Fattah"
 ---
 
 <style>
