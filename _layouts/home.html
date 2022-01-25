@@ -32,22 +32,38 @@ layout: default
         {{ content }}
 
         <!-- Home Post List -->
-        {% for post in site.posts limit : 5 %}
+        <link rel="stylesheet" type="text/css" href="/assets/post-card.css" />
 
-        <article class="post-preview">
-          <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
-            <h2 class="post-title">{{ post.title }}</h2>
-            {% if post.subtitle %}
-            <h3 class="post-subtitle">{{ post.subtitle }}</h3>
-            {% else %}
-            <h3 class="post-subtitle">{{ post.excerpt | strip_html | truncatewords: 15 }}</h3>
-            {% endif %}
-          </a>
-          <p class="post-meta">
-            {{ post.date | date: '%B %d, %Y' }} &middot; {% include read_time.html content=post.content %}
-          </p>
-        </article>
+        {% for post in site.posts limit : 3 %}
 
+        <div class="blog-card {% cycle '', 'alt' %}">
+          <div class="meta">
+            <div class="photo" style="background-image: url({{post.background}})"></div>
+            <ul class="details">
+              <li class="date">{{ post.date | date: '%B %d, %Y' }}</li>
+              <li class="time">{% include read_time.html content=post.content %}</li>
+              <li class="tags">
+                <ul>
+                  {% for cat in post.categories %}
+                  <li><a>{{cat}}</a></li>
+                  {% endfor %}
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="description">
+            <h1>{{ post.title }}</h1>
+            <h2>
+              {% if post.subtitle %}
+                {{ post.subtitle }}
+              {% endif %}
+            </h2>
+            <p> {{ post.excerpt }}</p>
+            <p class="read-more">
+              <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}#">Read More</a>
+            </p>
+          </div>
+        </div>
         {% endfor %}
 
         <!-- Pager -->
