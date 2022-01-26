@@ -5,7 +5,7 @@ organization: "InfoRR Company"
 organization-short: "InfoRR"
 date: 2019-01-01
 start_date: 2019
-end_date: Now
+end_date: 2021
 background: "/img/jobs/business.jpg" # business.jpg academy.jpg
 category: business # business academy
 permalink: /job/software-consultant

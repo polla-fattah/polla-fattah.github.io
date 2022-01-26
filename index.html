@@ -2,6 +2,9 @@
 layout: home
 background: '/img/ai.jpg'
 ---
+
+
+
 <style>
   * {
     box-sizing: border-box;
@@ -80,14 +83,6 @@ background: '/img/ai.jpg'
   </style>
   <div class="row">
       <div class="column">
-        <a href="/developer" class="card">
-          <span class="floating-image">
-              <img class="image-icon" src='/img/skills.png' width="150"/>
-          </span>
-           <h4 class="icon-title">Developer</h4>
-        </a>
-      </div>
-      <div class="column">
         <a href="/academy" class="card">
           <span class="floating-image">
               <img class="image-icon" src='/img/academic.svg' width="150"/>
@@ -104,7 +99,107 @@ background: '/img/ai.jpg'
            <h4 class="icon-title">Business</h4>
         </a>
       </div>
+      <div class="column">
+        <a href="/developer" class="card">
+          <span class="floating-image">
+              <img class="image-icon" src='/img/skills.png' width="150"/>
+          </span>
+           <h4 class="icon-title">Developer</h4>
+        </a>
+      </div>
     </div>
 
 
-    
+    <style>
+@charset "UTF-8";
+
+:root {
+  --var-padding: 0.6em;
+  --highlight: hsl(230, 38%, 46%);
+  --main-column-width: 25em;
+}
+.mid {
+  position: relative;
+  padding-left: 0.5em;
+  max-width: 60em;
+  background: #acbbd7 100% linear-gradient(#6a696d 0%, #504949 50%, #acbbd7 50%, #acbbd7 100%);
+  background-image: url("/img/mid-background.jpg");
+  background-size: auto 10em;
+  background-repeat: repeat-x;
+  background-position: center top;
+}
+
+.mid nav {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  padding: 1em var(--var-padding);
+  grid-row: 1;
+  grid-column: 1;
+  background: #fff;
+}
+
+.mid main {
+  padding: var(--var-padding);
+  grid-row: 2;
+  grid-column: 1;
+  background: #fff;
+}
+.mid main h1 {
+  width: 100%;
+  text-align: center;
+  margin-top: 0;
+  font-weight: normal;
+}
+.mid main p {
+  width: 100%;
+  text-align: justify;
+}
+@media (min-width: 37.5em) {
+  :root {
+    --var-padding: 3em;
+  }
+
+  .mid {
+    display: grid;
+    margin: 3em auto;
+    grid-template-rows: 5em auto;
+    grid-template-columns: 1.4fr 1fr;
+    padding-left: 2em;
+    background-size: auto;
+  }
+  .mid::after {
+    position: absolute;
+    right: 1em;
+    left: 1em;
+    bottom: 0;
+    z-index: -1;
+    width: 95%;
+    height: 200px;
+    content: "";
+    box-shadow: 0 0 5em #7d604f;
+  }
+
+  .mid nav {
+    justify-content: space-between;
+  }
+
+  .mid main {
+    min-width: var(--main-column-width);
+  }
+}
+
+    </style>
+
+<div class="mid">
+
+  <main>
+    <h1>Official CVs</h1>
+    <p>As I have two parallel career skills in academy and bushiness this is why I see it more fit to have two versions of m CV. 
+      One of them is focussed on the business career, projects and skills while the other is more focussed on the academic life career and its details.</p>
+  <nav>
+    <a href="/business/cv/">Business&nbsp;CV</a> &nbsp; 
+    <a href="/academy/cv/">Academic&nbsp;CV</a>
+  </nav>
+</main>
+</div>

@@ -2,6 +2,7 @@
 layout: project
 title: "Measure Changes in Behavior"
 organization: "University of Nottingham"
+description: "Measure changes in behavior of users of public good simulation for researchers of economic school at the University of Nottingham using customized algorithm"
 date: 2013-12-01
 background: "/img/projects/library.jpg"
 category: application # application, webapp, website,
@@ -30,4 +31,4 @@ technologies:
 
 ## Project Description
 
-Developing a method to measure changes in behavior. It can work for any behavior of a temporal nature however I have been asked to use it to measure changes in behavior of players simulating contribution in public goods.
+Measure changes in behavior of users of public good simulation for researchers of economic school at the University of Nottingham using customized algorithm

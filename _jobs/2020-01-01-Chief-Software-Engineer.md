@@ -4,7 +4,7 @@ title: "Chief Software Engineer"
 organization: "SmartGate Company"
 organization-short: "SmartGate"
 date: 2020-01-01
-start_date: 2020
+start_date: 2021
 end_date: Now
 background: "/img/jobs/business.jpg" # business.jpg academy.jpg
 category: business # business academy

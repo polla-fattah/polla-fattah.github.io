@@ -55,16 +55,14 @@ permalink: /business/cv/
             
     <div id="objective">
         <p>
-            I am mainly working in the filed of Artificial Intelligence, Machine Learning, Deep Learning and Data Mining. 
-            The focus of my research is to harness the power of computation to further advance our understanding of the nature of thinking and processing. 
-            And to develop algorithms that solve hard problems of automating and extracting information from data. 
-            My goal is to use these researches to further develop my society and our understanding for the science and its implications.
-
+            Most of my jobs in bushiness world was a part time/flexible time jobs. 
+            This is due to the nature of my primary job as lecturer at the university as I have a flexible time requirements their.
+            I have been working in the industry for the last 15 years with different companies and various job description. 
+            Nonetheless, I have created a significant trac and participated in many successful projects. 
+            One strong characteristic that I have in the industry is my ability to bring new ideas from academia to the industry.
         </p>
     </div>
-    
     <div class="clear"></div>
-    
     <dl>
         <dd class="clear"></dd>
         
@@ -72,25 +70,30 @@ permalink: /business/cv/
         {% for e in site.educations reversed %}
         <dd>
             <h2>{{e.establishment}} - {{e.rank}}</h2>
-            <p><strong>Thesis:</strong>Optimizing Rule-based Classification According to Items’ Behaviour in Temporal Data<br />
+            <p><strong>Thesis:</strong>Optimizing Rule-based Classification According to Items’ Behavior in Temporal Data<br />
                 <strong>Year:</strong>{{e.start_date | date: '%Y'}}-{{e.end_date | date: '%Y'}}</p>
         </dd>
         {% endfor %}
-
-
         <dd class="clear"></dd>
-        
         <dt>Experience</dt>
         {% for e in site.data.businessExp reversed %}
         <dd>
             <strong>{{e.label}}: </strong> {{ e.explanation }}
-
         </dd>
         {% endfor %}
-
-
         <dd class="clear"></dd>
-        
+        <dt>Skills</dt>
+        <dd>
+            {% for skillSet in site.data.developerSkills %}
+            <div style='text-indent: -60px; margin: 0px 0px 15px 60px'>
+                <strong>  {{ skillSet.skillHead }}: </strong><br />
+                    {% for skill in skillSet.skills %}
+                        {{skill.name}}, 
+                    {% endfor %}
+            </div>
+            {% endfor %}
+        </dd>
+        <dd class="clear"></dd>
         <dt>Career</dt>
         <dd>
         {% for e in site.jobs reversed %}
@@ -101,23 +104,20 @@ permalink: /business/cv/
             </div>
         {% endif %}
         {% endfor %}
-    
         </dd>
-        
         <dd class="clear"></dd>
         <dt>Projects</dt>
-
-
         <dd>
             {% for e in site.projects reversed %}
-            <div style='text-indent: -110px; margin: 0px 0px 15px 110px'><strong>{{e.date | date:"%b - %Y"}} :</strong> {{e.description}}</div>
+            <div style="display:flex; margin-bottom: 10px;">
+                <strong style="display: inline-block; width:100px;">{{e.date | date:"%b - %Y"}}:</strong>
+                <div style='display: inline-block; width: calc(100% - 115px); '>
+                    {{e.description}}
+                </div>
+            </div>
             {% endfor %}
         </dd>
-
         <dd class="clear"></dd>
-
     </dl>
-    
     <div class="clear"></div>
-
 </div>

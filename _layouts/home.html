@@ -32,6 +32,7 @@ layout: default
         {{ content }}
 
         <!-- Home Post List -->
+        <h2 class="section-heading" style="text-align: center;">Recent Posts</h2>
         <link rel="stylesheet" type="text/css" href="/assets/post-card.css" />
 
         {% for post in site.posts limit : 3 %}
@@ -60,7 +61,7 @@ layout: default
             </h2>
             <p> {{ post.excerpt }}</p>
             <p class="read-more">
-              <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}#">Read More</a>
+              <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}#">Read&nbsp;More</a>
             </p>
           </div>
         </div>

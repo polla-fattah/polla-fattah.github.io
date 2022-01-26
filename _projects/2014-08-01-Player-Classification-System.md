@@ -1,7 +1,8 @@
 ---
 layout: project
-title: "Player Classification System"
+title: "User Classification System"
 organization: "University of Nottingham"
+description: "Classifying users of public good simulation for researchers at the economic school using own developed algorithm."
 date: 2014-08-01
 background: "/img/projects/library.jpg"
 category: application # application, webapp, website,
@@ -30,4 +31,4 @@ technologies:
 
 ## Project Description
 
-Aug-2014 Propose a novel algorithm to classify items in temporal data.
+Classifying users of public good simulation for researchers at the economic school using own developed algorithm.
