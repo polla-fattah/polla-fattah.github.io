@@ -9,7 +9,17 @@ end_date: 2010
 background: "/img/jobs/academy.jpg" # business.jpg academy.jpg
 category: academy # business academy
 permalink: /job/visiting-lecturer-koya
+duties: It was a one day visit to Koya University per week to teach Introduction to [Operating Systems](/academy/lecture/os/) course.
+
 ---
+
+<style>
+  li p {
+    margin: 0px;
+    padding: 0px;
+  }
+</style>
+
 
 ## Highlights
 
@@ -20,7 +30,8 @@ permalink: /job/visiting-lecturer-koya
 
 ## Job Duties
 
-It was a one day visit to Koya University per week to teach Introduction to [Operating Systems](/academy/lecture/os/) course.
+{{ page.duties }}
+
 
 ## Acquired Experiences
 

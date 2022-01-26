@@ -9,7 +9,17 @@ end_date: 2008
 background: "/img/jobs/business.jpg" # business.jpg academy.jpg
 category: business # business academy
 permalink: /job/it-manager
+duties: This job was a part time for a startup company, I had the privilege of creating my first team of software and IT engineers. I was responsible for managing the team and creating products. During the time I was their me with my team created two products, one was a website for a university and the other was a web-based system for tracking progress of government projects.
+
 ---
+
+<style>
+  li p {
+    margin: 0px;
+    padding: 0px;
+  }
+</style>
+
 
 ## Highlights
 
@@ -20,7 +30,7 @@ permalink: /job/it-manager
 
 ## Job Duties
 
-This job was a part time for a startup company, I had the privilege of creating my first team of software and IT engineers. I was responsible for managing the team and creating products. During the time I was their me with my team created two products, one was a website for a university and the other was a web-based system for tracking progress of government projects.
+{{ page.duties }}
 
 ## Acquired Experiences
 

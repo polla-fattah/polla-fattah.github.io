@@ -9,7 +9,20 @@ end_date: Now
 background: "/img/jobs/business.jpg" # business.jpg academy.jpg
 category: business # business academy
 permalink: /job/chief-software-engineer
+duties: "
+<li> Leading Software requirement collection and then design for large projects.
+<li> project manager for developing multiple smaller projects.
+<li> Developing tools to automate software deployment.
+"
 ---
+
+<style>
+  li p {
+    margin: 0px;
+    padding: 0px;
+  }
+</style>
+
 
 ## Highlights
 
@@ -20,6 +33,6 @@ permalink: /job/chief-software-engineer
 
 ## Job Duties
 
-- Leading Software requirement collection and then design for big government projects.
-- project manager for developing multiple smaller projects.
-- Developing tools to automate software deployment.
+{{ page.duties }}
+
+

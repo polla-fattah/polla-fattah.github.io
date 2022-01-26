@@ -9,7 +9,16 @@ end_date: 2012
 background: "/img/jobs/business.jpg" # business.jpg academy.jpg
 category: business # business academy
 permalink: /job/linux-administrator
+duties: I have just returned from the Germany's Linux course, I have took this job as a Linux Administrator at 7NetLayers Company. My main duty was to manage, install Linux servers as well as evaluating and minimizing some web servers and web sites that they had.
 ---
+
+<style>
+  li p {
+    margin: 0px;
+    padding: 0px;
+  }
+</style>
+
 
 ## Highlights
 
@@ -20,7 +29,9 @@ permalink: /job/linux-administrator
 
 ## Job Duties
 
-I have just returned from the Germany's Linux course, I have took this job as a Linux Administrator at 7NetLayers Company. My main duty was to manage, install Linux servers as well as evaluating and minimizing some web servers and web sites that they had.
+{{ page.duties }}
+
+
 
 ## Acquired Experiences
 

@@ -1,37 +1,55 @@
 ---
 layout: page
-title: Academic CV
-description: Artificial Intelligence, Machine Learning, and Data Mining.
+title: Business CV
 background: '/img/Machine-Learning.jpg'
 permalink: /business/cv/
 
 ---
 
 <style type="text/css">
-    * { margin: 0; padding: 0; }
-    body { font: 16px Helvetica, Sans-Serif; line-height: 24px; background: url(/img/noise.jpg); }
+    body { font: 18px Helvetica, Sans-Serif; line-height: 24px; background: url(/img/noise.jpg); }
     .clear { clear: both; }
     #page-wrap { width: 800px; margin: 40px auto 60px; }
-    #pic { float: right; margin: -30px 0 0 0; }
-    h1 { margin: 0 0 16px 0; padding: 0 0 16px 0; font-size: 42px; font-weight: bold; letter-spacing: -2px; border-bottom: 1px solid #999; }
+    .cvh1 { margin: 0 0 16px 0; padding: 0 0 16px 0; font-size: 42px; font-weight: bold; letter-spacing: -2px; border-bottom: 1px solid #999; }
     h2 { font-size: 20px; margin: 0 0 6px 0; position: relative; }
     h2 span { position: absolute; bottom: 0; right: 0; font-style: italic; font-family: Georgia, Serif; font-size: 16px; color: #999; font-weight: normal; }
     p { margin: 0 0 16px 0; }
-    a { color: #999; text-decoration: none; border-bottom: 1px dotted #999; }
-    a:hover { border-bottom-style: solid; color: black; }
-    ul { margin: 0 0 32px 17px; }
-    #objective { width: 90%; float: left; }
-    #objective p { font-family: Georgia, Serif; font-style: italic; color: #666; }
-    dt { font-style: italic; font-weight: bold; font-size: 18px; text-align: right; padding: 0 26px 0 0; width: 150px; float: left; height: 100px; border-right: 1px solid #999;  }
-    dd { width: 600px; float: right; }
+    .job { margin: 0 0 32px 17px; }
+    #objective p { font-family: Georgia, Serif; font-style: italic; color: #333; text-align: justify;}
+    dt { 
+        font-style: italic; 
+        font-weight: bold; 
+        -size: 18px; 
+        text-align: right; 
+        padding: 0 26px 0 0; 
+        width: 100px; 
+        float: left; 
+        height: 100px; 
+        border-right: 1px solid #999;  
+    }
+    dd { width: 670px; float: right; }
     dd.clear { float: none; margin: 0; height: 15px; }
+
+    @media print{
+      body{ 
+        background-color:#FFFFFF; 
+        background-image:none; 
+        color:#000000 
+    }
+    header, footer{ 
+        display: none;
+    }
+      #ad{ display:none;}
+      #contentarea{ width:100%;}
+    }
+
  </style>
 <div id="page-wrap">
     <div id="contact-info" class="vcard">    
-        <h1 class="fn">Polla Fattah</h1>
+        <h1 class="fn cvh1">Polla Fattah</h1>
         <p>
             Cell: <span class="tel">+964 (0)750 446 3750</span><br />
-            Email: <a class="email" href="mailto:polla.fattah@su.edu.krd">polla.fattah@su.edu.krd</a>
+            Email: <a class="email" href="mailto:polla.fattah@gmail.com">polla.fattah@gmail.com</a>
         </p>
     </div>
             
@@ -51,78 +69,53 @@ permalink: /business/cv/
         <dd class="clear"></dd>
         
         <dt>Education</dt>
+        {% for e in site.educations reversed %}
         <dd>
-            <h2>University of Nottingham - PhD</h2>
+            <h2>{{e.establishment}} - {{e.rank}}</h2>
             <p><strong>Thesis:</strong>Optimizing Rule-based Classification According to Items’ Behaviour in Temporal Data<br />
-               <strong>Year:</strong>2012-2017</p>
+                <strong>Year:</strong>{{e.start_date | date: '%Y'}}-{{e.end_date | date: '%Y'}}</p>
         </dd>
-        <dd>
-            <h2>Salahaddin University-Erbil - Masters</h2>
-            <p><strong>Thesis:</strong>Design and Implementation of a Proposed Technique for Association Rule Mining<br />
-               <strong>Year:</strong>2006-2008</p>
-        </dd>
-        <dd>
-            <h2>Salahaddin University-Erbil - BSc</h2>
-            <p><strong>Graduation Project:</strong>Kurdish Chat server/Client using Java<br />
-               <strong>Year:</strong>2000-2004</p>
-        </dd>
-        <dd>
-            <h2>Kurdistan High School – Diploma</h2>
-            <p><strong>Major:</strong>Scientific Studies<br />
-               <strong>Year:</strong>1996-2000</p>
-        </dd> 
-        <dd class="clear"></dd>
-        
-        <dt>Honours & Awards</dt>
+        {% endfor %}
 
-
-        <dd>
-            <h2>Appreciation letter from Dean of Engineering college for excellence in teaching</h2>
-            <p>2021</p>      
-            <h2>Letter of Appreciation from the president of Salahaddin University-Erbil for excellence work </h2>
-            <p>2019</p>
-            <h2>KRG’s scholarship award for PhD degree.</h2>
-            <p>2012</p>
-            <h2>Appreciation certificate from Salahaddin University-Erbil for excellence at administrating the university’s website and IT infrastructure.</h2>
-            <p>2012</p>
-            <h2>German’s ZiiK grant for finishing IT Administration at TU Berlin</h2>
-            <p>2010</p>
-            <h2>Uppsala University Scholarship for MSc degree (I have Declinedit for family resons at that time).</h2>
-            <p>2006</p>
-            <h2>Ranked as second in the College of Engineering Salahaddin University for the graduation year 2004-2005.</h2>
-            <p>2005</p>
-        </dd>
 
         <dd class="clear"></dd>
         
         <dt>Experience</dt>
+        {% for e in site.data.businessExp reversed %}
         <dd>
-            <h2>Doomsday Cult <span>Leader/Overlord - Baton Rogue, LA - 1926-2010</span></h2>
-            <ul>
-                <li>Inspired and won highest peasant death competition among servants</li>
-                <li>Helped coordinate managers to grow cult following</li>
-                <li>Provided untimely deaths to all who opposed</li>
-            </ul>
-            
-            <h2>The Watering Hole <span>Bartender/Server - Milwaukee, WI - 2009</span></h2>
-            <ul>
-                <li>Worked on grass-roots promotional campaigns</li>
-                <li>Reduced theft and property damage percentages</li>
-                <li>Janitorial work, Laundry</li>
-            </ul> 
+            <strong>{{e.label}}: </strong> {{ e.explanation }}
+
+        </dd>
+        {% endfor %}
+
+
+        <dd class="clear"></dd>
+        
+        <dt>Career</dt>
+        <dd>
+        {% for e in site.jobs reversed %}
+        {% if e.category == "business" %}
+            <div class="job">
+                <h2>{{ e.title}} <span>{{ e.organization-short }} - {{ e.start_date }}-{{ e.end_date }}</span></h2>
+                {{ e.duties }}
+            </div>
+        {% endif %}
+        {% endfor %}
+    
         </dd>
         
         <dd class="clear"></dd>
-        
-        <dt>Hobbies</dt>
-        <dd>World Domination, Deep Sea Diving, Murder Most Foul</dd>
-        
+        <dt>Projects</dt>
+
+
+        <dd>
+            {% for e in site.projects reversed %}
+            <div style='text-indent: -110px; margin: 0px 0px 15px 110px'><strong>{{e.date | date:"%b - %Y"}} :</strong> {{e.description}}</div>
+            {% endfor %}
+        </dd>
+
         <dd class="clear"></dd>
-        
-        <dt>References</dt>
-        <dd>Available on request</dd>
-        
-        <dd class="clear"></dd>
+
     </dl>
     
     <div class="clear"></div>

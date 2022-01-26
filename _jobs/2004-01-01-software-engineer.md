@@ -9,7 +9,25 @@ end_date: 2006
 background: "/img/jobs/academy.jpg" # business.jpg academy.jpg
 category: academy # business academy
 permalink: /job/software-engineer-sue
+duties: "The main duties that I had with this job was as follows:
+
+    - Maintaining and developing parts of a portal to manage Software Engineering Department activities.
+  
+    - Network infrastructure maintenance as technician.
+  
+    - IT Support for staff and students.
+  
+    - Helping lecturers with some practical lab subjects.
+  "
 ---
+
+<style>
+  li p {
+    margin: 0px;
+    padding: 0px;
+  }
+</style>
+
 
 ## Highlights
 
@@ -20,12 +38,7 @@ permalink: /job/software-engineer-sue
 
 ## Job Duties
 
-The main duties that I had with this job was as follows:
-
-1. Maintaining and developing parts of a portal to manage Software Engineering Department activities.
-1. Network infrastructure maintenance as technician.
-1. IT Support for staff and students.
-1. Helping lecturers with some practical lab subjects.
+{{ page.duties }}
 
 ## Acquired Experiences
 

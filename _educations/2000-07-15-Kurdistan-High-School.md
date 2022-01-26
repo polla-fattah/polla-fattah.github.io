@@ -1,8 +1,11 @@
 ---
 layout: education
 title: "Deploma: Scientific Studies"
-establishment: "Kurdistan High School – Hawler"
+establishment: "Kurdistan High School–Hawler"
 rank: "Deploma"
+final_work_label: "Major"
+final_work: "Scientific Studies"
+permalink: "educations/Kurdistan-High-School"
 subtitle: "Kurdistan High School–Hawler "
 date: 2000-07-15 23:45:13  +0300
 start_date: 1996-09-01 23:45:13  +0300

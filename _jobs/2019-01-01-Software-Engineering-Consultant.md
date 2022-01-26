@@ -9,7 +9,23 @@ end_date: Now
 background: "/img/jobs/business.jpg" # business.jpg academy.jpg
 category: business # business academy
 permalink: /job/software-consultant
+duties: "
+<li> Writing and reviewing software proposals.
+<li> Planning for the software development.
+<li> Minting software development quality.
+<li> Working with clients to make sure that the software meets their requirements.
+<li> Estimating the cost of new software development projects.
+<li> Interviewing and selecting the right software developers for the tasks.
+"
 ---
+
+<style>
+  li p {
+    margin: 0px;
+    padding: 0px;
+  }
+</style>
+
 
 ## Highlights
 
@@ -20,9 +36,4 @@ permalink: /job/software-consultant
 
 ## Job Duties
 
-- Writing and reviewing software proposals.
-- Planning for the software development.
-- Minting software development quality.
-- Working with the client to make sure that the software meets the requirements of the tasks.
-- Estimating the cost of new software development projects.
-- Interviewing and selecting the right software developers for the tasks.
+{{ page.duties }}

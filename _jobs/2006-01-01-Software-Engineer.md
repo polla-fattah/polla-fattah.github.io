@@ -9,7 +9,23 @@ end_date: 2007
 background: "/img/jobs/business.jpg" # business.jpg academy.jpg
 category: business # business academy
 permalink: /job/software-engineer-awrosoft
+duties: "The main duty was creating websites and simple web based systems for various clients. While doing so I had to accomplish the following:
+
+    - Requirement collection.
+  
+    - Analysis of requirements.
+  
+    - Designing and developing the websites and web based algorithms.
+  "
 ---
+
+<style>
+  li p {
+    margin: 0px;
+    padding: 0px;
+  }
+</style>
+
 
 ## Highlights
 
@@ -20,11 +36,9 @@ permalink: /job/software-engineer-awrosoft
 
 ## Job Duties
 
-The main duty was creating websites and simple web based systems for various clients. While doing so I had to accomplish the following:
+{{ page.duties }}
 
-1. Requirement collection.
-1. Analysis of requirements.
-1. Designing and developing the websites and web based algorithms.
+
 
 ## Acquired Experiences
 

@@ -9,7 +9,23 @@ end_date: 2016
 background: "/img/jobs/academy.jpg" # business.jpg academy.jpg
 category: academy # business academy
 permalink: /job/teaching-assistant
+duties: "I was PhD student at the Nottingham University, So through out my study I could take the duty of assisting my supervisor and other professors in the lab for the following courses:
+
+- Data Modelling an analysis.
+
+- Computer Programming using Java
+
+- Database Systems
+  "
 ---
+
+<style>
+  li p {
+    margin: 0px;
+    padding: 0px;
+  }
+</style>
+
 
 ## Highlights
 
@@ -20,11 +36,7 @@ permalink: /job/teaching-assistant
 
 ## Job Duties
 
-I was PhD student at the Nottingham University, So through out my study I could take the duty of assisting my supervisor and other professors in the lab for the following courses:
-
-- Data Modelling an analysis.
-- Computer Programming using Java
-- Database Systems
+{{ page.duties }}
 
 ## Acquired Experiences
 

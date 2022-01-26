@@ -9,7 +9,15 @@ end_date: 2003
 background: "/img/jobs/business.jpg" # business.jpg academy.jpg
 category: business # business academy
 permalink: /job/technician
+duties: Maintaining computers, formatting and installing OSs on customers' computers, teaching customers how to use certain aspects of a software product, advising customers on how to use the software, and providing support.
 ---
+
+<style>
+  li p {
+    margin: 0px;
+    padding: 0px;
+  }
+</style>
 
 ## Highlights
 
@@ -20,7 +28,9 @@ permalink: /job/technician
 
 ## Job Duties
 
-Maintaining computers, formatting and installing OSs on customers' computers, teaching customers how to use certain aspects of a software product, advising customers on how to use the software, and providing support.
+{{ page.duties }}
+
+
 
 ## Acquired Experiences
 

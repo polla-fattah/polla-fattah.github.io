@@ -5,6 +5,8 @@ authors: Polla Fatah, Ibrahim Hamarash
 date: 2015-09-08
 background: "/img/publication/journal.jpg"
 type: Article # Chapter, Book, Report
+publisher: ""
+page: ""
 citation: Picking, Rich, Stuart Cunningham, Nigel Houlden, Denise Oram, Vic Grout, Julie Mayers, Raed A. Abd-Alhameed, Susan Liggett, And Yuriy Vagapov. "2015 INTERNET TECHNOLOGIES AND APPLICATIONS (ITA)."
 abstract: |
   The world is full of

@@ -9,7 +9,17 @@ end_date: 2012
 background: "/img/jobs/academy.jpg" # business.jpg academy.jpg
 category: academy # business academy
 permalink: /job/assistant-lecturer-sue
+duties:  have started this job at the Salahaddin University-Erbil, Engineering College, Electrical Department. My main duty was teaching computer programming courses to students as well as computer skills like using Operating System, Microsoft Office, etc. I was in charge of both theoretical and practical material with two assistants were helping me with the practical Lab work.
+
 ---
+
+<style>
+  li p {
+    margin: 0px;
+    padding: 0px;
+  }
+</style>
+
 
 ## Highlights
 
@@ -20,7 +30,7 @@ permalink: /job/assistant-lecturer-sue
 
 ## Job Duties
 
-I have started this job at the Salahaddin University-Erbil, Engineering College, Electrical Department. My main duty was teaching computer programming courses to students as well as computer skills like using Operating System, Microsoft Office, etc. I was in charge of both theoretical and practical material with two assistants were helping me with the practical Lab work.
+{{ page.duties }}
 
 ## Acquired Experiences
 

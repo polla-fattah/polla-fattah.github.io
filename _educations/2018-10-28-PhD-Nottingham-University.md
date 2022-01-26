@@ -3,6 +3,9 @@ layout: education
 title: "PhD: Data Mining and Machine Learning"
 establishment: "Compute Science"
 rank: "PhD"
+final_work_label: "Dissertation "
+final_work: "Optimizing Rule-based Classification According to Items’ Behaviour in Temporal Data"
+permalink: "educations/PhD"
 subtitle: "University of Nottingham"
 date: 2018-07-15
 start_date: 2012-10-01

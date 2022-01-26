@@ -7,21 +7,34 @@ permalink: /academy/cv/
 ---
 
 <style type="text/css">
-    .clear { clear: both; }
-    #page-wrap { width: 800px; margin: 40px auto 60px; }
-    #pic { float: right; margin: -30px 0 0 0; }
-    h1 { margin: 0 0 16px 0; padding: 0 0 16px 0; font-size: 42px; font-weight: bold; letter-spacing: -2px; border-bottom: 1px solid #999; }
+    #page-wrap { width: 100%; margin: 40px auto 60px; }
+    .cvh1 { 
+        margin: 16px 0 10px 0; 
+        font-size: 32px; 
+        font-weight: 600; 
+        border-bottom: 1px solid #999; 
+    }
     h2 { font-size: 20px; margin: 0 0 6px 0; position: relative; }
     h2 span { position: absolute; bottom: 0; right: 0; font-style: italic; font-family: Georgia, Serif; font-size: 16px; color: #999; font-weight: normal; }
-    p { margin: 0 0 16px 0; }
-    a { color: #999; text-decoration: none; border-bottom: 1px dotted #999; }
-    a:hover { border-bottom-style: solid; color: black; }
+    .element { 
+        margin: 0 0 14px 0; 
+        font-size: 1.1em;
+        font-weight: normal;
+    }
     ul { margin: 0 0 32px 17px; }
-    #objective { width: 90%; float: left; }
-    #objective p { font-family: Georgia, Serif; font-style: italic; color: #666; }
-    dt { font-style: italic; font-weight: bold; font-size: 18px; text-align: right; padding: 0 26px 0 0; width: 150px; float: left; height: 100px; border-right: 1px solid #999;  }
-    dd { width: 600px; float: right; }
-    dd.clear { float: none; margin: 0; height: 15px; }
+
+    @media print{
+      body{ 
+        background-color:#FFFFFF; 
+        background-image:none; 
+        color:#000000 
+    }
+    header, footer{ 
+        display: none;
+    }
+      #ad{ display:none;}
+      #contentarea{ width:100%;}
+    }
  </style>
 <div id="page-wrap">
     <div id="contact-info" class="vcard">    
@@ -31,97 +44,61 @@ permalink: /academy/cv/
             Email: <a class="email" href="mailto:polla.fattah@su.edu.krd">polla.fattah@su.edu.krd</a>
         </p>
     </div>
+    <p class="element" style="text-align: justify;width: 100%;">
+        I am mainly working in the filed of Artificial Intelligence, Machine Learning, Deep Learning and Data Mining. 
+        The focus of my research is to harness the power of computation to further advance our understanding of the nature of thinking and processing. 
+        And to develop algorithms that solve hard problems of automating and extracting information from data. 
+        My goal is to use these researches to further develop my society and our understanding for the science and its implications.
+
+    </p>
+        
+        <h1 class="cvh1">Education</h1>
+        {% for e in site.educations reversed %}
+        <div class='element'>
+            <h2>{{e.establishment}} - {{e.rank}}</h2>
+            <strong>{{e.final_work_label}}:</strong>{{e.final_work}}<br />
+               <strong>Year:</strong>{{e.start_date | date: '%Y'}}-{{e.end_date | date: '%Y'}}
+        </div>
+        {% endfor %}
+        
+
+        <h1 class="cvh1">Honours & Awards</h1>
+
+            {% for e in site.awards reversed %}        
+            <div class='element cv-normal' style='text-indent: -50px; margin-left: 60px'>
+                <strong>{{e.date | date: '%Y'}}: </strong>
+                {{ e.subtitle }}
+            </div>
+            {% endfor %}
+
             
-    <div id="objective">
-        <p>
-            I am mainly working in the filed of Artificial Intelligence, Machine Learning, Deep Learning and Data Mining. 
-            The focus of my research is to harness the power of computation to further advance our understanding of the nature of thinking and processing. 
-            And to develop algorithms that solve hard problems of automating and extracting information from data. 
-            My goal is to use these researches to further develop my society and our understanding for the science and its implications.
+        <h1 class="cvh1">Publications</h1>
+            {% for e in site.publications reversed %}        
+            <div class='element' style='text-indent: -50px; margin-left: 60px'>
+                <strong>{{ e.authors}}; </strong>
+                `{{ e.title }}`;
+                {% if e.publisher != "" %} {{ e.publisher}}; {% endif %}
+                {% if e.page != "" %}  {{ e.page}}; {% endif %}
+                <em>{{e.date | date: '%Y-%m-%d'}}</em>
+            </div>
+            {% endfor %}
+        
+        <h1 class="cvh1">Academic Jobs</h1>
+            {% for e in site.jobs reversed %}
+            {% if e.category == "academy" %}
+            <div class='element' style='text-indent: -50px; margin-left: 60px'>
+                <strong>{{e.start_date}}-{{e.end_date}}: </strong>
+                {{ e.title }} at {{ e.organization }}
+            </div>
+            {% endif %}
+            {% endfor %}
 
-        </p>
-    </div>
-    
-    <div class="clear"></div>
-    
-    <dl>
-        <dd class="clear"></dd>
-        
-        <dt>Education</dt>
-        <dd>
-            <h2>University of Nottingham - PhD</h2>
-            <p><strong>Thesis:</strong>Optimizing Rule-based Classification According to Items’ Behaviour in Temporal Data<br />
-               <strong>Year:</strong>2012-2017</p>
-        </dd>
-        <dd>
-            <h2>Salahaddin University-Erbil - Masters</h2>
-            <p><strong>Thesis:</strong>Design and Implementation of a Proposed Technique for Association Rule Mining<br />
-               <strong>Year:</strong>2006-2008</p>
-        </dd>
-        <dd>
-            <h2>Salahaddin University-Erbil - BSc</h2>
-            <p><strong>Graduation Project:</strong>Kurdish Chat server/Client using Java<br />
-               <strong>Year:</strong>2000-2004</p>
-        </dd>
-        <dd>
-            <h2>Kurdistan High School – Diploma</h2>
-            <p><strong>Major:</strong>Scientific Studies<br />
-               <strong>Year:</strong>1996-2000</p>
-        </dd> 
-        <dd class="clear"></dd>
-        
-        <dt>Honours & Awards</dt>
+        <h1 class="cvh1">Academic Experiences</h1>
 
-
-        <dd>
-            <h2>Appreciation letter from Dean of Engineering college for excellence in teaching</h2>
-            <p>2021</p>      
-            <h2>Letter of Appreciation from the president of Salahaddin University-Erbil for excellence work </h2>
-            <p>2019</p>
-            <h2>KRG’s scholarship award for PhD degree.</h2>
-            <p>2012</p>
-            <h2>Appreciation certificate from Salahaddin University-Erbil for excellence at administrating the university’s website and IT infrastructure.</h2>
-            <p>2012</p>
-            <h2>German’s ZiiK grant for finishing IT Administration at TU Berlin</h2>
-            <p>2010</p>
-            <h2>Uppsala University Scholarship for MSc degree (I have Declined it for family resons at that time).</h2>
-            <p>2006</p>
-            <h2>Ranked as second in the College of Engineering Salahaddin University for the graduation year 2004-2005.</h2>
-            <p>2005</p>
-        </dd>
-
-        <dd class="clear"></dd>
-        
-        <dt>Experience</dt>
-        <dd>
-            <h2>Doomsday Cult <span>Leader/Overlord - Baton Rogue, LA - 1926-2010</span></h2>
-            <ul>
-                <li>Inspired and won highest peasant death competition among servants</li>
-                <li>Helped coordinate managers to grow cult following</li>
-                <li>Provided untimely deaths to all who opposed</li>
-            </ul>
-            
-            <h2>The Watering Hole <span>Bartender/Server - Milwaukee, WI - 2009</span></h2>
-            <ul>
-                <li>Worked on grass-roots promotional campaigns</li>
-                <li>Reduced theft and property damage percentages</li>
-                <li>Janitorial work, Laundry</li>
-            </ul> 
-        </dd>
-        
-        <dd class="clear"></dd>
-        
-        <dt>Hobbies</dt>
-        <dd>World Domination, Deep Sea Diving, Murder Most Foul</dd>
-        
-        <dd class="clear"></dd>
-        
-        <dt>References</dt>
-        <dd>Available on request</dd>
-        
-        <dd class="clear"></dd>
-    </dl>
-    
-    <div class="clear"></div>
-
+            {% for e in site.data.academicExp reversed %}        
+            <div class='element' style='text-indent: -80px; margin-left: 90px'>
+                <strong>{{e.label}}: </strong>
+                {{ e.explanation }}
+            </div>
+            {% endfor %}
 </div>

@@ -5,6 +5,8 @@ authors: Tarik Rashid, Polla Fattah , Delan K. Awla
 date: 2018-01-01
 background: "/img/publication/journal.jpg"
 type: Article # Chapter, Book, Report
+publisher: ""
+page: ""
 citation: |
   Rashid, Tarik A., Polla Fattah, and Delan K. Awla. "Using accuracy measure for improving the training of LSTM with metaheuristic algorithms." Procedia Computer Science 140 (2018): 324-333.
 abstract: |

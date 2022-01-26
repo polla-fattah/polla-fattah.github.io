@@ -230,13 +230,10 @@ permalink: /business/
               <div class="content">
                 <p>
                     <ul>
-                        <li>Project Management:<i> I have successfully managed multiple projects with various number of employees/developers. I tend to use Agile project management in general. </i></li>
-                        <li>Software Design:<i> Software design is one of the most interesting activities in software projects as it enables us to be creative and solve problems efficiently.</i></li>
-                        <li>Database Systems:<i> Most of the software projects require a database system this is why I have learned to mastery degree multiple DBMSs.</i></li>
-                        <li>Web Based Applications:<i>  Due to the nature of web the development of web based systems enabled me to create systems that is accessible and usable by a wide range users and devices.</i></li>
-                        <li>Mobile Applications:<i> I have created few mobile applications using various programing languages and frameworks.</i></li>
-                        <li>Data Mining:<i> I have picked up data mining and analysis from my academic work and used in business world for analyzing clients data.</i></li>
-                        <li>Programming Languages:<i> programming in general was my passion and hobby before I choose software development as my job and still it is my primary drive to accept new challenges in my career.</i></li>
+                        {% for e in site.data.businessExp reversed %}
+                        <li>{{ e.label }}:<i> {{ e.explanation}} </i></li>
+                        {% endfor %}
+
                     </ul>
                 </p>
                 

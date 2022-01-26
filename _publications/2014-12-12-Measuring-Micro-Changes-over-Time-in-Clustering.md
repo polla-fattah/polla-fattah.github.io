@@ -5,6 +5,8 @@ authors: Polla Fattah
 date: 2014-12-12
 background: "/img/publication/conference.jpg"
 type: Conference
+publisher: "IMA Group Annual Seminar"
+page: ""
 citation: Polla Fattah, Measuring Micro Changes over Time in Clustering, IMA Group Annual Seminar on Intellegent Modelling, 2020
 abstract: |
   Does human behaviour change over time regarding to the public good? How it can be measured?

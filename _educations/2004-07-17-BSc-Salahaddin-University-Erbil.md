@@ -3,6 +3,9 @@ layout: education
 title: "BSc: Software Engineering"
 establishment: "Software Engineering Dept."
 rank: "BSc"
+final_work_label: "Graduation Project"
+final_work: "Kurdish Chat server/Client using Java"
+permalink: "educations/BSc-Software-Engineering"
 subtitle: "Salahaddin University-Erbil"
 date: 2004-07-15
 start_date: 2000-10-01
@@ -13,7 +16,7 @@ background: "/img/education/software.png"
 
 ## Salahaddin University-Erbil
 
-[Salahaddin University-Erbil](http://su.edu.krd/){:target="Salahaddin"} is one of the public higher education institution in the North of Iraq and especially in Kurdistan region. It is located in Erbil (Hewler), capital of the autonomous Kurdistan Region of Iraq. Sulaimani University-Sulaimani was established in 1968. It was moved to Erbil in 1981 and changed its name to Salaheddin university. Initially, the university included seven Academic Colleges: Science, Agriculture, Engineering, Administration, Arts, Education, and Medicine. In 1985, a college of Law and Politics was added, followed by the college of Dentistry in 1995. Several more were established in the following years so that by 2004, the university offered courses in 22 departments. In 2005, the departments of Medicine, Dentistry, Nursing, and Pharmacy split from Salahaddin University to establish Hawler Medical University.
+[Salahaddin University-Erbil](http://su.edu.krd/){:target="Salahaddin"} is one of the public higher education institution in the North of Iraq and especially in Kurdistan region. It is located in Erbil (Hewler), capital of the autonomous Kurdistan Region of Iraq. Salahaddin University-Erbil was established in 1968. It was moved to Erbil in 1981 and changed its name to Salahaddin university. Initially, the university included seven Academic Colleges: Science, Agriculture, Engineering, Administration, Arts, Education, and Medicine. In 1985, a college of Law and Politics was added, followed by the college of Dentistry in 1995. Several more were established in the following years so that by 2004, the university offered courses in 22 departments. In 2005, the departments of Medicine, Dentistry, Nursing, and Pharmacy split from Salahaddin University to establish Hawler Medical University.
 
 ## Software Engineering Dept
 

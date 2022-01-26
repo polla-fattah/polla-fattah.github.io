@@ -3,6 +3,9 @@ layout: education
 title: "IT: Linux Server Administration"
 establishment: "Computer Science (Informatik)"
 rank: "IT Administrator"
+final_work_label: "Final Project"
+final_work: "Crating virtual servers that are essential for running a university"
+permalink: "educations/IT-Administration"
 subtitle: "Technical University of Berlin"
 date: 2010-11-15
 start_date: 2010-04-15

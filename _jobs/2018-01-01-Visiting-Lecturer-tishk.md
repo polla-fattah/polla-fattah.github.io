@@ -9,7 +9,24 @@ end_date: 2020
 background: "/img/jobs/academy.jpg" # business.jpg academy.jpg
 category: academy # business academy
 permalink: /job/visiting-lecturer-tiu
+duties: "My main duty was teaching, the subjects that I lectured was:
+
+  - Linux Administration for BSc Students.
+  
+  - Operating Systems for BSc Students.
+  
+  And again we have conducted multiple researches and published some papers with the staff of the TIU.
+
+
+"
 ---
+
+<style>
+  li p {
+    margin: 0px;
+    padding: 0px;
+  }
+</style>
 
 ## Highlights
 
@@ -20,12 +37,7 @@ permalink: /job/visiting-lecturer-tiu
 
 ## Job Duties
 
-My main duty was teaching, the subjects that I lectured was:
-
-1. Linux Administration for BSc Students.
-1. Operating Systems for BSc Students.
-
-And again we have conducted multiple researches and published some papers with the staff of the TIU.
+{{ page.duties }}
 
 ## Why I Left
 

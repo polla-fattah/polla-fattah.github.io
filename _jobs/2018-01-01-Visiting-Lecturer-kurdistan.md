@@ -9,7 +9,28 @@ end_date: 2020
 background: "/img/jobs/academy.jpg" # business.jpg academy.jpg
 category: academy # business academy
 permalink: /job/visiting-lecturer-ukh
+duties: "
+My Main duty was teaching, the subjects that I taught was:
+
+- Human Computer Interaction for BSc Students.
+
+- Distributed systems for BSc Students.
+
+- [Computer Vision] for MSc Students.
+
+
+This opportunity provided me with new connections as we have conducted multiple researches together and published quite few of papers.
+
+"
 ---
+
+<style>
+  li p {
+    margin: 0px;
+    padding: 0px;
+  }
+</style>
+
 
 ## Highlights
 
@@ -20,13 +41,9 @@ permalink: /job/visiting-lecturer-ukh
 
 ## Job Duties
 
-My Main duty was teaching, the subjects that I taught was:
+{{ page.duties }}
 
-1. Human Computer Interaction for BSc Students.
-1. Distributed systems for BSc Students.
-1. [Computer Vision] for MSc Students.
 
-This opportunity provided me with new connections as we have conducted multiple researches together and published quite few of papers.
 
 ## Acquired Experiences
 
