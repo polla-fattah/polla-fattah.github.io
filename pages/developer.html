@@ -6,6 +6,7 @@ permalink: /developer/
 
 ---
 
+
 <style>
 .skillHeaders{
  font-size: 2rem;
@@ -73,7 +74,11 @@ permalink: /developer/
     </a>
     {% endfor %}
     </div>
+    {% unless forloop.last %}
+    <hr style="margin: 10px 2px 30px 2px;box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.28);height: 1px; color: #000000; width: 100%;">
+    {% endunless %}
   </div>
+  
 {% endfor %}
 
 <!--
