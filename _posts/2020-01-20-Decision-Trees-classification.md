@@ -9,19 +9,6 @@ categories: ["data-mining", "classification"]
 author: "Polla Fattah"
 ---
 
-<style>
-  .responsive-img {
-  width: 100%;
-  max-width: 500px;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
-.footnotes {
-  font-size: 0.7em;
-  margin-top: 1em;
-}
-</style>
 
 
 # Decision Trees
@@ -29,9 +16,11 @@ author: "Polla Fattah"
 As described by Zaki et al. [^2], Decision Tree is a classification model which recursively partitions the data space into two parts. The split can be considered as a hyperplane parallel to one axis of the data space. The process repeats by dividing each new part into two smaller parts, and this process continues until each sub-part mostly contains items of only one of the target classes. The final result of this partitioning process
 can be represented by a tree, where each node is a decision concerning which part an item belongs to, and the leaves represent one of the target classes.
 
-As an example of the decision tree partitioning, consider the iris data set with 150 entries of three classes. The items are displayed in Figure \ref{fig:Recurcive2Decision1}, which plots their sepal length and width as X, Y axes. The partitioning process created six different regions, which are divided by lines instead of hyperplains, as in two-dimensional data space the hyperplanes can only have one dimension. Multiple regions might represent one of the targeted classes. The tree representation of the iris data space partition is shown in Figure \ref{fig:Recurcive2Decision2}.
+As an example of the decision tree partitioning, consider the iris data set with 150 entries of three classes. The items are displayed in Figure below, which plots their sepal length and width as X, Y axes. The partitioning process created six different regions, which are divided by lines instead of hyperplains, as in two-dimensional data space the hyperplanes can only have one dimension. Multiple regions might represent one of the targeted classes. The tree representation of the iris data space partition is shown in Figure \ref{fig:Recurcive2Decision2}.
 
-![Decision trees representation for splitting items of the data by creating hyper-plains which are parallel to one of the axes.](/img/posts/2020-01-26-classification/recursiveCut.png){:class="responsive-img"}
+{% include image.html url="/img/posts/2020-01-20-Decision-Trees-classification/recursiveCut.png" description="Decision trees representation for splitting items of the data by creating hyper-plains which are parallel to one of the axes." %}
+
+
 
 C4.5 might be one of the most famous decision tree algorithms for classification [^3]. C4.5 is build on ID3, both of which were introduced by Quinlan [^4]. This algorithm relies on information gained to create its tree for classification. In this algorithm attributes with higher normalised information gain are used for decide the splits in the data. The the next highest attribute is used for subpartitioning the data recursively [^4].
 

@@ -9,43 +9,28 @@ categories: ["data-mining", "classification"]
 author: "Polla Fattah"
 ---
 
-<style>
-  .responsive-img {
-  width: 100%;
-  max-width: 500px;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
-.footnotes {
-  font-size: 0.7em;
-  margin-top: 1em;
-}
-</style>
+
 
 # Rule-Based Classification
 
 A rule-based classifier uses a set of rules to classify items in a data set. The rules are formalised in the form of IF-THEN clause. The conditions of the IF clause represent the rules that an item should fulfil to be accepted as a particular class. If the rules are ordered and have priority they can be represented in nested IF-THEN-ELSE clauses and might be called decision lists [^7].
 
-Figure \ref{fig:ruleBased}a shows a simple data set with items labelled \textbf{a} or \textbf{b}. We can produce multiple variations of rules to classify items in this data set. It is possible to filter out all class \textbf{a} items first then all others remaining will be class \textbf{b}:
-If x $>$ 1.4 and y $<$ 2.4 then class = \textbf{a}\\
-Otherwise class = \textbf{b}\\
+Figure below (a) shows a simple data set with items labelled **a** or **b**. We can produce multiple variations of rules to classify items in this data set. It is possible to filter out all class **a** items first then all others remaining will be class **b**:
+If x $>$ 1.4 and y $<$ 2.4 then class = **a**
 
-Conversely, if b class items are filtered out the remaining items will be classified as \textbf{a}:
-If x $\leqslant$ 1.2 then class = \textbf{b} \\
-If x $>$ 1.2 and y $\leqslant$ 2.6 then class = \textbf{b}\\
-Otherwise class = \textbf{a}\\
+Otherwise class = **b**
 
-In most cases, rule-based classification systems and decision trees can be used interchangeably; C4.5 provides both decision trees and classification rules [^3]. A decision tree representing the rule-based classifier is shown in Figure \ref{fig:ruleBased}b. The rules above and the decision tree can be considered as an equivalent classifiers, but most of the time people prefer rule-based classifiers on decision trees as they are more intuitive for human understanding [^7], due to being simpler and more concise [^3].
+Conversely, if b class items are filtered out the remaining items will be classified as **a**:
+If x $\leqslant$ 1.2 then class = **b**
 
-\begin{figure}[!h]
-\includegraphics[width=1\textwidth]{images/chapter2/rulebased.png}  
- \caption{Classifying same data set using both rules and a decision tree.
-(a) A two dimensional data sets with items of two classes.
-(b) A tree representation for a rule based classification.
-From Witten et al. [^7]}
-\label{fig:ruleBased}
-\end{figure}
+If x $>$ 1.2 and y $\leqslant$ 2.6 then class = **b**
+
+Otherwise class = **a**
+
+
+In most cases, rule-based classification systems and decision trees can be used interchangeably; C4.5 provides both decision trees and classification rules [^3]. A decision tree representing the rule-based classifier is shown in Figure below (b). The rules above and the decision tree can be considered as an equivalent classifiers, but most of the time people prefer rule-based classifiers on decision trees as they are more intuitive for human understanding [^7], due to being simpler and more concise [^3].
+
+{% include image.html url="/img/posts/2020-01-21-Rule-Based-Classification/rulebased.png" description="Classifying same data set using both rules and a decision tree. a. A two dimensional data sets with items of two classes. b. A tree representation for a rule based classification." %}
 
 Various methods are used to generate rule-based classifiers in different fields of application. The remainder of this section presents more effective samples of these works with a brief explanation of their methodologies.
 

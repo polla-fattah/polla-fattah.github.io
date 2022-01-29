@@ -1,7 +1,19 @@
 ---
 layout: default
 ---
-
+<style>
+  .footnotes{
+    font-size: 0.7em;
+    margin-top: 1em;
+  }
+  .footnotes ol li p{
+    margin-bottom: 0em;
+    margin-top: 0em;
+  }
+  .reversefootnote::before{
+    color: red;
+  }
+</style>
 <!-- Page Header -->
 {% if page.background %}
 <header class="masthead" style="background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')">
