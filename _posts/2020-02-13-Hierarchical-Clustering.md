@@ -7,6 +7,7 @@ date: 2020-02-13 23:45:13 -0400
 background: "/img/posts/2020-02-13-Hierarchical-Clustering/background.png"
 categories: ["data-mining", "clustering"]
 author: "Polla Fattah"
+usemathjax: false
 ---
 # Hierarchical Clustering
 

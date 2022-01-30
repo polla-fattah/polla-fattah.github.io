@@ -6,8 +6,8 @@ excerpt: "Many clustering methods exist to be used in different situations accor
 date: 2020-03-08 23:45:13 -0400
 background: "/img/posts/2020-03-08-Cluster-validation/background.png"
 categories: ["data-mining", "Clustering"]
-
 author: "Polla Fattah"
+usemathjax: false
 ---
 
 # Clustering Validation

@@ -6,8 +6,8 @@ excerpt: "External criteria validate the results of clustering based on some pre
 date: 2020-03-10 23:45:13 -0400
 background: "/img/posts/2020-03-10-External-Cluster-Validation/background.png"
 categories: ["data-mining", "Clustering"]
-
 author: "Polla Fattah"
+usemathjax: false
 ---
 
 # External Criteria

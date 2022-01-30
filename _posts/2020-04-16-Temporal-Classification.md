@@ -7,6 +7,7 @@ date: 2020-04-16 23:45:13 -0400
 background: "/img/posts/2020-04-16-Temporal-Classification/background.png"
 categories: ["data-mining", "Time-Series"]
 author: "Polla Fattah"
+usemathjax: false
 ---
 
 # Temporal Classification

@@ -7,6 +7,7 @@ date: 2020-01-20 23:45:13 -0400
 background: "/img/posts/2020-01-20-Decision-Trees-classification/background.jpg"
 categories: ["data-mining", "classification"]
 author: "Polla Fattah"
+usemathjax: false
 ---
 
 

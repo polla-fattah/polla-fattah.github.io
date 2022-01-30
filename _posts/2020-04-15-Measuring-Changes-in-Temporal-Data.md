@@ -7,6 +7,7 @@ date: 2020-04-15 23:45:13 -0400
 background: "/img/posts/2020-04-15-Measuring-Changes-in-Temporal-Data/background.png"
 categories: ["data-mining", "Time-Series"]
 author: "Polla Fattah"
+usemathjax: false
 ---
 
 # Measuring Changes in Temporal Data

@@ -6,14 +6,12 @@ excerpt: "Internal criteria measure the 'goodness' of clusters for the data by e
 date: 2020-03-09 23:45:13 -0400
 background: "/img/posts/2020-03-09-Internal-Cluster-Validation/background.png"
 categories: ["data-mining", "Clustering"]
-
 author: "Polla Fattah"
-usemathjax: true
+usemathjax: false
 ---
 
 # Internal Cluster Validation
 
-$$E=mc^2$$
 
 Internal criteria measure the 'goodness' of clusters for the data by extracting information from data and clusters alone, such as the compactness of data points inside one cluster and the separation of clusters from each other [^2]. These criteria were used as part of the cost function, to determine the quality of the selected classification rules in each time point, and to compare different clustering algorithms' performances, as presented in chapter six.
 
