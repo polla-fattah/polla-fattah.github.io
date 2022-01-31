@@ -334,6 +334,7 @@ permalink: /business/
 }
 
 .strange-cards .box {
+    display: block;
     border-radius: 5px;
     box-shadow: 0px 30px 40px -20px var(--grayishBlue);
     padding: 30px;
@@ -407,11 +408,8 @@ permalink: /business/
 }
 </style>
 
-
-
-
 <div class="strange-cards">
-    <a class="headers" href="/business/project/2013-12-01-measure-behaviour-changes/">Projects</a>
+    <a class="headers" href="/business/projects">Projects</a>
   <div class="row1-container">
     <a class="box box-down cyan" href="/business/project/2013-12-01-measure-behaviour-changes/">
       <h2>Behavior Analysis</h2>
@@ -439,6 +437,18 @@ permalink: /business/
     </a>
   </div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
 <hr style="margin: 15px 50px;">
 
 
@@ -455,10 +465,6 @@ permalink: /business/
 
 <hr style="margin: 15px 50px;">
 
-
-
-
-
 <style>
     .leaderboard {
        max-width: 490px;
@@ -468,7 +474,7 @@ permalink: /business/
      .leaderboard__profiles {
        background-color: #fff;
        border-radius: 0 0 12px 12px;
-       padding: 15px 15px 20px;
+       padding: 15px 0px 15px 20px;
        display: grid;
        row-gap: 8px;
        width: 100%;
@@ -501,7 +507,7 @@ permalink: /business/
      .leaderboard__name {
        color: #979cb0;
        font-weight: 600;
-       font-size: 20px;
+       font-size: 1.2rem;
        letter-spacing: 0.64px;
        margin-left: 12px;
     }
@@ -512,7 +518,16 @@ permalink: /business/
       place-items: center;
       font-family: 'Source Sans Pro', sans-serif;
     }
-    
+    @media (max-width: 650px) {
+        .leaderboard__name {
+       font-size: 0.8rem;
+       width: 100%;
+       padding-left:  20px;
+        }
+        .leaderboard__profile{
+            width: 100%;
+        }
+    }
     </style>
   
   <a class="headers" href="/jobs?category=business">Jobs</a>

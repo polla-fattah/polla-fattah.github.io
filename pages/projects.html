@@ -1,47 +1,52 @@
 ---
 layout: page
 title: Projects
-background: '/img/projects/ssdlc.png'
+background: '/img/projects/projects-bg.jpg'
 permalink: /business/projects
 
 ---
 <style>
-.post-meta-animate{
-  transition: all 0.5s ease-in-out;
-  margin-top: -30px;
-  margin-bottom: 0px;
-  font-family: arial;
-  font-size: 1.8rem;
-  color:rgba(173, 170, 170, 0.712);
-}
-.post-preview:hover   .post-meta-animate{
-  transform: scale(2);
-  transform: translate(0px,-3px);
-  color:rgba(43, 41, 41, 0.829);
-}
-.post-preview{
-  margin-bottom: 40px;
-}
-.post-preview > a > .post-title{
-  margin-top: 10px;
-  padding-top: 0px;
-}
-.technologies{
-  width: 100%;
-  text-align: center;
-  margin-top: 10px;
-}
-.tech{
-  font-size: 1.6rem;
-  color:rgb(145, 141, 141);
+  .post-meta-animate {
+    transition: all 0.5s ease-in-out;
+    margin-top: -30px;
+    margin-bottom: 0px;
+    font-family: arial;
+    font-size: 1.8rem;
+    color: rgba(173, 170, 170, 0.712);
+  }
 
-}
+  .post-preview:hover .post-meta-animate {
+    transform: scale(2);
+    transform: translate(0px, -3px);
+    color: rgba(43, 41, 41, 0.829);
+  }
+
+  .post-preview {
+    margin-bottom: 40px;
+  }
+
+  .post-preview>a>.post-title {
+    margin-top: 10px;
+    padding-top: 0px;
+  }
+
+  .technologies {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .tech {
+    font-size: 1.6rem;
+    color: rgb(145, 141, 141);
+
+  }
 </style>
 
 
 {% for item in site.projects reversed  %}
 <article class="post-preview">
-  <p class="post-meta-animate" >
+  <p class="post-meta-animate">
     {{ item.date | date: '%B-%Y' }}
   </p>
   <a href="{{ item.url | prepend: site.baseurl | replace: '//', '/' }}">
@@ -53,18 +58,18 @@ permalink: /business/projects
     <hr style="border-color: #EEE;width: 100%;">
 
     {% for tech in item.technologies %}
-      <span class='tech'>
-        {% if tech.fa %}
-        <i class="{{ tech.icon }}" tooltip="{{ tech.name }}"></i> 
-        {% else %}
-          {{ tech.icon }}
-        {% endif %}
-      
-        {% unless forloop.last %}&nbsp;&middot;&nbsp;{% endunless %}
-      </span>
+    <span class='tech'>
+      {% if tech.fa %}
+      <i class="{{ tech.icon }}" tooltip="{{ tech.name }}"></i>
+      {% else %}
+      {{ tech.icon }}
+      {% endif %}
+
+      {% unless forloop.last %}&nbsp;&middot;&nbsp;{% endunless %}
+    </span>
     {% endfor %}
   </div>
-</article> 
+</article>
 
 
 {% endfor %}
