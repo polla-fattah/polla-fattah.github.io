@@ -5,7 +5,7 @@ subtitle: ""
 date: 2009-11-01
 background: /img/lecture/apps.webp
 university: Salahaddin University-Erbil
-department: Electrical Engineeing Dept.
+department: Electrical Engineering Dept.
 level: BSc
 year: 2009-2012
 myStatus: Assitant Lecturer

@@ -5,7 +5,7 @@ subtitle: ""
 date: 2009-01-30
 background: /img/lecture/internet.jpg
 university: Koya University
-department: Computer Engineeing Dept.
+department: Computer Engineering Dept.
 level: BSc
 year: 2009-2011
 myStatus: Assitant Lecturer

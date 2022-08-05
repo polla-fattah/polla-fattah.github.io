@@ -5,7 +5,7 @@ subtitle: ""
 date: 2018-01-30
 background: /img/lecture/computer-vision.jpg
 university: University of Kurdistan Hewlêr
-department: Computer Engineeing Dept.
+department: Computer Engineering Dept.
 level: MSc
 year: 2018-2020
 myStatus: VIsiting Lecturer

@@ -75,8 +75,8 @@ permalink: /academy/cv/
         <h1 class="cvh1">Teaching</h1>
         {% for e in site.lectures reversed %}        
         <div class='element cv-normal' style='text-indent: -50px; margin-left: 60px'>
-            <strong>{{e.title}}: </strong> [{{e.year}}]
-            {{ e.university }}, {{ e.department }}.
+            <strong>{{e.title}}({{e.year}}): </strong> 
+            {{ e.university }}, {{ e.department }}
         </div>
         {% endfor %}
 

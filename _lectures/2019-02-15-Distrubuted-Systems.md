@@ -5,7 +5,7 @@ subtitle: ""
 date: 2019-02-15
 background: /img/lecture/distributed-systems.jpg
 university: Tishk International University
-department: Department of Computer Engineeing
+department: Department of Computer Engineering
 level: BSc
 year: 2019
 myStatus: Assitant Lecturer
