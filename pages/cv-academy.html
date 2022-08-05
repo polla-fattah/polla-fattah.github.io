@@ -74,6 +74,7 @@ permalink: /academy/cv/
         
         <h1 class="cvh1">Teaching</h1>
         {% for e in site.lectures reversed %}        
+
         <div class='element cv-normal' style='text-indent: -50px; margin-left: 60px'>
             <strong>{{e.title}}: </strong><br/>
             &nbsp; &nbsp; {{ e.university }}, {{ e.department }}. {{e.year}}
@@ -83,6 +84,7 @@ permalink: /academy/cv/
 
         <h1 class="cvh1">Honours & Awards</h1>
         {% for e in site.awards reversed %}        
+
         <div class='element cv-normal' style='text-indent: -50px; margin-left: 60px'>
             <strong>{{e.date | date: '%Y'}}: </strong>
             {{ e.subtitle }}
