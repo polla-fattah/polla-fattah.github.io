@@ -59,7 +59,6 @@ permalink: /academy/cv/
         The focus of my research is to harness the power of computation to further advance our understanding of the nature of thinking and processing. 
         And to develop algorithms that solve hard problems of automating and extracting information from data. 
         My goal is to use these researches to further develop my society and our understanding for the science and its implications.
-
     </p>
         
         <h1 class="cvh1">Education</h1>
@@ -72,16 +71,25 @@ permalink: /academy/cv/
         {% endfor %}
         
 
+        
+        <h1 class="cvh1">Teaching</h1>
+        {% for e in site.lectures reversed %}        
+        <div class='element cv-normal' style='text-indent: -50px; margin-left: 60px'>
+            <strong>{{e.title}}: </strong><br/>
+            &nbsp; &nbsp; {{ e.university }}, {{ e.department }}. {{e.year}}
+        </div>
+        {% endfor %}
+
+
         <h1 class="cvh1">Honours & Awards</h1>
+        {% for e in site.awards reversed %}        
+        <div class='element cv-normal' style='text-indent: -50px; margin-left: 60px'>
+            <strong>{{e.date | date: '%Y'}}: </strong>
+            {{ e.subtitle }}
+        </div>
+        {% endfor %}
 
-            {% for e in site.awards reversed %}        
-            <div class='element cv-normal' style='text-indent: -50px; margin-left: 60px'>
-                <strong>{{e.date | date: '%Y'}}: </strong>
-                {{ e.subtitle }}
-            </div>
-            {% endfor %}
 
-            
         <h1 class="cvh1">Publications</h1>
             {% for e in site.publications reversed %}        
             <div class='element' style='text-indent: -50px; margin-left: 60px'>
