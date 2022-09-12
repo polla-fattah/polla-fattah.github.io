@@ -3,8 +3,6 @@ layout: home
 background: '/img/main/ai.jpg'
 ---
 
-
-
 <style>
   * {
     box-sizing: border-box;
@@ -165,6 +163,8 @@ background: '/img/main/ai.jpg'
     grid-template-columns: 1.4fr 1fr;
     padding-left: 2em;
     background-size: auto;
+    cursor: default;
+    color: white;
   }
   .mid::after {
     position: absolute;
@@ -175,15 +175,41 @@ background: '/img/main/ai.jpg'
     width: 95%;
     height: 200px;
     content: "";
-    box-shadow: 0 0 5em #7d604f;
-  }
+    box-shadow: 0 0 1em #4f787d;
 
+  }
+  .mid:hover{
+    box-shadow: 0.4em 0.4em 2em #4f787d;
+    transition-duration: 0.5s;
+  }
+  .mid:hover a{
+    background-color: rgba(0, 0, 139, 0.29);
+    transition-duration: 0.5s;
+  }  .mid:hover main{
+    background-color: rgba(49, 76, 211, 0.721);
+    transition-duration: 0.7s;
+  }
   .mid nav {
+    background-color: rgba(254, 254, 254, 0);
     justify-content: space-between;
   }
 
   .mid main {
     min-width: var(--main-column-width);
+    background-color: rgba(49, 76, 211, 0.566);
+
+  }
+
+  .mid main a {
+    color: white;
+  }
+  .mid main nav a{
+    padding: 5px 10px;
+  }
+  .mid main nav a:hover{
+    text-decoration: none;
+    background-color: darkblue;
+    transition-duration: 0.7s;
   }
 }
 
@@ -193,8 +219,8 @@ background: '/img/main/ai.jpg'
 
   <main>
     <h1>Official CVs</h1>
-    <p>As I have two parallel career skills in academy and bushiness this is why I see it more fit to have two versions of m CV. 
-      One of them is focussed on the business career, projects and skills while the other is more focussed on the academic life career and its details.</p>
+    <p>I have two parallel career skills in academy and bushiness, this is why I see it more fit to have two versions of my CV. 
+      One of them is focussed on the business careerprojects and skills. While the other is more focussed on the academic life career and its details.</p>
   <nav>
     <a href="/business/cv/">Business&nbsp;CV</a> &nbsp; 
     <a href="/academy/cv/">Academic&nbsp;CV</a>
