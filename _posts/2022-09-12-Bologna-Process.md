@@ -3,7 +3,7 @@ layout: post
 title: "Bologna Process"
 subtitle: "Adopting a new process for University"
 excerpt: "Decision Tree is a classification model which recursively partitions the data space into two parts. The split can be considered as a hyperplane parallel to one axis of the data space."
-date: 2022-09-12 23:45:13 -0400
+date: 2022-09-09 23:45:13 -0400
 background: "/img/posts/2022-09-12-Bologna-Process/background.png"
 categories: ["Education", "University"]
 author: "Polla Fattah"
