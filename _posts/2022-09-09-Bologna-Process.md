@@ -2,7 +2,7 @@
 layout: post
 title: "Bologna Process"
 subtitle: "Adopting a new process for University"
-excerpt: "Decision Tree is a classification model which recursively partitions the data space into two parts. The split can be considered as a hyperplane parallel to one axis of the data space."
+excerpt: "In Kurdistan Region, we have started to adopt this process too. Particularly in our department, "Software Engineering department" we are more than enthusiastic about this process"
 date: 2022-09-09 23:45:13 -0400
 background: "/img/posts/2022-09-12-Bologna-Process/background.png"
 categories: ["Education", "University"]
@@ -20,7 +20,7 @@ In Kurdistan Region, we have started to adopt this process too. Particularly in 
 
  The second issue that we have is resistance to change. Some other departments and colleges hate this new process. This hate mostly originates from two sources, first, they love the status quo and do not want to roame into new territories, second, they do not comprehend the benefits of the process for their college/department and see the old process as more fit for thier needs. 
 
- <video width="320" height="240" controls>
+ <video width="720" height="400" controls>
   <source src="/img/posts/2022-09-12-Bologna-Process/meeting.mp4" type="video/mp4">
   Your browser does not support videos.
 </video>
@@ -30,9 +30,6 @@ In Kurdistan Region, we have started to adopt this process too. Particularly in 
  So while our enthusiasm in our department might help to adopt this process on a very small scale and limited scope. However, for a larger and faster adoption rate, we need government intervention by dedicating an appropriate budget for this implementation and transitioning from the old to the new process. 
 
  There is no need to wait multiple years to see the advantages of this process as it is obvious from now. The students that are started with the Bologna process, are already reporting a better satisfaction ratio in the surveys, and teacher report higher grades for their students as they are choosing subjects according to their passion and abilities.
-
-
-
 
 ---
 
