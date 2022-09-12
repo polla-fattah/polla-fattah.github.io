@@ -2,14 +2,20 @@
 layout: post
 title: "Bologna Process"
 subtitle: "Adopting a new process for University"
-excerpt: "In Kurdistan Region, we have started to adopt this process too. Particularly in our department, "Software Engineering department" we are more than enthusiastic about this process"
+excerpt: "In Kurdistan Region, we have started to adopt this process too. Particularly in our department, Software Engineering department we are more than enthusiastic about this process"
 date: 2022-09-09 23:45:13 -0400
-background: "/img/posts/2022-09-12-Bologna-Process/background.png"
+background: "/img/posts/2022-09-09-Bologna-Process/background.png"
 categories: ["Education", "University"]
 author: "Polla Fattah"
 usemathjax: false
 ---
-
+<style>
+  video {
+  /* override other styles to make responsive */
+  width: 100%    !important;
+  height: auto   !important;
+}
+</style>
 # Bologna Process
 
 Bologna Process[^1] is the pedagogical[^2] method that has been adopted by most Europian Universities. It encourages the credit collection method by the students. Once they fulfill the required amount of credit points they can graduate from that school. This process has the advantage of giving the flexibility of choosing subjects to the students so they can, with the help of advisors, choose their learning path and future carrier.
@@ -20,8 +26,8 @@ In Kurdistan Region, we have started to adopt this process too. Particularly in 
 
  The second issue that we have is resistance to change. Some other departments and colleges hate this new process. This hate mostly originates from two sources, first, they love the status quo and do not want to roame into new territories, second, they do not comprehend the benefits of the process for their college/department and see the old process as more fit for thier needs. 
 
- <video width="720" height="400" controls>
-  <source src="/img/posts/2022-09-12-Bologna-Process/meeting.mp4" type="video/mp4">
+ <video  controls>
+  <source src="/img/posts/2022-09-09-Bologna-Process/meeting.mp4" type="video/mp4">
   Your browser does not support videos.
 </video>
 
