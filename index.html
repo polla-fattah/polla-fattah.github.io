@@ -34,7 +34,6 @@ background: '/img/main/ai.jpg'
     text-decoration: none;
     transform: scale(1.05);
     box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
-
   }
   .floating-image{
       position: relative;
@@ -165,6 +164,7 @@ background: '/img/main/ai.jpg'
     background-size: auto;
     cursor: default;
     color: white;
+    transition: 0.5s;
   }
   .mid::after {
     position: absolute;
@@ -180,14 +180,13 @@ background: '/img/main/ai.jpg'
   }
   .mid:hover{
     box-shadow: 0.4em 0.4em 2em #4f787d;
-    transition-duration: 0.5s;
   }
   .mid:hover a{
     background-color: rgba(0, 0, 139, 0.29);
-    transition-duration: 0.5s;
-  }  .mid:hover main{
+  }  
+
+  .mid:hover main{
     background-color: rgba(49, 76, 211, 0.721);
-    transition-duration: 0.7s;
   }
   .mid nav {
     background-color: rgba(254, 254, 254, 0);
@@ -197,19 +196,20 @@ background: '/img/main/ai.jpg'
   .mid main {
     min-width: var(--main-column-width);
     background-color: rgba(49, 76, 211, 0.566);
+    transition: 0.7s;
 
   }
 
   .mid main a {
     color: white;
-  }
-  .mid main nav a{
+    transition: 0.7s;
     padding: 5px 10px;
+    background-color: rgba(0, 0, 139, 0.251);
+
   }
   .mid main nav a:hover{
     text-decoration: none;
-    background-color: darkblue;
-    transition-duration: 0.7s;
+    background-color: rgba(47, 148, 139, 0.708);
   }
 }
 
