@@ -43,7 +43,60 @@ We also conversed about the problems with having many applicants and limited res
 
 ## Opportunities
 
-Studying in this department opens various opportunities for graduates as they can choose to become programmers/developers data analysts, networking, server administration, web developer, UI designer, and many more subspecialties.
+A background in Software Engineering ensures that you develop the skills and mindset to tackle many different professional challenges. Here are just a few of the skills a Software Engineering degree can help you develop:
+
+### Core Software Engineering Skills
+
+- A comprehension of the design process of contemporary software systems and the steps involved from planning to execution. This will be underlined by a curriculum focused solely on software, without much focus on hardware design
+- A strong comprehension of mathematics, engineering and computer science principles
+- An ability to use theory and think critically about the practical application of software systems in real life projects with fellow students and teachers[^4]
+
+### Communication, Data Gathering and Organizational Skills
+
+- The ability to organize, understand and analyze sources of information and to apply novel forms of technology or new information to different professional settings and tasks
+- The capacity to critically analyze problems, think creatively and make sound decisions while considering different sides of an argument
+- The ability to explain complex ideas clearly to others and to apply complex theoretical concepts to everyday practice and professional dilemmas
+- The skills to collect various types of information, assess them, analyze and incorporate potential linkages from different fields, put them into writing and efficiently convey your message and the goal of your work[^4]
+
+<img class="img-fluid" src="/img/posts/2022-03-16-software-engineering/skills.png" alt="Software Engineering">
+
+### Management and Teamwork Skills
+
+- The ability to interpret and analyze information presented by peers and efficiently and constructively support or challenge their proposals, theories, ideas and reports in order to achieve a project’s intended and successful end result
+- The capacity to lead and interact with a variety of people with different approaches and personal and professional backgrounds
+- Skills enabling you to work effectively in group situations, partaking in decision-making, leading and contributing in various capacities to the ultimate success of the team and task
+- The capability to identify priorities and proper courses of action, to plan the execution of tasks and to determine and delegate responsibilities to group members to most effectively carry out projects[^4]
+
+## Career Options in Software Engineering
+Below is a sample list of some future choices to explore following studies in Software Engineering. This list is not exhaustive but it provides a solid idea of what fellow graduates have gone on to do and what potential careers a Software Engineering degree can offer. Some options are more directly associated with specific areas of Software Engineering than others.[^4]
+
+- Code Developer
+- Communications Specialist
+- Corporate Trainer
+- Embedded Software Engineer
+- Entrepreneur
+- Financial Analyst
+- Fund Manager
+- IT Specialist
+- Lawyer
+- Market Researcher
+- Mathematician
+- Media Correspondent
+- Mobile Software Engineer
+- Modeling Specialist
+- Network Engineer
+- Operations Manager
+- Quality Assurance Specialist
+- Research and Development Consultant
+- Smartphone Application Programmer
+- Software Engineer
+- Technology Writer
+- Technical Analyst
+- Video Game Developer
+- Website Designer
+- Accountant
+- Banker
+- Brand Strategist
 
 
 ---
@@ -54,3 +107,4 @@ __FootNote__
 [^2]: [Copied from software department website](https://colleges.su.edu.krd/engineering/software-engineering-department/#1658928959675-27e0cdfa-ae28){:target="Mission"}
 
 [^3]:[gov.krd/english/the-governments-mission/digital-transformation](https://gov.krd/english/the-governments-mission/digital-transformation/){:target="digital"}
+[^4]: [Copied from](https://careers.yorku.ca/my-degree/software-engineering)
