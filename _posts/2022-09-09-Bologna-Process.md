@@ -15,6 +15,7 @@ usemathjax: false
   width: 100%    !important;
   height: auto   !important;
 }
+body p{text-align: justify}
 </style>
 # Bologna Process
 

@@ -9,6 +9,8 @@ categories: ["data-mining", "Time-Series"]
 author: "Polla Fattah"
 usemathjax: false
 ---
+<style>body p{text-align: justify}</style>
+
 
 # Measuring Changes in Temporal Data
 

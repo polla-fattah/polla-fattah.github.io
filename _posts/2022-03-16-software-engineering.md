@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "Software Engineering"
-subtitle: "In an interview with the KTV I have discussed The history, mission and the purpose of Software Engineering Department In Salahaddin University"
+subtitle: "In the interview with the KTV I discussed the history, the mission, and the purpose of Software Engineering Department at Salahaddin University-Erbil."
 date: 2022-03-16 23:45:13 -0400
-background: "/img/posts/2022-09-09-Bologna-Process/background.png"
+background: "/img/posts/2022-03-16-software-engineering/background.webp"
 categories: ["Education", "University"]
 author: "Polla Fattah"
 usemathjax: false
@@ -14,31 +14,37 @@ usemathjax: false
   width: 100%    !important;
   height: auto   !important;
 }
+body p {text-align: justify}
 </style>
-# Bologna Process
+# Software Engineering Department
 
-Bologna Process[^1] is the pedagogical[^2] method that has been adopted by most Europian Universities. It encourages the credit collection method by the students. Once they fulfill the required amount of credit points they can graduate from that school. This process has the advantage of giving the flexibility of choosing subjects to the students so they can, with the help of advisors, choose their learning path and future carrier.
+In the interview with the KTV [^1] I discussed the history, the mission, and the purpose of [Software Engineering Department](https://colleges.su.edu.krd/engineering/software-engineering-department/){:target="Software"} at [Salahaddin University-Erbil](https://su.edu.krd/){:target="Salahaddin"}. Dr Ibrahim Hamarash has established this department at 2000/2001 with 25 students. The first head of department was Dr Ibrahim himself with the founding teachers of the department Dr Shawbo, Mr Karim, Dr Moaiad.
 
-In Kurdistan Region, we have started to adopt this process too. Particularly in our department, "Software Engineering department" we are more than enthusiastic about this process as now we can enable our students to choose diffrent paths for thier carrier by picking among the available subjects so that they can specialize in diffierent fields of software devilopment and engineering.
+## Mission & Vision
+The software engineering department mission is to teach and prepare liberally educated, articulate, and skilled software engineers for leadership and professional careers and for advanced study. A central objective of our department program is to contribute to society by advancing the fields of software engineering through innovations in teaching and research thus enhancing student knowledge through interactive instruction, global engagement, and experiential learning, also the program will serve as a resource to inform society about innovations related to the production and uses of computers and software.[^2]
 
- However, this change might take some time due to multiple reasons first is purely technical, as with every change, there are always obstacles to overcome, and perks to understand so that we can implement the process fully with no problems. There is much training that has to happen for the teachers, staff, and students. As well as implementing a new software process that supports this kind of semester-based credit collection instead of annual passing of the subjects.
-
- The second issue that we have is resistance to change. Some other departments and colleges hate this new process. This hate mostly originates from two sources, first, they love the status quo and do not want to roame into new territories, second, they do not comprehend the benefits of the process for their college/department and see the old process as more fit for thier needs. 
-
- <video  controls>
+<video  controls>
   <source src="/img/posts/2022-03-16-software-engineering/video.mp4" type="video/mp4">
   Your browser does not support videos.
 </video>
 
- The third problem with this system is resources. By resources, I mean more staff, lecturers, lecture rooms, and laboratories. These are essential for the most important part of the process which is letting students choose subjects. This means we have to offer more subjects that cover students' desires, this needs more lectures, then students' choices might be disproportionate. This means there will be a need for bigger lecture rooms for some subjects. And also we need a more dynamic computer lab that can cope with the changes of the subjects. In my online interview with the prime minister, I addressed some of these issues, and his responses were positive to help us to overcome them.
+Graduates of the software engineering department will be recognized as innovative leaders in the field of software engineering by their work in software development in a myriad of application areas, and through their work in advanced study and research. The department will continue to be known for their passion for teaching these students and for their knowledge, expertise, and innovation in advancing the frontiers of knowledge in software engineering.[^2]
 
- So while our enthusiasm in our department might help to adopt this process on a very small scale and limited scope. However, for a larger and faster adoption rate, we need government intervention by dedicating an appropriate budget for this implementation and transitioning from the old to the new process. 
+## Who can Apply
 
- There is no need to wait multiple years to see the advantages of this process as it is obvious from now. The students that are started with the Bologna process, are already reporting a better satisfaction ratio in the surveys, and teacher report higher grades for their students as they are choosing subjects according to their passion and abilities.
+Then the discussion began about the skills and mindsets that are required from students so that they can successfully apply to this departmetnand become productive self sustaining members of thier community. The qualities that are discussed were mainly about thier 
+
+
+
+<img class="img-fluid" src="/img/posts/2022-03-16-software-engineering/software.jpg" alt="Software Engineering">
+
+## Opportunities
+
+
 
 ---
 
 __FootNote__
 
-[^1]: [پراكتیزه‌كردنی بیرۆكه‌ و داهێنانی قوتابیان له‌ كۆلێژی ئه‌ندازیاری به‌شی پڕۆگرامسازی و ئیفۆرماتیكس](https://www.youtube.com/watch?v=IedhmZXVyY8)
-[^2]: 
+[^1]: [پراكتیزه‌كردنی بیرۆكه‌ و داهێنانی قوتابیان له‌ كۆلێژی ئه‌ندازیاری به‌شی پڕۆگرامسازی و ئیفۆرماتیكس](https://www.youtube.com/watch?v=IedhmZXVyY8){:target="Youtube"}
+[^2]: [Copied from software department website](https://colleges.su.edu.krd/engineering/software-engineering-department/#1658928959675-27e0cdfa-ae28){:target="Mission"}

@@ -9,6 +9,9 @@ categories: ["data-mining", "clustering"]
 author: "Polla Fattah"
 usemathjax: false
 ---
+<style>body p{text-align: justify}</style>
+
+
 # Hierarchical Clustering
 
 Hierarchical clustering is a method to group instances of a data set into a series of nested clusters or a tree of clusters called a dendrogram, which represents the similarity level between instances in the data set. An example hierarchical clustering is shown in Figures below. The figure shows a simple two-dimensional data set with three distinctive clusters. The data set is represented as in a hierarchical clustering model using a dendrogram. The dendrogram can be cut at any level (represented as a dotted horizontal line) to separate different patterns of the data set [^2]. The level of the cutoff line is subjective and may vary from one data set to another. Cutting a dendrogram from a higher level produces fewer patterns (clusters) [^1].

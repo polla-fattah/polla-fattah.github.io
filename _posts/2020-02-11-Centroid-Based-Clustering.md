@@ -10,6 +10,7 @@ author: "Polla Fattah"
 usemathjax: false
 ---
 
+<style>body p{text-align: justify}</style>
 
 ## Centroid-Based Clustering
 

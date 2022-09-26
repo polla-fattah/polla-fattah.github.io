@@ -9,8 +9,7 @@ categories: ["data-mining", "classification"]
 author: "Polla Fattah"
 usemathjax: false
 ---
-
-
+<style>body p{text-align: justify}</style>
 
 # Decision Trees
 
