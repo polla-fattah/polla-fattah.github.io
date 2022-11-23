@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "Software Engineering"
-subtitle: "In the interview with the KTV I discussed the history, the mission, and the purpose of Software Engineering Department at Salahaddin University-Erbil."
+subtitle: "potentials and challenges of Software Eng"
+excerpt: "In the interview with the KTV I discussed the history and the mission of Software Engineering Departmentat"
 date: 2022-03-16 23:45:13 -0400
 background: "/img/posts/2022-03-16-software-engineering/background.webp"
 categories: ["Education", "University"]
