@@ -1,55 +1,92 @@
 [
     {
-        "date": "19 Sep 1981",
-        "label": "Birth Day",
+        "date": "01 Oct 2017",
+        "label": "PhD Graduate",
+        "detail": "programming in general was my passion and hobby before I choose software development as my job and still it is my primary drive to accept new challenges in my career."
+
+    },
+    {
+        "date": "27 Aug 2013",
+        "label": "Mustafa's Birth Day",
+        "detail": "programming in general was my passion and hobby before I choose software development as my job and still it is my primary drive to accept new challenges in my career."
+
+    },
+    {
+        "date": "01 Oct 2012",
+        "label": "Accepted in PhD",
+        "detail": "programming in general was my passion and hobby before I choose software development as my job and still it is my primary drive to accept new challenges in my career."
+
+    },
+    {
+        "date": "01 Mar 2010",
+        "label": "IT Training",
+        "detail": "programming in general was my passion and hobby before I choose software development as my job and still it is my primary drive to accept new challenges in my career."
+
+    },
+    {
+        "date": "16 Aug 2009",
+        "label": "Sidra's Birth Day",
+        "detail": "programming in general was my passion and hobby before I choose software development as my job and still it is my primary drive to accept new challenges in my career."
+
+    },
+    {
+        "date": "19 Sep 2009",
+        "label": "MSc Graduate",
+        "detail": "programming in general was my passion and hobby before I choose software development as my job and still it is my primary drive to accept new challenges in my career."
+
+    },
+    {
+        "date": "05 Jul 2007",
+        "label": "Elaf's Birth Day",
+        "detail": "programming in general was my passion and hobby before I choose software development as my job and still it is my primary drive to accept new challenges in my career."
+
+    },
+    {
+        "date": "19 Nov 2005",
+        "label": "Got Married",
+        "detail": "programming in general was my passion and hobby before I choose software development as my job and still it is my primary drive to accept new challenges in my career."
+    },
+    {
+        "date": "01 Oct 2007",
+        "label": "Accepted in MSc",
+        "detail": "programming in general was my passion and hobby before I choose software development as my job and still it is my primary drive to accept new challenges in my career."
+
+    },    
+    {
+        "date": "01 Jul 2004",
+        "label": "Graduation",
+        "detail": "programming in general was my passion and hobby before I choose software development as my job and still it is my primary drive to accept new challenges in my career."
+
+    },
+    {
+        "date": "01 Oct 2000",
+        "label": "Software Engineering",
+        "detail": "programming in general was my passion and hobby before I choose software development as my job and still it is my primary drive to accept new challenges in my career."
+    },
+    {
+        "date": "01 Jul 1996",
+        "label": "Secondary School",
+        "detail": "programming in general was my passion and hobby before I choose software development as my job and still it is my primary drive to accept new challenges in my career."
+    },
+    {
+        "date": "01 Jul 1992",
+        "label": "Intermediat School",
+        "detail": "programming in general was my passion and hobby before I choose software development as my job and still it is my primary drive to accept new challenges in my career."
+    },
+    {
+        "date": "11 Mar 1991",
+        "label": "Raparin",
+        "detail": "programming in general was my passion and hobby before I choose software development as my job and still it is my primary drive to accept new challenges in my career."
+
+    },    {
+        "date": "01 Jul 1986",
+        "label": "1st Day in School",
         "detail": "programming in general was my passion and hobby before I choose software development as my job and still it is my primary drive to accept new challenges in my career."
 
     },
     {
         "date": "19 Sep 1981",
-        "label": "Birth Day",
-        "detail": "programming in general was my passion and hobby before I choose software development as my job and still it is my primary drive to accept new challenges in my career."
-
-    },
-    {
-        "date": "19 Sep 1981",
-        "label": "Birth Day",
-        "detail": "programming in general was my passion and hobby before I choose software development as my job and still it is my primary drive to accept new challenges in my career."
-
-    },
-    {
-        "date": "19 Sep 1981",
-        "label": "Birth Day",
-        "detail": "programming in general was my passion and hobby before I choose software development as my job and still it is my primary drive to accept new challenges in my career."
-
-    },
-    {
-        "date": "19 Sep 1981",
-        "label": "Birth Day",
-        "detail": "programming in general was my passion and hobby before I choose software development as my job and still it is my primary drive to accept new challenges in my career."
-
-    },
-    {
-        "date": "19 Sep 1981",
-        "label": "Birth Day",
-        "detail": "programming in general was my passion and hobby before I choose software development as my job and still it is my primary drive to accept new challenges in my career."
-
-    },
-    {
-        "date": "19 Sep 1981",
-        "label": "Birth Day",
-        "detail": "programming in general was my passion and hobby before I choose software development as my job and still it is my primary drive to accept new challenges in my career."
-
-    },
-    {
-        "date": "19 Sep 1981",
-        "label": "Birth Day",
-        "detail": "programming in general was my passion and hobby before I choose software development as my job and still it is my primary drive to accept new challenges in my career."
-
-    },
-    {
-        "date": "19 Sep 1981",
-        "label": "Birth Day",
+        "label": "My Birth Day",
         "detail": "programming in general was my passion and hobby before I choose software development as my job and still it is my primary drive to accept new challenges in my career."
 
     }
