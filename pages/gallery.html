@@ -1,0 +1,33 @@
+---
+layout: page
+title: Gallery
+background: "/gallery/gallery-background.jpeg"
+permalink: /gallery/
+---
+
+
+<link rel="stylesheet" type="text/css" href="/assets/gallery.css" />
+
+
+<!-- The Modal --> 
+<div id="myModal" class="modal" onclick="closeImage()">
+  <span class="close" onclick="closeImage()">&times;</span>
+  <img class="modal-content" id="img01" onclick="closeImage()">
+  <div id="caption" onclick="closeImage()"></div>
+</div>
+
+
+<div class="gallery-image" >
+  {% for g in site.data.gallery reversed  %}
+  <div class="img-box image-border" onclick="openImage('{{g.id}}')">
+    <img class="" src="{{ g.url }}" alt="" id="{{ g.id }}"  /><!-- alt="{{ g.description }}"  -->
+    <div class="transparent-box">
+      <div class="caption">
+        <!-- <p>{{ g.description }}</p> -->
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+<br>
+
+<script src="../assets/scripts.js"></script>
