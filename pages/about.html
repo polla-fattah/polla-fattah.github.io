@@ -139,7 +139,6 @@ permalink: /about/
 
 
 
-
 <h1 class="contact-header">My Habits</h1>
 <p>
   I have a few notable habits that make me who I am. Firstly, my love for tea is well-known among those who know me. My
@@ -156,36 +155,6 @@ permalink: /about/
   defining aspect of who I am.
 </p>
 
-
-<link rel="stylesheet" type="text/css" href="/assets/gallery.css" />
-
-
-
-
-<!-- The Modal -->
-<div id="myModal" class="modal"  onclick="closeImage()">
-  <span class="close" onclick="closeImage()">&times;</span>
-  <img class="modal-content" id="img01" onclick="closeImage()">
-  <div id="caption"></div>
-</div>
-
-
-<h1 class="contact-header">Gallery</h1> 
-<div class="gallery-image" >
-  {% for g in site.data.gallery reversed limit:6 %}
-  <div class="img-box image-border" onclick="openImage('{{g.id}}')">
-    <img src="{{g.url}}" alt="" id="{{ g.id }}"  /> <!-- alt="{{ g.description }}"  -->
-    <div class="transparent-box">
-      <div class="caption" onclick="openImage('{{g.id}}')">
-        <!-- <p>{{ g.description }}</p> -->
-      </div>
-    </div>
-  </div>
-  {% endfor %}
-<a class="btn btn-bg float-right" href="{{'/gallery' | relative_url }}">More</a>
-<br>
-
-<script src="../assets/scripts.js"></script>
 
 
 
