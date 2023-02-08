@@ -174,7 +174,7 @@ permalink: /about/
 <div class="gallery-image" >
   {% for g in site.data.gallery reversed limit:6 %}
   <div class="img-box image-border" onclick="openImage('{{g.id}}')">
-    <img src="{{ g.url }}" alt="" id="{{ g.id }}"  /> <!-- alt="{{ g.description }}"  -->
+    <img src="{{g.url}}" alt="" id="{{ g.id }}"  /> <!-- alt="{{ g.description }}"  -->
     <div class="transparent-box">
       <div class="caption" onclick="openImage('{{g.id}}')">
         <!-- <p>{{ g.description }}</p> -->
