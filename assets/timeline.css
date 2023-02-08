@@ -63,14 +63,14 @@
   }
 
   .timeline li {
-    padding: 2em 0;
+    padding: -2em 0;
   }
 
   .timeline .hexa {
     width: 16px;
     height: 10px;
     position: absolute;
-    background: #00c4f3;
+    background: #2f628d;
     z-index: 5;
     left: 0;
     right: 0;
@@ -81,7 +81,7 @@
   }
 
   .timeline .hexa:before {
-    border-bottom: 4px solid #00c4f3;
+    border-bottom: 4px solid #2f628d;
     border-left-width: 8px;
     border-right-width: 8px;
     top: -4px;
@@ -90,7 +90,7 @@
   .timeline .hexa:after {
     border-left-width: 8px;
     border-right-width: 8px;
-    border-top: 4px solid #00c4f3;
+    border-top: 4px solid #2f628d;
     bottom: -4px;
   }
 
@@ -115,6 +115,7 @@
     padding: 6px 10px;
     text-align: left;
     border-radius: 5px;
+    margin-top: 2em;
   }
 
   .direction-l .flag:after,
@@ -163,7 +164,7 @@
   }
 
   .time {
-    background: #00c4f3;
+    background: #2f628d;
     display: inline-block;
     padding: 8px;
   }
@@ -233,6 +234,8 @@
 
     .flag {
       font-size: 18px;
+      color: #2f628d;
+      margin-top: 2em;
     }
 
     .direction-l .flag:after {
@@ -273,7 +276,7 @@
     }
 
     .direction-r .desc {
-      margin: 1em 0 0 0.75em;
+      margin: 4em 0 0 0;
     }
   }
 

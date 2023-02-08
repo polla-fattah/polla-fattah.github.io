@@ -40,17 +40,7 @@ layout: default
         <div class="blog-card {% cycle '', 'alt' %}">
           <div class="meta">
             <div class="photo" style="background-image: url({{post.background}})"></div>
-            <ul class="details">
-              <li class="date">{{ post.date | date: '%B %d, %Y' }}</li>
-              <li class="time">{% include read_time.html content=post.content %}</li>
-              <li class="tags">
-                <ul>
-                  {% for cat in post.categories %}
-                  <li><a>{{cat}}</a></li>
-                  {% endfor %}
-                </ul>
-              </li>
-            </ul>
+ 
           </div>
           <div class="description">
             <h1>{{ post.title }}</h1>
