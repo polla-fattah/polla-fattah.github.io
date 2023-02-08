@@ -32,8 +32,8 @@ background: '/img/main/ai.jpg'
   }
   .card:hover {
     text-decoration: none;
-    transform: scale(1.05);
-    box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+    transform: scale(1.03);
+    box-shadow: 0 0 20px -10px rgba(0, 0, 0, 0.25);
   }
   .floating-image{
       position: relative;
@@ -82,7 +82,7 @@ background: '/img/main/ai.jpg'
       <div class="column">
         <a href="/academy" class="card">
           <span class="floating-image">
-              <img class="image-icon" src='/img/main/academic-icon.svg' width="150"/>
+              <img class="image-icon" src='/img/main/academic-icon.png' width="150"/>
           </span>
            <h4 class="icon-title">Academy</h4>
         </a>
@@ -97,132 +97,179 @@ background: '/img/main/ai.jpg'
         </a>
       </div>
       <div class="column">
-        <a href="/developer" class="card">
+        <a href="/organisations" class="card">
           <span class="floating-image">
-              <img class="image-icon" src='/img/main/skills-icon.png' width="150"/>
+              <img class="image-icon" src='/img/main/organizations-icon.png' width="150"/>
           </span>
-           <h4 class="icon-title">Development</h4>
+           <h4 class="icon-title">Organisations</h4>
         </a>
       </div>
     </div>
     
     <style>
-:root {
-  --var-padding: 0.6em;
-  --highlight: hsl(230, 38%, 46%);
-  --main-column-width: 25em;
-}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap");
 
-.mid {
-  position: relative;
-  padding-left: 0.5em;
-  max-width: 60em;
-  background: #acbbd7 100% linear-gradient(#6a696d 0%, #504949 50%, #acbbd7 50%, #acbbd7 100%);
-  background-image: url("/img/main/mid-background.jpg");
-  background-size: auto 10em;
-  background-repeat: repeat-x;
-  background-position: center top;
-}
-
-.mid nav {
-  width: 100%;
-  text-align: center;
+.cv-card {
   display: flex;
-  padding: 1em var(--var-padding);
-  grid-row: 1;
-  grid-column: 1;
-  background: #fff;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
-.mid main {
-  padding: var(--var-padding);
-  grid-row: 2;
-  grid-column: 1;
-  background: #fff;
+.cv-card .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 10px 0;
 }
-.mid main h1 {
-  width: 100%;
+
+.cv-card .container .card {
+  position: relative;
+  min-width: 270px;
+  height: 400px;
+  box-shadow:  5px 5px 5px rgba(0, 0, 0, 0.2),
+     -5px -5px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  margin: 0px 30px;
+  transition: 0.8s;
+}
+
+.cv-card .container .card:nth-child(1) .box .content a {
+  background: #4476ad;
+}
+
+.cv-card .container .card:nth-child(2) .box .content a {
+  background: #3f6ba9;
+}
+
+
+.cv-card .container .card .box {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.cv-card .container .card:nth-child(1) .box {
+  background: #2B5577;
+}
+.cv-card .container .card:nth-child(2) .box {
+  background: #315079;
+}
+.cv-card .container .card .box:hover {
+  transform: translateY(-5px);
+  background: #000000;
+}
+
+.cv-card .container .card .box:before {
+  content: "";
+  position: absolute; 
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.cv-card .container .card .box .content {
+  padding: 20px;
   text-align: center;
-  margin-top: 0;
-  font-weight: normal;
-}
-.mid main p {
-  width: 100%;
-  text-align: justify;
-}
-@media (min-width: 37.5em) {
-  :root {
-    --var-padding: 3em;
-  }
-
-  .mid {
-    display: grid;
-    margin: 3em auto;
-    grid-template-rows: 5em auto;
-    grid-template-columns: 1.4fr 1fr;
-    padding-left: 2em;
-    background-size: auto;
-    cursor: default;
-    color: white;
-    transition: 0.5s;
-  }
-  .mid::after {
-    position: absolute;
-    right: 1em;
-    left: 1em;
-    bottom: 0;
-    z-index: -1;
-    width: 95%;
-    height: 200px;
-    content: "";
-    box-shadow: 0 0 1em #4f787d;
-
-  }
-  .mid:hover{
-    box-shadow: 0.4em 0.4em 2em #4f787d;
-  }
-  .mid:hover a{
-    background-color: rgba(47, 148, 139, 0.708);
-  }  
-
-  .mid:hover main{
-    background-color: rgba(49, 125, 135, 0.721);
-  }
-  .mid nav {
-    background-color: rgba(254, 254, 254, 0);
-    justify-content: space-between;
-  }
-  .mid main {
-    min-width: var(--main-column-width);
-    background-color: rgba(66, 86, 190, 0.566);
-    transition: 0.7s;
-
-  }
-
-  .mid main a {
-    color: white;
-    transition: 0.7s;
-    padding: 5px 10px;
-    background-color: rgba(0, 0, 139, 0.251);
-
-  }
-  .mid main nav a:hover{
-    text-decoration: none;
-    background-color: rgba(0, 0, 139, 0.29);
-  }
 }
 
+.cv-card .container .card .box .content h2 {
+  position: absolute;
+  top: -10px;
+  right: 30px;
+  font-size: 8rem;
+  color: rgba(255, 255, 255, 0.1);
+}
+
+.cv-card .container .card .box .content h3 {
+  font-size: 1.8rem;
+  color: #fff;
+  z-index: 1;
+  transition: 0.5s;
+  margin-bottom: 5px;
+  margin-top: 95px;
+}
+
+.cv-card .container .card .box .content p {
+  font-size: 1rem;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.9);
+  z-index: 1;
+  transition: 0.5s;
+}
+
+.cv-card .container .card .box .content a {
+  position: relative;
+  display: inline-block;
+  padding: 8px 20px;
+  background: black;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  margin-top: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+}
+.cv-card .container .card .box .content a:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+  background: #fff;
+  color: #000;
+}
+
+.section-heading {
+    font-size: 36px;
+    font-weight: 700;
+    margin-top: 20px;
+    text-align: center;
+}
     </style>
 
-<div class="mid">
+<h1 class="section-heading">Official CVs</h1>
+<p style="text-align: justify; text-justify: inter-word;"> 
+  I have had the opportunity to develop skills in both the academic and business sectors, which has led me to create two separate Curriculum Vitae. 
+  The first CV highlights my academic background, including my education, research, and teaching experiences.
+  The second CV showcases my experiences and abilities in the business field, including relevant career projects and skills. 
+</p>
 
-  <main>
-    <h1>Official CVs</h1>
-    <p>I have two parallel career skills in academy and bushiness, this is why I see it more fit to have two versions of my CV. 
-      One of them is focussed on the business careerprojects and skills. While the other is more focussed on the academic life career and its details.</p>
-  <nav>
-    <a href="/business/cv/">Business&nbsp;CV</a> &nbsp; 
-    <a href="/academy/cv/">Academic&nbsp;CV</a>
-  </nav>
-</main>
+<div class="cv-card">
+  <div class="container">
+    <div class="card">
+      <div class="box">
+        <div class="content">
+          <h2>CV</h2>
+          <h3>Academic</h3>
+          <p>My achivements in the academic arena</p>
+          <a href="/academy/cv/">Open</a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="box">
+        <div class="content">
+          <h2>CV</h2>
+          <h3>Bisuness</h3>
+          <p>My accomplishments in the business world</p>
+          <a href="/business/cv/">Open</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </div>
