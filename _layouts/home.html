@@ -1,0 +1,74 @@
+---
+layout: default
+---
+
+<!-- Page Header -->
+
+{% if page.background %}
+<!--
+  This was giving header background to the pages I dismissed it for a more modern style attempt
+style="background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')"
+-->
+<header class="masthead" > 
+  {% else %}
+  <header class="masthead">
+    {% endif %}
+    <div class="overlay">
+    </div>
+    <div class="container">
+      
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          
+          <div class="page-heading">
+            <h1>{{ site.title }}</h1>
+            {% if site.description %}
+            <span class="subheading">{{ site.description }}</span>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+
+        {{ content }}
+
+        <!-- Home Post List -->
+        <h2 class="section-heading" style="text-align: center;">Recent Posts</h2>
+        <link rel="stylesheet" type="text/css" href="/assets/post-card.css" />
+
+        {% for post in site.posts limit : 3 %}
+
+        <div class="blog-card {% cycle '', 'alt' %}">
+          <div class="meta">
+            <div class="photo" style="background-image: url({{post.background}})"></div>
+ 
+          </div>
+          <div class="description">
+            <h1>{{ post.title }}</h1>
+            <h2>
+              {% if post.subtitle %}
+                {{ post.subtitle }}
+              {% endif %}
+            </h2>
+            <p> {{ post.excerpt }}</p>
+            <p class="read-more">
+              <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}#">Read&nbsp;More</a>
+            </p>
+          </div>
+        </div>
+        {% endfor %}
+
+        <!-- Pager -->
+        <div class="clearfix">
+          <a class="btn btn-bg float-right" href="{{"/posts" | relative_url }}">View All Posts 🡺</a>
+        </div>
+
+      </div>
+    </div>
+
+  </div>

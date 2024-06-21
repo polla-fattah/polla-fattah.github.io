@@ -1,0 +1,60 @@
+---
+layout: default
+---
+
+<!-- Page Header -->
+{% if page.background %}
+<!--
+  This was giving header background to the pages I dismissed it for a more modern style attempt
+style="background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')"
+-->
+<header class="masthead">
+  {% else %}
+  <header class="masthead">
+    {% endif %}
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>{{ page.title }}</h1>
+            {% if page.subtitle %}
+            <h2 class="subheading">{{ page.subtitle }}</h2>
+            {% endif %}
+            <span class="meta">
+              Working on from on {{ page.date | date: '%B %d, %Y' }} &middot; 
+              {% if page.end_date %} {{ page.date | date: '%B %d, %Y' }} &middot; {% endif %} 
+              {% include read_time.html content=page.content %}
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+
+        {{ content }}
+        <br/>
+        <a href="/" style="display:block; text-align: right;">Polla Fattah</a>
+        <hr>
+
+        <div class="clearfix" style="display:flex; justify-content:space-evenly">
+
+          {% if page.previous.url %}
+          <a class="btn btn-sm" style="flex-grow: 1;" href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{ page.previous.title }}">&laquo;Previous<span class="d-none d-md-inline"></span></a>
+          {% endif %}
+
+          <a class="btn btn-sm" style="flex-grow: 1;" href="/academy/researches">Researches</a>
+
+          {% if page.next.url %}
+          <a class="btn btn-sm" style="flex-grow: 1;" href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{ page.next.title }}">Next&raquo;<span class="d-none d-md-inline"></span></a>
+          {% endif %}
+
+        </div>
+
+      </div>
+    </div>
+  </div>

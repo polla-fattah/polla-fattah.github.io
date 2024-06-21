@@ -1,0 +1,25 @@
+---
+layout: page
+title: Researches
+background: '/img/bg-index.jpg'
+permalink: /academy/researches/
+---
+
+{% for research in site.researches %}
+
+<article class="research-preview">
+  <a href="{{ research.url | prepend: site.baseurl | replace: '//', '/' }}">
+    <h2 class="research-title">{{ research.title }}</h2>
+    {% if research.subtitle %}
+    <h3 class="research-subtitle">{{ research.subtitle }}</h3>
+    {% else %}
+    <h3 class="research-subtitle">{{ research.excerpt | strip_html | truncatewords: 15 }}</h3>
+    {% endif %}
+  </a>
+  <p class="research-meta">
+    Completed at {{ research.date | date: '%B %d, %Y' }}
+  </p>
+</article>
+
+
+{% endfor %}

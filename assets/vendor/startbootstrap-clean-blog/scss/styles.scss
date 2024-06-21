@@ -1,0 +1,23 @@
+// Import variables
+@import "./variables";
+
+// Import Bootstrap
+@import "../../bootstrap/scss/bootstrap";
+
+// Global CSS
+@import "./global";
+
+// Components
+@import "./components/buttons";
+@import "./components/navbar";
+
+// Sections
+@import "./sections/contact";
+@import "./sections/footer";
+@import "./sections/masthead";
+@import "./sections/post";
+@import "./sections/project";
+@import "./sections/research";
+@import "./sections/publication";
+@import "./sections/lecture";
+@import "./sections/education";

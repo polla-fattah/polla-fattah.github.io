@@ -1,0 +1,38 @@
+{
+    "version": "0.2",
+    "ignorePaths": [],
+    "dictionaryDefinitions": [],
+    "dictionaries": [],
+    "words": [
+        "Angulo",
+        "Bilal",
+        "Català",
+        "endcapture",
+        "Hamarash",
+        "Ibrahim",
+        "Karim",
+        "Meira",
+        "Narmin",
+        "Nsar",
+        "Núñez",
+        "Optimisation",
+        "pollafattah",
+        "Shawbo",
+        "tarik",
+        "thecycle",
+        "usemathjax",
+        "webp",
+        "Zaki"
+    ],
+    "ignoreWords": [
+        "Abdulhamid",
+        "Campusc",
+        "FSPD",
+        "Samira",
+        "Tamooz",
+        "endfor",
+        "imdb",
+        "lichess"
+    ],
+    "import": []
+}

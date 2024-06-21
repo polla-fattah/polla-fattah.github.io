@@ -1,0 +1,124 @@
+---
+layout: page
+title: Academic CV
+background: '/img/main/academic-cv-bg.jpg'
+permalink: /academy/cv/
+
+---
+
+<style type="text/css">
+    #page-wrap { width: 100%; margin: 40px auto 60px; }
+    .cvh1 { 
+        margin: 20px 0 15px 0; 
+        font-size: 1.5em; 
+        font-weight: 600; 
+        border-bottom: 1px solid #999; 
+        color: #006699;
+    }
+    h2 { font-size: 20px; margin: 0 0 6px 0; position: relative; }
+    h2 span { position: absolute; bottom: 0; right: 0; font-style: italic; font-family: Georgia, Serif; font-size: 16px; color: #999; font-weight: normal; }
+    .element { 
+        margin: 0 0 14px 0; 
+        font-size: 1.1em;
+        font-weight: normal;
+        padding: 0 0 0.5em 0.7em;
+    }
+    .element strong{
+        color: #24a49d;
+    }
+    ul { margin: 0 0 32px 17px; }
+
+    @media print{
+      body{ 
+        background-color:#FFFFFF; 
+        background-image:none; 
+        color:#000000;
+        padding: 30px;
+
+    }
+    header, footer{ 
+        display: none;
+    }
+      #ad{ display:none;}
+      #contentarea{ width:100%;}
+    }
+    .fn{
+        color: #006699;
+    }
+ </style>
+<div id="page-wrap">
+    <div id="contact-info" class="vcard">    
+        <h1 class="fn">Dr. Polla Fattah</h1>
+        <p>
+            Phone: <span class="tel">+964 (0)750 446 3750</span><br />
+            Email: <a class="email" href="mailto:polla.fattah@su.edu.krd">polla.fattah@su.edu.krd</a>
+        </p>
+    </div>
+    <p class="element" style="text-align: justify;width: 100%;">
+        I am working in the field of AI, ML, Deep Learning and Data Mining. 
+        I strive to harness the power of computation to further advance our understanding of the nature of thinking and processing information. 
+        Furthermore, I am trying to develop algorithms that solve hard problems of automating and extracting information from data. 
+        My goal is to use these researches to further develop my society and our understanding for the science and its implications.
+    </p>
+        
+        <h1 class="cvh1">Education</h1>
+        {% for e in site.educations reversed %}
+        <div class='element'>
+            <h2>{{e.title}}</h2>
+            <strong>{{e.final_work_label}}:</strong> {{e.final_work}}<br />
+            <strong>Awarding Body:</strong> {{e.establishment}}, {{e.awarding_body}}.<br />
+            <strong>Study Years:</strong> {{e.start_date | date: '%Y'}}-{{e.end_date | date: '%Y'}}.
+        </div>
+        {% endfor %}
+        
+
+        
+        <h1 class="cvh1">Teaching</h1>
+        {% for e in site.lectures reversed %}        
+        <div class='element cv-normal' style='text-indent: -50px; margin-left: 60px'>
+            <strong>{{e.title}}({{e.year}}): </strong> 
+            {{ e.university }}, {{ e.department }}
+        </div>
+        {% endfor %}
+
+
+        <h1 class="cvh1">Honours & Awards</h1>
+        {% for e in site.awards reversed %}        
+
+        <div class='element cv-normal' style='text-indent: -50px; margin-left: 60px'>
+            <strong>{{e.date | date: '%Y'}}: </strong>
+            {{ e.subtitle }}
+        </div>
+        {% endfor %}
+
+
+        <h1 class="cvh1">Publications</h1>
+            {% for e in site.publications reversed %}        
+            <div class='element' style='text-indent: -50px; margin-left: 60px'>
+                <strong>{{ e.authors}}; </strong>
+                `{{ e.title }}`;
+                {% if e.publisher != "" %} {{ e.publisher}}; {% endif %}
+                {% if e.page != "" %}  {{ e.page}}; {% endif %}
+                <em>{{e.date | date: '%Y-%m-%d'}}</em>
+            </div>
+            {% endfor %}
+        
+        <h1 class="cvh1">Academic Jobs</h1>
+            {% for e in site.jobs reversed %}
+            {% if e.category == "academy" %}
+            <div class='element' style='text-indent: -50px; margin-left: 60px'>
+                <strong>{{e.start_date}}-{{e.end_date}}: </strong>
+                {{ e.title }} at {{ e.organization }}
+            </div>
+            {% endif %}
+            {% endfor %}
+
+        <h1 class="cvh1">Academic Experiences</h1>
+
+            {% for e in site.data.academicExp reversed %}        
+            <div class='element' style='text-indent: -80px; margin-left: 90px'>
+                <strong>{{e.label}}: </strong>
+                {{ e.explanation }}
+            </div>
+            {% endfor %}
+</div>

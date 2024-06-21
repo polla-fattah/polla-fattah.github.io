@@ -1,0 +1,46 @@
+---
+layout: page
+title: Posts
+background: '/img/main/posts-bg.png'
+---
+<link rel="stylesheet" type="text/css" href="/assets/post-card.css" />
+
+
+{% for post in paginator.posts %}
+<article class="blog-card {% cycle '', 'alt' %}">
+  <div class="meta">
+    <div class="photo" style="background-image: url({{post.background}})"></div>
+  </div>
+  <div class="description">
+    <h1>{{ post.title }}</h1>
+    <h2>
+      {% if post.subtitle %}
+        {{ post.subtitle }}
+      {% endif %}
+    </h2>
+    <p> {{ post.excerpt }}</p>
+    <p class="read-more">
+      <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}#">Read&nbsp;More</a>
+    </p>
+  </div>
+</article>
+{% endfor %}
+
+
+<!-- Pager -->
+{% if paginator.total_pages > 1 %}
+
+<div class="clearfix">
+
+  {% if paginator.previous_page %}
+  <a class="btn btn-bg float-left" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"> 🢀
+    Newer<span class="d-none d-md-inline"> Posts</span></a>
+  {% endif %}
+
+  {% if paginator.next_page %}
+  <a class="btn btn-bg float-right" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older<span class="d-none d-md-inline"> Posts</span> 🡺</a>
+  {% endif %}
+
+</div>
+
+{% endif %}

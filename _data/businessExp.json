@@ -1,0 +1,33 @@
+[
+    {
+        "label": "Programming Languages",
+        "explanation": "programming in general was my passion and hobby before I choose software development as my job and still it is my primary drive to accept new challenges in my career."
+
+    },
+    {
+        "label": "Data Mining",
+        "explanation": "I have picked up data mining and analysis from my academic work and used in business world for analyzing clients data."
+
+    },
+    {
+        "label": "Mobile Applications",
+        "explanation": "I have created few mobile applications using various programming languages and frameworks."
+
+    },    
+    {
+        "label": "Web Based Applications",
+        "explanation": "Due to the nature of web the development of web based systems enabled me to create systems that is accessible and usable by a wide range users and devices."
+    },
+    {
+        "label": "Database Systems",
+        "explanation": "Most of the software projects require a database system this is why I have learned to mastery degree multiple DBMSs."
+    },
+    {
+        "label": "Software Design",
+        "explanation": "Software design is one of the most interesting activities in software projects as it enables us to be creative and solve problems efficiently."
+    },
+    {
+        "label": "Project Management",
+        "explanation": "I have successfully managed multiple projects with various number of employees/developers. I tend to use Agile project management in general."
+    }
+]

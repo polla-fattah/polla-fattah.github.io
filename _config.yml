@@ -1,0 +1,46 @@
+title: Polla Fattah
+email: polla.fattah@gmail.com
+description: 
+author: Polla Fattah
+baseurl: ""
+url: "https://polla-fattah.github.io"
+
+# Social Profiles
+twitter_username: FattahPolla
+github_username: polla-fattah
+facebook_username: pollafattah
+instagram_username:
+linkedin_username: polla-fattah-57617b23
+researchgate_username: Polla-Fattah
+
+# Build settings
+markdown: kramdown
+paginate: 10
+paginate_path: "/posts/page:num/"
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-sitemap
+
+collections:
+  awards:
+    output: true
+    permalink: /academy/award/:path/
+  projects:
+    output: true
+    permalink: /business/project/:path/
+  researches:
+    output: true
+    permalink: /academy/research/:path/
+  publications:
+    output: true
+    permalink: /academy/publication/:path/
+  lectures:
+    output: true
+    permalink: /academy/lecture/:path/
+  educations:
+    output: true
+    permalink: /academy/education/:path/
+  jobs:
+    output: true
+    permalink: /job/:path

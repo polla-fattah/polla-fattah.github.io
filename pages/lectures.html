@@ -1,0 +1,36 @@
+---
+layout: page
+title: Lectures
+background: '/img/lecture/background.jpg'
+permalink: /academy/lectures/
+---
+
+<p>
+The following list of courses is what I have lectureed in my academic career. Most of the lectures 
+are originated from my love and pation to teach a subject. While some of them are just handed over to me due to necessity.
+I have the privlage to lecture in many universities as a visiting lectures and also in my home university.
+The list of Universities that I have lectured in are:
+</p>
+<ul>
+  <li> <a href="https://su.edu.krd/" target="su">My Home University, Salahaddin University-Erbil</a> </li>
+  <li> <a href="https://tiu.edu.iq/" target="tiu">Tishk University</a> </li>
+  <li> <a href="https://www.ukh.edu.krd/" target="ukh">University of Kurdistan Hewlêr</a> </li>
+  <li> <a href="https://koyauniversity.org/" target="su">Koya University</a> </li>
+</ul>
+{% for item in site.lectures reversed  %}
+<article class="post-preview">
+  <a href="{{ item.url | prepend: site.baseurl | replace: '//', '/' }}">
+    <h2 class="post-title">{{ item.title }}</h2>
+    {% if item.subtitle %}
+    <h3 class="post-subtitle">{{ item.subtitle }}</h3>
+    {% else %}
+    <h3 class="post-subtitle">{{ item.excerpt | strip_html | truncatewords: 15 }}</h3>
+    {% endif %}
+  </a>
+  <p class="post-meta">
+    Lectured at {{ item.university }} &middot; For the year {{ item.year }}
+  </p>
+</article> 
+
+
+{% endfor %}

@@ -1,0 +1,29 @@
+---
+layout: page
+title: Publications
+background: '/img/main/publications-bg.jpg'
+permalink: /academy/publications/
+
+---
+
+{% for publication in site.publications reversed %}
+
+<article class="publication-preview">
+  <a href="{{ publication.url | prepend: site.baseurl | replace: '//', '/' }}">
+
+    <h2 class="publication-title">
+      {{ publication.title }}
+
+      </span>
+    </h2>
+    {% if publication.authors %}
+    <h3 class="publication-subtitle">{{ publication.authors }}</h3>
+    {% endif %}
+  </a>
+  <p class="publication-meta">
+    Type: {{ publication.type }} &middot; Date: {{ publication.date | date: '%B %d, %Y'}}
+  </p>
+</article>
+<hr>
+
+{% endfor %}

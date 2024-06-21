@@ -1,0 +1,270 @@
+---
+layout: page-narrow
+title: My Contacts
+background: '/img/main/contact-bg.jpg'
+permalink: /contacts/
+---
+
+<style>
+
+
+  .leaderboard {
+     max-width: 490px;
+     width: 100%;
+     border-radius: 12px;
+  }
+   .leaderboard__profiles {
+     background-color: #fff;
+     border-radius: 0 0 12px 12px;
+     padding: 15px 15px 20px;
+     display: grid;
+     row-gap: 8px;
+  }
+   .leaderboard__profile {
+    text-decoration: none;
+     display: grid;
+     grid-template-columns: 1fr 3fr 1fr;
+     align-items: center;
+     padding: 10px 30px 10px 10px;
+     overflow: hidden;
+     border-radius: 10px;
+     box-shadow: 0 5px 7px -1px rgba(51, 51, 51, 0.23);
+     cursor: pointer;
+     transition: transform 0.25s cubic-bezier(0.7, 0.98, 0.86, 0.98), box-shadow 0.25s cubic-bezier(0.7, 0.98, 0.86, 0.98);
+     background-color: #fff;
+  }
+   .leaderboard__profile:hover {
+    text-decoration: none;
+     transform: scale(1.007);
+     box-shadow: 0 7px 9px 3px rgba(51, 51, 51, 0.18);
+  }
+   .leaderboard__picture {
+     max-width: 100%;
+     width: 60px;
+     border-radius: 50%;
+     box-shadow: 0 0 0 10px #ebeef3, 0 0 0 22px #f3f4f6;
+  }
+   .leaderboard__name {
+     color: #979cb0;
+     font-weight: 600;
+     font-size: 20px;
+     letter-spacing: 0.64px;
+     margin-left: 12px;
+  }
+
+  .email-list {
+    margin: 0;
+    display: grid;
+    place-items: center;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+  
+
+  
+  </style>
+
+<div class="contact-header">Emails</div>
+<div class="email-list">
+  <a class="leaderboard">
+    <main class="leaderboard__profiles">
+      <a class="leaderboard__profile" href="mailto:polla.fattah@gmail.com" target="mail">
+        <img src="/img/main/personal-icon.png"  class="leaderboard__picture">
+        <span class="leaderboard__name">polla.fattah@gmail.com</span>
+      </a>
+      
+      <a class="leaderboard__profile" href="mailto:polla.fattah@su.edu.krd" target="mail">
+        <img src="/img/main/academic-icon.png"  class="leaderboard__picture">
+        <span class="leaderboard__name">polla.fattah@su.edu.krd</span>
+      </a>
+      
+      <a class="leaderboard__profile" href="mailto:polla.fattah@inforr.co.uk" target="mail">
+        <img src="/img/main/business-icon.png" class="leaderboard__picture">
+        <span class="leaderboard__name">polla.fattah@inforr.co.uk</span>
+      </a>
+    </main>
+  </div>
+</div>
+
+<!--<hr style="margin: 100px 20px 100px 20px;box-shadow: 0px 2px 5px 2px rgba(0,0,0,0.28);height: 1px; color: #000000; width: 100%;">-->
+
+
+
+
+<style>
+  .contact-header{
+    text-align: center;
+    display: block;
+    font-weight: 400;
+    font-size: 2.5em;
+    color: rgb(46, 72, 155);
+    width: 100%;
+    margin-bottom: 1em;
+  }
+  </style>
+  
+  
+  <style>
+  .my-middle{
+    width: 100%;
+    text-align: center;
+  }
+  .social-wrapper{
+    width: 100%;
+    padding: 150px 0px;
+    margin: 50px 0px;
+    box-shadow: 0px 3px 3px 3px rgba(139, 134, 134, 0.034);
+  }
+  
+  .my-btn{
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    background: #f1f1f1;
+    margin: 10px;
+    border-radius: 30%;
+    box-shadow: 0 5px 15px -5px #00000070;
+    color: #3498db;
+    overflow: hidden;
+    position: relative;
+  }
+  .my-btn i{
+    line-height: 90px;
+    font-size: 26px;
+    transition: 0.2s linear;
+  }
+  .my-btn:hover .svg-inline--fa{
+    transform: scale(1.1);
+    transition: 0.4s linear;
+    color: #f1f1f1;
+  }
+  .my-btn::before{
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background: #3498db;
+    transform: rotate(45deg);
+    left: -110%;
+    top: 90%;
+  }
+  .my-btn:hover::before{
+    animation: aaa 0.7s 1;
+    top: -10%;
+    left: -10%;
+  }
+  
+  .my-btn .svg-inline--fa {
+      display: inline-block;
+      font-size: 3rem;
+      height: 2em;
+      overflow: visible;
+      vertical-align: -.7em;
+  }
+  
+  @keyframes aaa {
+    0%{
+      left: -110%;
+      top: 90%;
+    }50%{
+      left: 10%;
+      top: -30%;
+    }100%{
+      top: -10%;
+      left: -10%;
+    }
+  }
+  </style>
+  <div class="social-wrapper">
+    <div class="contact-header">Social</div>
+  
+  <div class="my-middle">
+    <a class="my-btn" href="https://www.facebook.com/{{ site.facebook_username }}" target="facebook">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a class="my-btn" href="https://www.researchgate.net/profile/{{ site.researchgate_username }}" target="researchgate">
+      <i class="fab fa-researchgate"></i>
+    </a>
+    <a class="my-btn" href="https://github.com/{{ site.github_username }}" target="github">
+      <i class="fab fa-github"></i>
+    </a>
+    <a class="my-btn"href="https://twitter.com/{{ site.twitter_username }}" target="twitter">
+      <i class="fab fa-twitter"></i>
+    </a>
+    <a class="my-btn"  href="https://www.linkedin.com/in/{{ site.linkedin_username }}" target="linkedin">
+      <i class="fab fa-linkedin"></i>
+    </a>
+    <a class="my-btn" href="https://scholar.google.com/citations?user=z1VwmhsAAAAJ&hl=en" target="scholar">
+      <i class="fab fa-google"></i>
+    </a>
+  </div>
+  </div>
+  
+ 
+  <!--<hr style="margin: 100px 20px 100px 20px;box-shadow: 0px 2px 5px 2px rgba(0,0,0,0.28);height: 1px; color: #000000; width: 100%;">-->
+
+
+
+
+<style>
+  .address{
+    display: flex;
+    flex-wrap:wrap;
+    align-content: bottom;
+    width: 100%;
+  }
+  .gmap_iframe{
+    width: 100%;
+    height: 100%;
+    min-width: 300px;
+    max-width: 500px;
+
+    min-height: 300px;
+    max-height: 500px;
+  }
+  .address-written{
+    flex-grow: 1;
+  }
+  .map-wrap{
+    flex-grow: 1;
+
+  }
+</style>
+<div style="width: 100%">
+
+  <div class="contact-header">Address</div>
+<div class="address">
+
+  <div class="address-written">
+    <ul>
+      <li style="list-style: none;">
+          <i class="fas fa-map-marker"></i>
+          <span class="address-label">Software&nbsp;Engineerign</span>
+      </li>
+      <li style="list-style: none;">
+          <i class="fas fa-university"></i>
+          <span class="address-label">Engineering&nbsp;College</span>
+      </li>
+      <li style="list-style: none;">
+          <i class="fas fa-university"></i>
+          <span class="address-label">Salahaddin&nbsp;University-Erbil</span>
+      </li>
+      <li style="list-style: none;">
+          <i class="fas fa-road"></i>
+          <span class="address-label">Kurkuk&nbsp;Road</span>
+      </li>
+      <li style="list-style: none;">
+          <i class="fas fa-city"></i>
+          <span class="address-label">Erbil</span>
+      </li>
+      <li style="list-style: none;">
+          <i class="fas fa-map"></i>
+          <span class="address-label">Iraq</span>
+      </li>
+    </ul>
+  </div> 
+
+  <div class="map-wrap">
+    <iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3221.9515932666627!2d44.02126981512501!3d36.14339188008909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40073b4b050d6863%3A0xaf1bbf2f201d2aea!2sSoftware%20and%20Informatics%20Engineering!5e0!3m2!1sen!2siq!4v1641087102194!5m2!1sen!2siq&amp;output=embed"></iframe>
+  </div>
+</div>
+</div>

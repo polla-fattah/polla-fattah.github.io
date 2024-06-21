@@ -1,0 +1,474 @@
+---
+layout: page
+title: Business
+background: '/img/main/business-bg.jpeg'
+permalink: /business/
+
+---
+
+<style type="text/css">
+    .main_heading1 {
+      margin: 50px 0px 0px 0px;
+      font-size: 45px;
+      font-weight: 600;
+      text-align: center;
+      color: #777;
+    }
+  </style>
+  <div class="main_heading1">Business</div>
+
+
+
+<style>
+    .headers {
+        text-align: center;
+        display: block;
+        font-weight: 400;
+        font-size: 2.5em;
+        color: #19566a;
+        width: 100%;
+        margin: 1em 0px;
+    }
+
+    .headers:hover {
+        text-decoration: none;
+    }
+</style>
+
+
+
+<style>
+    .half-half-image-text {
+        padding: 70px 0px;
+    }
+
+    .half-half-image-text .content {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding: 35px 0px;
+
+    }
+
+    .half-half-image-text .content p {
+        font-size: 22px;
+    }
+
+    .half-half-image-text .img {
+        min-height: 450px;
+        height: 50%;
+        border-radius: 10px;
+    }
+
+    .content li {
+        margin: 1px;
+        padding: 2px;
+        font-size: 1.1em;
+        font-weight: 600;
+    }
+
+    .content li i {
+        margin: 1px;
+        padding: 2px;
+        font-size: 1em;
+        font-weight: 400;
+
+    }
+</style>
+
+
+<div class="half-half-image-text">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="headers">Technical Experiences</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-lg-8">
+                <div class="content">
+                    <p>
+                    <ul>
+                        {% for e in site.data.businessExp reversed %}
+                        <li>{{ e.label }}:<i> {{ e.explanation}} </i></li>
+                        {% endfor %}
+
+                    </ul>
+                    </p>
+
+                </div>
+            </div>
+            <div class="col-12 col-lg-4">
+                <div class="img">
+                    <img src="/img/business/standing.png">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+    :root {
+        --red: hsl(0, 78%, 62%);
+        --cyan: hsl(180, 62%, 55%);
+        --orange: hsl(34, 97%, 64%);
+        --blue: hsl(212, 86%, 64%);
+        --varyDarkBlue: hsl(234, 12%, 34%);
+        --grayishBlue: hsl(229, 6%, 66%);
+        --weight2: 400;
+        --weight3: 600;
+    }
+
+    .strange-cards {
+        font-size: 15px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .strange-cards .attribution {
+        font-size: 11px;
+        text-align: center;
+    }
+
+    .strange-cards .attribution a {
+        color: hsl(228, 45%, 44%);
+    }
+
+
+    @media (max-width: 400px) {
+        .strange-cards h1 {
+            font-size: 1.5rem;
+        }
+    }
+
+    .strange-cards .header {
+        text-align: left;
+        line-height: 0.8;
+        margin-bottom: 50px;
+        margin-top: 70px;
+        padding-left: 20px;
+    }
+
+    .strange-cards .header p {
+        margin: 0 auto;
+        line-height: 2;
+        color: var(--grayishBlue);
+    }
+
+
+    .strange-cards .box p {
+        color: var(--grayishBlue);
+    }
+
+    .strange-cards .box {
+        display: block;
+        border-radius: 5px;
+        box-shadow: 0px 30px 40px -20px var(--grayishBlue);
+        padding: 30px;
+        margin: 20px;
+    }
+
+    .strange-cards img {
+        float: right;
+    }
+
+
+
+    @media (max-width: 950px) {
+        .strange-cards .box {
+            text-align: center;
+            height: 220px;
+        }
+
+        .strange-cards .box p {
+            margin-bottom: 10px;
+        }
+    }
+
+    .strange-cards .cyan {
+        border-top: 3px solid var(--cyan);
+    }
+
+    .strange-cards .red {
+        border-top: 3px solid var(--red);
+    }
+
+    .strange-cards .blue {
+        border-top: 3px solid var(--blue);
+    }
+
+    .strange-cards .orange {
+        border-top: 3px solid var(--orange);
+    }
+
+    .strange-cards h2 {
+        color: var(--varyDarkBlue);
+        font-weight: var(--weight3);
+    }
+
+
+    @media (min-width: 950px) {
+        .strange-cards .row1-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .strange-cards .row2-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .strange-cards .box-down {
+            position: relative;
+            top: 150px;
+        }
+
+        .strange-cards .box {
+            width: 30%;
+
+        }
+
+        .strange-cards .box:hover {
+            text-decoration: none;
+
+        }
+
+        .strange-cards .header p {
+            width: 30%;
+        }
+
+    }
+</style>
+
+<div class="strange-cards">
+    <a class="headers" href="/business/projects">Projects</a>
+    <div class="row1-container">
+        <a class="box box-down cyan" href="/business/project/2013-12-01-measure-behaviour-changes/">
+            <h2>Behavior Analysis</h2>
+            <p>Measuring Behavior Changes of the players of public goods game</p>
+            <img src="/img/business/icon-supervisor.svg" alt="">
+        </a>
+
+        <a class="box red" href="/business/project/2014-10-01-salahaddin-uni-website/">
+            <h2>SUE's WebSite</h2>
+            <p>Design and implement Salahaddin University-Erbil website.</p>
+            <img src="/img/business/icon-team-builder.svg" alt="">
+        </a>
+
+        <a class="box box-down blue" href="/business/project/2020-07-01-Notary-System/">
+            <h2>Notary System</h2>
+            <p>Supervise the Quality of Services of the Notary system of the KRG</p>
+            <img src="/img/business/icon-calculator.svg" alt="">
+        </a>
+    </div>
+    <div class="row2-container">
+        <a class="box orange" href="/business/project/2016-08-01-AI-playing-Dots-and-Boxes-Game/">
+            <h2>AI Player</h2>
+            <p>AI Performance measurement in playing dots and boxes game.</p>
+            <img src="/img/business/icon-karma.svg" alt="">
+        </a>
+    </div>
+    <div class="clearfix">
+        <a class="btn btn-bg float-right" href="{{"/business/projects" | relative_url }}">All Projects 🡺</a>
+    </div>
+</div>
+
+
+<style>
+    .container1 {
+        width: 100%;
+    }
+
+    .record {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-flow: wrap;
+    }
+
+    .container1 .card {
+        width: 70px;
+        border: 0px;
+        margin: 15px 20px;
+        transition: 0.3s;
+    }
+
+    .container1 .card:hover {
+        transform: scale(1.05);
+    }
+</style>
+
+
+
+<div>
+    <a class="headers" href="/developer">Development Skills</a>
+    <p style="padding: 20px; width: 100%; text-align: center;">
+        Through the years I have picked up quite a few tools that helped me in my career. The tools rage from
+        communication, management, design and version control.
+        I have also enjoyed using multiple programming languages for various purposes and used the best fit
+        language/paradigm for the task.
+    </p>
+    <div class="container1">
+        <div class="record">
+            {% for skillSet in site.data.developerSkills %}
+
+            <a href="{{ skillSet.skills.first.link }}" target="{{skillSet.skills.first.name}}" class="card">
+                {{ skillSet.skills.first.icon }}
+            </a>
+
+            {% endfor %}
+        </div>
+    </div>
+    <div class="clearfix">
+        <a class="btn btn-bg float-right" href="{{"/developer/" | relative_url }}">More Tools 🡺</a>
+    </div>
+</div>
+
+
+<style>
+    .leaderboard {
+        max-width: 490px;
+        width: 100%;
+        border-radius: 12px;
+    }
+
+    .leaderboard__profiles {
+        background-color: #fff;
+        border-radius: 0 0 12px 12px;
+        padding: 15px 0px 15px 20px;
+        display: grid;
+        row-gap: 8px;
+        width: 100%;
+    }
+
+    .leaderboard__profile {
+        text-decoration: none;
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+        align-items: center;
+        padding: 10px 30px 10px 10px;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0 2px 2px 1px rgba(51, 51, 51, 0.18);
+
+        cursor: pointer;
+        transition: transform 0.25s cubic-bezier(0.7, 0.98, 0.86, 0.98), box-shadow 0.25s cubic-bezier(0.7, 0.98, 0.86, 0.98);
+        background-color: #fff;
+    }
+
+    .leaderboard__profile:hover {
+        text-decoration: none;
+        box-shadow: 0 5px 7px -1px rgba(51, 51, 51, 0.23);
+        transform: translateX(25px);
+    }
+
+    .leaderboard__picture {
+        max-width: 100%;
+        width: 60px;
+        border-radius: 50%;
+        box-shadow: 0 0 0 10px #ebeef3, 0 0 0 22px #f3f4f6;
+    }
+
+    .leaderboard__name {
+        color: #979cb0;
+        font-weight: 600;
+        font-size: 1.2rem;
+        letter-spacing: 0.64px;
+        margin-left: 12px;
+    }
+
+    .Jobs-list {
+        margin: 0;
+        display: grid;
+        place-items: center;
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+
+    @media (max-width: 650px) {
+        .leaderboard__name {
+            font-size: 0.8rem;
+            width: 100%;
+            padding-left: 20px;
+        }
+
+        .leaderboard__profile {
+            width: 100%;
+        }
+    }
+</style>
+
+<a class="headers" href="/jobs?category=business">Jobs</a>
+<div class="Jobs-list">
+    <a class="leaderboard">
+        <main class="leaderboard__profiles">
+
+
+            <a class="leaderboard__profile" href="/job/chief-software-engineer">
+                <img src="/img/main/color-a.png" class="leaderboard__picture">
+                <span class="leaderboard__name">Chief Software Engineer at SmartGate Company</span>
+            </a>
+
+            <a class="leaderboard__profile" href="/job/software-consultant">
+                <img src="/img/main/color-b.png" class="leaderboard__picture">
+                <span class="leaderboard__name">Consultant at InfoRR Company</span>
+            </a>
+
+            <a class="leaderboard__profile" href="/job/leading-developer">
+                <img src="/img/main/color-c.png" class="leaderboard__picture">
+                <span class="leaderboard__name">Leading Developer at Salahaddin University</span>
+            </a>
+        </main>
+</div>
+<div class="clearfix">
+    <a class="btn btn-bg float-right" href="{{"/jobs/?category=business" | relative_url }}">Previous Jobs 🡺</a>
+</div>
+
+
+
+<div>
+    <a href="/business/cv/" class="headers">Official CV</a>
+    <p style="padding: 20px; width: 100%; text-align: center;">
+        I have had the opportunity to develop skills in both the academic and business sectors, which has led me to
+        create two separate Curriculum Vitae.
+        <a href="/business/cv/">This CV</a> showcases my experiences and abilities in the business field, including relevant career projects
+        and skills.
+    </p>
+</div>
+</div>
+
+

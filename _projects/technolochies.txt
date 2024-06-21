@@ -1,0 +1,58 @@
+technologies:
+  - fa: true
+    icon: "fab fa-java"
+    name: "Java"
+  - fa: true
+    icon: "far fa-file-alt"
+    name: "File based database"
+  - fa: true
+    icon: "fas fa-project-diagram"
+    name: "Diagram"
+  - fa: true
+    icon: "fas fa-network-wired"
+    name: "Networking"
+  - fa: true
+    icon: "fab fa-js-square"
+    name: "JavaScript"
+  - fa: true
+    icon: "far fa-file-alt"
+    name: "Text File"
+  - fa: true
+    icon: "fas fas fa-terminal"
+    name: "Bash Script"
+  - fa: true
+    icon: "fas fa-database"
+    name: "MySql"
+  - fa: true
+    icon: "fab fa-php"
+    name: "PHP"
+  - fa: true
+    icon: "fas fa-server"
+    name: "Server"
+  - fa: true
+    icon: "fas fa-code"
+    name: "HTML Code"
+  - fa: true
+    icon: "fab fa-css3-alt"
+    name: "CSS"
+  - fa: true
+    icon: "fab fa-vuejs"
+    name: "VueJs"
+  - fa: true
+    icon: "far fa-file-alt"
+    name: "File based database"
+  - fa: true
+    icon: "fas fa-network-wired"
+    name: "Networking"
+  - fa: true
+    icon: "fas fa-project-diagram"
+    name: "ER Diagrams"
+  - fa: true
+    icon: "fab fa-wikipedia-w"
+    name: "Wikimedia"
+  - fa: true
+    icon: "fab fa-wordpress-simple"
+    name: "Wordpress"
+  - fa: true
+    icon: "fab fa-linux"
+    name: "Linux"

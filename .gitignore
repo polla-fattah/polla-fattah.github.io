@@ -1,0 +1,10 @@
+_site
+.sass-cache
+node_modules
+Gemfile.lock
+*.gem
+.jekyll-cache
+.jekyll-cache/*
+.jekyll-cache/Jekyll/Cache
+.jekyll-cache/Jekyll/Cache/*
+Cache/

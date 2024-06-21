@@ -1,0 +1,119 @@
+---
+layout: page-narrow
+title: Development Skills
+background: '/img/main/developer-bg.jpg'
+permalink: /developer/
+
+---
+
+
+<style>
+.skillHeaders{
+ font-size: 2rem;
+ font-weight: bold;
+ margin-bottom: 1rem;
+ margin-top: 3rem;
+ color:#216275;
+}
+.skillName{
+ font-size: 1.3rem;
+ font-weight: normal;
+ color:#71969c;
+ transition: 0.2s;
+}
+
+.container1 {
+ width: 100%;
+}
+
+.row {
+ display: flex;
+ flex-direction: row;
+ justify-content: space-around;
+ flex-flow: wrap;
+}
+
+.card {
+ width: 70px;
+ border: 0px ;
+ margin: 15px 20px;
+ transition: 0.3s;
+}
+
+
+.card:hover {
+ transform: scale(1.05);
+}
+
+@media screen and (max-width: 620px) {
+ .container1 {
+ width: 100%;
+ }
+ .heading {
+ padding: 10px;
+ font-size: 1.2rem;
+ }
+ .skillHeaders{
+  font-size: 1.2rem;
+ }
+ .skillName{
+  font-size: 0.6rem;
+ }
+}
+
+</style>
+
+{% for skillSet in site.data.developerSkills %}
+  <h1 class="skillHeaders">{{ skillSet.skillHead }}
+    <span id="{{skillSet.id}}" class="skillName"></span>
+  </h1>
+  <div class="container1">
+    <div class="row">
+    {% for skill in skillSet.skills %}
+    <a href="{{ skill.link }}" target="{{skill.name}}" class="card" onmouseover="displayText('{{skillSet.id}}', '{{skill.name}}')" onmouseout="displayText('{{skillSet.id}}')">
+      {{ skill.icon }}
+    </a>
+    {% endfor %}
+    </div>
+    {% unless forloop.last %}
+    {% endunless %}
+  </div>
+  
+{% endfor %}
+
+
+ <script>
+  let nIntervId;
+  let index = 0;
+  let cursor = "_";
+  let intervalChanged = false;
+  function displayText(branch, text=""){
+    intervalChanged = false;
+    if(text === ""){
+      document.getElementById(branch).innerHTML = "";
+      
+      clearInterval(nIntervId);
+      nIntervId = null;
+      index = 0;
+      cursor = "_";
+      return;
+    }
+
+    nIntervId = setInterval(displayTextInterval, 100, branch, text);
+  }
+  function displayTextInterval(branch, text){
+    if(index < text.length){
+      index++;
+    }
+    else{
+      if(!intervalChanged){
+        clearInterval(nIntervId);
+        nIntervId = setInterval(displayTextInterval, 500, branch, text);
+        intervalChanged = true;
+
+      }
+      cursor = cursor === "_"?  "" : "_";
+    }
+    document.getElementById(branch).innerHTML = text.substring(0, index) + cursor;
+  }
+ </script>
