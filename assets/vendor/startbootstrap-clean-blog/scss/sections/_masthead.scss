@@ -24,10 +24,11 @@ header.masthead {
     .post-heading,
     .site-heading {
         padding: 100px 0 50px;
-        color: white;
+        margin: 100px 0 0;
+        color: black;
 
         @media only screen and (min-width: 768px) {
-            padding: 130px 0;
+            padding: 70px 0;
         }
     }
 

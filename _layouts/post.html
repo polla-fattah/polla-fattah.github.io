@@ -28,11 +28,8 @@ style="background-image: url('{{ page.background | prepend: site.baseurl | repla
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
-          <div class="post-heading">
+          <div class="post-heading" style="margin: 100px 0px 0px 0px;">
             <h1>{{ page.title }}</h1>
-            {% if page.subtitle %}
-            <h2 class="subheading">{{ page.subtitle }}</h2>
-            {% endif %}
             <span class="meta">
               Published on {{ page.date | date: '%B %d, %Y' }} &middot; {% include read_time.html
               content=page.content %}
@@ -45,7 +42,7 @@ style="background-image: url('{{ page.background | prepend: site.baseurl | repla
 
   <div class="container">
     <div class="row">
-      <div class="col-lg-8 col-md-10 mx-auto">
+      <div class="col-lg-8 col-md-10 mx-auto" style="margin-top: 170px;">
 
         {{ content }}
         <br/>

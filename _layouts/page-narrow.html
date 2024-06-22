@@ -16,8 +16,8 @@ style="background-image: url('{{ page.background | prepend: site.baseurl | repla
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
-          <div class="page-heading">
-            <h1>{{ page.title }}</h1>
+          <div class="page-heading" style="margin: 0px ; color: black; font-size: 20px">
+            <h1 style="font-size: 60px">{{ page.title }}</h1>
             {% if page.description %}
             <span class="subheading">{{ page.description }}</span>
             {% endif %}
@@ -29,7 +29,7 @@ style="background-image: url('{{ page.background | prepend: site.baseurl | repla
 
   <div class="container">
     <div class="row">
-      <div class="col-lg-8 col-md-10 mx-auto">
+      <div class="col-lg-8 col-md-10 mx-auto" style="margin: 50px 0px 0px 0px ;">
 
         {{ content }}
 
