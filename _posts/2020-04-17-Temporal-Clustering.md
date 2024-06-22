@@ -12,7 +12,7 @@ usemathjax: false
 <style>body p{text-align: justify}</style>
 
 
-# Temporal Clustering
+
 
 Clustering is an unsupervised machine-learning method whose goal is to find natural groupings (clusters) of instances in data sets. All clustering methods strive to detect compacted clusters by maximising the total sum of inter-cluster distance and minimising the total sum of the intra-cluster distance between instances [^4]. The distance can be measured using Euclidean distance, DTW distance, or any other similarity measures.
 

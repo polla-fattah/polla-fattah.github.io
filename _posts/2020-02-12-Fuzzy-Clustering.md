@@ -12,8 +12,6 @@ usemathjax: false
 <style>body p{text-align: justify}</style>
 
 
-# Fuzzy Clustering
-
 Fuzzy sets are used in fuzzy logic and can be considered as a generalisation of set theory. An element can be a member of a particular set or not in set theory, while in fuzzy set theory an element can have a gradual transition membership between sets. Hence, fuzzy clustering uses the fuzzy set to allow an instance to be in more than one cluster at the same time [^1].
 
 The most well known and used fuzzy clustering is fuzzy c-means algorithm, developed by Dunn [^3] and later improved by Bezdek [^2] who introduced the concept of the fuzzifier parameter \textbf{m}. This parameter, also called 'fuzziness index', is used to control the fuzziness of the membership of each item in the data set. Usually, m = 2 is used without any particular theoretical basis for this choice. For m = 1 the fuzzy c-means will behave as k--means algorithm, and the fuzziness of the system increases with the larger value of m parameter [^4].

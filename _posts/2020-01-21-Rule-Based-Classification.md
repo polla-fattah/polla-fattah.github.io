@@ -11,7 +11,6 @@ usemathjax: false
 ---
 <style>body p{text-align: justify}</style>
 
-# Rule-Based Classification
 
 A rule-based classifier uses a set of rules to classify items in a data set. The rules are formalised in the form of IF-THEN clause. The conditions of the IF clause represent the rules that an item should fulfil to be accepted as a particular class. If the rules are ordered and have priority they can be represented in nested IF-THEN-ELSE clauses and might be called decision lists [^7].
 

@@ -12,7 +12,7 @@ usemathjax: false
 <style>body p{text-align: justify}</style>
 
 
-# Internal Cluster Validation
+
 
 
 Internal criteria measure the 'goodness' of clusters for the data by extracting information from data and clusters alone, such as the compactness of data points inside one cluster and the separation of clusters from each other [^2]. These criteria were used as part of the cost function, to determine the quality of the selected classification rules in each time point, and to compare different clustering algorithms' performances, as presented in chapter six.

@@ -12,7 +12,7 @@ usemathjax: false
 <style>body p{text-align: justify}</style>
 
 
-# Temporal Classification
+
 
 Temporal and sequence classification is an automatic system that assigns one of the predefined classes to the time series or sequence input. Many temporal classifications have been introduced that reuse traditional classification algorithms in terms of criteria and measurements crafted for temporal data. Three main methods exist for classifying temporal data set: distance-based, feature extraction-based and model-based [^1].
 

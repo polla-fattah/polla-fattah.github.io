@@ -12,7 +12,6 @@ usemathjax: false
 <style>body p{text-align: justify}</style>
 
 
-# Clustering Validation
 
 Many clustering methods exist to be used in different situations according to the underlying data to be analysed and clustered. There are many methods to assess clustering results and their initial configurations, which can be categorised into three main types: clustering tendency, cluster stability and cluster evaluation [^3].
 

@@ -12,7 +12,6 @@ usemathjax: false
 
 <style>body p{text-align: justify}</style>
 
-## Centroid-Based Clustering
 
 Centroid-based or representative-based clustering is a method of finding the best k clusters of items in the D data set. Each cluster contains a representative point which might be called centroid [^1]. Two examples of centroid-based clustering discussed below are K-means and PAM clustering methods.
 

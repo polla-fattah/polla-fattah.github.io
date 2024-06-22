@@ -17,7 +17,6 @@ usemathjax: false
 }
 body p{text-align: justify}
 </style>
-# Bologna Process
 
 Bologna Process[^1] is the pedagogical[^2] method that has been adopted by most European Universities. It encourages the credit collection method by the students. Once they fulfill the required amount of credit points they can graduate from that school. This process has the advantage of giving the flexibility of choosing subjects to the students so they can, with the help of advisors, choose their learning path and future carrier.
 

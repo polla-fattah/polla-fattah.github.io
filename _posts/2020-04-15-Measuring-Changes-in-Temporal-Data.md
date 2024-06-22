@@ -12,7 +12,7 @@ usemathjax: false
 <style>body p{text-align: justify}</style>
 
 
-# Measuring Changes in Temporal Data
+
 
 Spiliopoulou et al. [^1] introduced the MONIC _Modeling and monitoring cluster transitions_, which finds cluster transition over accumulating data sets, providing an ageing function for clustering data that prioritises new records over old ones and eliminates records older than two time points. Matching for clusters in one time point to the next one is carried out by passing a threshold that determines normalised maximum number of records that exist in both matched clusters in the two time points. This model defines two kinds of transitions, external and internal. In external transition, clusters may survive, split, be absorbed, disappear or emerge, while in internal transition clusters can change in size, compactness or location.
 

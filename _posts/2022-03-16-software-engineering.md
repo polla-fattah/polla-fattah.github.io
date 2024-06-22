@@ -17,7 +17,7 @@ usemathjax: false
 }
 body p {text-align: justify}
 </style>
-# Software Engineering Department
+
 
 In the interview with the KTV [^1] I discussed the history, the mission, and the purpose of [Software Engineering Department](https://colleges.su.edu.krd/engineering/software-engineering-department/){:target="Software"} at [Salahaddin University-Erbil](https://su.edu.krd/){:target="Salahaddin"}. Dr. Ibrahim Hamarash established this department in 2000/2001 with 25 students. The first head of the department was Dr. Ibrahim himself with the founding teachers of the department were Dr. Shawbo, Mr. Karim, and Dr. Moaiad.
 

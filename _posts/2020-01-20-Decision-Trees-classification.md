@@ -11,7 +11,6 @@ usemathjax: false
 ---
 <style>body p{text-align: justify}</style>
 
-# Decision Trees
 
 As described by Zaki et al. [^2], Decision Tree is a classification model which recursively partitions the data space into two parts. The split can be considered as a hyperplane parallel to one axis of the data space. The process repeats by dividing each new part into two smaller parts, and this process continues until each sub-part mostly contains items of only one of the target classes. The final result of this partitioning process
 can be represented by a tree, where each node is a decision concerning which part an item belongs to, and the leaves represent one of the target classes.

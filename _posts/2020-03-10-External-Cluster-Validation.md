@@ -12,7 +12,7 @@ usemathjax: false
 <style>body p{text-align: justify}</style>
 
 
-# External Criteria
+
 
 External criteria validate the results of clustering based on some predefined structures of the data which is provided from an external source. The most well-known example of structural information is labels for the data provided by experts (called true classes). The main task of this approach is to determine a statistical measure for the similarity or dissimilarity between obtained clusters and labels [^2][^3]. According to the methods incorporated in the external criteria, they can be divided into three types: pairwise measures, entropy-based measures and matching based measures [^1].
 

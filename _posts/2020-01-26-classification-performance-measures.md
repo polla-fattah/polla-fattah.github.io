@@ -12,8 +12,6 @@ usemathjax: false
 <style>body p{text-align: justify}</style>
 
 
-# Classification Performance Measures
-
 Multiple methods exist to measure the performance of a classification algorithm and classify a data set into two classes, positive and classified. The terminology was developed in the medical field, where positive denotes the presence of a disease and negative indicates its absence [^19].
 
 In a test data set D with n instances, a classifier tries to identify the class of instances for binary classifiers, whereby four possibilities exist. These possibilities for any classifier can be demonstrated as a confusion matrix, which is shown in Table \ref{tab:confusionMatrix}, and explained below [^2]:
