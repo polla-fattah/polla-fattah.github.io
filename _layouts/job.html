@@ -2,18 +2,8 @@
 layout: default
 ---
 
-<!-- Page Header -->
-{% if page.background %}
-<!--
-  This was giving header background to the pages I dismissed it for a more modern style attempt
-style="background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')"
--->
-<header class="masthead">
-  {% else %}
-  <header class="masthead">
-    {% endif %}
-    <div class="overlay"></div>
-    <div class="container">
+
+    <div class="container" style="margin-top: 170px;">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="post-heading">
@@ -25,11 +15,10 @@ style="background-image: url('{{ page.background | prepend: site.baseurl | repla
         </div>
       </div>
     </div>
-  </header>
 
   <div class="container">
     <div class="row">
-      <div class="col-lg-8 col-md-10 mx-auto">
+      <div class="col-lg-8 col-md-10 mx-auto" style="margin: 30px 0px 0px 0px;">
 
         {{ content }}
         <br/>
