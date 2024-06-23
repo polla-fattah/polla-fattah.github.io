@@ -44,3 +44,6 @@ collections:
   jobs:
     output: true
     permalink: /job/:path
+  contact:
+    output: true
+    permalink: /contact/:path
