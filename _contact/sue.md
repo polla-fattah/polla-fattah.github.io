@@ -1,6 +1,6 @@
 ---
 layout: contact
-picture:/img/Polla-Fattah.jpg
+picture: /img/Polla-Fattah.jpg
 title: Operating Systems
 university: Koya University
 department: Computer Engineering Dept.
