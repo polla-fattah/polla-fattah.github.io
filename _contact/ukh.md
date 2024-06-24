@@ -3,46 +3,55 @@ layout: contact
 picture: 
 name: Polla Fattah
 jobTitle: Lecturer
-email: mailto:polla.fattah@su.edu.krd
+email: mailto:polla.fattah@ukh.edu.krd
 phone: tel:+9647504463750
-permalink: /contact/sue/
+permalink: /contact/ukh/
 contacts:
   - title: Lecturer
-    text: Salahaddin University-Erbil
-    url: https://academics.su.edu.krd/polla.fattah
+    text: University of Kurdistan Hewler
+    url: "https://www.ukh.edu.krd/faculty/11907/"
     fa: fas fa-briefcase
+
   - title: Email
-    text: polla.fattah@su.edu.krd
-    url: mailto:polla.fattah@su.edu.krd
+    text: polla.fattah@ukh.edu.krd
+    url: mailto:polla.fattah@ukh.edu.krd
     fa: fas fa-envelope
+
   - title: Phone
     text: +9647504463750
     url: tel:+9647504463750
     fa: fas fa-phone
-  - title: Twitter
-    text: "@FattahPolla"
-    url: "https://x.com/FattahPolla"
-    fa: fab fa-twitter
-  - title: ResearchGate
-    text: Polla Fattah
-    url: "https://www.researchgate.net/profile/Polla_Fattah"
-    fa: fab fa-researchgate
-  - title: Personal Website
-    text: polla.dev
-    url: "https://polla.dev"
-    fa: fas fa-link
-  - title: LinkedIn
-    text: Polla Fattah
-    url: "https://www.linkedin.com/in/polla-fattah-57617b23/"
-    fa: fab fa-linkedin
-  - title: Google Scholar
-    text: Polla Fattah
-    url: "https://scholar.google.com/citations?user=z1VwmhsAAAAJ&hl=en"
-    fa: fas fa-book
+
   - title: ORCID
     text: 0000-0001-8027-3540
     url: "https://orcid.org/0000-0001-8027-3540"
     fa: fa-brands fa-orcid
+
+  - title: ResearchGate
+    text: Polla Fattah
+    url: "https://www.researchgate.net/profile/Polla_Fattah"
+    fa: fab fa-researchgate
+
+  - title: Personal Website
+    text: polla.dev
+    url: "https://polla.dev"
+    fa: fas fa-link
+
+  - title: Google Scholar
+    text: Polla Fattah
+    url: "https://scholar.google.com/citations?user=z1VwmhsAAAAJ&hl=en"
+    fa: fa-solid fa-book-open-reader
+
+  - title: LinkedIn
+    text: Polla Fattah
+    url: "https://www.linkedin.com/in/polla-fattah-57617b23/"
+    fa: fab fa-linkedin
+
+  - title: Twitter
+    text: "@FattahPolla"
+    url: "https://x.com/FattahPolla"
+    fa: fab fa-twitter
+
   - title: GitHub
     text: PollaFattah
     url: "https://github.com/polla-fattah"
