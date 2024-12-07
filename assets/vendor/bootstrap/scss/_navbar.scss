@@ -71,7 +71,7 @@
 
 .navbar-nav {
   display: flex;
-  flex-direction: column; // cannot use `inherit` to get the `.navbar`s value
+  flex-direction: row; // cannot use `inherit` to get the `.navbar`s value
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
@@ -184,8 +184,8 @@
           }
 
           .nav-link {
-            padding-right: $navbar-nav-link-padding-x;
-            padding-left: $navbar-nav-link-padding-x;
+            /*padding-right: $navbar-nav-link-padding-x;
+            padding-left: $navbar-nav-link-padding-x;*/
           }
         }
 
