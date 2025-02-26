@@ -3,7 +3,7 @@ layout: post
 title: "Impact of AI on Academia"
 subtitle: ""
 excerpt: "In Kurdistan Region, we have started to adopt this process too. Particularly in our department, Software Engineering department we are more than enthusiastic about this process"
-date: 2022-09-09 23:45:13 -0400
+date: 2024-10-01 15:06:00 +0300
 background: "/img/posts/2023-11-24-Impact-of-AI-on-Academia/wideimage.jpg"
 categories: ["Education", "University"]
 author: "Polla Fattah"
