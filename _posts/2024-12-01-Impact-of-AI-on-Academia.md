@@ -8,6 +8,7 @@ background: "/img/posts/2023-11-24-Impact-of-AI-on-Academia/wideimage.jpg"
 categories: ["Education", "University"]
 author: "Polla Fattah"
 usemathjax: false
+published: false
 ---
 <style>
   video {
