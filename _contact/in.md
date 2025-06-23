@@ -5,7 +5,7 @@ name: Polla Fattah
 jobTitle: Consultant
 email: mailto:polla.fattah@inforr.co.uk
 phone: tel:+9647504463750
-permalink: /contact/in/
+permalink: /inforr/
 contacts:
   - title: Consultant
     text: InfoRR Company

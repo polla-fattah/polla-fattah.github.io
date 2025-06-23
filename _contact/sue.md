@@ -5,7 +5,7 @@ name: Polla Fattah
 jobTitle: Lecturer
 email: mailto:polla.fattah@su.edu.krd
 phone: tel:+9647504463750
-permalink: /contact/sue/
+permalink: /sue/
 contacts:
   - title: Lecturer
     text: Salahaddin University-Erbil
