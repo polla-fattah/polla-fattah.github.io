@@ -1,7 +1,7 @@
 ---
 layout: job
-title: "Chief Software Engineer"
-organization: "SmartGate Company"
+title: "Software Consultant"
+organization: "Smart Gate Company"
 organization-short: "SmartGate"
 date: 2020-01-01
 start_date: 2021

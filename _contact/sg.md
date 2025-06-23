@@ -1,14 +1,15 @@
 ---
 layout: contact
-picture: 
+picture: /img/Polla-Fattah3.png
 name: Polla Fattah
-jobTitle: Consultant
+jobTitle: Software Consultant
 email: mailto:polla.fattah@inforr.co.uk
 phone: tel:+9647504463750
-permalink: /inforr/
+permalink: /sg/
+vcffile: /assets/Polla_Fattah_SG.vcf
 contacts:
   - title: Consultant
-    text: InfoRR Company
+    text: Smart Gate Company
     url: "https://www.smartgatetechnology.com/"
     fa: fas fa-briefcase
 

@@ -6,6 +6,7 @@ jobTitle: Lecturer
 email: mailto:polla.fattah@ukh.edu.krd
 phone: tel:+9647504463750
 permalink: /ukh/
+vcffile: /assets/Polla_Fattah_UKH.vcf
 contacts:
   - title: Lecturer
     text: University of Kurdistan Hewler

@@ -1,6 +1,6 @@
 ---
 layout: job
-title: "Software Consultant"
+title: "Chief Software Engineer"
 organization: "InfoRR Company"
 organization-short: "InfoRR"
 date: 2019-01-01

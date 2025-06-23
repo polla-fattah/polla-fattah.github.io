@@ -1,11 +1,12 @@
 ---
 layout: contact
-picture: 
+picture: /img/Polla-Fattah-SUE.png
 name: Polla Fattah
-jobTitle: Lecturer
+jobTitle: Head of Data Analysis
 email: mailto:polla.fattah@su.edu.krd
 phone: tel:+9647504463750
-permalink: /sue/
+permalink: /su/
+vcffile: /assets/Polla_Fattah_SUE.vcf
 contacts:
   - title: Lecturer
     text: Salahaddin University-Erbil
