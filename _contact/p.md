@@ -6,7 +6,7 @@ name: Polla Fattah
 jobTitle: Software Engineer
 email: mailto:polla.fattah@gmail.com
 phone: tel:+9647504463750
-description: Polla Fattah is a lecturer and researcher in AI, NLP, OCR, and data-driven solutions. Explore his projects, publications, and connect via email, GitHub, Twitter, or LinkedIn.
+description: Polla Fattah Academic and Developer. Explore his projects, publications, and connect via email, GitHub, Twitter, or LinkedIn.
 permalink: /p/
 vcffile: /assets/Polla_Fattah_UKH.vcf
 contacts:
