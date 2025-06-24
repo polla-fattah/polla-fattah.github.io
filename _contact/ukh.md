@@ -5,6 +5,7 @@ name: Polla Fattah
 jobTitle: Lecturer
 email: mailto:polla.fattah@ukh.edu.krd
 phone: tel:+9647504463750
+description: Polla Fattah is a lecturer and researcher in AI, NLP, OCR, and data-driven solutions. Explore his projects, publications, and connect via email, GitHub, Twitter, or LinkedIn.
 permalink: /ukh/
 vcffile: /assets/Polla_Fattah_UKH.vcf
 contacts:

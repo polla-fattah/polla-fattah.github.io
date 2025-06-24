@@ -5,11 +5,12 @@ name: Polla Fattah
 jobTitle: Software Consultant
 email: mailto:polla.fattah@inforr.co.uk
 phone: tel:+9647504463750
+description: Polla Fattah, software consultant at Smart Gate Technology, showcases expertise in AI solutions, software architecture, and full-stack projects. Connect via email, GitHub, Twitter, or LinkedIn.
 permalink: /sg/
 vcffile: /assets/Polla_Fattah_SG.vcf
 contacts:
   - title: Consultant
-    text: Smart Gate Company
+    text: Smart Gate Technology
     url: "https://www.smartgatetechnology.com/"
     fa: fas fa-briefcase
 
