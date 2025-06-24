@@ -1,7 +1,7 @@
 ---
 layout: contact
 picture: 
-ogimage: /img/business_card/testbc.png
+ogimage: /img/og_img/ukh.png
 name: Polla Fattah
 jobTitle: Lecturer
 email: mailto:polla.fattah@ukh.edu.krd
