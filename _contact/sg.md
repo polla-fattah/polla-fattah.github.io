@@ -1,6 +1,7 @@
 ---
 layout: contact
 picture: /img/Polla-Fattah3.png
+ogimage: /img/business_card/testbc.png
 name: Polla Fattah
 jobTitle: Software Consultant
 email: mailto:polla.fattah@inforr.co.uk
