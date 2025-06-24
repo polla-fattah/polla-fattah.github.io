@@ -1,6 +1,6 @@
 ---
 layout: contact
-picture: /img/polla-fattah-circle.png
+picture: /img/polla-circular.png
 ogimage: /img/og_img/p.png
 name: Polla Fattah
 jobTitle: Software Engineer
