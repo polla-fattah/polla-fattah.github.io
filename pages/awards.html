@@ -3,8 +3,8 @@ layout: page
 title: Honors & Awards
 background: '/img/awards/awards_bg.jpg'
 permalink: /academy/awards/
-
 ---
+<link rel="stylesheet" href="/assets/css/pages.css">
 
 {% for item in site.awards reversed  %}
 <article class="post-preview">
@@ -16,11 +16,6 @@ permalink: /academy/awards/
     <h3 class="post-subtitle">{{ item.excerpt | strip_html | truncatewords: 15 }}</h3>
     {% endif %}
   </a>
-  <p class="post-meta">
-    Awarded at {{ item.date | date: '%B %d, %Y' }} by {{ item.awardingBody }}
-  </p>
-</article> 
-
-
-
+  <p class="post-meta">Awarded at {{ item.date | date: '%B %d, %Y' }} by {{ item.awardingBody }}</p>
+</article>
 {% endfor %}

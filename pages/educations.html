@@ -3,8 +3,8 @@ layout: page
 title: Educations
 background: '/img/education/background.jpg'
 permalink: /academy/educations/
-
 ---
+<link rel="stylesheet" href="/assets/css/pages.css">
 
 {% for item in site.educations reversed  %}
 <article class="post-preview">
@@ -16,9 +16,6 @@ permalink: /academy/educations/
     <h3 class="post-subtitle">{{ item.excerpt | strip_html | truncatewords: 15 }}</h3>
     {% endif %}
   </a>
-  <p class="post-meta">
-    Published on {{ item.date | date: '%B %d, %Y' }} &middot; {% include read_time.html content=item.content %}
-  </p>
-</article> 
-
+  <p class="post-meta">Published on {{ item.date | date: '%B %d, %Y' }} &middot; {% include read_time.html content=item.content %}</p>
+</article>
 {% endfor %}

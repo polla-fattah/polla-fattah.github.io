@@ -1,0 +1,11 @@
+{% assign header_title = include.title %}
+{% assign header_subtitle = include.subtitle %}
+{% assign header_alignment = include.alignment | default: 'left' %}
+
+<div class="section-header {{ header_alignment }}">
+  <h2 class="section-title">{{ header_title }}</h2>
+  {% if header_subtitle %}
+  <p class="section-subtitle">{{ header_subtitle }}</p>
+  {% endif %}
+  <div class="section-divider"></div>
+</div>

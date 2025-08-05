@@ -1,0 +1,11 @@
+{% assign columns = include.columns | default: 3 %}
+{% assign items = include.items %}
+{% assign item_layout = include.item_layout %}
+
+<div class="grid-layout columns-{{ columns }}">
+  {% for item in items %}
+    <div class="grid-item">
+      {% include {{ item_layout }} item=item %}
+    </div>
+  {% endfor %}
+</div>

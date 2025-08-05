@@ -4,7 +4,22 @@ title: My Contacts
 background: '/img/main/contact-bg.jpg'
 permalink: /contacts/
 ---
+<link rel="stylesheet" href="/assets/css/pages.css">
 
+<div class="contact-card">
+  <div class="contact-profiles">
+    {% for contact in site.data.contacts %}
+    <a href="{{ contact.url }}" class="contact-profile">
+      <img src="{{ contact.picture }}" alt="{{ contact.name }}" class="contact-picture">
+      <div class="contact-info">
+        <h3 class="contact-name">{{ contact.name }}</h3>
+        <p class="contact-title">{{ contact.title }}</p>
+      </div>
+      <span class="contact-value">{{ contact.value }}</span>
+    </a>
+    {% endfor %}
+  </div>
+</div>
 <style>
 
 

@@ -1,0 +1,23 @@
+{% assign card_title = include.title %}
+{% assign card_subtitle = include.subtitle %}
+{% assign card_content = include.content %}
+{% assign card_image = include.image %}
+{% assign card_link = include.link %}
+
+<div class="card-component">
+  {% if card_image %}
+  <div class="card-image">
+    <img src="{{ card_image }}" alt="{{ card_title }}">
+  </div>
+  {% endif %}
+  <div class="card-content">
+    <h3 class="card-title">{{ card_title }}</h3>
+    {% if card_subtitle %}
+    <h4 class="card-subtitle">{{ card_subtitle }}</h4>
+    {% endif %}
+    <div class="card-text">{{ card_content }}</div>
+    {% if card_link %}
+    <a href="{{ card_link }}" class="card-link">Read More</a>
+    {% endif %}
+  </div>
+</div>
