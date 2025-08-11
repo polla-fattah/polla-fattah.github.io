@@ -41,45 +41,59 @@
 
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #826d6688;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
         }
 
         .container {
             width: 100%;
             max-width: 600px;
-            margin: 0px auto;
+            margin: 20px auto;
             text-align: center;
-            box-shadow: 0 0 20px rgba(95, 84, 84, 0.678);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
             background-color: #fff;
-
+            border-radius: 20px;
+            overflow: hidden;
         }
 
         .profile {
             margin-bottom: 20px;
-            background: linear-gradient(-90deg, #674c43, #846f68);
-            padding-top: 40px;
-
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 40px 20px 20px 20px;
+            position: relative;
         }
 
         .profile-pic {
-            width: 80px;
-            height: 80px;
+            width: 100px;
+            height: 100px;
             border-radius: 50%;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
+            border: 4px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .profile-pic:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
         }
 
         h1 {
-            font-size: 24px;
+            font-size: 28px;
             margin: 0;
+            color: #fff;
+            font-weight: 600;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
         h2 {
             font-size: 18px;
-            margin: 5px 0;
-            color: #FFF;
+            margin: 8px 0;
+            color: rgba(255, 255, 255, 0.9);
+            font-weight: 400;
         }
 
         .contact-buttons {
@@ -93,19 +107,22 @@
 
 
         .contact-button {
-            background-color: #6b5149;
+            background-color: rgba(255, 255, 255, 0.2);
             color: #fff;
             border: none;
-            padding: 10px 20px;
+            padding: 15px 20px;
             cursor: pointer;
             width: 100%;
-            border-top: 1px solid white;
+            border-top: 1px solid rgba(255, 255, 255, 0.3);
             text-decoration: none;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
         }
 
         .contact-button:hover {
-            background-color: #674c43;
-            transition: background-color 0.7s ease;
+            background-color: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+            transition: all 0.3s ease;
         }
 
         .contact-button:visited {
@@ -114,7 +131,7 @@
         }
 
         .contact-button:nth-child(1) {
-            border-right: 1px solid white;
+            border-right: 1px solid rgba(255, 255, 255, 0.3);
         }
 
         .contact-info {
@@ -126,10 +143,11 @@
             display: flex;
             text-decoration: none;
             align-items: center;
-            padding: 10px 0;
-            margin: 0px 20px;
-            border-bottom: 1px solid #a38080;
-            color: black
+            padding: 15px 20px;
+            margin: 0;
+            border-bottom: 1px solid #f0f0f0;
+            color: #333;
+            transition: all 0.3s ease;
         }
 
         .contact-item:visited {
@@ -137,7 +155,9 @@
         }
 
         .contact-item:hover {
-            border-bottom: 1px solid #805f5f;
+            background-color: #f8f9ff;
+            border-bottom: 1px solid #667eea;
+            transform: translateX(5px);
         }
 
         .contact-item:last-child {
@@ -147,7 +167,8 @@
         .icon {
             font-size: 22px;
             margin-right: 15px;
-            color: #777;
+            color: #667eea;
+            transition: all 0.3s ease;
         }
 
         .icon-big {
@@ -164,15 +185,21 @@
         }
 
         .contact-details p:first-child {
-            font-weight: bold;
+            font-weight: 600;
             margin-bottom: 3px;
+            color: #333;
+        }
+
+        .contact-details p:last-child {
+            color: #666;
+            font-size: 14px;
         }
 
         .add-contact {
             position: fixed;
             font-size: 25px;
             text-decoration: none;
-            background-color: #a87979e0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: #fff;
             border: none;
             border-radius: 50%;
@@ -180,33 +207,45 @@
             cursor: pointer;
             bottom: 20px;
             right: 20px;
-            box-shadow: 0 4px 8px rgba(41, 40, 40, 0.2);
-
-
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+            transition: all 0.3s ease;
         }
 
         .add-contact:hover {
-            background-color: #826d66;
-            transition: background-color 0.7s ease;
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(102, 126, 234, 0.4);
+            transition: all 0.3s ease;
         }
 
 
         /* Desktop view */
         @media (min-width: 1024px) {
             .container {
-                max-width: 400px;
+                max-width: 450px;
+                margin: 40px auto;
             }
 
             .profile-pic {
-                width: 100px;
-                height: 100px;
+                width: 120px;
+                height: 120px;
             }
 
             .contact-button {
-                padding: 15px 30px;
+                padding: 18px 30px;
+                font-size: 16px;
             }
 
+            h1 {
+                font-size: 32px;
+            }
 
+            h2 {
+                font-size: 20px;
+            }
+
+            .contact-item {
+                padding: 18px 25px;
+            }
         }
     </style>
 </head>
