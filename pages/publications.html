@@ -13,8 +13,6 @@ permalink: /academy/publications/
 
     <h2 class="publication-title">
       {{ publication.title }}
-
-      </span>
     </h2>
     {% if publication.authors %}
     <h3 class="publication-subtitle">{{ publication.authors }}</h3>
@@ -24,6 +22,5 @@ permalink: /academy/publications/
     Type: {{ publication.type }} &middot; Date: {{ publication.date | date: '%B %d, %Y'}}
   </p>
 </article>
-<hr>
 
 {% endfor %}

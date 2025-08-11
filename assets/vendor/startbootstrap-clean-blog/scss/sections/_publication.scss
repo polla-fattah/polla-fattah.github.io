@@ -1,51 +1,94 @@
-// Styling for the publication page
+// Modern styling for the publication page
 .publication-preview {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    border: 1px solid #f0f0f0;
+    transition: all 0.3s ease;
+    
+    &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+        border-color: #26272b;
+    }
+
     >a {
-        color: $gray-900;
+        color: #2c3e50;
+        text-decoration: none;
+        display: block;
 
         &:focus,
         &:hover {
             text-decoration: none;
-            color: $primary;
+            color: #26272b;
         }
 
         >.publication-title {
-            font-size: 20px;
-            margin-top: 20px;
-            font-weight: 600;
-            margin-bottom: 10px;
+            font-size: 22px;
+            margin-top: 0;
+            font-weight: 700;
+            margin-bottom: 12px;
+            line-height: 1.4;
+            color: #2c3e50;
+            transition: color 0.3s ease;
         }
 
         >.publication-subtitle {
-            font-size: 18px;
-            font-weight: 300;
-            margin: 0 0 10px;
+            font-size: 16px;
+            font-weight: 400;
+            margin: 0 0 16px;
+            color: #5a6c7d;
+            line-height: 1.5;
+        }
+        
+        &:hover >.publication-title {
+            color: #26272b;
         }
     }
 
     >.publication-meta {
-        font-size: 15px;
-        font-style: italic;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
         margin-top: 0;
-        color: $gray-500;
+        color: #7f8c8d;
+        background: #f8f9fa;
+        padding: 8px 12px;
+        border-radius: 6px;
+        display: inline-block;
 
         >a {
             text-decoration: none;
-            color: $gray-900;
+            color: #7f8c8d;
 
             &:focus,
             &:hover {
-                text-decoration: underline;
-                color: $primary;
+                text-decoration: none;
+                color: #26272b;
             }
         }
     }
 
     @media only screen and (min-width: 768px) {
+        padding: 32px;
+        
         >a {
             >.publication-title {
-                font-size: 25px;
+                font-size: 26px;
+                margin-bottom: 16px;
             }
+            
+            >.publication-subtitle {
+                font-size: 18px;
+                margin-bottom: 20px;
+            }
+        }
+        
+        >.publication-meta {
+            font-size: 15px;
+            padding: 10px 16px;
         }
     }
 }
