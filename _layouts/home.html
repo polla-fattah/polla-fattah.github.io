@@ -2,86 +2,152 @@
 layout: default
 ---
 <style>
+  .hero-section {
+    background: linear-gradient(135deg, #26272b 0%, #2a2d33 25%, #2d3748 60%, #1a202c 100%);
+    color: white;
+    padding: 80px 0;
+    margin-bottom: 0;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+  }
+  
+  .profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    margin-top: 60px;
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+  }
+  
+  .profile-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.3);
+  }
+  
   .name {
-      font-size: 4em;
-      width: 100%;
-      justify-content: center;
-      align-items: center;
-
-      font-weight: 600;
-      display: flex;
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
+  
+  .tagline {
+    font-size: 1.3rem;
+    font-weight: 300;
+    margin-bottom: 30px;
+    opacity: 0.9;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+  }
+  
+  .cta-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+  }
+  
+  .cta-btn {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 12px 30px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+  }
+  
+  .cta-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    color: white;
+    text-decoration: none;
+  }
+  
   @media (max-width: 768px) {
+    .hero-section {
+      padding: 60px 0;
+    }
     .name {
-      font-size: 3em; /* Adjust the size as needed */
+      font-size: 2.5rem;
+    }
+    .tagline {
+      font-size: 1.1rem;
+    }
+    .profile-image {
+      width: 120px;
+      height: 120px;
+    }
+    .cta-buttons {
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+      margin-top: 30px;
+    }
+    .cta-btn {
+      width: 200px;
+      text-align: center;
     }
   }
-  .name span {
-    display: inline-block;
-    animation: colorChange 5s infinite;
-    transition: color 0.6s ease;
-}
-.name:hover .pulse {
-    animation: colorChange 5s infinite;
-}
-@keyframes colorChange {
-    0%, 100% {
-        color: #000;
-    }
-    50% {
-        color: #777;
-    }
-}
-  .name span:nth-child(1) { animation-delay: 0s; }
-  .name span:nth-child(2) { animation-delay: 0.1s; }
-  .name span:nth-child(3) { animation-delay: 0.2s; }
-  .name span:nth-child(4) { animation-delay: 0.3s; }
-  .name span:nth-child(5) { animation-delay: 0.4s; }
-  .name span:nth-child(6) { animation-delay: 0.5s; }
-  .name span:nth-child(7) { animation-delay: 0.6s; }
-  .name span:nth-child(8) { animation-delay: 0.7s; }
-  .name span:nth-child(9) { animation-delay: 0.8s; }
-  .name span:nth-child(10) { animation-delay: 0.9s; }
-  .name span:nth-child(11) { animation-delay: 1s; }
 </style>
 
-
-    <div class="container">
-
-      <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
-          
-
-          <div class="page-heading" style="text-align: center;margin-top: 130px;">
-            <img src="{{"/img/polla-circular.png" | relative_url }}"/ width="130px">
-            <div class="name" id="name">
-              <span class="pulse">P</span>
-              <span class="pulse">o</span>
-              <span class="pulse">l</span>
-              <span class="pulse">l</span>
-              <span class="pulse">a</span>
-              <span class="pulse">&nbsp;</span>
-              <span class="pulse">F</span>
-              <span class="pulse">a</span>
-              <span class="pulse">t</span>
-              <span class="pulse">t</span>
-              <span class="pulse">a</span>
-              <span class="pulse">h</span>
-          </div>
-
+<div class="hero-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="hero-content">
+          <img src="{{"/img/polla-circular.png" | relative_url }}" class="profile-image" alt="Polla Fattah">
+          <h1 class="name">Polla Fattah</h1>
+          <p class="tagline">Academic Researcher & Technology Consultant<br>Specializing in AI, Data Science, and Digital Innovation</p>
+          <div class="cta-buttons">
+            <a href="/business/projects/" class="cta-btn">Projects</a>
+            <a href="/academy/publications/" class="cta-btn">Publications</a>
+            <a href="/contacts/" class="cta-btn">Contact</a>
           </div>
         </div>
       </div>
     </div>
+  </div>
+</div>
 
-  <div class="container">
+  <div class="container" style="padding: 80px 0; background: #f8f9ff;">
     <div class="row">
-      <div class="col-lg-8 col-md-10 mx-auto">
+      <div class="col-lg-10 mx-auto">
 
         {{ content }}
 
         <!-- Home Post List -->
-        <h2 class="section-heading" style="text-align: center;">Recent Posts</h2>
+        <div style="text-align: center; margin-bottom: 60px; padding-top: 40px;">
+          <h2 class="section-heading" style="font-size: 2.5rem; font-weight: 700; color: #333; margin-bottom: 20px; font-family: 'Inter', sans-serif;">Recent Posts</h2>
+          <p style="color: #666; font-size: 1.1rem; max-width: 600px; margin: 0 auto; line-height: 1.6;">Latest insights on AI, technology, and research</p>
+        </div>
         <link rel="stylesheet" type="text/css" href="/assets/post-card.css" />
 
         {% for post in site.posts limit : 3 %}
@@ -107,8 +173,18 @@ layout: default
         {% endfor %}
 
         <!-- Pager -->
-        <div class="clearfix">
-          <a class="btn btn-bg float-right" href="{{"/posts" | relative_url }}">View All Posts 🡺</a>
+        <div class="clearfix" style="text-align: center; margin-top: 50px;">
+          <a href="{{"/posts" | relative_url }}" style="
+            background: linear-gradient(135deg, #4a5568 0%, #2d3748 100%);
+            color: white;
+            padding: 15px 35px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            display: inline-block;
+            box-shadow: 0 5px 15px rgba(74, 85, 104, 0.3);
+          " onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 25px rgba(74, 85, 104, 0.4)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 5px 15px rgba(74, 85, 104, 0.3)';">View All Posts →</a>
         </div>
 
       </div>
