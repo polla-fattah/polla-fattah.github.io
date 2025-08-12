@@ -1,119 +1,274 @@
 ---
-layout: page-narrow
+layout: default
 title: Development Skills
 background: '/img/main/developer-bg.jpg'
 permalink: /developer/
 
 ---
 
-
 <style>
-.skillHeaders{
- font-size: 2rem;
- font-weight: bold;
- margin-bottom: 1rem;
- margin-top: 3rem;
- color:#216275;
-}
-.skillName{
- font-size: 1.3rem;
- font-weight: normal;
- color:#71969c;
- transition: 0.2s;
-}
+  /* Modern developer page styles */
+  .developer-hero {
+    background: linear-gradient(135deg, rgba(38, 39, 43, 0.9), rgba(73, 80, 87, 0.9)), url('{{ page.background | default: "/img/main/developer-bg.jpg" }}');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 120px 0 80px;
+    color: white;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
 
-.container1 {
- width: 100%;
-}
+  .developer-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.1);
+  }
 
-.row {
- display: flex;
- flex-direction: row;
- justify-content: space-around;
- flex-flow: wrap;
-}
+  .developer-hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
+  }
 
-.card {
- width: 70px;
- border: 0px ;
- margin: 15px 20px;
- transition: 0.3s;
-}
+  .developer-hero h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  }
 
+  .developer-hero .subtitle {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+    line-height: 1.6;
+  }
 
-.card:hover {
- transform: scale(1.05);
-}
+  .skills-content {
+    background: white;
+    padding: 80px 0;
+    position: relative;
+  }
 
-@media screen and (max-width: 620px) {
- .container1 {
- width: 100%;
- }
- .heading {
- padding: 10px;
- font-size: 1.2rem;
- }
- .skillHeaders{
-  font-size: 1.2rem;
- }
- .skillName{
-  font-size: 0.6rem;
- }
-}
+  .skills-content .container {
+    max-width: 1200px;
+  }
 
+  .skillHeaders {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    margin-top: 4rem;
+    color: #2c3e50;
+    text-align: center;
+    position: relative;
+    padding-bottom: 15px;
+  }
+
+  .skillHeaders:first-of-type {
+    margin-top: 0;
+  }
+
+  .skillHeaders::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(135deg, #26272b, #495057);
+    border-radius: 2px;
+  }
+
+  .skillName {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #495057;
+    transition: all 0.3s ease;
+    display: block;
+    margin-top: 10px;
+    min-height: 35px;
+  }
+
+  .container1 {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 20px;
+  }
+
+  .card {
+    width: 80px;
+    height: 80px;
+    border: none;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(38, 39, 43, 0.05), rgba(73, 80, 87, 0.05));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-8px) scale(1.1);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+  }
+
+  .card:hover::before {
+    opacity: 1;
+  }
+
+  .card svg,
+  .card img,
+  .card i {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .skills-section {
+    margin-bottom: 4rem;
+    padding: 2rem;
+    background: #f8f9fa;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  }
+
+  @media screen and (max-width: 768px) {
+    .developer-hero {
+      padding: 100px 0 60px;
+    }
+
+    .developer-hero h1 {
+      font-size: 2.5rem;
+    }
+
+    .developer-hero .subtitle {
+      font-size: 1.2rem;
+    }
+
+    .skills-content {
+      padding: 60px 0;
+    }
+
+    .skillHeaders {
+      font-size: 2rem;
+    }
+
+    .skillName {
+      font-size: 1.1rem;
+      min-height: 30px;
+    }
+
+    .card {
+      width: 70px;
+      height: 70px;
+    }
+
+    .card svg,
+    .card img,
+    .card i {
+      width: 40px;
+      height: 40px;
+    }
+
+    .row {
+      gap: 15px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .skillHeaders {
+      font-size: 1.5rem;
+    }
+
+    .skillName {
+      font-size: 0.9rem;
+    }
+
+    .card {
+      width: 60px;
+      height: 60px;
+    }
+
+    .card svg,
+    .card img,
+    .card i {
+      width: 35px;
+      height: 35px;
+    }
+  }
 </style>
 
-{% for skillSet in site.data.developerSkills %}
-  <h1 class="skillHeaders">{{ skillSet.skillHead }}
-    <span id="{{skillSet.id}}" class="skillName"></span>
-  </h1>
-  <div class="container1">
-    <div class="row">
-    {% for skill in skillSet.skills %}
-    <a href="{{ skill.link }}" target="{{skill.name}}" class="card" onmouseover="displayText('{{skillSet.id}}', '{{skill.name}}')" onmouseout="displayText('{{skillSet.id}}')">
-      {{ skill.icon }}
-    </a>
-    {% endfor %}
+<div class="developer-hero">
+  <div class="container">
+    <div class="developer-hero-content">
+      <h1>{{ page.title }}</h1>
+      <p class="subtitle">Crafting digital solutions with cutting-edge technologies and innovative approaches</p>
     </div>
-    {% unless forloop.last %}
-    {% endunless %}
   </div>
-  
-{% endfor %}
+</div>
 
+<div class="skills-content">
+  <div class="container">
 
- <script>
-  let nIntervId;
-  let index = 0;
-  let cursor = "_";
-  let intervalChanged = false;
-  function displayText(branch, text=""){
-    intervalChanged = false;
-    if(text === ""){
-      document.getElementById(branch).innerHTML = "";
-      
-      clearInterval(nIntervId);
-      nIntervId = null;
-      index = 0;
-      cursor = "_";
-      return;
-    }
+    {% for skillSet in site.data.developerSkills %}
+    <div class="skills-section">
+      <h1 class="skillHeaders">{{ skillSet.skillHead }}</h1>
+      <div class="container1">
+        <div class="row">
+          {% for skill in skillSet.skills %}
+          <div class="card" onmouseover="showSkillName('{{ skill.name }}')" onmouseout="hideSkillName()">
+            {{ skill.icon }}
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    {% endfor %}
 
-    nIntervId = setInterval(displayTextInterval, 100, branch, text);
+    <div class="skillName" id="skillName"></div>
+  </div>
+</div>
+
+<script>
+  function showSkillName(skillName) {
+    document.getElementById("skillName").innerHTML = skillName;
   }
-  function displayTextInterval(branch, text){
-    if(index < text.length){
-      index++;
-    }
-    else{
-      if(!intervalChanged){
-        clearInterval(nIntervId);
-        nIntervId = setInterval(displayTextInterval, 500, branch, text);
-        intervalChanged = true;
-
-      }
-      cursor = cursor === "_"?  "" : "_";
-    }
-    document.getElementById(branch).innerHTML = text.substring(0, index) + cursor;
+  function hideSkillName() {
+    document.getElementById("skillName").innerHTML = "";
   }
- </script>
+</script>

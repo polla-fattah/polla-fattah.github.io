@@ -36,12 +36,6 @@ layout: default
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
     margin-top: 60px;
     margin-bottom: 30px;
-    transition: all 0.3s ease;
-  }
-  
-  .profile-image:hover {
-    transform: scale(1.05);
-    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.3);
   }
   
   .name {
@@ -72,21 +66,23 @@ layout: default
   }
   
   .cta-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: rgba(255, 255, 255, 0.2);
     color: white;
     padding: 12px 30px;
     border: 2px solid rgba(255, 255, 255, 0.3);
-    border-radius: 50px;
+    border-radius: 15px;
     text-decoration: none;
     font-weight: 500;
-    transition: all 0.3s ease;
     backdrop-filter: blur(10px);
+    width: 140px;
+    height: 50px;
   }
   
   .cta-btn:hover {
     background: rgba(255, 255, 255, 0.3);
-    transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
     color: white;
     text-decoration: none;
   }
@@ -112,8 +108,8 @@ layout: default
       margin-top: 30px;
     }
     .cta-btn {
-      width: 200px;
-      text-align: center;
+      width: 140px;
+      height: 50px;
     }
   }
 </style>

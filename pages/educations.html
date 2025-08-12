@@ -1,21 +1,184 @@
 ---
-layout: page
+layout: default
 title: Educations
 background: '/img/education/background.jpg'
 permalink: /academy/educations/
 ---
-<link rel="stylesheet" href="/assets/css/pages.css">
 
-{% for item in site.educations reversed  %}
-<article class="post-preview">
-  <a href="{{ item.url | prepend: site.baseurl | replace: '//', '/' }}">
-    <h2 class="post-title">{{ item.title }}</h2>
-    {% if item.subtitle %}
-    <h3 class="post-subtitle">{{ item.subtitle }}</h3>
-    {% else %}
-    <h3 class="post-subtitle">{{ item.excerpt | strip_html | truncatewords: 15 }}</h3>
-    {% endif %}
-  </a>
-  <p class="post-meta">Published on {{ item.date | date: '%B %d, %Y' }} &middot; {% include read_time.html content=item.content %}</p>
-</article>
-{% endfor %}
+<style>
+  /* Modern educations page styles */
+  .educations-hero {
+    background: linear-gradient(135deg, rgba(38, 39, 43, 0.9), rgba(73, 80, 87, 0.9)), url('{{ page.background | default: "/img/education/background.jpg" }}');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 120px 0 80px;
+    color: white;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .educations-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.1);
+  }
+
+  .educations-hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .educations-hero h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  }
+
+  .educations-hero .subtitle {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+    line-height: 1.6;
+  }
+
+  .educations-content {
+    background: white;
+    padding: 80px 0;
+    position: relative;
+  }
+
+  .educations-content .container {
+    max-width: 1200px;
+  }
+
+  .educations-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .post-preview {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    transition: all 0.3s ease;
+    border-left: 4px solid #26272b;
+    height: fit-content;
+  }
+
+  .post-preview:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  }
+
+  .post-preview a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .post-preview a:hover {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .post-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+    transition: color 0.3s ease;
+  }
+
+  .post-preview:hover .post-title {
+    color: #26272b;
+  }
+
+  .post-subtitle {
+    font-size: 1.2rem;
+    color: #6c757d;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+  }
+
+  .post-meta {
+    font-size: 0.95rem;
+    color: #868e96;
+    margin: 0;
+    font-style: italic;
+  }
+
+  @media screen and (max-width: 768px) {
+    .educations-hero {
+      padding: 100px 0 60px;
+    }
+
+    .educations-hero h1 {
+      font-size: 2.5rem;
+    }
+
+    .educations-hero .subtitle {
+      font-size: 1.2rem;
+    }
+
+    .educations-content {
+      padding: 60px 0;
+    }
+
+    .educations-grid {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+
+    .post-preview {
+      padding: 1.5rem;
+    }
+
+    .post-title {
+      font-size: 1.5rem;
+    }
+
+    .post-subtitle {
+      font-size: 1.1rem;
+    }
+  }
+</style>
+
+<div class="educations-hero">
+  <div class="container">
+    <div class="educations-hero-content">
+      <h1>{{ page.title }}</h1>
+      <p class="subtitle">Academic journey and educational achievements that shaped my expertise</p>
+    </div>
+  </div>
+</div>
+
+<div class="educations-content">
+  <div class="container">
+    <div class="educations-grid">
+      {% for item in site.educations reversed %}
+      <article class="post-preview">
+        <a href="{{ item.url | prepend: site.baseurl | replace: '//', '/' }}">
+          <h2 class="post-title">{{ item.title }}</h2>
+          {% if item.subtitle %}
+          <h3 class="post-subtitle">{{ item.subtitle }}</h3>
+          {% else %}
+          <h3 class="post-subtitle">{{ item.excerpt | strip_html | truncatewords: 15 }}</h3>
+          {% endif %}
+        </a>
+        <p class="post-meta">Published on {{ item.date | date: '%B %d, %Y' }} &middot; {% include read_time.html content=item.content %}</p>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</div>

@@ -2,49 +2,270 @@
 layout: default
 ---
 
-<!-- Page Header -->
-<!--
-  This was giving header background to the pages I dismissed it for a more modern style attempt
-style="background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')"
--->
+<style>
+  .publication-hero {
+    background: linear-gradient(135deg, rgba(38, 39, 43, 0.9), rgba(73, 80, 87, 0.9)), url('{{ page.background | default: "/img/publication/journal.jpg" }}');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 120px 0 80px;
+    color: white;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
 
-    <div class="container" style="margin-top: 170px;">
-      <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto" >
-          <div class="project-heading"  >
-            <h2 class="post-title"  >{{ page.title }}</h2>
-            <span class="meta post-subtitle" >
-              {{ page.authors }}
-            </span>
-            <br/><br/>
-          </div>
-        </div>
-      </div>
-    </div>
+  .publication-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.1);
+  }
 
+  .publication-hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .publication-hero h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    line-height: 1.2;
+  }
+
+  .publication-hero .authors {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    opacity: 0.9;
+    font-style: italic;
+  }
+
+  .publication-meta {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+  }
+
+  .meta-item {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px 20px;
+    border-radius: 25px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 0.9rem;
+  }
+
+  .publication-content {
+    background: white;
+    padding: 80px 0;
+    position: relative;
+  }
+
+  .publication-content .container {
+    max-width: 800px;
+  }
+
+  .publication-content h2 {
+    color: #2c3e50;
+    font-weight: 600;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e9ecef;
+  }
+
+  .publication-content h3 {
+    color: #495057;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
+
+  .publication-content p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #5a6c7d;
+    text-align: justify;
+  }
+
+  .publication-content ul {
+    margin-bottom: 25px;
+  }
+
+  .publication-content li {
+    margin-bottom: 8px;
+    color: #5a6c7d;
+  }
+
+  .publication-navigation {
+    background: #f8f9fa;
+    padding: 40px 0;
+    border-top: 1px solid #e9ecef;
+  }
+
+  .nav-buttons {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 20px;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .nav-btn {
+    background: #26272b;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    text-align: center;
+    border: none;
+    display: inline-block;
+  }
+
+  .nav-btn:hover {
+    background: #495057;
+    color: white;
+    text-decoration: none;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  .nav-btn.center {
+    background: #495057;
+  }
+
+  .nav-btn.center:hover {
+    background: #26272b;
+  }
+
+  .author-credit {
+    text-align: right;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #e9ecef;
+  }
+
+  .author-credit a {
+    color: #495057;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .author-credit a:hover {
+    color: #26272b;
+    text-decoration: none;
+  }
+
+  @media (max-width: 768px) {
+    .publication-hero {
+      padding: 100px 0 60px;
+    }
+
+    .publication-hero h1 {
+      font-size: 2rem;
+    }
+
+    .publication-hero .authors {
+      font-size: 1rem;
+    }
+
+    .publication-meta {
+      gap: 15px;
+    }
+
+    .meta-item {
+      font-size: 0.8rem;
+      padding: 8px 15px;
+    }
+
+    .publication-content {
+      padding: 60px 0;
+    }
+
+    .nav-buttons {
+      grid-template-columns: 1fr;
+      gap: 15px;
+    }
+  }
+</style>
+
+<div class="publication-hero">
   <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-md-10 mx-auto" style="text-align: justify;">
-
-        {{ content }}
-        <br/>
-        <a href="/" style="display:block; text-align: right;">Polla Fattah</a>
-        <hr>
-
-        <div class="clearfix" style="display:flex; justify-content:space-between">
-
-          {% if page.previous.url %}
-          <a class="btn btn-sm" style="flex-grow: 1;" href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{ page.previous.title }}">&laquo;Previous<span class="d-none d-md-inline"></span></a>
-          {% endif %}
-
-          <a class="btn btn-sm" style="flex-grow: 1;" href="/academy/publications">Publications</a>
-
-          {% if page.next.url %}
-          <a class="btn btn-sm" style="flex-grow: 1;" href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{ page.next.title }}">Next&raquo;<span class="d-none d-md-inline"></span></a>
-          {% endif %}
-
+    <div class="publication-hero-content">
+      <h1>{{ page.title }}</h1>
+      {% if page.authors %}
+      <p class="authors">{{ page.authors }}</p>
+      {% endif %}
+      <div class="publication-meta">
+        <div class="meta-item">
+          <i class="fas fa-calendar"></i> {{ page.date | date: '%B %d, %Y' }}
         </div>
-
+        {% if page.type %}
+        <div class="meta-item">
+          <i class="fas fa-file-alt"></i> {{ page.type }}
+        </div>
+        {% endif %}
+        {% if page.publisher %}
+        <div class="meta-item">
+          <i class="fas fa-building"></i> {{ page.publisher }}
+        </div>
+        {% endif %}
+        <div class="meta-item">
+          <i class="fas fa-clock"></i> {% include read_time.html content=page.content %}
+        </div>
       </div>
     </div>
   </div>
+</div>
+
+<div class="publication-content">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        {{ content }}
+        
+        <div class="author-credit">
+          <a href="/">Polla Fattah</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="publication-navigation">
+  <div class="container">
+    <div class="nav-buttons">
+      {% if page.previous.url %}
+      <a class="nav-btn" href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" title="{{ page.previous.title }}">
+        <i class="fas fa-chevron-left"></i> Previous
+      </a>
+      {% else %}
+      <div></div>
+      {% endif %}
+      
+      <a class="nav-btn center" href="/academy/publications/">
+        <i class="fas fa-list"></i> All Publications
+      </a>
+      
+      {% if page.next.url %}
+      <a class="nav-btn" href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" title="{{ page.next.title }}">
+        Next <i class="fas fa-chevron-right"></i>
+      </a>
+      {% else %}
+      <div></div>
+      {% endif %}
+    </div>
+  </div>
+</div>
