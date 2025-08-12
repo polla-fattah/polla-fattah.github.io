@@ -1,8 +1,93 @@
 ---
-layout: page
+layout: default
 title: Posts
 background: '/img/main/posts-bg.png'
 ---
+
+<!-- Hero Section -->
+<div class="hero-section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="hero-content">
+          <h1 class="hero-title">Blog Posts</h1>
+          <p class="hero-subtitle">Insights on AI, technology, research, and academic perspectives from Kurdistan and beyond.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Content Section -->
+<div class="content-section">
+  <div class="container">
+
+<style>
+  /* Hero Section Styles */
+  .hero-section {
+    background: linear-gradient(135deg, rgba(38, 39, 43, 0.9) 0%, rgba(42, 45, 51, 0.9) 25%, rgba(45, 55, 72, 0.9) 60%, rgba(26, 32, 44, 0.9) 100%), url('/img/main/posts-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    padding: 120px 0 80px 0;
+    margin-bottom: 0;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+  }
+  
+  .hero-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .hero-subtitle {
+    font-size: 1.3rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  }
+  
+  .content-section {
+    padding: 60px 0;
+    background: #f8f9fa;
+  }
+  
+  @media (max-width: 768px) {
+    .hero-title {
+      font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+      font-size: 1.1rem;
+    }
+    
+    .hero-section {
+      padding: 100px 0 60px 0;
+    }
+  }
+</style>
+
 <link rel="stylesheet" type="text/css" href="/assets/post-card.css" />
 
 
@@ -44,3 +129,6 @@ background: '/img/main/posts-bg.png'
 </div>
 
 {% endif %}
+
+  </div>
+</div>
