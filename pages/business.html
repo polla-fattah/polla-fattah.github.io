@@ -1,24 +1,131 @@
 ---
-layout: page
+layout: default
 title: Business
-background: '/img/main/business-bg.jpeg'
 permalink: /business/
 
 ---
 
+<!-- Hero Section -->
+<div class="hero-section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="hero-content">
+          <img src="/img/main/about-icon.png" alt="Professional" class="profile-image">
+          <h1 class="hero-title">Professional Portfolio</h1>
+          <p class="hero-subtitle">Driving innovation through technology, leadership, and strategic business solutions</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Content Section -->
+<div class="content-section">
+  <div class="container">
+
 <style>
-    .headers {
-        text-align: center;
-        display: block;
-        font-weight: 400;
-        font-size: 2.5em;
-        color: #19566a;
-        width: 100%;
-        margin: 1em 0px;
+  /* Hero Section Styles */
+  .hero-section {
+    background: linear-gradient(135deg, #26272b 0%, #2a2d33 25%, #2d3748 60%, #1a202c 100%);
+    color: white;
+    padding: 80px 0;
+    margin-bottom: 0;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+  }
+  
+  .profile-image {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    margin-top: 60px;
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+  }
+  
+  .profile-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.3);
+  }
+  
+  .hero-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.3rem;
+    font-weight: 300;
+    margin-bottom: 30px;
+    opacity: 0.9;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+  }
+
+  .content-section {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+  }
+
+  @media (max-width: 768px) {
+    .hero-section {
+      padding: 60px 0;
+    }
+    .hero-title {
+      font-size: 2.5rem;
+    }
+    .hero-subtitle {
+      font-size: 1.1rem;
+    }
+    .profile-image {
+      width: 150px;
+      height: 150px;
+    }
+  }
+
+<style>
+    .headers:hover {
+        text-decoration: none !important;
+        color: #26272b;
     }
 
-    .headers:hover {
-        text-decoration: none;
+    /* Remove text decoration for header links */
+    a.headers:hover {
+        text-decoration: none !important;
+    }
+
+    .headers::after {
+        content: '';
+        display: block;
+        width: 160px;
+        height: 2px;
+        background-color: #26272b;
+        margin: 20px auto;
     }
 </style>
 
@@ -27,6 +134,8 @@ permalink: /business/
 <style>
     .half-half-image-text {
         padding: 70px 0px;
+        background: #f8f8f8;
+        margin: 40px 0;
     }
 
     .half-half-image-text .content {
@@ -34,11 +143,13 @@ permalink: /business/
         display: flex;
         align-items: center;
         padding: 35px 0px;
-
     }
 
     .half-half-image-text .content p {
-        font-size: 22px;
+        font-size: 17px;
+        font-weight: 300;
+        line-height: 25px;
+        color: #636363;
     }
 
     .half-half-image-text .img {
@@ -48,18 +159,24 @@ permalink: /business/
     }
 
     .content li {
-        margin: 1px;
-        padding: 2px;
-        font-size: 1.1em;
-        font-weight: 600;
+        margin: 8px 0;
+        padding: 8px 0;
+        font-size: 16px;
+        font-weight: 400;
+        color: #393939;
+        border-bottom: 1px solid #eee;
+    }
+
+    .content li:last-child {
+        border-bottom: none;
     }
 
     .content li i {
-        margin: 1px;
-        padding: 2px;
-        font-size: 1em;
-        font-weight: 400;
-
+        margin-left: 10px;
+        font-size: 15px;
+        font-weight: 300;
+        color: #636363;
+        line-height: 25px;
     }
 </style>
 
@@ -130,19 +247,22 @@ permalink: /business/
 
 <style>
     :root {
-        --red: hsl(0, 78%, 62%);
-        --cyan: hsl(180, 62%, 55%);
-        --orange: hsl(34, 97%, 64%);
-        --blue: hsl(212, 86%, 64%);
-        --varyDarkBlue: hsl(234, 12%, 34%);
-        --grayishBlue: hsl(229, 6%, 66%);
-        --weight2: 400;
-        --weight3: 600;
+        --primary-dark: #26272b;
+        --text-light: #777;
+        --text-medium: #636363;
+        --text-dark: #393939;
+        --background-light: #f8f8f8;
+        --shadow-color: rgba(0,0,0,0.1);
+        --accent-red: #e74c3c;
+        --accent-blue: #3498db;
+        --accent-orange: #f39c12;
+        --accent-green: #2ecc71;
     }
 
     .strange-cards {
         font-size: 15px;
-        font-family: 'Poppins', sans-serif;
+        font-family: inherit;
+        margin: 40px 0;
     }
 
     .strange-cards .attribution {
@@ -151,9 +271,8 @@ permalink: /business/
     }
 
     .strange-cards .attribution a {
-        color: hsl(228, 45%, 44%);
+        color: var(--primary-dark);
     }
-
 
     @media (max-width: 400px) {
         .strange-cards h1 {
@@ -163,68 +282,96 @@ permalink: /business/
 
     .strange-cards .header {
         text-align: left;
-        line-height: 0.8;
+        line-height: 1.4;
         margin-bottom: 50px;
         margin-top: 70px;
         padding-left: 20px;
     }
 
+    /* Ensure headers are properly styled and centered */
+    .headers {
+        text-align: center !important;
+        display: block;
+        font-weight: 300;
+        font-size: 45px !important;
+        color: #777;
+        width: 100%;
+        margin: 50px 0px;
+        line-height: 45px;
+        padding-left: 0 !important;
+    }
+
     .strange-cards .header p {
         margin: 0 auto;
-        line-height: 2;
-        color: var(--grayishBlue);
+        line-height: 25px;
+        color: var(--text-medium);
+        font-weight: 300;
     }
 
 
     .strange-cards .box p {
-        color: var(--grayishBlue);
+        color: var(--text-medium);
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 25px;
     }
 
     .strange-cards .box {
         display: block;
-        border-radius: 5px;
-        box-shadow: 0px 30px 40px -20px var(--grayishBlue);
+        border-radius: 10px;
+        box-shadow: 2px 2px 8px var(--shadow-color);
         padding: 30px;
         margin: 20px;
+        background: #fff;
+        transition: all 0.3s ease;
+        text-align: center;
+    }
+
+    .strange-cards .box:hover {
+        box-shadow: 2px 8px 16px var(--shadow-color);
+        transform: translateY(-5px);
+        text-decoration: none;
     }
 
     .strange-cards img {
         float: right;
+        opacity: 0.8;
     }
-
-
 
     @media (max-width: 950px) {
         .strange-cards .box {
             text-align: center;
-            height: 220px;
+            height: auto;
+            min-height: 220px;
         }
 
         .strange-cards .box p {
-            margin-bottom: 10px;
+            margin-bottom: 15px;
         }
     }
 
     .strange-cards .cyan {
-        border-top: 3px solid var(--cyan);
+        border-top: 4px solid #26272b;
     }
 
     .strange-cards .red {
-        border-top: 3px solid var(--red);
+        border-top: 4px solid #26272b;
     }
 
     .strange-cards .blue {
-        border-top: 3px solid var(--blue);
+        border-top: 4px solid #26272b;
     }
 
     .strange-cards .orange {
-        border-top: 3px solid var(--orange);
+        border-top: 4px solid #26272b;
     }
 
     .strange-cards h2 {
-        color: var(--varyDarkBlue);
-        font-weight: var(--weight2);
-        font-size: 1.5rem;
+        color: #393939;
+        font-weight: 400;
+        font-size: 18px;
+        margin-bottom: 15px;
+        text-shadow: none;
     }
 
 
@@ -310,6 +457,8 @@ permalink: /business/
 <style>
     .container1 {
         width: 100%;
+        padding: 20px 0;
+        margin: 40px 0;
     }
 
     .record {
@@ -317,26 +466,55 @@ permalink: /business/
         flex-direction: row;
         justify-content: space-around;
         flex-flow: wrap;
+        padding: 20px 0;
     }
 
     .container1 .card {
         width: 70px;
         border: 0px;
         margin: 15px 20px;
-        transition: 0.3s;
+        transition: all 0.3s ease;
+        border-radius: 10px;
+        padding: 15px;
+        background: #f8f8f8;
+        box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+        border: 2px solid transparent;
     }
 
     .container1 .card:hover {
         transform: scale(1.05);
+        box-shadow: 2px 4px 8px rgba(0,0,0,0.15);
+        border-color: #26272b;
+        background: #fff;
+    }
+
+    .development-skills-section {
+        margin: 60px 0;
+        text-align: center;
+        background: #ffffff;
+        padding: 40px 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        border: 1px solid #e9ecef;
+    }
+
+    .development-skills-section p {
+        padding: 30px 20px;
+        width: 100%;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 28px;
+        color: #636363;
+        max-width: 800px;
+        margin: 0 auto;
     }
 </style>
 
-
-
-<div>
+<div class="development-skills-section">
     <a class="headers" href="/developer">Development Skills</a>
-    <p style="padding: 20px; width: 100%; text-align: justify; font-size: 1.2em">
-        Through the years I have picked up quite a few tools that helped me in my career. The tools rage from
+    <p>
+        Through the years I have picked up quite a few tools that helped me in my career. The tools range from
         communication, management, design and version control.
         I have also enjoyed using multiple programming languages for various purposes and used the best fit
         language/paradigm for the task.
@@ -363,14 +541,14 @@ permalink: /business/
         max-width: 490px;
         width: 100%;
         border-radius: 12px;
+        margin: 40px auto;
     }
 
     .leaderboard__profiles {
-        background-color: #fff;
-        border-radius: 0 0 12px 12px;
-        padding: 15px 0px 15px 20px;
+        border-radius: 12px;
+        padding: 20px;
         display: grid;
-        row-gap: 8px;
+        row-gap: 12px;
         width: 100%;
     }
 
@@ -379,42 +557,41 @@ permalink: /business/
         display: grid;
         grid-template-columns: 1fr 3fr 1fr;
         align-items: center;
-        padding: 10px 30px 10px 10px;
+        padding: 15px 20px;
         overflow: hidden;
         border-radius: 10px;
-        box-shadow: 0 2px 2px 1px rgba(51, 51, 51, 0.18);
-
+        box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
         cursor: pointer;
-        transition: transform 0.25s cubic-bezier(0.7, 0.98, 0.86, 0.98), box-shadow 0.25s cubic-bezier(0.7, 0.98, 0.86, 0.98);
+        transition: all 0.3s ease;
         background-color: #fff;
     }
 
     .leaderboard__profile:hover {
         text-decoration: none;
-        box-shadow: 0 5px 7px -1px rgba(51, 51, 51, 0.23);
-        transform: translateX(25px);
+        box-shadow: 2px 4px 8px rgba(0,0,0,0.1);
+        transform: translateY(-3px);
     }
 
     .leaderboard__picture {
         max-width: 100%;
         width: 60px;
         border-radius: 50%;
-        box-shadow: 0 0 0 10px #ebeef3, 0 0 0 22px #f3f4f6;
+        box-shadow: 0 0 0 3px #f8f8f8, 0 0 0 6px #fff;
     }
 
     .leaderboard__name {
-        color: #979cb0;
-        font-weight: 600;
-        font-size: 1.2rem;
-        letter-spacing: 0.64px;
+        color: #393939;
+        font-weight: 400;
+        font-size: 16px;
+        letter-spacing: 0.5px;
         margin-left: 12px;
     }
 
     .Jobs-list {
-        margin: 0;
+        margin: 40px 0;
         display: grid;
         place-items: center;
-        font-family: 'Source Sans Pro', sans-serif;
+        font-family: inherit;
     }
 
     @media (max-width: 650px) {
@@ -458,15 +635,48 @@ permalink: /business/
 
 
 
-<div>
+<div class="cv-section">
     <a href="/business/cv/" class="headers">Official CV</a>
-    <p style="padding: 20px; width: 100%; text-align: center;">
+    <p class="cv-description">
         I have had the opportunity to develop skills in both the academic and business sectors, which has led me to
         create two separate Curriculum Vitae.
-        <a href="/business/cv/">This CV</a> showcases my experiences and abilities in the business field, including relevant career projects
+        <a href="/business/cv/" class="cv-link">This CV</a> showcases my experiences and abilities in the business field, including relevant career projects
         and skills.
     </p>
 </div>
-</div>
+
+<style>
+    .cv-section {
+        margin: 40px 0;
+        padding: 40px 20px;
+        background: #f8f8f8;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    .cv-description {
+        padding: 20px;
+        width: 100%;
+        text-align: center;
+        font-size: 17px;
+        font-weight: 300;
+        line-height: 25px;
+        color: #636363;
+    }
+
+    .cv-link {
+        color: #26272b;
+        font-weight: 400;
+        text-decoration: none;
+    }
+
+    .cv-link:hover {
+        color: #777;
+        text-decoration: underline;
+    }
+</style>
+
+  </div> <!-- End container -->
+</div> <!-- End content-section -->
 
 
