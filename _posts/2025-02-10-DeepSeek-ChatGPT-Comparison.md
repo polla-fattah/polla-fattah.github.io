@@ -4,7 +4,7 @@ title: "DeepSeek vs ChatGPT: Democratizing AI Research"
 subtitle: "Exploring the Potential of Open AI Models for Global Accessibility"
 excerpt: "A focused interview discussing the differences between ChatGPT and DeepSeek, and how open AI models can democratize research and development for third-world countries"
 date: 2025-02-10 14:00:00 +0300
-background: "/img/posts/2025-02-10-DeepSeek-ChatGPT-Comparison/background.jpg"
+background: "/img/posts/2025-02-10-DeepSeek-ChatGPT-Comparison/background.png"
 categories: ["Media Appearance", "AI", "DeepSeek", "ChatGPT", "Research"]
 author: "Polla Fattah"
 usemathjax: false
