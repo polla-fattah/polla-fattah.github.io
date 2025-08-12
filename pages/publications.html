@@ -1,26 +1,180 @@
 ---
-layout: page
+layout: default
 title: Publications
-background: '/img/main/publications-bg.jpg'
 permalink: /academy/publications/
-
 ---
 
-{% for publication in site.publications reversed %}
+<style>
+  .hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/img/main/publications-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+  }
 
-<article class="publication-preview">
-  <a href="{{ publication.url | prepend: site.baseurl | replace: '//', '/' }}">
+  .hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  }
 
-    <h2 class="publication-title">
-      {{ publication.title }}
-    </h2>
-    {% if publication.authors %}
-    <h3 class="publication-subtitle">{{ publication.authors }}</h3>
-    {% endif %}
-  </a>
-  <p class="publication-meta">
-    Type: {{ publication.type }} &middot; Date: {{ publication.date | date: '%B %d, %Y'}}
-  </p>
-</article>
+  .hero-content p {
+    font-size: 1.3rem;
+    margin-bottom: 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  }
 
-{% endfor %}
+  .content-section {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+  }
+
+  .publications-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+  }
+
+  .publication-card {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 1px solid #e9ecef;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .publication-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  }
+
+  .publication-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    line-height: 1.4;
+    text-decoration: none;
+  }
+
+  .publication-title:hover {
+    color: #3498db;
+    text-decoration: none;
+  }
+
+  .publication-authors {
+    font-size: 1rem;
+    color: #7f8c8d;
+    margin-bottom: 15px;
+    font-style: italic;
+  }
+
+  .publication-meta {
+    font-size: 0.9rem;
+    color: #95a5a6;
+    margin-top: auto;
+    padding-top: 15px;
+    border-top: 1px solid #ecf0f1;
+  }
+
+  .publication-type {
+    background: #3498db;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  .section-header {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .section-header h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 15px;
+  }
+
+  .section-header p {
+    font-size: 1.1rem;
+    color: #7f8c8d;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 768px) {
+    .hero-content h1 {
+      font-size: 2.5rem;
+    }
+
+    .hero-content p {
+      font-size: 1.1rem;
+    }
+
+    .publications-grid {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    .publication-card {
+      padding: 20px;
+    }
+
+    .section-header h2 {
+      font-size: 2rem;
+    }
+  }
+</style>
+
+<!-- Hero Section -->
+<section class="hero-section">
+  <div class="hero-content">
+    <h1>Research Publications</h1>
+    <p>Exploring the frontiers of knowledge through academic research</p>
+  </div>
+</section>
+
+<!-- Publications Content -->
+<section class="content-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Published Works</h2>
+      <p>A collection of my academic contributions to the field of computer science and artificial intelligence</p>
+    </div>
+
+    <div class="publications-grid">
+      {% for publication in site.publications reversed %}
+      <div class="publication-card">
+        <a href="{{ publication.url | prepend: site.baseurl | replace: '//', '/' }}" class="publication-title">
+          {{ publication.title }}
+        </a>
+        {% if publication.authors %}
+        <div class="publication-authors">{{ publication.authors }}</div>
+        {% endif %}
+        <div class="publication-meta">
+          <span class="publication-type">{{ publication.type }}</span>
+          <span>{{ publication.date | date: '%B %d, %Y'}}</span>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

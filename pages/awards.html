@@ -1,21 +1,222 @@
 ---
-layout: page
+layout: default
 title: Honors & Awards
-background: '/img/awards/awards_bg.jpg'
 permalink: /academy/awards/
 ---
-<link rel="stylesheet" href="/assets/css/pages.css">
 
-{% for item in site.awards reversed  %}
-<article class="post-preview">
-  <a href="{{ item.url | prepend: site.baseurl | replace: '//', '/' }}">
-    <h2 class="post-title">{{ item.title }}</h2>
-    {% if item.subtitle %}
-    <h3 class="post-subtitle">{{ item.subtitle }}</h3>
-    {% else %}
-    <h3 class="post-subtitle">{{ item.excerpt | strip_html | truncatewords: 15 }}</h3>
-    {% endif %}
-  </a>
-  <p class="post-meta">Awarded at {{ item.date | date: '%B %d, %Y' }} by {{ item.awardingBody }}</p>
-</article>
-{% endfor %}
+<style>
+  .hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/img/awards/awards_bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+  }
+
+  .hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  }
+
+  .hero-content p {
+    font-size: 1.3rem;
+    font-weight: 300;
+    max-width: 600px;
+    margin: 0 auto;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  }
+
+  .content-section {
+    padding: 80px 0;
+    background: #f8f9fa;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    position: relative;
+  }
+
+  .section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(90deg, #26272b, #26272b);
+    border-radius: 2px;
+  }
+
+  .section-subtitle {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #7f8c8d;
+    margin-bottom: 60px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .awards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+  }
+
+  .award-card {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 1px solid #e9ecef;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .award-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  }
+
+  .award-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #26272b, #26272b);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 24px;
+  }
+
+  .award-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    line-height: 1.3;
+  }
+
+  .award-subtitle {
+    font-size: 1rem;
+    color: #7f8c8d;
+    margin-bottom: 15px;
+    line-height: 1.5;
+  }
+
+  .award-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #ecf0f1;
+    font-size: 0.9rem;
+  }
+
+  .award-date {
+    color: #26272b;
+    font-weight: 600;
+  }
+
+  .award-body {
+    color: #7f8c8d;
+    font-style: italic;
+  }
+
+  @media (max-width: 768px) {
+    .hero-content h1 {
+      font-size: 2.5rem;
+    }
+
+    .hero-content p {
+      font-size: 1.1rem;
+    }
+
+    .awards-grid {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    .award-meta {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+  }
+</style>
+
+<!-- Hero Section -->
+<section class="hero-section">
+  <div class="hero-content">
+    <h1>Honors & Awards</h1>
+    <p>Recognition of excellence in academic and professional achievements</p>
+  </div>
+</section>
+
+<!-- Content Section -->
+<section class="content-section">
+  <div class="container">
+    <h2 class="section-title">Achievements & Recognition</h2>
+    <p class="section-subtitle">
+      A collection of honors and awards received throughout my academic and professional journey, 
+      recognizing contributions to education, research, and community service.
+    </p>
+
+    <div class="awards-grid">
+      {% for item in site.awards reversed %}
+      <div class="award-card">
+        <div class="award-icon">
+          {% if item.title contains 'Grant' or item.title contains 'grant' %}
+            <i class="fas fa-hand-holding-usd"></i>
+          {% elsif item.title contains 'Scholarship' or item.title contains 'scholarship' %}
+            <i class="fas fa-graduation-cap"></i>
+          {% elsif item.title contains 'Certificate' or item.title contains 'certificate' %}
+            <i class="fas fa-certificate"></i>
+          {% elsif item.title contains 'Thanks' or item.title contains 'thanks' or item.title contains 'Appreciation' or item.title contains 'appreciation' %}
+             <i class="fas fa-handshake"></i>
+          {% else %}
+            <i class="fas fa-trophy"></i>
+          {% endif %}
+        </div>
+        <a href="{{ item.url | prepend: site.baseurl | replace: '//', '/' }}" style="text-decoration: none; color: inherit;">
+          <h3 class="award-title">{{ item.title }}</h3>
+          {% if item.subtitle %}
+          <p class="award-subtitle">{{ item.subtitle }}</p>
+          {% else %}
+          <p class="award-subtitle">{{ item.excerpt | strip_html | truncatewords: 15 }}</p>
+          {% endif %}
+        </a>
+        <div class="award-meta">
+          <span class="award-date">{{ item.date | date: '%B %d, %Y' }}</span>
+          <span class="award-body">{{ item.awardingBody }}</span>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

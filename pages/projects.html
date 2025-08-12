@@ -1,75 +1,221 @@
 ---
-layout: page
+layout: default
 title: Projects
-background: '/img/projects/projects-bg.jpg'
 permalink: /business/projects
-
 ---
+
 <style>
-  .post-meta-animate {
-    transition: all 0.5s ease-in-out;
-    margin-top: -30px;
-    margin-bottom: 0px;
-    font-family: arial;
-    font-size: 1.8rem;
-    color: rgba(173, 170, 170, 0.712);
+  .hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/img/projects/projects-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
   }
 
-  .post-preview:hover .post-meta-animate {
-    transform: scale(2);
-    transform: translate(0px, -3px);
-    color: rgba(43, 41, 41, 0.829);
+  .hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
   }
 
-  .post-preview {
-    margin-bottom: 40px;
+  .hero-content p {
+    font-size: 1.3rem;
+    margin-bottom: 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
   }
 
-  .post-preview>a>.post-title {
-    margin-top: 10px;
-    padding-top: 0px;
+  .content-section {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+  }
+
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+  }
+
+  .project-card {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 1px solid #e9ecef;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  }
+
+  .project-date {
+    font-size: 0.9rem;
+    color: #6c757d;
+    font-weight: 500;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .project-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    line-height: 1.4;
+    text-decoration: none;
+  }
+
+  .project-title:hover {
+    color: #3498db;
+    text-decoration: none;
+  }
+
+  .project-description {
+    font-size: 1rem;
+    color: #7f8c8d;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    flex-grow: 1;
   }
 
   .technologies {
-    width: 100%;
-    text-align: center;
-    margin-top: 10px;
+    margin-top: auto;
+    padding-top: 20px;
+    border-top: 1px solid #ecf0f1;
+  }
+
+  .technologies-label {
+    font-size: 0.8rem;
+    color: #95a5a6;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+
+  .tech-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
   }
 
   .tech {
-    font-size: 1.6rem;
-    color: rgb(145, 141, 141);
+    font-size: 1.5rem;
+    color: #34495e;
+    transition: all 0.3s ease;
+  }
 
+  .tech:hover {
+    color: #3498db;
+    transform: scale(1.2);
+  }
+
+  .section-header {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .section-header h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 15px;
+  }
+
+  .section-header p {
+    font-size: 1.1rem;
+    color: #7f8c8d;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 768px) {
+    .hero-content h1 {
+      font-size: 2.5rem;
+    }
+
+    .hero-content p {
+      font-size: 1.1rem;
+    }
+
+    .projects-grid {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    .project-card {
+      padding: 20px;
+    }
+
+    .section-header h2 {
+      font-size: 2rem;
+    }
+
+    .tech-icons {
+      gap: 10px;
+    }
   }
 </style>
 
-
-{% for item in site.projects reversed  %}
-<article class="post-preview">
-  <p class="post-meta-animate">
-    {{ item.date | date: '%B-%Y' }}
-  </p>
-  <a href="{{ item.url | prepend: site.baseurl | replace: '//', '/' }}">
-    <h2 class="post-title">{{ item.title }}</h2>
-    <h3 class="post-subtitle">{{ item.description }}</h3>
-
-  </a>
-  <div class='technologies'>
-    <hr style="border-color: #EEE;width: 100%;">
-
-    {% for tech in item.technologies %}
-    <span class='tech'>
-      {% if tech.fa %}
-      <i class="{{ tech.icon }}" tooltip="{{ tech.name }}"></i>
-      {% else %}
-      {{ tech.icon }}
-      {% endif %}
-
-      {% unless forloop.last %}&nbsp;&middot;&nbsp;{% endunless %}
-    </span>
-    {% endfor %}
+<!-- Hero Section -->
+<section class="hero-section">
+  <div class="hero-content">
+    <h1>Development Projects</h1>
+    <p>Showcasing innovative solutions and technical expertise</p>
   </div>
-</article>
+</section>
 
+<!-- Projects Content -->
+<section class="content-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Portfolio</h2>
+      <p>A collection of projects demonstrating my skills in software development, web technologies, and problem-solving</p>
+    </div>
 
-{% endfor %}
+    <div class="projects-grid">
+      {% for item in site.projects reversed %}
+      <div class="project-card">
+        <div class="project-date">
+          {{ item.date | date: '%B %Y' }}
+        </div>
+        <a href="{{ item.url | prepend: site.baseurl | replace: '//', '/' }}" class="project-title">
+          {{ item.title }}
+        </a>
+        <div class="project-description">
+          {{ item.description }}
+        </div>
+        <div class="technologies">
+          <div class="technologies-label">Technologies</div>
+          <div class="tech-icons">
+            {% for tech in item.technologies %}
+            <span class="tech" title="{{ tech.name }}">
+              {% if tech.fa %}
+              <i class="{{ tech.icon }}"></i>
+              {% else %}
+              {{ tech.icon }}
+              {% endif %}
+            </span>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

@@ -1,11 +1,42 @@
 ---
-layout: page
+layout: default
 title: Jobs
-background: '/img/jobs/jobs.png'
 permalink: /jobs/
-
 ---
+
 <style>
+  .hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/img/jobs/jobs.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+  }
+
+  .hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  }
+
+  .hero-content p {
+    font-size: 1.3rem;
+    margin-bottom: 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  }
+
+  .content-section {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+  }
+
   .headers{
     text-align: center;
     display: block;
@@ -15,19 +46,88 @@ permalink: /jobs/
     width: 100%;
     margin: 1em 0px;
   }
-</style>
-<h1 class="headers">An Explanation</h1>
 
-<p style="text-align: justify">
-  I have worked in multiple jobs throughout the years, and an observant person can notice that I have held multiple jobs simultaneously. 
-  This is because of the flexible time requirements of my main career at the university, which includes teaching and other activities. 
-  This flexibility has enabled me to work other jobs, particularly those with flexible time requirements as well.
-</p>
-<p style="text-align: justify">
-  As a lecturer, I believe it is important to have knowledge about the business side of things so that I can provide practical knowledge to my students. 
-  As a developer, having connections with the university is also a plus as it allows me to provide businesses I work for with new research aspects if needed, 
-  and guarantees access to the best talents of new developers for them.
-</p>
+  .explanation-section {
+    padding: 40px 0;
+    margin-bottom: 60px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  }
+
+  .explanation-section .headers {
+    color: #2c3e50;
+    margin-bottom: 30px;
+    position: relative;
+  }
+
+  .explanation-section .headers::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg, #3498db, #2980b9);
+    border-radius: 2px;
+  }
+
+  .explanation-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 30px;
+  }
+
+  .explanation-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #34495e;
+    margin-bottom: 25px;
+    text-align: justify;
+  }
+
+  .explanation-content p:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (max-width: 768px) {
+    .hero-content h1 {
+      font-size: 2.5rem;
+    }
+
+    .hero-content p {
+      font-size: 1.1rem;
+    }
+  }
+</style>
+
+<!-- Hero Section -->
+<section class="hero-section">
+  <div class="hero-content">
+    <h1>Career Journey</h1>
+    <p>Bridging academia and industry through diverse professional experiences</p>
+  </div>
+</section>
+
+<!-- Content Section -->
+<section class="content-section">
+  <div class="container">
+    <div class="explanation-section">
+      <h1 class="headers">An Explanation</h1>
+      <div class="explanation-content">
+        <p>
+          I have worked in multiple jobs throughout the years, and an observant person can notice that I have held multiple jobs simultaneously. 
+          This is because of the flexible time requirements of my main career at the university, which includes teaching and other activities. 
+          This flexibility has enabled me to work other jobs, particularly those with flexible time requirements as well.
+        </p>
+        <p>
+          As a lecturer, I believe it is important to have knowledge about the business side of things so that I can provide practical knowledge to my students. 
+          As a developer, having connections with the university is also a plus as it allows me to provide businesses I work for with new research aspects if needed, 
+          and guarantees access to the best talents of new developers for them.
+        </p>
+      </div>
+    </div>
 
 <style>
   .filter-button {
@@ -153,10 +253,8 @@ permalink: /jobs/
 </article>
 {% endfor %}
 </div>
-
-
-
-
+  </div>
+</section>
 
 <script>
   function getParameterByName(name, url = window.location.href) {
