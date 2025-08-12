@@ -20,20 +20,51 @@
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
   <link rel="shortcut icon" type="image/png" href="/img/icon.png">
 
-  <meta property="og:title"        content="Polla Fattah - Software Engineer">
-  <meta property="og:description"  content="Polla Fattah is a Software Engineer with enthusiasm for advancing understanding science in the region Connect with Polla Fattah via mobile, email and other social media accounts.">
-  <meta property="og:image"        content="https://polla.dev/img/og_img/p.png">
-  <meta property="og:url"          content="https://polla.dev">
-  <meta property="og:site_name"    content="Polla.dev">
-  <meta property="og:locale"       content="en_US">
-  <meta property="og:type"         content="website">
+  <!-- Open Graph / Facebook -->
+  {% if page.title and page.excerpt %}
+  <!-- Dynamic OG tags for posts and pages with front matter -->
+  <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:title" content="{{ page.title | escape }} - {{ site.title | escape }}">
+  <meta property="og:description" content="{{ page.excerpt | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+  <meta property="og:image" content="{% if page.background %}{{ page.background | absolute_url }}{% else %}{{ '/img/og_img/p.png' | absolute_url }}{% endif %}">
+  <meta property="og:site_name" content="{{ site.title | escape }}">
+  <meta property="og:locale" content="en_US">
+  {% if page.layout == 'post' %}
+  <meta property="article:author" content="{{ page.author | default: site.author }}">
+  <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
+  {% if page.categories %}
+  {% for category in page.categories %}
+  <meta property="article:section" content="{{ category }}">
+  {% endfor %}
+  {% endif %}
+  {% endif %}
+  {% else %}
+  <!-- Static OG tags for main page and pages without front matter -->
+  <meta property="og:title" content="Polla Fattah - Software Engineer">
+  <meta property="og:description" content="Polla Fattah is a Software Engineer with enthusiasm for advancing understanding science in the region Connect with Polla Fattah via mobile, email and other social media accounts.">
+  <meta property="og:image" content="https://polla.dev/img/og_img/p.png">
+  <meta property="og:url" content="https://polla.dev">
+  <meta property="og:site_name" content="Polla.dev">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="website">
+  {% endif %}
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@FattahPolla">
+  {% if page.title and page.excerpt %}
+  <!-- Dynamic Twitter tags for posts and pages with front matter -->
+  <meta name="twitter:title" content="{{ page.title | escape }} - {{ site.title | escape }}">
+  <meta name="twitter:description" content="{{ page.excerpt | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+  <meta name="twitter:image" content="{% if page.background %}{{ page.background | absolute_url }}{% else %}{{ '/img/og_img/p.png' | absolute_url }}{% endif %}">
+  {% else %}
+  <!-- Static Twitter tags for main page and pages without front matter -->
   <meta name="twitter:title" content="Polla Fattah - Software Engineer">
   <meta name="twitter:description" content="Polla Fattah is a Software Engineer with enthusiasm for advancing understanding science in the region Connect with Polla Fattah via mobile, email and other social media accounts.">
-  <meta name="twitter:image" content="https://polla.dev">
+  <meta name="twitter:image" content="https://polla.dev/img/og_img/p.png">
+  {% endif %}
+  <meta name="twitter:creator" content="@FattahPolla">
 
   
 
