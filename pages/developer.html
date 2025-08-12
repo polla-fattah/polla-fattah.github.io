@@ -251,7 +251,7 @@ permalink: /developer/
       <div class="container1">
         <div class="row">
           {% for skill in skillSet.skills %}
-          <div class="card" onmouseover="showSkillName('{{ skill.name }}')" onmouseout="hideSkillName()">
+          <div class="card" data-skill-name="{{ skill.name | escape }}" onmouseover="showSkillName(this.dataset.skillName)" onmouseout="hideSkillName()">
             {{ skill.icon }}
           </div>
           {% endfor %}
@@ -266,9 +266,15 @@ permalink: /developer/
 
 <script>
   function showSkillName(skillName) {
-    document.getElementById("skillName").innerHTML = skillName;
+    const skillNameElement = document.getElementById("skillName");
+    if (skillNameElement) {
+      skillNameElement.innerHTML = skillName;
+    }
   }
   function hideSkillName() {
-    document.getElementById("skillName").innerHTML = "";
+    const skillNameElement = document.getElementById("skillName");
+    if (skillNameElement) {
+      skillNameElement.innerHTML = "";
+    }
   }
 </script>
