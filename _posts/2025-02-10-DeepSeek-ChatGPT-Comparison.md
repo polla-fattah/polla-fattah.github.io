@@ -28,37 +28,60 @@ usemathjax: false
 }
 </style>
 
-I participated in a focused interview on Rudaw TV discussing the emergence of DeepSeek and its potential to revolutionize AI accessibility. This discussion came at the height of the DeepSeek hype, exploring how this new model could democratize AI research and development, particularly for researchers and institutions in developing regions.
+The AI landscape is experiencing a seismic shift. When DeepSeek burst onto the scene, it didn't just introduce another chatbot—it challenged the very foundations of how we think about AI accessibility and global technological equity. Recently, I had the opportunity to discuss this revolutionary development on Rudaw TV, exploring what DeepSeek's emergence means for researchers, developers, and entire nations previously locked out of the AI revolution.
 
-### Key Discussion Points
+### Watch the Full Discussion
 
-During this insightful interview, we explored several important aspects of the AI landscape:
+<div class="embed-container">
+  <iframe src="https://www.youtube.com/embed/GJrn6ib0fYI" frameborder="0" allowfullscreen></iframe>
+</div>
 
-- **DeepSeek vs ChatGPT**: Technical and philosophical differences between the two AI models
-- **Open Source Impact**: How DeepSeek's approach could break the monopoly of large tech companies
-- **Research Democratization**: Making advanced AI accessible to individual researchers and smaller institutions
-- **Third World Opportunities**: How developing countries can leverage open AI models for innovation
-- **AI Speculation**: Addressing the hype cycle and realistic expectations for AI development
-- **Future Implications**: The potential for more diverse and distributed AI development
+*If the YouTube video doesn't load, you can [download the interview directly](/img/posts/2025-02-10-DeepSeek-ChatGPT-Comparison/interview%20with%20polla%20fattah.mp4).*
 
-### Watch the Interview
+### The David vs. Goliath Moment in AI
 
-You can watch the complete interview here:
+For years, we've watched as a handful of Western tech giants—OpenAI, Google, Microsoft—dominated the AI conversation. Their models, while impressive, came with significant barriers: expensive API costs, restricted access, and limited customization options. Then came DeepSeek from China, and suddenly, the rules of the game changed.
 
-{% include youtube.html id="GJrn6ib0fYI" %}
+What makes DeepSeek particularly fascinating isn't just its technical capabilities—it's the philosophical shift it represents. While ChatGPT operates as a black box controlled by corporate interests, DeepSeek embraces openness and accessibility. This isn't merely about technology; it's about democratizing intelligence itself.
 
-### The Significance of Open AI Models
+### A New Hope for Kurdish Language Technology
 
-The emergence of DeepSeek represents a pivotal moment in AI development. Unlike proprietary models controlled by major corporations, open models like DeepSeek have the potential to:
+One of the most exciting aspects of DeepSeek's approach is its potential impact on underrepresented languages like Kurdish. During our discussion, I emphasized how DeepSeek's better support for diverse languages, including Kurdish, could trigger a domino effect across the entire AI ecosystem.
 
-- **Level the Playing Field**: Enable researchers worldwide to access state-of-the-art AI capabilities
-- **Foster Innovation**: Allow for customization and adaptation to local needs and languages
-- **Reduce Costs**: Eliminate expensive API fees and subscription models
-- **Promote Transparency**: Enable better understanding of AI systems and their limitations
-- **Encourage Collaboration**: Facilitate global research collaboration and knowledge sharing
+When one major AI model demonstrates superior performance with Kurdish text, it creates competitive pressure for others to follow suit. This means we might finally see ChatGPT, Claude, and other major models investing seriously in Kurdish language capabilities. For a stateless nation like Kurdistan, this represents more than technological progress—it's about digital sovereignty and cultural preservation in the AI age.
 
-### Looking Ahead
+### Unleashing Research Potential: What We Can Do Now
 
-The discussion highlighted the transformative potential of open AI models for global research and development. As we move beyond the initial hype, it's crucial to focus on practical applications and real-world benefits. For regions like Kurdistan and other developing areas, open AI models represent an unprecedented opportunity to participate in the AI revolution without the barriers traditionally imposed by resource constraints.
+The research implications are staggering. With DeepSeek's open approach, researchers in Kurdistan and other developing regions can now:
 
-This shift toward more accessible AI could fundamentally change how we approach technological development, making it more inclusive and globally distributed. The key is to move beyond speculation and focus on building practical applications that serve real needs in our communities.
+**Conduct Advanced NLP Research**: No longer constrained by API limits or costs, researchers can experiment with large-scale language processing tasks, develop Kurdish-specific models, and contribute to global AI research.
+
+**Build Custom Applications**: Universities and research institutions can create specialized AI tools tailored to local needs—from Kurdish language learning platforms to region-specific knowledge systems.
+
+**Train the Next Generation**: Students can now access state-of-the-art AI models for learning and experimentation, preparing them for careers in an AI-driven world.
+
+**Collaborate Globally**: Open models enable international research partnerships without the barriers imposed by proprietary systems.
+
+The research capabilities we can unlock today were unimaginable just months ago. We're no longer passive consumers of AI technology—we can become active contributors to its development.
+
+### The Geopolitical Chess Game: West vs. China in AI
+
+Behind DeepSeek's emergence lies a larger geopolitical narrative that we cannot ignore. The AI race between the West and China isn't just about technological supremacy—it's about who gets to shape the future of human-machine interaction.
+
+China's strategy with DeepSeek is brilliant: by making advanced AI freely accessible, they're building global goodwill while simultaneously challenging Western AI hegemony. For countries like those in the Middle East, this competition is actually beneficial. We're no longer forced to choose between expensive Western solutions or nothing at all.
+
+This competition is driving innovation at an unprecedented pace. When Chinese companies demonstrate that high-quality AI can be open and accessible, it forces Western companies to reconsider their closed, profit-maximizing approaches. The result? Better AI for everyone.
+
+### Beyond the Hype: Real-World Impact
+
+While the tech world buzzes with excitement about DeepSeek's technical achievements, the real story is about access and opportunity. For the first time, a researcher in Erbil has the same AI capabilities as one in Silicon Valley. A startup in Sulaymaniyah can build AI-powered applications without massive infrastructure investments.
+
+This democratization of AI isn't just changing who can participate in the AI revolution—it's changing the revolution itself. When diverse voices contribute to AI development, we get more inclusive, culturally aware, and globally relevant solutions.
+
+### The Road Ahead: Seizing the Moment
+
+The DeepSeek moment won't last forever. As the initial excitement fades, the real work begins: building sustainable AI ecosystems that serve local needs while contributing to global knowledge.
+
+For Kurdistan and similar regions, this means investing in AI education, supporting local research initiatives, and fostering partnerships between universities and the global AI community. We have a window of opportunity to establish ourselves as contributors to, rather than just consumers of, AI technology.
+
+The question isn't whether AI will transform our world—it's whether we'll be active participants in shaping that transformation. DeepSeek has opened the door. Now it's up to us to walk through it.
