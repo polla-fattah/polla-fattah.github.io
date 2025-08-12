@@ -5,7 +5,7 @@ subtitle: "Exploring AI's transformative role in education, research, and the fu
 excerpt: "On K24 Podcast Metaverse, I discussed the profound influence of artificial intelligence on education and society, from personalized learning to ethical considerations in research."
 date: 2024-05-14 10:00:00 +0300
 background: "/img/posts/2024-05-14-K24-Metaverse-Podcast/background.jpg"
-categories: ["AI", "Education", "Research", "Technology", "Podcast", "K24"]
+categories: ["Media Appearance", "AI", "Education", "Research"]
 author: "Polla Fattah"
 usemathjax: false
 ---

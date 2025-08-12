@@ -5,7 +5,7 @@ subtitle: "Exploring Opportunities in IT Studies and Student Mentorship"
 excerpt: "A comprehensive podcast discussion on Rudaw's Giftugo program about IT education opportunities, university experiences, and entrepreneurship with student interviews"
 date: 2024-07-22 15:06:00 +0300
 background: "/img/posts/2024-07-22-Rudaw-Giftugo-Podcast/background.png"
-categories: ["Media Appearance", "IT", "Education", "University", "Entrepreneurship"]
+categories: ["Media Appearance", "IT", "Education"]
 author: "Polla Fattah"
 usemathjax: false
 published: true
