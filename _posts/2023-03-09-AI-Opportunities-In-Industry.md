@@ -1,14 +1,14 @@
 ---
 layout: post
 title: "AI Opportunities In Industry"
-subtitle: ""
-excerpt: "In Kurdistan Region, we have started to adopt this process too. Particularly in our department, Software Engineering department we are more than enthusiastic about this process"
-date: 2022-09-09 23:45:13 -0400
-background: "/img/posts/2022-09-09-Bologna-Process/background.png"
-categories: ["Education", "University"]
+subtitle: "Exploring the potential of artificial intelligence in transforming industrial processes"
+excerpt: "Artificial Intelligence is revolutionizing industries across the globe, and the Kurdistan Region is uniquely positioned to capitalize on these transformative opportunities in manufacturing, oil & gas, and agriculture."
+date: 2023-03-09 23:45:13 -0400
+background: "/img/posts/2023-03-09-AI-Opportunities-In-Industry/background.jpg"
+categories: ["AI", "Technology", "Industry"]
 author: "Polla Fattah"
 usemathjax: false
-published: false
+published: true
 ---
 <style>
   video {
@@ -20,28 +20,163 @@ body p{text-align: justify}
 </style>
 
 
-Bologna Process[^1] is the pedagogical[^2] method that has been adopted by most European Universities. It encourages the credit collection method by the students. Once they fulfill the required amount of credit points they can graduate from that school. This process has the advantage of giving the flexibility of choosing subjects to the students so they can, with the help of advisors, choose their learning path and future carrier.
+## Introduction
 
-In Kurdistan Region, we have started to adopt this process too. Particularly in our department, "Software Engineering department" we are more than enthusiastic about this process as now we can enable our students to choose different paths for their carrier by picking among the available subjects so that they can specialize in different fields of software development and engineering.
+The Kurdistan Region of Iraq (KRI) has been witnessing a rapid transformation in the use of artificial intelligence (AI) technologies for security, administration, and public service. This article details the journey of implementing AI-based systems such as Optical Character Recognition (OCR), Object Detection, Face Recognition, and Automatic License Plate Recognition (ALPR) across various governmental platforms. The emphasis is on how these systems were deployed in the Kurdistan Notary System (KNS), Kurdistan Security System (KSS), and Kurdistan Surveillance Cameras (KSC).
 
- However, this change might take some time due to multiple reasons first is purely technical, as with every change, there are always obstacles to overcome, and perks to understand so that we can implement the process fully with no problems. There is much training that has to happen for the teachers, staff, and students. As well as implementing a new software process that supports this kind of semester-based credit collection instead of annual passing of the subjects.
+## Historical Foundations of AI
 
- The second issue that we have is resistance to change. Some other departments and colleges hate this new process. This hate mostly originates from two sources, first, they love the status quo and do not want to roam into new territories, second, they do not comprehend the benefits of the process for their college/department and see the old process as more fit for their needs. 
+The evolution of AI technologies traces back to the conceptualization of the artificial neuron by McCulloch and Pitts in 1943. In 1957, Frank Rosenblatt introduced the **Perceptron**, the first artificial neural network. Over the decades, limitations such as high training time and convergence issues demanded more advanced hardware—ushering in the era of the **GPU**, starting with Nvidia's GeForce 256 in 1999.
 
- <video  controls>
-  <source src="/img/posts/2022-09-09-Bologna-Process/meeting.mp4" type="video/mp4">
-  Your browser does not support videos.
-</video>
+<div class="text-center my-4">
+  <img src="/img/posts/2023-03-09-AI-Opportunities-In-Industry/UKH-Talk.jpeg" class="img-fluid rounded shadow" alt="University of Kurdistan Hewlêr AI Talk Flyer" style="max-width: 500px;">
+  <p class="mt-2 text-muted"><em>University of Kurdistan Hewlêr AI Talk Flyer</em></p>
+</div>
 
- The third problem with this system is resources. By resources, I mean more staff, lecturers, lecture rooms, and laboratories. These are essential for the most important part of the process which is letting students choose subjects. This means we have to offer more subjects that cover students' desires, this needs more lectures, then students' choices might be disproportionate. This means there will be a need for bigger lecture rooms for some subjects. And also we need a more dynamic computer lab that can cope with the changes of the subjects. In my online interview with the prime minister, I addressed some of these issues, and his responses were positive to help us to overcome them.
+The internet's growth—from ARPANET (1969) to the IoT era—created a data-rich environment. By 2020, the total global data volume reached 44 zettabytes, fueling breakthroughs in deep learning, including **AlexNet**, which demonstrated the power of GPU acceleration in large-scale neural networks.
 
- So while our enthusiasm in our department might help to adopt this process on a very small scale and limited scope. However, for a larger and faster adoption rate, we need government intervention by dedicating an appropriate budget for this implementation and transitioning from the old to the new process. 
+## AI in Action: Implementations in Kurdistan
 
- There is no need to wait multiple years to see the advantages of this process as it is obvious from now. The students that are started with the Bologna process, are already reporting a better satisfaction ratio in the surveys, and teacher report higher grades for their students as they are choosing subjects according to their passion and abilities.
+### Kurdistan Notary System (KNS)
+
+The KNS operates in **65 offices** across the region, processing thousands of visitors daily. Each large office holds nearly a quarter of a million records, creating a huge administrative burden. Data entry efficiency became a priority, leading to the adoption of **Tesseract OCR** to digitize and extract text from scanned documents.
+
+#### Tesseract OCR Features:
+- **Preprocessing** to improve recognition accuracy
+- **Layout analysis** for paragraphs, columns, and structures
+- **Character recognition** via LSTM-based neural networks
+- **Postprocessing** for spell-check and error correction
+
+Training the OCR system for Kurdish script was a major step in reducing data entry time and improving operational efficiency.
+
+### Face Recognition Technology
+
+Face recognition in Kurdistan leverages advanced models:
+- **FaceNet** (Google, 2015)
+- **VGGFace & VGGFace2** (University of Oxford)
+- **ArcFace** (Chinese Academy of Sciences)
+- **DeepFace** (Facebook AI)
+
+Using the **face_recognition** library by Adam Geitgey, the process involves:
+1. **Face Detection** via HOG or CNN
+2. **Landmark Detection** (68 points)
+3. **Face Alignment**
+4. **Feature Encoding** (128-dimensional embedding)
+5. **Recognition & Matching** via Euclidean distance
+
+Deployment is server-based, allowing client applications to send image data to an API for real-time identification.
+
+### Kurdistan Security System (KSS)
+
+Responsible for issuing residency permits and managing border security, the KSS integrates OCR and face detection. One challenge was **Kurdish character set incompatibility** between different systems, complicating data exchange. The system also maintains a **blacklist** database to prevent entry of certain individuals.
+
+### Kurdistan Surveillance Cameras (KSC)
+
+KSC handles **object tracking**, **face detection**, and **license plate recognition**. It uses **YOLO** (You Only Look Once) for real-time object detection and the **ALPR-Unconstrained** system by Sergio Montazzolli for automatic license plate recognition.
+
+#### ALPR Process:
+1. Vehicle detection (YOLOv2)
+2. License plate detection (YOLOv2 trained for plates)
+3. OCR-based character recognition
+4. Post-processing for accuracy
+
+#### System Requirements:
+- **CPU**: Intel i7/i9 (8+ cores, ≥3.5 GHz)
+- **GPU**: NVIDIA GTX/RTX or AMD Radeon RX (≥8 GB VRAM)
+- **Storage**: ~1.8 TB per camera per month at 1080p/30fps
+
+## Event Photos from AI Presentation
+
+<div class="container-fluid my-5">
+  <div class="row g-2 g-md-3">
+    <div class="col-6 col-md-4">
+      <div class="text-center">
+        <img src="/img/posts/2023-03-09-AI-Opportunities-In-Industry/DSCF4271.jpg" class="img-fluid rounded shadow" alt="AI Presentation Opening">
+        <p class="mt-2 small"><strong>AI Presentation Opening</strong></p>
+      </div>
+    </div>
+    <div class="col-6 col-md-4">
+      <div class="text-center">
+        <img src="/img/posts/2023-03-09-AI-Opportunities-In-Industry/DSCF4279.jpg" class="img-fluid rounded shadow" alt="Technical Discussion">
+        <p class="mt-2 small"><strong>Technical Discussion</strong></p>
+      </div>
+    </div>
+    <div class="col-6 col-md-4">
+      <div class="text-center">
+        <img src="/img/posts/2023-03-09-AI-Opportunities-In-Industry/DSCF4281.jpg" class="img-fluid rounded shadow" alt="Audience Engagement">
+        <p class="mt-2 small"><strong>Audience Engagement</strong></p>
+      </div>
+    </div>
+    <div class="col-6 col-md-4">
+      <div class="text-center">
+        <img src="/img/posts/2023-03-09-AI-Opportunities-In-Industry/DSCF4335.jpg" class="img-fluid rounded shadow" alt="Face Recognition Demo">
+        <p class="mt-2 small"><strong>Face Recognition Demo</strong></p>
+      </div>
+    </div>
+    <div class="col-6 col-md-4">
+      <div class="text-center">
+        <img src="/img/posts/2023-03-09-AI-Opportunities-In-Industry/DSCF4400.jpg" class="img-fluid rounded shadow" alt="Q&A Session">
+        <p class="mt-2 small"><strong>Q&A Session</strong></p>
+      </div>
+    </div>
+    <div class="col-6 col-md-4">
+      <div class="text-center">
+        <img src="/img/posts/2023-03-09-AI-Opportunities-In-Industry/DSCF4440.jpg" class="img-fluid rounded shadow" alt="Technology Showcase">
+        <p class="mt-2 small"><strong>Technology Showcase</strong></p>
+      </div>
+    </div>
+    <div class="col-6 col-md-4">
+      <div class="text-center">
+        <img src="/img/posts/2023-03-09-AI-Opportunities-In-Industry/DSCF4473.jpg" class="img-fluid rounded shadow" alt="Implementation Details">
+        <p class="mt-2 small"><strong>Implementation Details</strong></p>
+      </div>
+    </div>
+    <div class="col-6 col-md-4">
+      <div class="text-center">
+        <img src="/img/posts/2023-03-09-AI-Opportunities-In-Industry/DSCF4477.jpg" class="img-fluid rounded shadow" alt="System Architecture">
+        <p class="mt-2 small"><strong>System Architecture</strong></p>
+      </div>
+    </div>
+    <div class="col-6 col-md-4">
+        <div class="text-center">
+          <img src="/img/posts/2023-03-09-AI-Opportunities-In-Industry/DSCF4498.jpg" class="img-fluid rounded shadow" alt="Presentation Conclusion">
+          <p class="mt-2 small"><strong>Presentation Conclusion</strong></p>
+        </div>
+      </div>
+  </div>
+</div>
+
+## Challenges and Lessons Learned
+
+Implementing AI in localized contexts such as KRI required:
+- Adapting AI models for **Kurdish language scripts**
+- Overcoming **data interoperability issues** between government systems
+- Managing **storage and computational needs** for high-resolution video analytics
+
+## The Road Ahead
+
+We are entering a future where **automation and AI** will play a central role in governance and security. There is a critical shortage of **AI engineers and data scientists**, especially for solving localized and language-specific challenges. This creates immense opportunities for youth in the region to specialize in AI, machine learning, and data science.
+
+## Conclusion
+
+The implementation of AI for face recognition and related technologies in Kurdistan demonstrates the transformative potential of AI when aligned with local needs. From improving administrative efficiency to enhancing public safety, these systems represent a significant leap toward a tech-enabled future for the Kurdistan Region.
+
+The successful deployment of OCR systems in the Kurdistan Notary System, face recognition technology across security platforms, and advanced surveillance capabilities through the Kurdistan Surveillance Cameras project showcases the region's capability to adapt cutting-edge AI technologies to local requirements. These implementations have not only improved operational efficiency but also established Kurdistan as a pioneer in AI adoption within the Middle East.
+
+As we move forward, the critical need for skilled AI professionals presents both a challenge and an opportunity. The region's youth have the potential to become leaders in AI development, particularly in addressing language-specific and culturally relevant technological challenges. This creates a unique opportunity for Kurdistan to develop its own AI expertise while contributing to the global AI community.
+
+The journey from concept to reality in AI implementation requires continuous learning, adaptation, and innovation. Kurdistan's experience serves as a valuable case study for other regions looking to implement AI technologies in governmental and security applications.
+
+## Download Presentation
+
+For a detailed overview of AI applications in face recognition technology within the Kurdistan Region, you can download the complete presentation:
+
+<div class="text-center my-4">
+  <a href="/img/posts/2023-03-09-AI-Opportunities-In-Industry/Utilizing AI for Face Recognition in KRG.pptx" 
+     class="btn btn-primary btn-lg" 
+     download="Utilizing AI for Face Recognition in KRG.pptx">
+    <i class="fas fa-download me-2"></i>Download Presentation (PPTX)
+  </a>
+</div>
 
 ---
-
-__FootNote__
-
-[^1]: [The Bologna Process and the European Higher Education Area](https://education.ec.europa.eu/education-levels/higher-education/inclusive-and-connected-higher-education/bologna-process#:~:text=Under%20the%20Bologna%20Process%2C%20European,a%20European%20Higher%20Education%20Area.)
-[^2]: Pedagogy and pedagogue come from the Greek paidos "boy, child" plus agogos "leader." Pedagogy refers to the teaching profession as well as the science of education, for example as a college subject. This might be one reason that the word, pedagogue, is often used for a teacher who is overly interested in rules and details, hence the science of teaching, rather than actually getting through to his or her students.[Source](https://www.vocabulary.com/dictionary/pedagogy#:~:text=synonyms%3A%20didactics%2C%20education%2C%20educational%20activity%2C%20instruction%2C%20teaching).
