@@ -173,7 +173,7 @@ For a detailed overview of AI applications in face recognition technology within
 
 <div class="text-center my-4">
   <a href="/img/posts/2023-03-09-AI-Opportunities-In-Industry/Utilizing AI for Face Recognition in KRG.pptx" 
-     class="btn btn-primary btn-lg" 
+     class="download-btn" 
      download="Utilizing AI for Face Recognition in KRG.pptx">
     <i class="fas fa-download me-2"></i>Download Presentation (PPTX)
   </a>

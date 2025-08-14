@@ -4,7 +4,7 @@ title: "Lagal Ranj - AI Discussion on Rudaw TV"
 subtitle: "Exploring AI Impact on Kurdistan: Language, Jobs, and Security"
 excerpt: "A live discussion on Rudaw TV's Lagal Ranj program about ChatGPT, AI technologies, and their specific impact on Kurdistan's language, employment, and security"
 date: 2024-12-02 20:00:00 +0300
-background: "/img/posts/2024-12-02-Lagal-Ranj-AI-Discussion/Background.png"
+background: "/img/posts/2024-12-02-Lagal-Ranj-AI-Discussion/background.png"
 categories: ["Media Appearance", "AI"]
 author: "Polla Fattah"
 usemathjax: false
@@ -38,6 +38,8 @@ usemathjax: false
 
 I participated in a comprehensive live discussion on Rudaw TV's "Lagal Ranj" program on October 13, 2024, focusing on artificial intelligence and its specific implications for Kurdistan. This was an extensive panel discussion with leading experts from academia and industry, exploring how AI technologies like ChatGPT will fundamentally transform our region's language, employment landscape, security considerations, and cultural preservation.
 
+{% include image.html src="/img/posts/2024-12-02-Lagal-Ranj-AI-Discussion/panel-discussion-experts.jpg" alt="Panel discussion with AI experts on Rudaw TV" description="Panel discussion with AI experts on Rudaw TV's Lagal Ranj program" %}
+
 ### Defining Artificial Intelligence in Kurdish Context
 
 During the program, one of the university professors defined artificial intelligence as "gathering all the intelligence of the world into one device and delivering it to humans in the shortest possible time." This definition sparked an important debate about whether AI can truly think like humans at this stage, with the consensus being that "this remains a topic of discussion."
@@ -49,8 +51,7 @@ The panel covered several crucial topics with deep analysis:
 #### **AI Regulation and Governance**
 A critical question emerged: Can laws and regulations be established for artificial intelligence? The expert consensus was clear - "No, because AI development is much faster than laws can be created." This highlights the challenge facing policymakers worldwide, but particularly in regions like Kurdistan where technological adaptation must be swift.
 
-<img src="/img/posts/2024-12-02-Lagal-Ranj-AI-Discussion/Kurdish%20Academy%20should%20work%20to%20enhance%20Kurdish%20Language%20in%20AI%20era.png" alt="Kurdish Academy and AI" class="post-image">
-*Kurdish Academy's role in enhancing Kurdish language in the AI era*
+{% include image.html src="/img/posts/2024-12-02-Lagal-Ranj-AI-Discussion/kurdish-academy-ai-enhancement.png" alt="Kurdish Academy's role in enhancing Kurdish language in the AI era" description="Kurdish Academy's role in enhancing Kurdish language in the AI era" %}
 
 #### **Employment Transformation**
 While there are legitimate concerns about job displacement due to AI, the panel presented a balanced perspective. Yes, some current jobs will be lost to AI automation, but simultaneously, "AI might discover several new jobs for us that we haven't even thought about today." This dual nature of technological disruption was a central theme.
@@ -58,8 +59,7 @@ While there are legitimate concerns about job displacement due to AI, the panel 
 #### **Kurdistan's Strategic Response**
 For Kurds as a stateless nation, the question of how to effectively engage with AI for present and future benefit was paramount. The panel noted that "good work has already begun at the individual and university level," with specific mention that "the University of Kurdistan has made a good start in working on artificial intelligence."
 
-<img src="/img/posts/2024-12-02-Lagal-Ranj-AI-Discussion/New%20wars%20are%20all%20doen%20using%20AI.png" alt="AI and Modern Warfare" class="post-image">
-*Discussion on how AI is transforming modern conflicts and security*
+{% include image.html src="/img/posts/2024-12-02-Lagal-Ranj-AI-Discussion/ai-warfare-discussion.png" alt="Discussion on how AI is transforming modern conflicts and security" description="Discussion on how AI is transforming modern conflicts and security" %}
 
 #### **Kurdish Language and Digital Preservation**
 One of the most pressing issues discussed was the absence of Kurdish language and its various dialects within AI systems. The panel emphasized the critical need to digitize Kurdish libraries and literature. This is not just about technological inclusion - it's about cultural survival. **Some Kurdish dialects face the risk of disappearing entirely if they are not properly documented and integrated into digital systems.**
@@ -82,6 +82,8 @@ This comprehensive discussion brought together leading voices in AI and technolo
 - **Ara Miran** - Professor at British International University in Erbil
 
 This diverse panel represented the full spectrum of AI expertise in Kurdistan, from academic research to practical industry applications.
+
+{% include image.html src="/img/posts/2024-12-02-Lagal-Ranj-AI-Discussion/ai-discussion-participants.jpg" alt="AI discussion participants and experts" description="Participants and experts during the AI discussion on Lagal Ranj" %}
 
 ### Watch the Full Lagal Ranj Discussion
 

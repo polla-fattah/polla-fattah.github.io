@@ -1,20 +1,40 @@
 <style>
     .responsive-img {
     width: 100%;
-    max-width: 500px;
+    max-width: 800px;
     height: auto;
     display: block;
     margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  .responsive-img-custom {
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  @media (max-width: 768px) {
+    .responsive-img, .responsive-img-custom {
+        max-width: 100%;
+        margin: 0 10px;
+    }
   }
   figcaption{
     width: 100%;
     text-align: center;
     font-size: 1em;
     font-weight: 600;
+    margin-top: 10px;
   }
   </style>
 
 <figure>
+    {% if include.width %}
+    <img src="{{ include.url }}" alt="{{ include.description }}" class="responsive-img-custom" style="width: {{ include.width }};">
+    {% else %}
     <img src="{{ include.url }}" alt="{{ include.description }}" class="responsive-img">
+    {% endif %}
     <figcaption>{{ include.description }}</figcaption>
 </figure>
