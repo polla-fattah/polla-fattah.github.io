@@ -35,7 +35,6 @@ Our platform represents a significant breakthrough in natural language processin
 
 This project is being carried out in partnership with the **Kurdish Academy**, ensuring linguistic accuracy and cultural authenticity. As **Pakhshan Fahmi**, a linguist at the Kurdish Academy, noted: *"We tried to use texts that were previously doctoral and master's theses, because they have the fewest grammatical and spelling errors."*
 
-{% include image.html url="/img/posts/2025-06-25-announcing-projects/final photo.jpg" description="Celebrating the successful launch with all participants" %}
 
 ## The Symposium: "AI and the Future of the Kurdish Language"
 
@@ -47,7 +46,7 @@ The announcement was made during a prestigious symposium held at the Kurdish Aca
 
 The project has garnered significant attention, with **Rudaw TV** providing comprehensive coverage of this historic initiative. As **Tariq Ahmed**, director of UKH's AIIC, explained to Rudaw: *"Instead of searching for each of these on several different sites, this platform gives you all of them together. You may not only need translation, video or text."* The coverage has helped raise awareness about the importance of preserving and advancing the Kurdish language through technology.
 
-{% include image.html url="/img/posts/2025-06-25-announcing-projects/portrait picture of me in the event.jpg" description="Representing UKH's commitment to Kurdish language technology" %}
+{% include image.html url="/img/posts/2025-06-25-announcing-projects/picture-of-me-in-the-event.jpg" description="Representing UKH's commitment to Kurdish language technology" width="50%" %}
 
 ## Impact and Significance
 
