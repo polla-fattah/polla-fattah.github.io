@@ -1,0 +1,36 @@
+<div class="video-container" style="position: relative; margin: 2rem 0; text-align: center;">
+  <video 
+    controls 
+    style="max-width: {{ include.width | default: '100%' }}; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"
+    preload="metadata">
+    <source src="{{ include.url }}" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  {% if include.description %}
+  <p style="margin-top: 0.5rem; font-style: italic; color: #666; font-size: 0.9rem;">{{ include.description }}</p>
+  {% endif %}
+</div>
+
+<style>
+@media (max-width: 768px) {
+  .video-container video {
+    max-width: 100% !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .video-container {
+    margin: 1rem 0 !important;
+  }
+  .video-container p {
+    font-size: 0.8rem !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .video-container {
+    max-width: 800px;
+    margin: 2rem auto !important;
+  }
+}
+</style>

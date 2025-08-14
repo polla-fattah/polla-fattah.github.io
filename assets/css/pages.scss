@@ -1,0 +1,200 @@
+/* Common Page Styles */
+.page-title {
+    font-size: 45px;
+    font-weight: 300;
+    text-align: center;
+    color: #777;
+    margin: 50px 0;
+}
+
+/* Download Button Styles */
+.download-btn {
+    background-color: #495057;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+    background-color: #26272b;
+    color: white;
+    text-decoration: none;
+}
+
+/* Post Preview Styles */
+.post-preview {
+    padding: 25px 0;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.post-preview a {
+    text-decoration: none;
+    color: #212529;
+}
+
+.post-preview:hover a {
+    color: #000000;
+}
+
+.post-title {
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.post-subtitle {
+    font-weight: 300;
+    margin: 0 0 10px;
+    color: #565656;
+}
+
+.post-meta {
+    font-size: 18px;
+    font-style: italic;
+    margin-top: 0;
+    color: #868e96;
+}
+
+/* Contact Card Styles */
+.contact-card {
+    max-width: 490px;
+    width: 100%;
+    border-radius: 12px;
+    background-color: #fff;
+    padding: 15px;
+    margin: 20px auto;
+}
+
+.contact-profile {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    align-items: center;
+    padding: 10px 30px 10px 10px;
+    border-radius: 10px;
+    box-shadow: 0 5px 7px -1px rgba(51, 51, 51, 0.23);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    background-color: #fff;
+    text-decoration: none;
+    margin: 10px 0;
+}
+
+.contact-profile:hover {
+    transform: scale(1.007);
+    box-shadow: 0 7px 9px 3px rgba(51, 51, 51, 0.18);
+}
+
+.contact-picture {
+    width: 60px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #ebeef3, 0 0 0 22px #f3f4f6;
+}
+
+.contact-name {
+    color: #979cb0;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .post-title {
+        font-size: 24px;
+    }
+    
+    .post-subtitle {
+        font-size: 18px;
+    }
+    
+    .contact-profile {
+        grid-template-columns: 1fr 2fr;
+        padding: 10px;
+    }
+}
+
+
+/* Card Component */
+.card-component {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.card-component:hover {
+  transform: translateY(-5px);
+}
+
+.card-image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-title {
+  margin: 0 0 10px;
+  color: #333;
+}
+
+.card-subtitle {
+  color: #666;
+  margin: 0 0 15px;
+}
+
+.card-link {
+  display: inline-block;
+  margin-top: 15px;
+  color: #000000;
+  text-decoration: none;
+}
+
+/* Section Header */
+.section-header {
+  margin-bottom: 40px;
+  text-align: var(--alignment);
+}
+
+.section-header.center {
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5em;
+  color: #333;
+  margin: 0 0 10px;
+}
+
+.section-subtitle {
+  color: #666;
+  font-size: 1.2em;
+  margin: 0;
+}
+
+.section-divider {
+  height: 3px;
+  width: 60px;
+  background: #000000;
+  margin: 20px auto;
+}
+
+/* Grid Layout */
+.grid-layout {
+  display: grid;
+  gap: 30px;
+  margin: 0 auto;
+}
+
+.grid-layout.columns-2 { grid-template-columns: repeat(2, 1fr); }
+.grid-layout.columns-3 { grid-template-columns: repeat(3, 1fr); }
+.grid-layout.columns-4 { grid-template-columns: repeat(4, 1fr); }
+
+@media (max-width: 768px) {
+  .grid-layout { grid-template-columns: repeat(1, 1fr) !important; }
+}
