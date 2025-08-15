@@ -30,7 +30,7 @@ background: "/img/main/academy-bg.jpg"
 
 <h2 class="section-heading">Current Development</h2>
 
-<p><strong>Nida</strong> is developing the core algorithms for term generation and validation, creating comprehensive databases of Kurdish morphological patterns and semantic relationships.</p>
+<p><strong><a href="/student/nida">Nida</a></strong> is developing the core algorithms for term generation and validation, creating comprehensive databases of Kurdish morphological patterns and semantic relationships.</p>
 
 <h2 class="section-heading">Cultural Significance</h2>
 

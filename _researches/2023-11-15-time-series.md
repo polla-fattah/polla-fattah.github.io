@@ -30,7 +30,7 @@ background: "/img/main/academy-bg.jpg"
 
 <h2 class="section-heading">Team Achievement</h2>
 
-<p>The research team consisting of <strong>Arwa</strong>, <strong>Sakar</strong>, and <strong>Zainab</strong> has successfully completed this comprehensive project, each contributing specialized expertise in different aspects of time series analysis.</p>
+<p>The research team consisting of <strong><a href="/student/arwa">Arwa</a></strong>, <strong><a href="/student/sakar">Sakar</a></strong>, and <strong>Zainab</strong> has successfully completed this comprehensive project, each contributing specialized expertise in different aspects of time series analysis.</p>
 
 <h2 class="section-heading">Applications</h2>
 

@@ -25,7 +25,7 @@ background: "/img/main/academy-bg.jpg"
 
 <h2 class="section-heading">Current Progress</h2>
 
-<p><strong>Moaiad</strong> is actively developing the core ASR architecture, focusing on acoustic model training and optimization for Kurdish speech patterns.</p>
+<p><strong><a href="/student/moaiad">Moaiad</a></strong> is actively developing the core ASR architecture, focusing on acoustic model training and optimization for Kurdish speech patterns.</p>
 
 <h2 class="section-heading">Applications</h2>
 

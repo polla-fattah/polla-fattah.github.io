@@ -47,3 +47,6 @@ collections:
   contact:
     output: true
     permalink: /contact/:path
+  students:
+    output: true
+    permalink: /student/:path

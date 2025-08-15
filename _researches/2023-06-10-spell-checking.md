@@ -29,7 +29,7 @@ background: "/img/main/academy-bg.jpg"
 
 <h2 class="section-heading">Current Work</h2>
 
-<p><strong>Azhin</strong> is developing the core algorithms for error detection and correction, focusing on creating comprehensive dictionaries and morphological analyzers for Kurdish.</p>
+<p><strong><a href="/student/azhin">Azhin</a></strong> is developing the core algorithms for error detection and correction, focusing on creating comprehensive dictionaries and morphological analyzers for Kurdish.</p>
 
 <h2 class="section-heading">Expected Impact</h2>
 

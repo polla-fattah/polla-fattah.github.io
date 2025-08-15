@@ -5,7 +5,7 @@ organization: "Independent"
 organization-short: "Freelance"
 date: 2020-01-01
 start_date: 2020
-end_date: Present
+end_date: Now
 background: "/img/jobs/business.jpg"
 category: business
 permalink: /job/software-consultant

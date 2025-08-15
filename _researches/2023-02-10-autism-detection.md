@@ -25,7 +25,7 @@ background: "/img/main/academy-bg.jpg"
 
 <h2 class="section-heading">Research Team</h2>
 
-<p><strong>Aveen</strong> and <strong>Sizan</strong> are actively developing the machine learning models and validation frameworks for this important healthcare application.</p>
+<p><strong><a href="/student/aveen">Aveen</a></strong> and <strong><a href="/student/sizan">Sizan</a></strong> are actively developing the machine learning models and validation frameworks for this important healthcare application.</p>
 
 <h2 class="section-heading">Expected Impact</h2>
 

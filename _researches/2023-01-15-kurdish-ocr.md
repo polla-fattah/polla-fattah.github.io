@@ -25,7 +25,7 @@ background: "/img/main/academy-bg.jpg"
 
 <h2 class="section-heading">Student Contributions</h2>
 
-<p><strong>Hevi</strong> and <strong>Israa</strong> have successfully completed their research work on this project, contributing to the development of training datasets and model optimization techniques.</p>
+<p><strong>Hevi</strong> and <strong><a href="/student/isra">Isra</a></strong> have successfully completed their research work on this project, contributing to the development of training datasets and model optimization techniques.</p>
 
 <h2 class="section-heading">Impact and Applications</h2>
 

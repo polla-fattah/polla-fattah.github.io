@@ -3,8 +3,8 @@ layout: default
 ---
 
 <style>
-  .publication-hero {
-    background: linear-gradient(135deg, rgba(38, 39, 43, 0.9), rgba(73, 80, 87, 0.9)), url('{{ page.background | default: "/img/publication/journal.jpg" }}');
+  .student-hero {
+    background: linear-gradient(135deg, rgba(38, 39, 43, 0.9), rgba(73, 80, 87, 0.9)), url('/img/main/academy-bg.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -15,7 +15,7 @@ layout: default
     overflow: hidden;
   }
 
-  .publication-hero::before {
+  .student-hero::before {
     content: '';
     position: absolute;
     top: 0;
@@ -25,14 +25,14 @@ layout: default
     background: rgba(0, 0, 0, 0.1);
   }
 
-  .publication-hero-content {
+  .student-hero-content {
     position: relative;
     z-index: 2;
     max-width: 800px;
     margin: 0 auto;
   }
 
-  .publication-hero h1 {
+  .student-hero h1 {
     font-size: 2.8rem;
     font-weight: 700;
     margin-bottom: 1rem;
@@ -40,14 +40,14 @@ layout: default
     line-height: 1.2;
   }
 
-  .publication-hero .authors {
+  .student-hero .university {
     font-size: 1.2rem;
     margin-bottom: 1.5rem;
     opacity: 0.9;
     font-style: italic;
   }
 
-  .publication-meta {
+  .student-meta {
     display: flex;
     justify-content: center;
     gap: 30px;
@@ -64,17 +64,17 @@ layout: default
     font-size: 0.9rem;
   }
 
-  .publication-content {
+  .student-content {
     background: white;
     padding: 80px 0;
     position: relative;
   }
 
-  .publication-content .container {
+  .student-content .container {
     max-width: 800px;
   }
 
-  .publication-content h2 {
+  .student-content h2 {
     color: #2c3e50;
     font-weight: 600;
     margin-top: 40px;
@@ -83,30 +83,30 @@ layout: default
     border-bottom: 2px solid #e9ecef;
   }
 
-  .publication-content h3 {
+  .student-content h3 {
     color: #495057;
     font-weight: 500;
     margin-top: 30px;
     margin-bottom: 15px;
   }
 
-  .publication-content p {
+  .student-content p {
     line-height: 1.8;
     margin-bottom: 20px;
     color: #5a6c7d;
     text-align: justify;
   }
 
-  .publication-content ul {
+  .student-content ul {
     margin-bottom: 25px;
   }
 
-  .publication-content li {
+  .student-content li {
     margin-bottom: 8px;
     color: #5a6c7d;
   }
 
-  .publication-navigation {
+  .student-navigation {
     background: #f8f9fa;
     padding: 40px 0;
     border-top: 1px solid #e9ecef;
@@ -150,38 +150,79 @@ layout: default
     background: #26272b;
   }
 
-  .author-credit {
-    text-align: right;
-    margin-top: 40px;
-    padding-top: 20px;
-    border-top: 1px solid #e9ecef;
+  .status-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
   }
 
-  .author-credit a {
+  .status-badge.active {
+    background: #f39c12;
+    color: white;
+  }
+
+  .status-badge.completed {
+    background: #27ae60;
+    color: white;
+  }
+
+  .publications-list {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+
+  .publications-list h4 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-weight: 600;
+  }
+
+  .publications-list ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .publications-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid #e9ecef;
+    margin-bottom: 0;
+  }
+
+  .publications-list li:last-child {
+    border-bottom: none;
+  }
+
+  .publications-list a {
     color: #495057;
     text-decoration: none;
     font-weight: 500;
   }
 
-  .author-credit a:hover {
+  .publications-list a:hover {
     color: #26272b;
-    text-decoration: none;
+    text-decoration: underline;
   }
 
   @media (max-width: 768px) {
-    .publication-hero {
+    .student-hero {
       padding: 100px 0 60px;
     }
 
-    .publication-hero h1 {
+    .student-hero h1 {
       font-size: 2rem;
     }
 
-    .publication-hero .authors {
+    .student-hero .university {
       font-size: 1rem;
     }
 
-    .publication-meta {
+    .student-meta {
       gap: 15px;
     }
 
@@ -190,7 +231,7 @@ layout: default
       padding: 8px 15px;
     }
 
-    .publication-content {
+    .student-content {
       padding: 60px 0;
     }
 
@@ -201,71 +242,61 @@ layout: default
   }
 </style>
 
-<div class="publication-hero">
+<div class="student-hero">
   <div class="container">
-    <div class="publication-hero-content">
+    <div class="student-hero-content">
       <h1>{{ page.title }}</h1>
-      {% if page.authors %}
-      <p class="authors">{{ page.authors }}</p>
+      {% if page.university %}
+      <p class="university">{{ page.university }}</p>
       {% endif %}
-      <div class="publication-meta">
+      <div class="student-meta">
         <div class="meta-item">
-          <i class="fas fa-calendar"></i> {{ page.date | date: '%B %d, %Y' }}
+          <i class="fas fa-graduation-cap"></i> {{ page.level }}
         </div>
-        {% if page.type %}
+        {% if page.subject %}
         <div class="meta-item">
-          <i class="fas fa-file-alt"></i> {{ page.type }}
-        </div>
-        {% endif %}
-        {% if page.publisher %}
-        <div class="meta-item">
-          <i class="fas fa-building"></i> {{ page.publisher }}
+          <i class="fas fa-book"></i> {{ page.subject }}
         </div>
         {% endif %}
         <div class="meta-item">
-          <i class="fas fa-clock"></i> {% include read_time.html content=page.content %}
+          <i class="fas fa-calendar"></i> {{ page.start_date }} - {{ page.end_date }}
+        </div>
+        <div class="meta-item">
+          <span class="status-badge {{ page.status | downcase }}">{{ page.status }}</span>
         </div>
       </div>
     </div>
   </div>
 </div>
 
-<div class="publication-content">
+<div class="student-content">
   <div class="container">
     <div class="row">
       <div class="col-12">
         {{ content }}
         
-        {% if page.students %}
-        <div class="students-section" style="margin-top: 40px; padding-top: 30px; border-top: 2px solid #e9ecef;">
-          <h3 style="color: #2c3e50; margin-bottom: 20px; font-weight: 600;">
-            <i class="fas fa-users" style="margin-right: 10px; color: #495057;"></i>Research Team
-          </h3>
-          <div style="display: flex; flex-wrap: wrap; gap: 15px;">
-            {% for student_id in page.students %}
-              {% assign student = site.students | where: "name", student_id | first %}
-              {% if student %}
-              <a href="{{ student.url | prepend: site.baseurl | replace: '//', '/' }}" 
-                 style="display: inline-block; background: #f8f9fa; padding: 10px 20px; border-radius: 25px; text-decoration: none; color: #495057; border: 1px solid #e9ecef; transition: all 0.3s ease;">
-                <i class="fas fa-user-graduate" style="margin-right: 8px; color: #6c757d;"></i>
-                {{ student.title }}
-                <span style="font-size: 0.8rem; color: #6c757d; margin-left: 8px;">{{ student.research_area | truncate: 30 }}</span>
-              </a>
+        {% if page.publications %}
+        <div class="publications-list">
+          <h4>Publications</h4>
+          <ul>
+            {% for pub_id in page.publications %}
+              {% assign publication = site.publications | where: "name", pub_id | first %}
+              {% if publication %}
+              <li>
+                <a href="{{ publication.url | prepend: site.baseurl | replace: '//', '/' }}">{{ publication.title }}</a>
+                <br><small>{{ publication.date | date: '%Y' }} - {{ publication.type }}</small>
+              </li>
               {% endif %}
             {% endfor %}
-          </div>
+          </ul>
         </div>
         {% endif %}
-        
-        <div class="author-credit">
-          <a href="/">Polla Fattah</a>
-        </div>
       </div>
     </div>
   </div>
 </div>
 
-<div class="publication-navigation">
+<div class="student-navigation">
   <div class="container">
     <div class="nav-buttons">
       {% if page.previous.url %}
@@ -276,8 +307,8 @@ layout: default
       <div></div>
       {% endif %}
       
-      <a class="nav-btn center" href="/academy/publications/">
-        <i class="fas fa-list"></i> All Publications
+      <a class="nav-btn center" href="/academy/students/">
+        <i class="fas fa-list"></i> All Students
       </a>
       
       {% if page.next.url %}

@@ -30,7 +30,7 @@ background: "/img/main/academy-bg.jpg"
 
 <h2 class="section-heading">Student Achievement</h2>
 
-<p><strong>Alaa</strong> has successfully completed this comprehensive research project, demonstrating proficiency in medical data analysis and contributing valuable insights to computational medicine.</p>
+<p><strong><a href="/student/alaa">Alaa</a></strong> has successfully completed this comprehensive research project, demonstrating proficiency in medical data analysis and contributing valuable insights to computational medicine.</p>
 
 <h2 class="section-heading">Key Contributions</h2>
 

@@ -25,7 +25,7 @@ background: "/img/main/academy-bg.jpg"
 
 <h2 class="section-heading">Student Achievement</h2>
 
-<p><strong>Bnar</strong> has successfully completed this research project, developing innovative approaches to handle Kurdish morphology in machine translation systems.</p>
+<p><strong><a href="/student/bnar">Bnar</a></strong> has successfully completed this research project, developing innovative approaches to handle Kurdish morphology in machine translation systems.</p>
 
 <h2 class="section-heading">Impact</h2>
 

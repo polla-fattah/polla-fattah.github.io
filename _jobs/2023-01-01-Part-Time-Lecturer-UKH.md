@@ -5,7 +5,7 @@ organization: "University of Kurdistan Hewlêr"
 organization-short: "UKH"
 date: 2023-01-01
 start_date: 2023
-end_date: Present
+end_date: Now
 background: "/img/jobs/academy.jpg"
 category: academy
 permalink: /job/part-time-lecturer-ukh
