@@ -6,49 +6,51 @@ organization-short: "UKH"
 date: 2018-01-01
 start_date: 2018
 end_date: 2020
-background: "/img/jobs/academy.jpg" # business.jpg academy.jpg
-category: academy # business academy
+background: "/img/jobs/academy.jpg"
+category: academy
 permalink: /job/visiting-lecturer-ukh
-duties: "
-My Main duty was teaching, the subjects that I taught was:
-
-- Human Computer Interaction for BSc Students.
-
-- Distributed systems for BSc Students.
-
-- [Computer Vision] for MSc Students.
-
-
-This opportunity provided me with new connections as we have conducted multiple researches together and published quite few of papers.
-
-"
 ---
 
-<style>
-  li p {
-    margin: 0px;
-    padding: 0px;
-  }
-</style>
+## General Information
 
+- **Position:** Visiting Lecturer
+- **Organization:** University of Kurdistan Hewlêr (UKH)
+- **Duration:** 2018 - 2020
+- **Type:** Academic teaching and research collaboration
 
-## Highlights
+## Role Overview
 
-- **Job Title:** _{{page.title}}_
-- **Organization:** _{{page.organization}}_
-- **Start Date:** _{{page.start_date}}_
-- **End Date**: _{{page.end_date}}_
+This visiting lecturer position at UKH provided an excellent opportunity to teach advanced computer science subjects while building valuable research connections and expanding my professional network in the field.
 
-## Job Duties
+## Key Responsibilities
 
-{{ page.duties }}
+### Teaching and Instruction
+- **Human Computer Interaction** - BSc level course
+- **Distributed Systems** - BSc level course  
+- **Computer Vision** - MSc level course
 
+### Research Collaboration
+- Conducted multiple research projects with UKH faculty
+- Published several research papers through collaborative efforts
+- Established strong academic connections in computer science and software engineering
 
+## Professional Development
 
-## Acquired Experiences
+- Enhanced teaching experience across different academic levels (BSc and MSc)
+- Developed research collaboration skills
+- Expanded professional network in the computer science community
 
-More than experience this kind of visiting lecturer job expands my connections and networks of specialists in the field of computer science and software engineering.
+## Skills Applied
 
-## Why I Left
+- Advanced course instruction and curriculum development
+- Research methodology and academic writing
+- Cross-institutional collaboration
+- Academic networking and relationship building
 
-I have started working at [InfoRR Company](/job/software-consultant) which was a bit demanding job. So I just did not renew my contract as visiting lecturer.
+## Impact
+
+This position significantly expanded my professional connections and networks with specialists in computer science and software engineering, leading to ongoing research collaborations and academic partnerships.
+
+## Transition
+
+I transitioned to a more demanding role at [InfoRR Company](/job/software-consultant), which required my full attention and led to the decision not to renew my visiting lecturer contract at UKH.

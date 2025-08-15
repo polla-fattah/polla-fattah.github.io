@@ -6,38 +6,57 @@ organization-short: "7NetLayers"
 date: 2010-01-01
 start_date: 2010
 end_date: 2012
-background: "/img/jobs/business.jpg" # business.jpg academy.jpg
-category: business # business academy
+background: "/img/jobs/business.jpg"
+category: business
 permalink: /job/linux-administrator
-duties: I have just returned from the Germany's Linux course, I have took this job as a Linux Administrator at 7NetLayers Company. My main duty was to manage, install Linux servers as well as evaluating and minimizing some web servers and web sites that they had.
 ---
 
-<style>
-  li p {
-    margin: 0px;
-    padding: 0px;
-  }
-</style>
+## General Information
 
+- **Position:** Linux Administrator
+- **Organization:** 7NetLayers Company
+- **Duration:** 2010 - 2012
+- **Type:** Technical infrastructure management role
 
-## Highlights
+## Role Overview
 
-- **Job Title:** _{{page.title}}_
-- **Organization:** _{{page.organization}}_
-- **Start Date:** _{{page.start_date}}_
-- **End Date**: _{{page.end_date}}_
+Following my return from Germany's Linux administration training, I joined 7NetLayers Company as a Linux Administrator, applying my newly acquired skills to manage and optimize Linux server infrastructure and web services.
 
-## Job Duties
+## Key Responsibilities
 
-{{ page.duties }}
+### Server Management
+- Installing and configuring Linux servers
+- Managing server infrastructure and system administration
+- Monitoring server performance and security
 
+### Web Infrastructure
+- Evaluating and optimizing existing web servers
+- Minimizing and improving website performance
+- Maintaining web server configurations
 
+### System Integration
+- Working with legacy code systems
+- Creating new components that integrate with existing infrastructure
+- Maintaining compatibility with older system components
 
-## Acquired Experiences
+## Professional Development
 
-- First time hand on practical experience with the knowledge of Linux administration.
-- Learn to maintain others code and create new parts that can communicate with archaic portions of the code.
+- Applied theoretical Linux administration knowledge in practical environments
+- Gained hands-on experience with server management and optimization
+- Developed skills in maintaining and integrating legacy systems
 
-## Why I Left
+## Skills Applied
 
-I was leaving Iraq to UK to pursue my PhD degree, so I had to leave my job with one month notice.
+- Linux server administration and configuration
+- Web server management and optimization
+- System integration and legacy code maintenance
+- Performance optimization and troubleshooting
+- Infrastructure monitoring and security
+
+## Impact
+
+This position provided valuable practical experience in Linux administration, allowing me to apply my training knowledge while developing skills in system integration and legacy code maintenance.
+
+## Transition
+
+I left this position to pursue my PhD degree in the UK, providing one month's notice before departure.

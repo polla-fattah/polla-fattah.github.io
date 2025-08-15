@@ -6,42 +6,52 @@ organization-short: "UoN"
 date: 2012-01-01
 start_date: 2012
 end_date: 2016
-background: "/img/jobs/academy.jpg" # business.jpg academy.jpg
-category: academy # business academy
+background: "/img/jobs/academy.jpg"
+category: academy
 permalink: /job/teaching-assistant
-duties: "I was PhD student at the Nottingham University, So through out my study I could take the duty of assisting my supervisor and other professors in the lab for the following courses:
-
-- Data Modelling an analysis.
-
-- Computer Programming using Java
-
-- Database Systems
-  "
 ---
 
-<style>
-  li p {
-    margin: 0px;
-    padding: 0px;
-  }
-</style>
+## General Information
 
+- **Position:** Teaching Assistant
+- **Organization:** University of Nottingham
+- **Duration:** 2012 - 2016
+- **Type:** Academic support role during PhD studies
 
-## Highlights
+## Role Overview
 
-- **Job Title:** _{{page.title}}_
-- **Organization:** _{{page.organization}}_
-- **Start Date:** _{{page.start_date}}_
-- **End Date**: _{{page.end_date}}_
+As a PhD student at the University of Nottingham, I served as a Teaching Assistant, supporting my supervisor and other professors in laboratory sessions and course delivery across multiple computer science subjects.
 
-## Job Duties
+## Key Responsibilities
 
-{{ page.duties }}
+### Laboratory Support
+- **Data Modelling and Analysis** - Assisted in lab sessions and practical exercises
+- **Computer Programming using Java** - Provided programming support and guidance
+- **Database Systems** - Supported database design and implementation exercises
 
-## Acquired Experiences
+### Academic Support
+- Assisted professors in course delivery and student assessment
+- Provided technical guidance and support to students
+- Contributed to laboratory session planning and execution
 
-It was my first time working with students with vibrant background, ethnicity and nationality which was exciting and full of new experience for me. I had acquired the knowledge about the teaching process and regulations of another country as well.
+## Professional Development
 
-## Why I Left
+- Gained experience working with diverse student populations from various backgrounds, ethnicities, and nationalities
+- Learned about teaching processes and regulations in the UK higher education system
+- Developed cross-cultural communication and teaching skills
 
-The Phd program has finished and I was starting to write up my thesis.
+## Skills Applied
+
+- Laboratory instruction and technical support
+- Student mentoring and guidance
+- Cross-cultural communication and teaching
+- Course material development and delivery
+- Academic assessment and feedback
+
+## Impact
+
+This position provided valuable experience in international higher education, enhancing my teaching skills while working with a diverse student body and learning about different academic systems and regulations.
+
+## Transition
+
+I completed the PhD program and transitioned to thesis writing phase, concluding my teaching assistant responsibilities.

@@ -6,44 +6,59 @@ organization-short: "AwroSoft"
 date: 2006-01-01
 start_date: 2006
 end_date: 2007
-background: "/img/jobs/business.jpg" # business.jpg academy.jpg
-category: business # business academy
+background: "/img/jobs/business.jpg"
+category: business
 permalink: /job/software-engineer-awrosoft
-duties: "The main duty was creating websites and simple web based systems for various clients. While doing so I had to accomplish the following:
-
-    - Requirement collection.
-  
-    - Analysis of requirements.
-  
-    - Designing and developing the websites and web based algorithms.
-  "
 ---
 
-<style>
-  li p {
-    margin: 0px;
-    padding: 0px;
-  }
-</style>
+## General Information
 
+- **Position:** Software Engineer
+- **Organization:** AwroSoft Company
+- **Duration:** 2006 - 2007
+- **Type:** Web development and client services role
 
-## Highlights
+## Role Overview
 
-- **Job Title:** _{{page.title}}_
-- **Organization:** _{{page.organization}}_
-- **Start Date:** _{{page.start_date}}_
-- **End Date**: _{{page.end_date}}_
+This position focused on creating websites and web-based systems for various clients, involving the complete software development lifecycle from requirements gathering to deployment.
 
-## Job Duties
+## Key Responsibilities
 
-{{ page.duties }}
+### Requirements Management
+- Collecting and analyzing client requirements
+- Understanding business needs and translating them into technical specifications
+- Ensuring clear communication with clients throughout the development process
 
+### Web Development
+- Designing and developing websites and web-based systems
+- Creating web-based algorithms and applications
+- Implementing full-stack solutions using LAMP stack technologies
 
+### Technical Implementation
+- Using HTML, CSS, and JavaScript for frontend development
+- Managing database design and implementation
+- Maintaining server infrastructure and configurations
 
-## Acquired Experiences
+## Professional Development
 
-I have created multiple websites mainly using LAMP stack plus HTML, CSS and JavaScript. I have learned a great deal of customer relation and support as well as technical skills like database management, Server maintenance and programming with these languages and tools.
+- Developed expertise in LAMP stack development (Linux, Apache, MySQL, PHP)
+- Enhanced customer relationship and support skills
+- Gained experience in database management and server maintenance
+- Strengthened programming skills across multiple languages and tools
 
-## Why I Left
+## Skills Applied
 
-I got a better job as IT manager at [SefinTel Company](/jobs/it-manager).
+- Full-stack web development (LAMP stack)
+- Requirements analysis and client communication
+- Database design and management
+- Server maintenance and configuration
+- Frontend development (HTML, CSS, JavaScript)
+- Backend development and system architecture
+
+## Impact
+
+This role provided comprehensive experience in web development and client services, building a strong foundation in both technical skills and customer relationship management.
+
+## Transition
+
+I advanced to a leadership position as IT Manager at [SefinTel Company](/jobs/it-manager), taking on greater responsibilities in team management and project oversight.

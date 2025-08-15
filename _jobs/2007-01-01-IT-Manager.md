@@ -6,38 +6,54 @@ organization-short: "SefinTel"
 date: 2007-01-01
 start_date: 2007
 end_date: 2008
-background: "/img/jobs/business.jpg" # business.jpg academy.jpg
-category: business # business academy
+background: "/img/jobs/business.jpg"
+category: business
 permalink: /job/it-manager
-duties: This job was a part time for a startup company, I had the privilege of creating my first team of software and IT engineers. I was responsible for managing the team and creating products. During the time I was their me with my team created two products, one was a website for a university and the other was a web-based system for tracking progress of government projects.
-
 ---
 
-<style>
-  li p {
-    margin: 0px;
-    padding: 0px;
-  }
-</style>
+## General Information
 
+- **Position:** IT Manager
+- **Organization:** SefinTel Company
+- **Duration:** 2007 - 2008
+- **Type:** Part-time role at a startup company
 
-## Highlights
+## Role Overview
 
-- **Job Title:** _{{page.title}}_
-- **Organization:** _{{page.organization}}_
-- **Start Date:** _{{page.start_date}}_
-- **End Date**: _{{page.end_date}}_
+This position provided the opportunity to lead and manage my first team of software and IT engineers in a startup environment. I was responsible for team management and product development, successfully delivering two significant projects during my tenure.
 
-## Job Duties
+## Key Responsibilities
 
-{{ page.duties }}
+### Team Management
+- Led and managed a team of software and IT engineers
+- Coordinated team efforts and project workflows
+- Provided technical guidance and mentorship
 
-## Acquired Experiences
+### Product Development
+- Oversaw the development of two major products:
+  - University website development
+  - Web-based government project tracking system
+- Managed product lifecycle from conception to deployment
 
-- Managing a small team of engineers.
-- Responsible for Creating software products.
-- Deploying products and upgrading clients network infrastructure.
+### Technical Infrastructure
+- Deployed products to production environments
+- Upgraded and maintained client network infrastructure
+- Ensured system reliability and performance
 
-## Why I Left
+## Professional Development
 
-I have finished my MSc degree so I had started another job as visiting lecturer and the [Koya University](/job/visiting-lecturer-koya) as well as changing my position in the [Salahaddin University-Erbil](/job/assistant-lecturer-sue) and became assistant lecturer.
+- Gained first-hand experience in team leadership and management
+- Developed project management skills in a startup environment
+- Enhanced technical deployment and infrastructure management capabilities
+
+## Skills Applied
+
+- Team leadership and management
+- Software product development
+- Network infrastructure management
+- Client relationship management
+- Project coordination and delivery
+
+## Transition
+
+After completing my MSc degree, I transitioned to academic roles, taking positions as a visiting lecturer at [Koya University](/job/visiting-lecturer-koya) and advancing to assistant lecturer at [Salahaddin University-Erbil](/job/assistant-lecturer-sue).

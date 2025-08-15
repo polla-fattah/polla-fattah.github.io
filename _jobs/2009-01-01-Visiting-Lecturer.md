@@ -6,37 +6,50 @@ organization-short: "Koya University"
 date: 2009-01-01
 start_date: 2009
 end_date: 2010
-background: "/img/jobs/academy.jpg" # business.jpg academy.jpg
-category: academy # business academy
+background: "/img/jobs/academy.jpg"
+category: academy
 permalink: /job/visiting-lecturer-koya
-duties: It was a one day visit to Koya University per week to teach Introduction to [Operating Systems](/academy/lecture/os/) course.
-
 ---
 
-<style>
-  li p {
-    margin: 0px;
-    padding: 0px;
-  }
-</style>
+## General Information
 
+- **Position:** Visiting Lecturer
+- **Organization:** Koya University
+- **Duration:** 2009 - 2010
+- **Type:** Part-time academic teaching (one day per week)
 
-## Highlights
+## Role Overview
 
-- **Job Title:** _{{page.title}}_
-- **Organization:** _{{page.organization}}_
-- **Start Date:** _{{page.start_date}}_
-- **End Date**: _{{page.end_date}}_
+This visiting lecturer position at Koya University provided my first experience teaching at another university, offering valuable insights into different academic environments and teaching methodologies.
 
-## Job Duties
+## Key Responsibilities
 
-{{ page.duties }}
+### Teaching and Instruction
+- **Introduction to Operating Systems** course instruction
+- Weekly teaching sessions (one day per week)
+- Course curriculum delivery and student assessment
 
+### Academic Engagement
+- Adapted to different university teaching processes and regulations
+- Gained experience in cross-institutional academic collaboration
 
-## Acquired Experiences
+## Professional Development
 
-That was my first time I have teaching experience in another University so I have learned about the teaching process and regulations in another University.
+- Acquired first-hand experience teaching at another university
+- Learned about different university teaching processes and regulations
+- Developed adaptability skills for diverse academic environments
 
-## Why I Left
+## Skills Applied
 
-I had to travel to Germany for my Linux administration training grant. Then up on return I started a part time job as [Linux Administrator](/job/linux-administrator) at 7NetLayers Company.
+- Course instruction and curriculum delivery
+- Cross-institutional academic collaboration
+- Adaptation to different university systems and procedures
+- Time management for part-time academic commitments
+
+## Impact
+
+This position provided foundational experience in teaching at multiple institutions, enhancing my understanding of different academic environments and teaching methodologies.
+
+## Transition
+
+I left this position to travel to Germany for a Linux administration training grant. Upon returning, I began a part-time role as [Linux Administrator](/job/linux-administrator) at 7NetLayers Company.

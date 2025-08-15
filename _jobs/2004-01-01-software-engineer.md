@@ -6,48 +6,66 @@ organization-short: "SUE"
 date: 2004-01-01
 start_date: 2004
 end_date: 2006
-background: "/img/jobs/academy.jpg" # business.jpg academy.jpg
-category: academy # business academy
+background: "/img/jobs/academy.jpg"
+category: academy
 permalink: /job/software-engineer-sue
-duties: "The main duties that I had with this job was as follows:
-
-    - Maintaining and developing parts of a portal to manage Software Engineering Department activities.
-  
-    - Network infrastructure maintenance as technician.
-  
-    - IT Support for staff and students.
-  
-    - Helping lecturers with some practical lab subjects.
-  "
 ---
 
-<style>
-  li p {
-    margin: 0px;
-    padding: 0px;
-  }
-</style>
+## General Information
 
+- **Position**: {{page.title}}
+- **Organization**: {{page.organization}}
+- **Department**: Software Engineering Department
+- **Duration**: {{page.start_date}} - {{page.end_date}}
+- **Category**: Academic/Technical
 
-## Highlights
+## Role Overview
 
-- **Job Title:** _{{page.title}}_
-- **Organization:** _{{page.organization}}_
-- **Start Date:** _{{page.start_date}}_
-- **End Date**: _{{page.end_date}}_
+As a Software Engineer at Salahaddin University-Erbil, I was responsible for developing and maintaining the department's web portal while providing technical support and infrastructure management. This role provided valuable experience in both software development and academic support services.
 
-## Job Duties
+## Key Responsibilities
 
-{{ page.duties }}
+### Software Development
+- **Portal Development**: Maintained and enhanced the Software Engineering Department's web portal
+- **System Management**: Developed and updated various components of the department's online systems
+- **Technical Implementation**: Converted requirements into functional software solutions
 
-## Acquired Experiences
+### Technical Support
+- **IT Infrastructure**: Maintained network infrastructure and technical systems
+- **User Support**: Provided technical assistance to staff and students
+- **System Administration**: Managed departmental computer systems and networks
 
-- better understanding of how to support clients.
-- Learning how to manage network infrastructure.
-- Practical hand on requirement collection.
-- Analysis of Requirements and converting them into codes in the system.
-- First time taking some duties of teaching students.
+### Academic Support
+- **Laboratory Assistance**: Supported lecturers with practical lab sessions
+- **Teaching Support**: Assisted in delivering technical content to students
+- **Educational Technology**: Contributed to the integration of technology in education
 
-## Why I Left
+## Professional Development
 
-I did not really left instead my role has changed as I became an MSc student so according to the University's regulation I could't work in the Software Engineering Department as Engineer.
+This position provided essential experience in:
+
+- **Software Development**: Practical application of programming and system development
+- **Client Support**: Understanding user needs and providing effective technical solutions
+- **Network Management**: Maintaining and troubleshooting IT infrastructure
+- **Requirements Analysis**: Gathering and analyzing user requirements for system development
+- **Educational Technology**: Supporting technology integration in academic environments
+
+## Technical Skills Acquired
+
+- **Web Development**: Portal development and maintenance
+- **System Administration**: Network and infrastructure management
+- **User Support**: Technical assistance and problem resolution
+- **Requirements Engineering**: Analysis and implementation of user needs
+- **Educational Support**: Technology integration in academic settings
+
+## Transition
+
+My role evolved as I began my MSc studies, and according to university regulations, I could no longer work as a Software Engineer in the department while pursuing graduate studies.
+
+## Impact
+
+This role established my foundation in:
+- Practical software development and system maintenance
+- Technical support and user assistance
+- Academic technology integration
+- Professional software engineering practices
