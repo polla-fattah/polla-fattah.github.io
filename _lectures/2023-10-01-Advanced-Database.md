@@ -1,6 +1,6 @@
 ---
 layout: lecture
-title: Advance Database
+title: Advanced Database
 subtitle: ""
 date: 2023-10-01
 background: /img/lecture/database.png

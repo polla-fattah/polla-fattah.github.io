@@ -22,30 +22,144 @@ permalink: /academy/lecture/data-structure/
 
 ## Course Description
 
-This course is an introductory course to various data structures that can be used in computer science with different algorithms. The course emphasizes on the elegancy and efficiency of the codes. This course is important to understand the underlying mathematics to measure the big O.
+This course provides a comprehensive introduction to fundamental data structures and algorithms essential for software engineering. Students will learn to design, implement, and analyze various data structures using C++ programming language. The course emphasizes both theoretical understanding and practical implementation, focusing on algorithmic efficiency and elegant code design.
+
+The curriculum covers essential data structures including arrays, linked lists, stacks, queues, trees, and graphs, along with fundamental algorithms for searching and sorting. Students will develop a deep understanding of time and space complexity analysis using Big O notation, enabling them to make informed decisions about algorithm selection for different problem scenarios.
+
+Through hands-on programming assignments and projects, students will gain practical experience in implementing these data structures and algorithms, preparing them for advanced computer science courses and real-world software development challenges.
+
+## Prerequisites
+
+- Programming Fundamentals (or equivalent)
+- Basic C++ programming knowledge
+- Mathematical reasoning skills
 
 ## Course Objectives
 
-Up on completion of the course students should be able to demonstrate a hands on understanding of data structures and algorithms like:
+Upon completion of this course, students will be able to:
 
-1. Linked Lists
-1. Stack
-1. Queue
-1. Sorting
-1. Searching
+- Understand and implement fundamental data structures including arrays, linked lists, stacks, queues, and trees.
+- Analyze algorithm efficiency using Big O notation and asymptotic analysis.
+- Design and implement efficient searching and sorting algorithms.
+- Apply appropriate data structures to solve computational problems.
+- Write clean, efficient, and well-documented C++ code.
+- Evaluate trade-offs between different data structures and algorithms.
+- Develop problem-solving skills through algorithmic thinking.
 
-## Course Content
+## Course Outline
 
-- Introduction to the Course
-- Arrays
-- Big O Notation
-- Linked Lists and Doubly Linked List
-- Stacks and Stacks with Arrays
-- Queue and Queue with Linked Lists
-- Tree and Binary Tree.
-- Algorithms and Efficient Algorithms
-- Sets
-- Elegant Coding
-- Searching
-- Sorting
-- Calculating big O for sorting and searching
+### Week 1: Introduction to Data Structures and Algorithm Analysis
+- Course overview and expectations
+- Introduction to data structures and their importance
+- Algorithm analysis fundamentals
+- Big O notation and asymptotic analysis
+- Time and space complexity concepts
+- **Lab**: Setting up development environment and first C++ program
+
+### Week 2: Arrays and Basic Data Structures
+- Array fundamentals and implementation
+- Dynamic arrays and memory management
+- Multi-dimensional arrays
+- Array-based algorithms and operations
+- Performance characteristics of arrays
+- **Lab**: Array manipulation and basic algorithms
+
+### Week 3: Linked Lists Fundamentals
+- Singly linked lists: structure and implementation
+- Linked list operations: insertion, deletion, traversal
+- Linked list vs. array trade-offs
+- Applications of linked lists
+- **Lab**: Implementing singly linked lists in C++
+
+### Week 4: Advanced Linked Lists
+- Doubly linked lists and circular linked lists
+- Advanced linked list operations
+- Linked list optimization techniques
+- Memory management in linked lists
+- **Lab**: Doubly linked list implementation
+
+### Week 5: Stacks and Queues
+- Stack data structure: LIFO principle
+- Stack implementation using arrays and linked lists
+- Queue data structure: FIFO principle
+- Queue implementation and variations
+- **Lab**: Stack and queue applications
+
+### Week 6: Trees and Binary Trees
+- Tree terminology and basic concepts
+- Binary tree structure and properties
+- Tree traversal algorithms (inorder, preorder, postorder)
+- Binary search trees (BST)
+- **Lab**: Binary tree implementation and traversal
+
+### Week 7: Midterm Exam and Review
+- **Midterm Exam**: Covers weeks 1-6 material
+- Review of fundamental concepts
+- Problem-solving practice
+- **Lab**: Exam review and practice problems
+
+### Week 8: Advanced Tree Structures
+- BST operations: insertion, deletion, search
+- AVL trees and self-balancing
+- Red-black trees concepts
+- Tree-based algorithms and optimizations
+- **Lab**: Advanced tree operations
+
+### Week 9: Searching Algorithms
+- Linear search and binary search
+- Search algorithms for different data structures
+- Search efficiency analysis
+- Advanced searching techniques
+- **Lab**: Search algorithm implementation and comparison
+
+### Week 10: Basic Sorting Algorithms
+- Bubble sort and selection sort
+- Insertion sort and shell sort
+- Sorting algorithm comparison and analysis
+- Algorithm complexity analysis
+- **Lab**: Basic sorting algorithm implementation
+
+### Week 11: Advanced Sorting Algorithms
+- Merge sort and divide-and-conquer approach
+- Quick sort and partitioning strategies
+- Heap sort and priority queues
+- Sorting algorithm optimization
+- **Lab**: Advanced sorting algorithms
+
+### Week 12: Sets and Hash Tables
+- Set data structure and operations
+- Hash tables: concepts and implementation
+- Hash functions and collision resolution
+- Hash table performance analysis
+- **Lab**: Hash table implementation
+
+### Week 13: Algorithm Design and Optimization
+- Elegant coding principles
+- Algorithm design patterns
+- Performance optimization techniques
+- Code efficiency and maintainability
+- **Lab**: Algorithm optimization and code review
+
+### Week 14: Final Exam Preparation and Review
+- Comprehensive review of all course material
+- Practice problems and sample questions
+- **Final Exam**: Theoretical component
+- **Lab**: Final exam practice and preparation
+
+### Week 15: Final Practical Exam and Course Wrap-up
+- **Final Exam**: Practical programming component
+- Course evaluation and feedback
+- Future learning paths and advanced topics
+- **Lab**: Final practical exam
+
+## Textbooks
+
+- [Recommended] "Data Structures and Algorithm Analysis in C++" by Mark Allen Weiss
+- [Optional] "Introduction to Algorithms" by Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein
+
+## Assessment
+
+- **Assignments (30%)**
+- **Programming Projects (25%)**
+- **Midterm Exam (20%)**
+- **Final Exam (25%)**
