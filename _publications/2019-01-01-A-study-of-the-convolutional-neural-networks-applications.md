@@ -1,7 +1,8 @@
 ---
 layout: publication
 title: A study of the convolutional neural networks applications
-authors: Ahmed S Shamsaldin, Polla Fattah, Tarik A Rashid, Nawzad K Al-Salihi
+name: "study-convolutional-neural-networks-applications"
+authors: ["Ahmed S Shamsaldin", "Polla Fattah", "Tarik A Rashid", "Nawzad K Al-Salihi"]
 date: 2019-01-01
 background: "/img/publication/journal.jpg"
 type: Article # Chapter, Book, Report

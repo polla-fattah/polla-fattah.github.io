@@ -1,6 +1,7 @@
 ---
 layout: student
 title: "Aveen"
+name: "aveen"
 level: "MSc"
 university: "University of Kurdistan Hewlêr"
 subject: "Computer Science"
@@ -10,18 +11,18 @@ status: "Active"
 supervisor: "Dr. Polla Fattah"
 research_area: "Autism Spectrum Disorder Detection using Machine Learning"
 permalink: /student/aveen
+
+# CROSS-REFERENCES - REMEMBER TO UPDATE THESE WHEN CHANGES OCCUR:
+# 1. When adding this student to a research project, add the project ID here
+# 2. When this student publishes a paper, add the publication ID here
+# 3. Update the corresponding research/publication files with this student's ID
+research_projects:
+  - "2023-02-10-autism-detection"  # Autism Detection Research
+  - "2023-10-08-general-medical"   # General Medical Research
+publications: []  # Add publication IDs when papers are published
 ---
 
-## Student Information
 
-- **Name**: Aveen
-- **Level**: MSc
-- **University**: University of Kurdistan Hewlêr (UKH)
-- **Subject**: Computer Science
-- **Research Area**: Autism Spectrum Disorder (ASD) Detection using Machine Learning
-- **Status**: Active Research
-- **Supervisor**: Dr. Polla Fattah
-- **Duration**: 2023 - Present
 
 ## Research Focus
 

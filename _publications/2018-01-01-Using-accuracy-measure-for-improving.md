@@ -1,7 +1,8 @@
 ---
 layout: publication
 title: Using accuracy measure for improving the training of LSTM with metaheuristic algorithms
-authors: Tarik Rashid, Polla Fattah , Delan K. Awla
+name: "using-accuracy-measure-improving-training-lstm-metaheuristic-algorithms"
+authors: ["Tarik Rashid", "Polla Fattah", "Delan K. Awla"]
 date: 2018-01-01
 background: "/img/publication/journal.jpg"
 type: Article # Chapter, Book, Report

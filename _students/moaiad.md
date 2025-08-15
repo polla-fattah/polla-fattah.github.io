@@ -1,6 +1,7 @@
 ---
 layout: student
 title: "Moaiad"
+name: "moaiad"
 level: "MSc"
 university: "Salahaddin University-Erbil"
 subject: "Computer Science"
@@ -12,16 +13,7 @@ research_area: "Automatic Speech Recognition (ASR) for Kurdish Language"
 permalink: /student/moaiad
 ---
 
-## Student Information
 
-- **Name**: Moaiad
-- **Level**: MSc
-- **University**: Salahaddin University-Erbil (SUE)
-- **Subject**: Computer Science
-- **Research Area**: Automatic Speech Recognition (ASR) for Kurdish Language
-- **Status**: Active Research
-- **Supervisor**: Dr. Polla Fattah
-- **Duration**: 2023 - Present
 
 ## Research Focus
 

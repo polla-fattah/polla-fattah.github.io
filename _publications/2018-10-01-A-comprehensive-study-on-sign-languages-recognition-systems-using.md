@@ -1,7 +1,8 @@
 ---
 layout: publication
 title: A Comprehensive Study on Sign Languages Recognition Systems Using (SVM, KNN, CNN and ANN)
-authors: Agha, Rawan A. Al Rashid, Muhammed N. Sefer, and Polla Fattah
+name: "comprehensive-study-sign-languages-recognition-systems-svm-knn-cnn-ann"
+authors: ["Agha, Rawan A. Al", "Rashid, Muhammed N. Sefer", "Polla Fattah"]
 date: 2018-10-01
 background: "/img/publication/conference.jpg"
 type: Conference

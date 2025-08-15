@@ -261,9 +261,6 @@ layout: default
         <div class="meta-item">
           <i class="fas fa-calendar"></i> {{ page.start_date }} - {{ page.end_date }}
         </div>
-        <div class="meta-item">
-          <span class="status-badge {{ page.status | downcase }}">{{ page.status }}</span>
-        </div>
       </div>
     </div>
   </div>
@@ -273,6 +270,43 @@ layout: default
   <div class="container">
     <div class="row">
       <div class="col-12">
+        <h2 class="section-heading">Student Information</h2>
+        
+        <ul style="list-style: none; padding: 0;">
+          <li style="margin-bottom: 8px; padding: 8px 12px; background: #f8f9fa; border-radius: 6px; border-left: 3px solid #26272b;">
+            <i class="fas fa-user" style="color: #26272b; margin-right: 8px;"></i>
+            <strong>Name:</strong> {{ page.title }}
+          </li>
+          <li style="margin-bottom: 8px; padding: 8px 12px; background: #f8f9fa; border-radius: 6px; border-left: 3px solid #26272b;">
+            <i class="fas fa-graduation-cap" style="color: #26272b; margin-right: 8px;"></i>
+            <strong>Level:</strong> {{ page.level }}
+          </li>
+          <li style="margin-bottom: 8px; padding: 8px 12px; background: #f8f9fa; border-radius: 6px; border-left: 3px solid #26272b;">
+            <i class="fas fa-university" style="color: #26272b; margin-right: 8px;"></i>
+            <strong>University:</strong> {{ page.university }}
+          </li>
+          <li style="margin-bottom: 8px; padding: 8px 12px; background: #f8f9fa; border-radius: 6px; border-left: 3px solid #26272b;">
+            <i class="fas fa-book" style="color: #26272b; margin-right: 8px;"></i>
+            <strong>Subject:</strong> {{ page.subject }}
+          </li>
+          <li style="margin-bottom: 8px; padding: 8px 12px; background: #f8f9fa; border-radius: 6px; border-left: 3px solid #26272b;">
+            <i class="fas fa-search" style="color: #26272b; margin-right: 8px;"></i>
+            <strong>Research Area:</strong> {{ page.research_area }}
+          </li>
+          <li style="margin-bottom: 8px; padding: 8px 12px; background: #f8f9fa; border-radius: 6px; border-left: 3px solid #26272b;">
+            <i class="fas fa-info-circle" style="color: #26272b; margin-right: 8px;"></i>
+            <strong>Status:</strong> {{ page.status }}
+          </li>
+          <li style="margin-bottom: 8px; padding: 8px 12px; background: #f8f9fa; border-radius: 6px; border-left: 3px solid #26272b;">
+            <i class="fas fa-user-tie" style="color: #26272b; margin-right: 8px;"></i>
+            <strong>Supervisor:</strong> {{ page.supervisor }}
+          </li>
+          <li style="margin-bottom: 8px; padding: 8px 12px; background: #f8f9fa; border-radius: 6px; border-left: 3px solid #26272b;">
+            <i class="fas fa-calendar" style="color: #26272b; margin-right: 8px;"></i>
+            <strong>Duration:</strong> {{ page.start_date }} - {{ page.end_date }}
+          </li>
+        </ul>
+
         {{ content }}
         
         {% if page.publications %}
@@ -283,7 +317,7 @@ layout: default
               {% assign publication = site.publications | where: "name", pub_id | first %}
               {% if publication %}
               <li>
-                <a href="{{ publication.url | prepend: site.baseurl | replace: '//', '/' }}">{{ publication.title }}</a>
+                <a href="{{ publication.permalink | prepend: site.baseurl | replace: '//', '/' }}">{{ publication.title }}</a>
                 <br><small>{{ publication.date | date: '%Y' }} - {{ publication.type }}</small>
               </li>
               {% endif %}

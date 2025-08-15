@@ -1,6 +1,7 @@
 ---
 layout: student
 title: "Sakar"
+name: "sakar"
 level: "MSc"
 university: "Salahaddin University-Erbil"
 subject: "Computer Science"
@@ -12,16 +13,7 @@ research_area: "Data Analysis in Public Goods Game Research"
 permalink: /student/sakar
 ---
 
-## Student Information
 
-- **Name**: Sakar
-- **Level**: MSc
-- **University**: Salahaddin University-Erbil (SUE)
-- **Subject**: Computer Science
-- **Research Area**: Data Analysis in Public Goods Game Research
-- **Status**: Completed
-- **Supervisor**: Dr. Polla Fattah
-- **Duration**: 2022 - 2024
 
 ## Research Focus
 

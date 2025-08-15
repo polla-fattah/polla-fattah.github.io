@@ -1,7 +1,8 @@
 ---
 layout: publication
 title: Optimization of Association Rule Mining
-authors: Polla Fatah, Ibrahim Hamarash
+name: "optimization-association-rule-mining"
+authors: ["Polla Fatah", "Ibrahim Hamarash"]
 date: 2015-09-08
 background: "/img/publication/journal.jpg"
 type: Article # Chapter, Book, Report

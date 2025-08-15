@@ -4,9 +4,19 @@ title: "OCR (Optical Character Recognition)"
 subtitle: "Developing systems to digitize and recognize Kurdish text from printed documents, handwritten text, and digital images"
 date: 2023-01-15
 category: "Kurdish Language Research"
-students: ["Hevi", "Israa"]
 status: "completed"
 background: "/img/main/academy-bg.jpg"
+permalink: /academy/research/kurdish-ocr/
+
+# CROSS-REFERENCES - REMEMBER TO UPDATE THESE WHEN CHANGES OCCUR:
+# 1. When adding a student to this project, add their student ID here
+# 2. When this project produces a publication, add the publication ID here
+# 3. Update the corresponding student files with this project ID
+students: ["isra"]  # Student IDs (lowercase, no spaces)
+publications:
+  - "kurdish-handwritten-character-recognition-deep-learning"
+  - "kurdish-handwritten-character-recognition-deep-learning-techniques"
+  - "extensive-dataset-handwritten-central-kurdish-characters"
 ---
 
 <p>Optical Character Recognition (OCR) for Kurdish language represents a significant advancement in digitizing Kurdish textual content. This research focuses on developing robust systems capable of accurately recognizing and converting Kurdish text from various sources including printed documents, handwritten materials, and digital images.</p>
@@ -23,9 +33,7 @@ background: "/img/main/academy-bg.jpg"
 <li>Real-time processing capabilities</li>
 </ul>
 
-<h2 class="section-heading">Student Contributions</h2>
 
-<p><strong>Hevi</strong> and <strong><a href="/student/isra">Isra</a></strong> have successfully completed their research work on this project, contributing to the development of training datasets and model optimization techniques.</p>
 
 <h2 class="section-heading">Impact and Applications</h2>
 

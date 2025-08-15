@@ -1,19 +1,19 @@
 ---
 layout: student
-title: "Alaa Adham"
-name: "alaa"
+title: "Michael"
+name: "michael"
 level: "MSc"
 university: "University of Kurdistan Hewlêr"
 subject: "Computer Science"
 start_date: 2023
-end_date: 2024
+end_date: 
 status: "Completed"
 supervisor: "Dr. Polla Fattah"
-research_area: "Medical Data Analysis and Computational Medicine"
-permalink: /student/alaa
+research_area: "TTS"
+permalink: /student/micheal
 publications:
-  - "age-gender-estimation-skeletal-radiographs-deep-learning"
-  - "multi-factor-classification-deep-learning-xray-images"
+  - "2024-01-19-age-gender-estimation-skeletal-radiographs-deep-learning"
+  - "2024-01-20-multi-factor-classification-deep-learning-xray-images"
 ---
 
 

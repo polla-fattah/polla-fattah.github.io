@@ -1,6 +1,7 @@
 ---
 layout: student
 title: "Nida"
+name: "nida"
 level: "MSc"
 university: "University of Kurdistan Hewlêr"
 subject: "Computer Science"
@@ -12,16 +13,7 @@ research_area: "Fuzzy Logic for Kurdish Terminology Development"
 permalink: /student/nida
 ---
 
-## Student Information
 
-- **Name**: Nida
-- **Level**: MSc
-- **University**: University of Kurdistan Hewlêr (UKH)
-- **Subject**: Computer Science
-- **Research Area**: Fuzzy Logic for Kurdish Terminology Development
-- **Status**: Active Research
-- **Supervisor**: Dr. Polla Fattah
-- **Duration**: 2023 - Present
 
 ## Research Focus
 

@@ -1,6 +1,7 @@
 ---
 layout: student
 title: "Arwa"
+name: "arwa"
 level: "MSc"
 university: "Salahaddin University-Erbil"
 subject: "Computer Science"
@@ -12,16 +13,7 @@ research_area: "Time Series Data Analysis of Displaced People"
 permalink: /student/arwa
 ---
 
-## Student Information
 
-- **Name**: Arwa
-- **Level**: MSc
-- **University**: Salahaddin University-Erbil (SUE)
-- **Subject**: Computer Science
-- **Research Area**: Time Series Data Analysis of Displaced People
-- **Status**: Completed
-- **Supervisor**: Dr. Polla Fattah
-- **Duration**: 2022 - 2024
 
 ## Research Focus
 

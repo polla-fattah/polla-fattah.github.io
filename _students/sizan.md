@@ -1,6 +1,7 @@
 ---
 layout: student
 title: "Sizan"
+name: "sizan"
 level: "MSc"
 university: "University of Kurdistan Hewlêr"
 subject: "Computer Science"
@@ -12,16 +13,7 @@ research_area: "Autism Spectrum Disorder Detection using Machine Learning"
 permalink: /student/sizan
 ---
 
-## Student Information
 
-- **Name**: Sizan
-- **Level**: MSc
-- **University**: University of Kurdistan Hewlêr (UKH)
-- **Subject**: Computer Science
-- **Research Area**: Autism Spectrum Disorder (ASD) Detection using Machine Learning
-- **Status**: Active Research
-- **Supervisor**: Dr. Polla Fattah
-- **Duration**: 2023 - Present
 
 ## Research Focus
 

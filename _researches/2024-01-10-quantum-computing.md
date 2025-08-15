@@ -4,9 +4,16 @@ title: "Quantum Computing & AI"
 subtitle: "Exploring quantum-inspired neural networks and hybrid quantum-classical architectures for optimization"
 date: 2024-01-10
 category: "Emerging Technologies"
-students: ["Sara"]
 status: "ongoing"
 background: "/img/main/academy-bg.jpg"
+permalink: /academy/research/quantum-computing/
+
+# CROSS-REFERENCES - REMEMBER TO UPDATE THESE WHEN CHANGES OCCUR:
+# 1. When adding a student to this project, add their student ID here
+# 2. When this project produces a publication, add the publication ID here
+# 3. Update the corresponding student files with this project ID
+students: ["sara"]  # Student IDs (lowercase, no spaces)
+publications: []  # Add publication IDs when available
 ---
 
 <p>Quantum Computing & AI research explores the intersection of quantum mechanics and artificial intelligence, developing novel approaches that leverage quantum principles to enhance machine learning and optimization algorithms.</p>
@@ -28,9 +35,7 @@ background: "/img/main/academy-bg.jpg"
 
 <p>The research develops novel algorithms that combine the computational power of quantum systems with the flexibility of classical machine learning, creating hybrid architectures for complex optimization problems.</p>
 
-<h2 class="section-heading">Current Exploration</h2>
 
-<p><strong>Sara</strong> is investigating quantum-inspired approaches to neural network design, exploring how quantum principles can enhance learning efficiency and computational capabilities.</p>
 
 <h2 class="section-heading">Theoretical Foundations</h2>
 

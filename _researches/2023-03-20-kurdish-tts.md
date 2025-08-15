@@ -4,9 +4,16 @@ title: "TTS (Text-to-Speech)"
 subtitle: "Creating natural-sounding speech synthesis systems for Kurdish language"
 date: 2023-03-20
 category: "Kurdish Language Research"
-students: ["Michael"]
 status: "ongoing"
 background: "/img/main/academy-bg.jpg"
+permalink: /academy/research/kurdish-tts/
+
+# CROSS-REFERENCES - REMEMBER TO UPDATE THESE WHEN CHANGES OCCUR:
+# 1. When adding a student to this project, add their student ID here
+# 2. When this project produces a publication, add the publication ID here
+# 3. Update the corresponding student files with this project ID
+students: ["michael"]  # Student IDs (lowercase, no spaces)
+publications: []  # Add publication IDs when available
 ---
 
 <p>Text-to-Speech (TTS) synthesis for Kurdish language aims to develop natural-sounding speech generation systems that can convert written Kurdish text into high-quality spoken audio.</p>
@@ -23,6 +30,3 @@ background: "/img/main/academy-bg.jpg"
 <li>Multi-speaker voice adaptation</li>
 </ul>
 
-<h2 class="section-heading">Current Progress</h2>
-
-<p><strong>Michael</strong> is currently working on developing the core TTS architecture and training methodologies for Kurdish language synthesis.</p>

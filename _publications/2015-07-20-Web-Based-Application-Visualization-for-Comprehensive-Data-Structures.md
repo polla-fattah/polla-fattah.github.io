@@ -1,7 +1,8 @@
 ---
 layout: publication
 title: Web Based Application Visualization for Comprehensive Data Structures
-authors: Ihab Ahmed Najm, Nayif Mohammed Hammash, Mahamod Ismail, Polla Fatah
+name: "web-based-application-visualization-comprehensive-data-structures"
+authors: ["Ihab Ahmed Najm", "Nayif Mohammed Hammash", "Mahamod Ismail", "Polla Fatah"]
 date: 2015-07-20
 background: "/img/publication/journal.jpg"
 type: Article # Chapter, Book, Report

@@ -95,7 +95,26 @@ permalink: /academy/cv/
         <h1 class="cvh1">Publications</h1>
             {% for e in site.publications reversed %}        
             <div class='element' style='text-indent: -50px; margin-left: 60px'>
-                <strong>{{ e.authors}}; </strong>
+                <strong>
+                  {% for author in e.authors %}
+                    {% assign is_student = false %}
+                    {% assign student_link = "" %}
+                    {% assign student_title = "" %}
+                    {% for student in site.students %}
+                      {% if student.title == author or student.name == author %}
+                        {% assign is_student = true %}
+                        {% assign student_link = student.permalink %}
+                        {% assign student_title = student.title %}
+                        {% break %}
+                      {% endif %}
+                    {% endfor %}
+                    {% if is_student %}
+                      <a href="{{ student_link | prepend: site.baseurl | replace: '//', '/' }}" style="color: inherit; text-decoration: none;">{{ student_title }}</a>{% unless forloop.last %}, {% endunless %}
+                    {% else %}
+                      {{ author }}{% unless forloop.last %}, {% endunless %}
+                    {% endif %}
+                  {% endfor %}; 
+                </strong>
                 `{{ e.title }}`;
                 {% if e.publisher != "" %} {{ e.publisher}}; {% endif %}
                 {% if e.page != "" %}  {{ e.page}}; {% endif %}

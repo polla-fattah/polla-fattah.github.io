@@ -206,7 +206,26 @@ layout: default
     <div class="publication-hero-content">
       <h1>{{ page.title }}</h1>
       {% if page.authors %}
-      <p class="authors">{{ page.authors }}</p>
+      <p class="authors">
+        {% for author in page.authors %}
+          {% assign is_student = false %}
+          {% assign student_link = "" %}
+          {% assign student_title = "" %}
+          {% for student in site.students %}
+            {% if student.title == author or student.name == author %}
+              {% assign is_student = true %}
+              {% assign student_link = student.permalink %}
+              {% assign student_title = student.title %}
+              {% break %}
+            {% endif %}
+          {% endfor %}
+          {% if is_student %}
+            <a href="{{ student_link | prepend: site.baseurl | replace: '//', '/' }}" style="color: inherit; text-decoration: none; font-weight: 500;">{{ student_title }}</a>{% unless forloop.last %}, {% endunless %}
+          {% else %}
+            {{ author }}{% unless forloop.last %}, {% endunless %}
+          {% endif %}
+        {% endfor %}
+      </p>
       {% endif %}
       <div class="publication-meta">
         <div class="meta-item">
@@ -245,8 +264,8 @@ layout: default
             {% for student_id in page.students %}
               {% assign student = site.students | where: "name", student_id | first %}
               {% if student %}
-              <a href="{{ student.url | prepend: site.baseurl | replace: '//', '/' }}" 
-                 style="display: inline-block; background: #f8f9fa; padding: 10px 20px; border-radius: 25px; text-decoration: none; color: #495057; border: 1px solid #e9ecef; transition: all 0.3s ease;">
+                                          <a href="{{ student.permalink | prepend: site.baseurl | replace: '//', '/' }}" 
+                               style="display: inline-block; background: #f8f9fa; padding: 10px 20px; border-radius: 25px; text-decoration: none; color: #495057; border: 1px solid #e9ecef; transition: all 0.3s ease;">
                 <i class="fas fa-user-graduate" style="margin-right: 8px; color: #6c757d;"></i>
                 {{ student.title }}
                 <span style="font-size: 0.8rem; color: #6c757d; margin-left: 8px;">{{ student.research_area | truncate: 30 }}</span>

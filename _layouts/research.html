@@ -234,6 +234,134 @@ layout: default
       <div class="col-12">
         {{ content }}
         
+        {% if page.students and page.students.size > 0 %}
+        <div class="students-section" style="margin-top: 40px; padding-top: 30px; border-top: 2px solid #e9ecef;">
+          <h2 style="color: #2c3e50; margin-bottom: 20px; font-weight: 600;">
+            <i class="fas fa-users" style="margin-right: 10px; color: #495057;"></i>Research Team
+          </h2>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+            {% for student_id in page.students %}
+              {% assign student = site.students | where: "name", student_id | first %}
+              {% if student %}
+              <div style="background: #f8f9fa; border-radius: 15px; padding: 20px; border: 1px solid #e9ecef; transition: all 0.3s ease;">
+                <div style="display: flex; align-items: center; margin-bottom: 15px;">
+                  <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #26272b, #495057); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 15px;">
+                    <i class="fas fa-user-graduate" style="color: white; font-size: 20px;"></i>
+                  </div>
+                  <div>
+                                                      <h3 style="margin: 0; font-size: 1.2rem; font-weight: 600; color: #2c3e50;">
+                                    <a href="{{ student.permalink | prepend: site.baseurl | replace: '//', '/' }}" style="color: inherit; text-decoration: none;">
+                                      {{ student.title }}
+                                    </a>
+                                  </h3>
+                    <p style="margin: 5px 0 0 0; color: #6c757d; font-size: 0.9rem;">
+                      {{ student.level }} • {{ student.university }}
+                    </p>
+                  </div>
+                </div>
+                {% if student.research_area %}
+                <p style="margin: 0; color: #495057; font-size: 0.95rem; line-height: 1.5;">
+                  <strong>Research Focus:</strong> {{ student.research_area }}
+                </p>
+                {% endif %}
+                {% if student.status %}
+                <div style="margin-top: 10px;">
+                  <span style="background: {% if student.status == 'completed' %}#28a745{% else %}#ffc107{% endif %}; color: {% if student.status == 'completed' %}white{% else %}#212529{% endif %}; padding: 4px 12px; border-radius: 20px; font-size: 0.8rem; font-weight: 500;">
+                    {{ student.status | capitalize }}
+                  </span>
+                </div>
+                {% endif %}
+              </div>
+              {% else %}
+              <div style="background: #f8f9fa; border-radius: 15px; padding: 20px; border: 1px solid #e9ecef; opacity: 0.7;">
+                <p style="margin: 0; color: #6c757d; font-style: italic;">
+                  <i class="fas fa-user" style="margin-right: 8px;"></i>
+                  Student: {{ student_id }}
+                </p>
+              </div>
+              {% endif %}
+            {% endfor %}
+          </div>
+        </div>
+        {% endif %}
+        
+        {% if page.publications and page.publications.size > 0 %}
+        <div class="publications-section" style="margin-top: 40px; padding-top: 30px; border-top: 2px solid #e9ecef;">
+          <h2 style="color: #2c3e50; margin-bottom: 20px; font-weight: 600;">
+            <i class="fas fa-file-alt" style="margin-right: 10px; color: #495057;"></i>Publications
+          </h2>
+          <div style="display: flex; flex-direction: column; gap: 25px;">
+            {% for publication_id in page.publications %}
+              {% assign publication = site.publications | where: "name", publication_id | first %}
+              {% if publication %}
+              <div style="background: white; border-radius: 12px; padding: 25px; border: 2px solid #e9ecef; box-shadow: 0 4px 12px rgba(0,0,0,0.08); transition: all 0.3s ease; position: relative; overflow: hidden;">
+                <div style="position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, #6c757d, #495057, #343a40, #212529);"></div>
+                <div style="display: flex; align-items: flex-start; margin-bottom: 15px;">
+                  <div style="width: 45px; height: 45px; background: linear-gradient(135deg, #6c757d, #495057); border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-right: 15px; flex-shrink: 0;">
+                    <i class="fas fa-file-alt" style="color: white; font-size: 18px;"></i>
+                  </div>
+                  <div style="flex: 1;">
+                    <h3 style="margin: 0 0 8px 0; font-size: 1.1rem; font-weight: 600; color: #2c3e50; line-height: 1.4;">
+                      <a href="{{ publication.permalink | prepend: site.baseurl | replace: '//', '/' }}" style="color: inherit; text-decoration: none;">
+                        {{ publication.title }}
+                      </a>
+                    </h3>
+                    {% if publication.authors %}
+                    <p style="margin: 0 0 8px 0; color: #6c757d; font-size: 0.9rem; font-style: italic;">
+                      {% for author in publication.authors %}
+                        {% assign is_student = false %}
+                        {% assign student_link = "" %}
+                        {% assign student_title = "" %}
+                        {% for student in site.students %}
+                          {% if student.title == author or student.name == author %}
+                            {% assign is_student = true %}
+                            {% assign student_link = student.permalink %}
+                            {% assign student_title = student.title %}
+                            {% break %}
+                          {% endif %}
+                        {% endfor %}
+                        {% if is_student %}
+                          <a href="{{ student_link | prepend: site.baseurl | replace: '//', '/' }}" style="color: #495057; text-decoration: none; font-weight: 500;">{{ student_title }}</a>{% unless forloop.last %}, {% endunless %}
+                        {% else %}
+                          {{ author }}{% unless forloop.last %}, {% endunless %}
+                        {% endif %}
+                      {% endfor %}
+                    </p>
+                    {% endif %}
+                    {% if publication.date %}
+                    <p style="margin: 0 0 8px 0; color: #495057; font-size: 0.85rem;">
+                      <i class="fas fa-calendar-alt" style="margin-right: 5px;"></i>
+                      {{ publication.date | date: '%B %Y' }}
+                    </p>
+                    {% endif %}
+                  </div>
+                </div>
+                {% if publication.abstract %}
+                <p style="margin: 0; color: #495057; font-size: 0.9rem; line-height: 1.5; border-top: 1px solid #f1f3f4; padding-top: 12px;">
+                  {{ publication.abstract | truncate: 120 }}
+                </p>
+                {% endif %}
+                {% if publication.category %}
+                <div style="margin-top: 12px;">
+                  <span style="background: #e9ecef; color: #495057; padding: 4px 10px; border-radius: 15px; font-size: 0.75rem; font-weight: 500;">
+                    {{ publication.category }}
+                  </span>
+                </div>
+                {% endif %}
+              </div>
+              {% else %}
+              <div style="background: white; border-radius: 12px; padding: 25px; border: 2px solid #e9ecef; opacity: 0.7;">
+                <p style="margin: 0; color: #6c757d; font-style: italic;">
+                  <i class="fas fa-file-alt" style="margin-right: 8px;"></i>
+                  Publication: {{ publication_id }}
+                </p>
+              </div>
+              {% endif %}
+            {% endfor %}
+          </div>
+        </div>
+        {% endif %}
+        
         <div class="author-credit">
           <a href="/">Polla Fattah</a>
         </div>

@@ -96,6 +96,40 @@ The website uses:
 - **Twitter**: [@FattahPolla](https://twitter.com/FattahPolla)
 - **ResearchGate**: [Polla-Fattah](https://researchgate.net/profile/Polla-Fattah)
 
+## Content Management
+
+### Cross-Reference System
+
+This website uses a cross-reference system to link students, research projects, and publications. When making changes, follow these guidelines:
+
+#### When You Make Changes:
+
+**Adding a student to a project:**
+- Add student ID to research file's `students: []`
+- Add project ID to student file's `research_projects: []`
+- The helpful comments remind you what to do!
+
+**Publishing a paper:**
+- Add student IDs to publication file's `students: []`
+- Add publication ID to student files' `publications: []`
+- Add publication ID to research files' `publications: []`
+
+The system is now self-documenting and maintainable! 🎉
+
+#### ID Naming Convention:
+- **Student IDs**: lowercase, no spaces (e.g., `"aveen"`, `"bnar"`)
+- **Research IDs**: filename without extension (e.g., `"2023-02-10-autism-detection"`)
+- **Publication IDs**: filename without extension (e.g., `"2024-01-15-tokenisation-free-machine-translation-kurdish-byt5"`)
+
+#### Maintenance Tips:
+- Use the helpful comments in front matter as reminders
+- Check the generated site after making changes
+- Keep IDs consistent across all files
+- Update relationships immediately when changes occur
+- Use the cross-references include in templates for automatic linking
+
+For detailed maintenance procedures, see `MAINTENANCE_CHECKLIST.md`.
+
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.

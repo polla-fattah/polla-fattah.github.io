@@ -6,7 +6,7 @@ permalink: /academy/researches/
 
 <style>
   .hero-section {
-    background: linear-gradient(135deg, rgba(38, 39, 43, 0.9), rgba(73, 80, 87, 0.9)), url('/img/main/research-bg.jpg');
+    background: linear-gradient(135deg, rgba(52, 73, 94, 0.8), rgba(44, 62, 80, 0.8)), url('/img/main/academy-bg.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -27,7 +27,7 @@ permalink: /academy/researches/
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.1);
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2));
   }
 
   .hero-content {
@@ -61,11 +61,20 @@ permalink: /academy/researches/
 
   .stat-item {
     text-align: center;
-    background: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    border-radius: 15px;
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.15);
+    padding: 25px;
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  }
+
+  .stat-item:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.25);
+    border-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
   }
 
   .stat-number {
@@ -146,8 +155,7 @@ permalink: /academy/researches/
   }
 
   .research-category:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    transform: translateY(-1px);
   }
 
   .category-header {
@@ -190,11 +198,12 @@ permalink: /academy/researches/
     border-left: 4px solid #26272b;
     transition: all 0.3s ease;
     position: relative;
+    cursor: pointer;
   }
 
   .research-project:hover {
-    background: #e9ecef;
-    transform: scale(1.02);
+    background: #f1f3f4;
+    transform: scale(1.005);
     border-left-color: #495057;
   }
 
@@ -202,6 +211,8 @@ permalink: /academy/researches/
     text-decoration: none;
     color: inherit;
     display: block;
+    height: 100%;
+    width: 100%;
   }
 
   .project-link:hover {
@@ -217,10 +228,6 @@ permalink: /academy/researches/
     transition: color 0.3s ease;
   }
 
-  .project-link:hover .project-title {
-    color: #495057;
-  }
-
   .project-description {
     font-size: 1rem;
     color: #5a6c7d;
@@ -228,42 +235,7 @@ permalink: /academy/researches/
     margin-bottom: 15px;
   }
 
-  .project-students {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-top: 15px;
-  }
 
-  .student-tag {
-    background: #f8f9fa;
-    color: #495057;
-    padding: 6px 12px;
-    border-radius: 20px;
-    font-size: 0.85rem;
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    border: 1px solid #dee2e6;
-    transition: all 0.3s ease;
-  }
-
-  .student-tag.completed {
-    background: #e9ecef;
-    color: #26272b;
-    border-color: #adb5bd;
-  }
-
-  .student-tag:hover {
-    transform: scale(1.02);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    background: #e9ecef;
-  }
-
-  .student-tag i {
-    font-size: 0.8rem;
-  }
 
   .category-stats {
     display: flex;
@@ -302,7 +274,6 @@ permalink: /academy/researches/
   }
 
   .stat-box:hover {
-    transform: translateY(-5px);
     background: rgba(255, 255, 255, 0.12);
     border-color: rgba(255, 255, 255, 0.25);
   }
@@ -360,20 +331,28 @@ permalink: /academy/researches/
 <!-- Hero Section -->
 <section class="hero-section">
   <div class="hero-content">
-    <h1>Research Excellence</h1>
-    <p>Pioneering innovations across multiple disciplines through cutting-edge research and collaborative student mentorship</p>
+    <h1>Research Portfolio</h1>
+    <p>Exploring the intersection of technology, language, medicine, and emerging sciences through innovative research methodologies and student collaboration</p>
+    
+    {% comment %} Calculate dynamic statistics {% endcomment %}
+    {% assign total_categories = site.researches | map: 'category' | uniq | size %}
+    {% assign total_projects = site.researches | size %}
+    {% assign total_students_mentored = 0 %}
+    {% for research in site.researches %}
+      {% assign total_students_mentored = total_students_mentored | plus: research.students.size %}
+    {% endfor %}
     
     <div class="research-stats">
       <div class="stat-item">
-        <span class="stat-number">5</span>
+        <span class="stat-number">{{ total_categories }}</span>
         <span class="stat-label">Research Areas</span>
       </div>
       <div class="stat-item">
-        <span class="stat-number">15+</span>
+        <span class="stat-number">{{ total_projects }}</span>
         <span class="stat-label">Active Projects</span>
       </div>
       <div class="stat-item">
-        <span class="stat-number">20+</span>
+        <span class="stat-number">{{ total_students_mentored }}</span>
         <span class="stat-label">Students Mentored</span>
       </div>
     </div>
@@ -383,10 +362,7 @@ permalink: /academy/researches/
 <!-- Research Content -->
 <section class="content-section">
   <div class="container">
-    <div class="section-header">
-      <h2>Research Portfolio</h2>
-      <p>Exploring the intersection of technology, language, medicine, and emerging sciences through innovative research methodologies and student collaboration</p>
-    </div>
+
 
     <div class="research-categories">
       
@@ -404,16 +380,27 @@ permalink: /academy/researches/
         <div class="research-category">
           <div class="category-header">
             <div class="category-icon">
-              {% if category == "Kurdish Language Research" %}
+              {% comment %} Dynamic icon selection based on category keywords {% endcomment %}
+              {% if category contains "Language" or category contains "Kurdish" %}
                 <i class="fas fa-language"></i>
-              {% elsif category == "Medical Research" %}
+              {% elsif category contains "Medical" or category contains "Health" %}
                 <i class="fas fa-heartbeat"></i>
-              {% elsif category == "Data Analysis" %}
+              {% elsif category contains "Data" or category contains "Analysis" %}
                 <i class="fas fa-chart-line"></i>
-              {% elsif category == "Religious Studies" %}
+              {% elsif category contains "Religious" or category contains "Hadith" %}
                 <i class="fas fa-book-open"></i>
-              {% elsif category == "Emerging Technologies" %}
+              {% elsif category contains "Technology" or category contains "AI" or category contains "Machine Learning" %}
                 <i class="fas fa-atom"></i>
+              {% elsif category contains "Computer" or category contains "Software" %}
+                <i class="fas fa-laptop-code"></i>
+              {% elsif category contains "Vision" or category contains "Image" %}
+                <i class="fas fa-eye"></i>
+              {% elsif category contains "Network" or category contains "Communication" %}
+                <i class="fas fa-network-wired"></i>
+              {% elsif category contains "Security" or category contains "Privacy" %}
+                <i class="fas fa-shield-alt"></i>
+              {% elsif category contains "Database" or category contains "Storage" %}
+                <i class="fas fa-database"></i>
               {% else %}
                 <i class="fas fa-flask"></i>
               {% endif %}
@@ -424,19 +411,10 @@ permalink: /academy/researches/
           <div class="research-projects">
             {% for research in category_research %}
             <div class="research-project">
-              <a href="{{ research.url | prepend: site.baseurl | replace: '//', '/' }}" class="project-link">
+              <a href="{{ research.permalink | prepend: site.baseurl | replace: '//', '/' }}" class="project-link">
                 <div class="project-title">{{ research.title }}</div>
                 <div class="project-description">{{ research.subtitle }}</div>
               </a>
-              <div class="project-students">
-                {% for student in research.students %}
-                  {% if research.status == "completed" %}
-                    <span class="student-tag completed"><i class="fas fa-check"></i> {{ student }}</span>
-                  {% else %}
-                    <span class="student-tag"><i class="fas fa-user-graduate"></i> {{ student }}</span>
-                  {% endif %}
-                {% endfor %}
-              </div>
             </div>
             {% endfor %}
           </div>

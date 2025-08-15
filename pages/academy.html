@@ -17,9 +17,9 @@ permalink: /academy/
           
           <!-- Navigation Links -->
           <div class="hero-navigation">
-            <a href="/academy/educations/" class="hero-nav-btn">Education</a>
-            <a href="/academy/publications/" class="hero-nav-btn">Publications</a>
-            <a href="#Universities" class="hero-nav-btn">Universities</a>
+            <a href="/academy/educations" class="hero-nav-btn">Education</a>
+            <a href="/academy/publications" class="hero-nav-btn">Publications</a>
+            <a href="/academy/researches" class="hero-nav-btn">Researches</a>
           </div>
         </div>
       </div>
@@ -147,18 +147,7 @@ permalink: /academy/
     transform: translateY(-2px);
   }
   
-  a[href="/academy/researches/"]:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 12px 35px rgba(38, 39, 43, 0.3);
-  }
-  
-  a[href="/academy/researches/"]:hover .fas.fa-arrow-right {
-    transform: translateX(4px);
-  }
-  
-  a[href="/academy/researches/"]:hover div[style*="left: -100%"] {
-    left: 100% !important;
-  }
+
 
   @media (max-width: 768px) {
     .hero-section {
@@ -528,9 +517,9 @@ permalink: /academy/
     </a><!-- End col-md-4-->
     <a class="col-md-4 col-sm-6 link-no-decoration" href="/academy/lecture/advanced-programming/">
       <div class="services-box">
-        <h4>Advanced Prog.</h4>
+        <h4>Advanced Programming</h4>
         <p>This course introduces advanced concepts of programming languages. It also introduces many tools that are
-          used in software eng</p>
+          used in software engineering</p>
       </div>
     </a><!-- End col-md-4-->
     <a class="col-md-4 services-box-gray col-sm-6  link-no-decoration" href="/academy/lecture/advanced-database/">
@@ -541,7 +530,7 @@ permalink: /academy/
     </a><!-- End col-md-4-->
     <a class="col-md-4 col-sm-6 link-no-decoration" href="/academy/lecture/data-structure/">
       <div class="services-box">
-        <h4>Data Structure</h4>
+        <h4>Data Structures</h4>
         <p>This course is an introductory course to various data structures that can be used in computer science with
           different algorithms</p>
       </div>
@@ -558,6 +547,76 @@ permalink: /academy/
 </div><!-- End container -->
 
 <!-- End Services -->
+
+<!-- Research Section -->
+<div class="container" id="Research" style="margin-top: 120px; position: relative;">
+  <!-- Elegant background accent -->
+  <div style="position: absolute; top: -20px; left: 50%; transform: translateX(-50%); width: 200px; height: 4px; background: linear-gradient(90deg, transparent, #26272b, transparent); opacity: 0.3;"></div>
+  
+  <div class="row">
+    <a href="/academy/researches/" class="link-no-decoration"><div class="col-md-12">
+      <div class="main_heading" style="position: relative; z-index: 2;">
+        <h1 style="position: relative;">Research</h1>
+        <div class="text-center"><span class="underline" style="background: linear-gradient(90deg, #26272b, #495057); height: 3px;"></span></div>
+        <!-- Decorative elements -->
+      </div></a>
+    </div><!-- End col-md-12 -->
+  </div><!-- End row -->
+
+  <div class="row" style="margin-top: 40px;">
+    <div class="col-md-12">
+      <div style="text-align: center; padding: 30px 40px; background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%); border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); position: relative; overflow: hidden;">
+        <!-- Subtle pattern overlay -->
+        <p style="font-size: 1.2rem; color: #495057; line-height: 1.8; margin: 0; position: relative; z-index: 1; font-weight: 300; letter-spacing: 0.5px;">
+          My research focuses on <strong style="color: #26272b;">data mining</strong>, <strong style="color: #26272b;">machine learning</strong>, and <strong style="color: #26272b;">artificial intelligence</strong>. I explore innovative approaches to solve complex problems in computer science and collaborate with students and research groups across various domains including robotics and computer vision.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row" style="margin-top: 50px;">
+    {% assign sorted_researches = site.researches | sort: 'date' | reverse %}
+    {% for research in sorted_researches limit:3 %}
+    <div class="col-md-4" style="margin-bottom: 40px;">
+      <div class="research-card" style="height: 100%; background: white; border-radius: 20px; overflow: hidden; box-shadow: 0 15px 35px rgba(0,0,0,0.08); transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94); position: relative; border: 1px solid rgba(0,0,0,0.05);">
+        <!-- Card accent line -->
+        <div style="position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, #26272b, #495057);"></div>
+        
+        <div style="padding: 35px 30px;">
+                          <a href="{{ research.permalink | prepend: site.baseurl | replace: '//', '/' }}" class="link-no-decoration" style="display: block; height: 100%;">
+            <!-- Research icon -->
+            <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #f8f9fa, #e9ecef); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
+              <i class="fas fa-flask" style="color: #26272b; font-size: 20px;"></i>
+            </div>
+            
+            <h3 style="color: #26272b; margin-bottom: 18px; font-size: 1.4rem; font-weight: 600; line-height: 1.3; letter-spacing: -0.5px;">{{ research.title }}</h3>
+            
+            {% if research.subtitle %}
+            <p style="color: #6c757d; margin-bottom: 20px; line-height: 1.7; font-size: 0.95rem;">{{ research.subtitle }}</p>
+            {% else %}
+            <p style="color: #6c757d; margin-bottom: 20px; line-height: 1.7; font-size: 0.95rem;">{{ research.excerpt | strip_html | truncatewords: 20 }}</p>
+            {% endif %}
+            
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-top: auto; padding-top: 15px; border-top: 1px solid #f1f3f4;">
+              <p style="color: #adb5bd; font-size: 0.85rem; margin: 0; display: flex; align-items: center;">
+                <i class="fas fa-calendar-alt" style="margin-right: 6px;"></i> {{ research.date | date: '%B %Y' }}
+              </p>
+              <div style="width: 30px; height: 30px; background: #f8f9fa; border-radius: 50%; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease;">
+                <i class="fas fa-arrow-right" style="color: #26272b; font-size: 12px;"></i>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div><!-- End row -->
+
+
+
+</div><!-- End container -->
+
+
 
 <!-- Publications -->
 <div class="publication-bg" id="Call-to-Publication">
@@ -722,85 +781,6 @@ permalink: /academy/
 
 </div><!-- End container -->
 
-<!-- Research Section -->
-<div class="container" id="Research" style="margin-top: 120px; position: relative;">
-  <!-- Elegant background accent -->
-  <div style="position: absolute; top: -20px; left: 50%; transform: translateX(-50%); width: 200px; height: 4px; background: linear-gradient(90deg, transparent, #26272b, transparent); opacity: 0.3;"></div>
-  
-  <div class="row">
-    <div class="col-md-12">
-      <div class="main_heading" style="position: relative; z-index: 2;">
-        <h1 style="position: relative;"><a href="/academy/researches/" class="link-no-decoration">Research</a></h1>
-        <div class="text-center"><span class="underline" style="background: linear-gradient(90deg, #26272b, #495057); height: 3px;"></span></div>
-        <!-- Decorative elements -->
-        <div style="position: absolute; top: -10px; left: 50%; transform: translateX(-50%); width: 60px; height: 60px; border: 2px solid #f8f9fa; border-radius: 50%; opacity: 0.1;"></div>
-        <div style="position: absolute; top: -5px; left: 50%; transform: translateX(-50%); width: 40px; height: 40px; border: 1px solid #26272b; border-radius: 50%; opacity: 0.2;"></div>
-      </div>
-    </div><!-- End col-md-12 -->
-  </div><!-- End row -->
-
-  <div class="row" style="margin-top: 40px;">
-    <div class="col-md-12">
-      <div style="text-align: center; padding: 30px 40px; background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%); border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); position: relative; overflow: hidden;">
-        <!-- Subtle pattern overlay -->
-        <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-image: radial-gradient(circle at 20% 50%, rgba(38, 39, 43, 0.02) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(73, 80, 87, 0.02) 0%, transparent 50%); pointer-events: none;"></div>
-        <p style="font-size: 1.2rem; color: #495057; line-height: 1.8; margin: 0; position: relative; z-index: 1; font-weight: 300; letter-spacing: 0.5px;">
-          My research focuses on <strong style="color: #26272b;">data mining</strong>, <strong style="color: #26272b;">machine learning</strong>, and <strong style="color: #26272b;">artificial intelligence</strong>. I explore innovative approaches to solve complex problems in computer science and collaborate with students and research groups across various domains including robotics and computer vision.
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <div class="row" style="margin-top: 50px;">
-    {% assign sorted_researches = site.researches | sort: 'date' | reverse %}
-    {% for research in sorted_researches limit:3 %}
-    <div class="col-md-4" style="margin-bottom: 40px;">
-      <div class="research-card" style="height: 100%; background: white; border-radius: 20px; overflow: hidden; box-shadow: 0 15px 35px rgba(0,0,0,0.08); transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94); position: relative; border: 1px solid rgba(0,0,0,0.05);">
-        <!-- Card accent line -->
-        <div style="position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, #26272b, #495057);"></div>
-        
-        <div style="padding: 35px 30px;">
-          <a href="{{ research.url | prepend: site.baseurl | replace: '//', '/' }}" class="link-no-decoration" style="display: block; height: 100%;">
-            <!-- Research icon -->
-            <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #f8f9fa, #e9ecef); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
-              <i class="fas fa-flask" style="color: #26272b; font-size: 20px;"></i>
-            </div>
-            
-            <h3 style="color: #26272b; margin-bottom: 18px; font-size: 1.4rem; font-weight: 600; line-height: 1.3; letter-spacing: -0.5px;">{{ research.title }}</h3>
-            
-            {% if research.subtitle %}
-            <p style="color: #6c757d; margin-bottom: 20px; line-height: 1.7; font-size: 0.95rem;">{{ research.subtitle }}</p>
-            {% else %}
-            <p style="color: #6c757d; margin-bottom: 20px; line-height: 1.7; font-size: 0.95rem;">{{ research.excerpt | strip_html | truncatewords: 20 }}</p>
-            {% endif %}
-            
-            <div style="display: flex; align-items: center; justify-content: space-between; margin-top: auto; padding-top: 15px; border-top: 1px solid #f1f3f4;">
-              <p style="color: #adb5bd; font-size: 0.85rem; margin: 0; display: flex; align-items: center;">
-                <i class="fas fa-calendar-alt" style="margin-right: 6px;"></i> {{ research.date | date: '%B %Y' }}
-              </p>
-              <div style="width: 30px; height: 30px; background: #f8f9fa; border-radius: 50%; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease;">
-                <i class="fas fa-arrow-right" style="color: #26272b; font-size: 12px;"></i>
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-    {% endfor %}
-  </div><!-- End row -->
-
-  <div class="row">
-    <div class="col-md-12 text-center" style="margin-top: 50px;">
-      <a href="/academy/researches/" style="display: inline-flex; align-items: center; background: linear-gradient(135deg, #26272b 0%, #495057 100%); color: white; padding: 16px 40px; border-radius: 50px; text-decoration: none; font-weight: 500; font-size: 1.05rem; transition: all 0.4s ease; box-shadow: 0 8px 25px rgba(38, 39, 43, 0.2); letter-spacing: 0.5px; position: relative; overflow: hidden;">
-        <span style="position: relative; z-index: 2;">View All Research</span>
-        <i class="fas fa-arrow-right" style="margin-left: 12px; transition: transform 0.3s ease; position: relative; z-index: 2;"></i>
-        <!-- Button shine effect -->
-        <div style="position: absolute; top: 0; left: -100%; width: 100%; height: 100%; background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent); transition: left 0.6s ease;"></div>
-      </a>
-    </div>
-  </div>
-
-</div><!-- End container -->
 
 <div style="margin-top: 60px;">
   <div class="main_heading">

@@ -1,7 +1,8 @@
 ---
 layout: publication
 title: Measuring behavioural change of players in public goods game
-authors: Polla Fattah, Uwe Aickelin, Christian Wagner
+name: "measuring-behavioural-change-players-public-goods-game"
+authors: ["Polla Fattah", "Uwe Aickelin", "Christian Wagner"]
 date: 2016-09-21
 background: "/img/publication/journal.jpg"
 type: Article # Chapter, Book, Report

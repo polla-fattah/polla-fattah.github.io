@@ -4,9 +4,18 @@ title: "General Medical Research"
 subtitle: "Various medical applications and genetic analysis using computational approaches"
 date: 2023-10-08
 category: "Medical Research"
-students: ["Alaa"]
 status: "completed"
 background: "/img/main/academy-bg.jpg"
+permalink: /academy/research/general-medical/
+
+# CROSS-REFERENCES - REMEMBER TO UPDATE THESE WHEN CHANGES OCCUR:
+# 1. When adding a student to this project, add their student ID here
+# 2. When this project produces a publication, add the publication ID here
+# 3. Update the corresponding student files with this project ID
+students: ["alaa"]  # Student IDs (lowercase, no spaces)
+publications:
+  - "age-gender-estimation-skeletal-radiographs-deep-learning"
+  - "multi-factor-classification-deep-learning-xray-images"
 ---
 
 <p>General medical research encompasses a broad range of computational approaches applied to various medical domains, including genetic analysis, disease prediction, and healthcare data analytics.</p>
@@ -28,9 +37,7 @@ background: "/img/main/academy-bg.jpg"
 
 <p>The research employs statistical analysis, machine learning algorithms, and bioinformatics tools to extract meaningful insights from complex medical datasets.</p>
 
-<h2 class="section-heading">Student Achievement</h2>
 
-<p><strong><a href="/student/alaa">Alaa</a></strong> has successfully completed this comprehensive research project, demonstrating proficiency in medical data analysis and contributing valuable insights to computational medicine.</p>
 
 <h2 class="section-heading">Key Contributions</h2>
 

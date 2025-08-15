@@ -4,9 +4,19 @@ title: "Machine Translation"
 subtitle: "Developing translation systems between Kurdish and other languages using tokenization-free approaches"
 date: 2023-05-15
 category: "Kurdish Language Research"
-students: ["Bnar"]
 status: "completed"
 background: "/img/main/academy-bg.jpg"
+permalink: /academy/research/machine-translation/
+
+# CROSS-REFERENCES - REMEMBER TO UPDATE THESE WHEN CHANGES OCCUR:
+# 1. When adding a student to this project, add their student ID here
+# 2. When this project produces a publication, add the publication ID here
+# 3. Update the corresponding student files with this project ID
+students: ["bnar"]  # Student IDs (lowercase, no spaces)
+publications:
+  - "tokenisation-free-machine-translation-kurdish-byt5"
+  - "domain-adaptation-kurdish-english-mt"
+  - "evaluation-metrics-low-resource-mt-kurdish"
 ---
 
 <p>Machine Translation for Kurdish language represents a breakthrough in cross-linguistic communication, enabling seamless translation between Kurdish and major world languages using advanced neural machine translation techniques.</p>
@@ -23,9 +33,7 @@ background: "/img/main/academy-bg.jpg"
 <li>Context-aware translation models</li>
 </ul>
 
-<h2 class="section-heading">Student Achievement</h2>
 
-<p><strong><a href="/student/bnar">Bnar</a></strong> has successfully completed this research project, developing innovative approaches to handle Kurdish morphology in machine translation systems.</p>
 
 <h2 class="section-heading">Impact</h2>
 

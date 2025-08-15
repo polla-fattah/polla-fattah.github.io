@@ -4,9 +4,16 @@ title: "Medical Imaging Analysis"
 subtitle: "Developing computer-aided diagnosis systems for medical images, particularly Lumbar Spinal Stenosis analysis"
 date: 2023-09-12
 category: "Medical Research"
-students: ["Salar"]
 status: "ongoing"
 background: "/img/main/academy-bg.jpg"
+permalink: /academy/research/medical-imaging/
+
+# CROSS-REFERENCES - REMEMBER TO UPDATE THESE WHEN CHANGES OCCUR:
+# 1. When adding a student to this project, add their student ID here
+# 2. When this project produces a publication, add the publication ID here
+# 3. Update the corresponding student files with this project ID
+students: ["salar"]  # Student IDs (lowercase, no spaces)
+publications: []  # Add publication IDs when available
 ---
 
 <p>Medical imaging analysis research focuses on developing advanced computer-aided diagnosis systems that can automatically analyze medical images to assist healthcare professionals in accurate and timely diagnosis.</p>
@@ -28,9 +35,7 @@ background: "/img/main/academy-bg.jpg"
 
 <p>The developed system aims to reduce diagnosis time, improve accuracy, and provide consistent analysis across different healthcare settings, particularly beneficial in regions with limited access to specialized radiologists.</p>
 
-<h2 class="section-heading">Current Progress</h2>
 
-<p><strong>Salar</strong> is developing the deep learning models for spinal stenosis detection, working with medical imaging datasets and collaborating with healthcare professionals for validation.</p>
 
 <h2 class="section-heading">Methodology</h2>
 

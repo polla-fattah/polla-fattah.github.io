@@ -1,7 +1,8 @@
 ---
 layout: publication
 title: "Kurdish Handwritten character recognition using deep learning techniques"
-authors: Rebin M. Ahmed, Tarik A. Rashid, Polla Fattah, Abeer Alsadoon, Nebojsa Bacanin, Seyedali Mirjalili , S. Vimal, Amit Chhabra
+name: "kurdish-handwritten-character-recognition-deep-learning-techniques"
+authors: ["Rebin M. Ahmed", "Tarik A. Rashid", "Polla Fattah", "Abeer Alsadoon", "Nebojsa Bacanin", "Seyedali Mirjalili", "S. Vimal", "Amit Chhabra"]
 date: 2022-12-01
 background: "/img/publication/journal.jpg"
 type: Article # Chapter, Book, Report

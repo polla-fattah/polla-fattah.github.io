@@ -1,6 +1,7 @@
 ---
 layout: student
-title: "Isra"
+title: "Isra Mahdi"
+name: "isra"
 level: "MSc"
 university: "Salahaddin University-Erbil"
 subject: "Computer Science"
@@ -11,19 +12,10 @@ supervisor: "Dr. Polla Fattah"
 research_area: "Handwritten OCR (Optical Character Recognition) for Kurdish Language"
 permalink: /student/isra
 publications:
-  - "2024-01-18-kurdish-handwritten-character-recognition-deep-learning"
+  - "kurdish-handwritten-character-recognition-deep-learning"
 ---
 
-## Student Information
 
-- **Name**: Isra
-- **Level**: MSc
-- **University**: Salahaddin University-Erbil (SUE)
-- **Subject**: Computer Science
-- **Research Area**: Handwritten OCR (Optical Character Recognition) for Kurdish Language
-- **Status**: Completed
-- **Supervisor**: Dr. Polla Fattah
-- **Duration**: 2022 - 2024
 
 ## Research Focus
 
@@ -66,12 +58,6 @@ Isra's research focused on comparative analysis of different Kurdish OCR methods
 
 Isra's comparative analysis work has provided valuable insights into the most effective approaches for Kurdish OCR, helping to establish best practices and improve the overall quality of Kurdish text recognition systems.
 
-## Publications and Presentations
-
-- **Kurdish Handwritten Character Recognition using Deep Learning Techniques** (2024) - Journal Article
-- Completed comprehensive thesis on Kurdish OCR comparative analysis
-- Published findings on performance comparison studies
-- Contributed to Kurdish language technology advancement
 
 ## Academic Achievement
 

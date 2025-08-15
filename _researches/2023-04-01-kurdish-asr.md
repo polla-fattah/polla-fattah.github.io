@@ -4,9 +4,16 @@ title: "ASR (Automatic Speech Recognition)"
 subtitle: "Building systems to convert Kurdish speech to text using modern neural network architectures"
 date: 2023-04-01
 category: "Kurdish Language Research"
-students: ["Moaiad"]
 status: "ongoing"
 background: "/img/main/academy-bg.jpg"
+permalink: /academy/research/kurdish-asr/
+
+# CROSS-REFERENCES - REMEMBER TO UPDATE THESE WHEN CHANGES OCCUR:
+# 1. When adding a student to this project, add their student ID here
+# 2. When this project produces a publication, add the publication ID here
+# 3. Update the corresponding student files with this project ID
+students: ["moaiad"]  # Student IDs (lowercase, no spaces)
+publications: []  # Add publication IDs when available
 ---
 
 <p>Automatic Speech Recognition (ASR) for Kurdish language focuses on developing advanced systems that can accurately convert spoken Kurdish into written text. This research addresses the unique phonetic characteristics and dialectal variations of Kurdish speech.</p>
@@ -23,9 +30,7 @@ background: "/img/main/academy-bg.jpg"
 <li>Real-time speech processing capabilities</li>
 </ul>
 
-<h2 class="section-heading">Current Progress</h2>
 
-<p><strong><a href="/student/moaiad">Moaiad</a></strong> is actively developing the core ASR architecture, focusing on acoustic model training and optimization for Kurdish speech patterns.</p>
 
 <h2 class="section-heading">Applications</h2>
 

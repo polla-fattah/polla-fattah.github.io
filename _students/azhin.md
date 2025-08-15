@@ -1,6 +1,7 @@
 ---
 layout: student
 title: "Azhin"
+name: "azhin"
 level: "MSc"
 university: "University of Kurdistan Hewlêr"
 subject: "Computer Science"
@@ -12,16 +13,7 @@ research_area: "Kurdish Spell Checking and Language Processing"
 permalink: /student/azhin
 ---
 
-## Student Information
 
-- **Name**: Azhin
-- **Level**: MSc
-- **University**: University of Kurdistan Hewlêr (UKH)
-- **Subject**: Computer Science
-- **Research Area**: Kurdish Spell Checking and Language Processing
-- **Status**: Active Research
-- **Supervisor**: Dr. Polla Fattah
-- **Duration**: 2023 - Present
 
 ## Research Focus
 

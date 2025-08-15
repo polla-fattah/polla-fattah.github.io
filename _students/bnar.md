@@ -1,6 +1,7 @@
 ---
 layout: student
-title: "Bnar"
+title: "Bnar Ismail"
+name: "bnar"
 level: "MSc"
 university: "University of Kurdistan Hewlêr"
 subject: "Computer Science"
@@ -10,22 +11,20 @@ status: "Completed"
 supervisor: "Dr. Polla Fattah"
 research_area: "Tokenization-free Kurdish Machine Translation"
 permalink: /student/bnar
+
+# CROSS-REFERENCES - REMEMBER TO UPDATE THESE WHEN CHANGES OCCUR:
+# 1. When adding this student to a research project, add the project ID here
+# 2. When this student publishes a paper, add the publication ID here
+# 3. Update the corresponding research/publication files with this student's ID
+research_projects:
+  - "2023-05-15-machine-translation"  # Machine Translation Research
 publications:
-  - "2024-01-15-tokenisation-free-machine-translation-kurdish-byt5"
-  - "2024-01-16-domain-adaptation-kurdish-english-machine-translation"
-  - "2024-01-17-evaluation-metrics-low-resource-mt-kurdish"
+  - "tokenisation-free-machine-translation-kurdish-byt5"
+  - "domain-adaptation-kurdish-english-mt"
+  - "evaluation-metrics-low-resource-mt-kurdish"
 ---
 
-## Student Information
 
-- **Name**: Bnar
-- **Level**: MSc
-- **University**: University of Kurdistan Hewlêr (UKH)
-- **Subject**: Computer Science
-- **Research Area**: Tokenization-free Kurdish Machine Translation
-- **Status**: Completed
-- **Supervisor**: Dr. Polla Fattah
-- **Duration**: 2023 - 2024
 
 ## Research Focus
 

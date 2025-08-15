@@ -1,7 +1,8 @@
 ---
 layout: publication
 title: Clustering Human Behaviour in Public Good Experiment
-authors: Fattah, Polla, Uwe Aickelin, and Christian Wagner
+name: "clustering-human-behaviour-public-good-experiment"
+authors: ["Fattah, Polla", "Uwe Aickelin", "Christian Wagner"]
 date: 2013-09-23
 background: "/img/publication/journal.jpg"
 type: Report

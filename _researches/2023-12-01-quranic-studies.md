@@ -4,9 +4,16 @@ title: "Quranic Studies"
 subtitle: "Computational approaches to analyzing Quranic text and developing digital tools for Islamic studies"
 date: 2023-12-01
 category: "Religious Studies"
-students: ["Jalal"]
 status: "ongoing"
 background: "/img/main/academy-bg.jpg"
+permalink: /academy/research/quranic-studies/
+
+# CROSS-REFERENCES - REMEMBER TO UPDATE THESE WHEN CHANGES OCCUR:
+# 1. When adding a student to this project, add their student ID here
+# 2. When this project produces a publication, add the publication ID here
+# 3. Update the corresponding student files with this project ID
+students: ["jalal"]  # Student IDs (lowercase, no spaces)
+publications: []  # Add publication IDs when available
 ---
 
 <p>Quranic studies research applies computational linguistics and digital humanities methodologies to analyze the Quranic text, developing innovative tools and approaches for Islamic scholarship and education.</p>
@@ -27,10 +34,6 @@ background: "/img/main/academy-bg.jpg"
 <h2 class="section-heading">Methodological Approach</h2>
 
 <p>The research employs natural language processing techniques, statistical analysis, and machine learning methods specifically adapted for classical Arabic text analysis.</p>
-
-<h2 class="section-heading">Current Development</h2>
-
-<p><strong>Jalal</strong> is developing computational tools for Quranic text analysis, focusing on creating accessible digital resources for scholars and students of Islamic studies.</p>
 
 <h2 class="section-heading">Technical Challenges</h2>
 

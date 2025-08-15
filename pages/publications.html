@@ -39,66 +39,78 @@ permalink: /academy/publications/
 
   .publications-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
     margin-top: 40px;
   }
 
   .publication-card {
     background: white;
-    border-radius: 15px;
-    padding: 30px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 25px;
+    border: 2px solid #e9ecef;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     transition: all 0.3s ease;
-    border: 1px solid #e9ecef;
+    position: relative;
+    overflow: hidden;
     height: 100%;
     display: flex;
     flex-direction: column;
   }
 
   .publication-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  }
+
+  .publication-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #6c757d, #495057, #343a40, #212529);
   }
 
   .publication-title {
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     font-weight: 600;
     color: #2c3e50;
-    margin-bottom: 15px;
+    margin-bottom: 8px;
     line-height: 1.4;
     text-decoration: none;
   }
 
   .publication-title:hover {
-    color: #3498db;
+    color: #495057;
     text-decoration: none;
   }
 
   .publication-authors {
-    font-size: 1rem;
-    color: #7f8c8d;
-    margin-bottom: 15px;
+    font-size: 0.9rem;
+    color: #6c757d;
+    margin-bottom: 8px;
     font-style: italic;
   }
 
   .publication-meta {
-    font-size: 0.9rem;
-    color: #95a5a6;
+    font-size: 0.85rem;
+    color: #6c757d;
     margin-top: auto;
-    padding-top: 15px;
-    border-top: 1px solid #ecf0f1;
+    padding-top: 12px;
+    border-top: 1px solid #e9ecef;
   }
 
   .publication-type {
-    background: #3498db;
+    background: #6c757d;
     color: white;
-    padding: 4px 12px;
-    border-radius: 20px;
-    font-size: 0.8rem;
+    padding: 3px 10px;
+    border-radius: 15px;
+    font-size: 0.75rem;
     font-weight: 500;
     display: inline-block;
-    margin-right: 10px;
+    margin-right: 8px;
   }
 
   .section-header {
@@ -163,12 +175,38 @@ permalink: /academy/publications/
     <div class="publications-grid">
       {% for publication in site.publications reversed %}
       <div class="publication-card">
-        <a href="{{ publication.url | prepend: site.baseurl | replace: '//', '/' }}" class="publication-title">
-          {{ publication.title }}
-        </a>
+        <div style="display: flex; align-items: flex-start; margin-bottom: 15px;">
+          <div style="width: 45px; height: 45px; background: linear-gradient(135deg, #6c757d, #495057); border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-right: 15px; flex-shrink: 0;">
+            <i class="fas fa-file-alt" style="color: white; font-size: 18px;"></i>
+          </div>
+          <div style="flex: 1;">
+            <a href="{{ publication.url | prepend: site.baseurl | replace: '//', '/' }}" class="publication-title">
+              {{ publication.title }}
+            </a>
         {% if publication.authors %}
-        <div class="publication-authors">{{ publication.authors }}</div>
+        <div class="publication-authors">
+          {% for author in publication.authors %}
+            {% assign is_student = false %}
+            {% assign student_link = "" %}
+            {% assign student_title = "" %}
+            {% for student in site.students %}
+              {% if student.title == author or student.name == author %}
+                {% assign is_student = true %}
+                {% assign student_link = student.permalink %}
+                {% assign student_title = student.title %}
+                {% break %}
+              {% endif %}
+            {% endfor %}
+            {% if is_student %}
+              <a href="{{ student_link | prepend: site.baseurl | replace: '//', '/' }}" style="color: inherit; text-decoration: none; font-weight: 500;">{{ student_title }}</a>{% unless forloop.last %}, {% endunless %}
+            {% else %}
+              {{ author }}{% unless forloop.last %}, {% endunless %}
+            {% endif %}
+          {% endfor %}
+        </div>
         {% endif %}
+          </div>
+        </div>
         <div class="publication-meta">
           <span class="publication-type">{{ publication.type }}</span>
           <span>{{ publication.date | date: '%B %d, %Y'}}</span>

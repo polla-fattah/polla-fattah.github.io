@@ -4,9 +4,16 @@ title: "Wishesazi (Word Creation)"
 subtitle: "Developing systematic approaches for creating new technical and scientific terms in Kurdish using fuzzy logic"
 date: 2023-08-05
 category: "Kurdish Language Research"
-students: ["Nida"]
 status: "ongoing"
 background: "/img/main/academy-bg.jpg"
+permalink: /academy/research/wishesazi/
+
+# CROSS-REFERENCES - REMEMBER TO UPDATE THESE WHEN CHANGES OCCUR:
+# 1. When adding a student to this project, add their student ID here
+# 2. When this project produces a publication, add the publication ID here
+# 3. Update the corresponding student files with this project ID
+students: ["nida"]  # Student IDs (lowercase, no spaces)
+publications: []  # Add publication IDs when available
 ---
 
 <p>Wishesazi (Word Creation) research focuses on developing systematic methodologies for creating new technical and scientific terminology in Kurdish language, addressing the growing need for modern vocabulary in academic and professional contexts.</p>
@@ -28,9 +35,7 @@ background: "/img/main/academy-bg.jpg"
 
 <p>The system analyzes existing Kurdish vocabulary patterns and applies fuzzy logic rules to generate contextually appropriate new terms for emerging concepts in science and technology.</p>
 
-<h2 class="section-heading">Current Development</h2>
 
-<p><strong><a href="/student/nida">Nida</a></strong> is developing the core algorithms for term generation and validation, creating comprehensive databases of Kurdish morphological patterns and semantic relationships.</p>
 
 <h2 class="section-heading">Cultural Significance</h2>
 

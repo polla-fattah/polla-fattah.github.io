@@ -4,9 +4,16 @@ title: "Spell Checking"
 subtitle: "Creating intelligent tools to detect and correct spelling errors in Kurdish text"
 date: 2023-06-10
 category: "Kurdish Language Research"
-students: ["Azhin"]
 status: "ongoing"
 background: "/img/main/academy-bg.jpg"
+permalink: /academy/research/spell-checking/
+
+# CROSS-REFERENCES - REMEMBER TO UPDATE THESE WHEN CHANGES OCCUR:
+# 1. When adding a student to this project, add their student ID here
+# 2. When this project produces a publication, add the publication ID here
+# 3. Update the corresponding student files with this project ID
+students: ["azhin"]  # Student IDs (lowercase, no spaces)
+publications: []  # Add publication IDs when available
 ---
 
 <p>Spell checking for Kurdish language addresses the critical need for accurate text correction tools that understand the unique orthographic and morphological characteristics of Kurdish writing systems.</p>
@@ -27,9 +34,7 @@ background: "/img/main/academy-bg.jpg"
 
 <p>The approach combines statistical language models with rule-based morphological analysis to provide accurate and context-aware spell correction suggestions.</p>
 
-<h2 class="section-heading">Current Work</h2>
 
-<p><strong><a href="/student/azhin">Azhin</a></strong> is developing the core algorithms for error detection and correction, focusing on creating comprehensive dictionaries and morphological analyzers for Kurdish.</p>
 
 <h2 class="section-heading">Expected Impact</h2>
 

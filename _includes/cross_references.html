@@ -1,0 +1,159 @@
+{% comment %}
+  Cross References Helper Include
+  Usage: {% include cross_references.html type="student" item=page %}
+  
+  This include displays related items based on cross-references in front matter
+{% endcomment %}
+
+{% if include.type == "student" %}
+  {% assign student = include.item %}
+  
+  {% if student.research_projects.size > 0 %}
+  <div class="cross-references-section">
+    <h4><i class="fas fa-flask"></i> Research Projects</h4>
+    <ul>
+      {% for project_id in student.research_projects %}
+        {% assign research = site.researches | where: "name", project_id | first %}
+        {% if research %}
+        <li><a href="{{ research.permalink | prepend: site.baseurl | replace: '//', '/' }}">{{ research.title }}</a></li>
+        {% else %}
+        <li><span class="error">Project not found: {{ project_id }}</span></li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+  
+  {% if student.publications.size > 0 %}
+  <div class="cross-references-section">
+    <h4><i class="fas fa-file-alt"></i> Publications</h4>
+    <ul>
+      {% for pub_id in student.publications %}
+        {% assign publication = site.publications | where: "name", pub_id | first %}
+        {% if publication %}
+        <li><a href="{{ publication.url }}">{{ publication.title }}</a></li>
+        {% else %}
+        <li><span class="error">Publication not found: {{ pub_id }}</span></li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+
+{% elsif include.type == "research" %}
+  {% assign research = include.item %}
+  
+  {% if research.students.size > 0 %}
+  <div class="cross-references-section">
+    <h4><i class="fas fa-users"></i> Research Team</h4>
+    <ul>
+      {% for student_id in research.students %}
+        {% assign student = site.students | where: "name", student_id | first %}
+        {% if student %}
+        <li><a href="{{ student.url }}">{{ student.title }}</a> - {{ student.research_area }}</li>
+        {% else %}
+        <li><span class="error">Student not found: {{ student_id }}</span></li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+  
+  {% if research.publications.size > 0 %}
+  <div class="cross-references-section">
+    <h4><i class="fas fa-file-alt"></i> Publications</h4>
+    <ul>
+      {% for pub_id in research.publications %}
+        {% assign publication = site.publications | where: "name", pub_id | first %}
+        {% if publication %}
+        <li><a href="{{ publication.url }}">{{ publication.title }}</a></li>
+        {% else %}
+        <li><span class="error">Publication not found: {{ pub_id }}</span></li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+
+{% elsif include.type == "publication" %}
+  {% assign publication = include.item %}
+  
+  {% if publication.students.size > 0 %}
+  <div class="cross-references-section">
+    <h4><i class="fas fa-users"></i> Student Authors</h4>
+    <ul>
+      {% for student_id in publication.students %}
+        {% assign student = site.students | where: "name", student_id | first %}
+        {% if student %}
+        <li><a href="{{ student.url }}">{{ student.title }}</a> - {{ student.research_area }}</li>
+        {% else %}
+        <li><span class="error">Student not found: {{ student_id }}</span></li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+  
+  {% if publication.research_projects.size > 0 %}
+  <div class="cross-references-section">
+    <h4><i class="fas fa-flask"></i> Related Research</h4>
+    <ul>
+      {% for project_id in publication.research_projects %}
+        {% assign research = site.researches | where: "name", project_id | first %}
+        {% if research %}
+        <li><a href="{{ research.permalink | prepend: site.baseurl | replace: '//', '/' }}">{{ research.title }}</a></li>
+        {% else %}
+        <li><span class="error">Research not found: {{ project_id }}</span></li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+{% endif %}
+
+<style>
+  .cross-references-section {
+    margin-top: 30px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    border-left: 4px solid #495057;
+  }
+  
+  .cross-references-section h4 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-weight: 600;
+  }
+  
+  .cross-references-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .cross-references-section li {
+    padding: 8px 0;
+    border-bottom: 1px solid #e9ecef;
+  }
+  
+  .cross-references-section li:last-child {
+    border-bottom: none;
+  }
+  
+  .cross-references-section a {
+    color: #495057;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .cross-references-section a:hover {
+    color: #26272b;
+    text-decoration: underline;
+  }
+  
+  .error {
+    color: #dc3545;
+    font-style: italic;
+  }
+</style>

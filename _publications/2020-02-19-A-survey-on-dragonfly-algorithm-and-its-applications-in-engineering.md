@@ -1,7 +1,8 @@
 ---
 layout: publication
 title: A Survey on Dragonfly Algorithm and Its Applications in Engineering
-authors: Chnoor M Rahman, Tarik A Rashid, Abeer Alsadoon, Nebojsa Bacanin, Polla Fattah
+name: "survey-dragonfly-algorithm-applications-engineering"
+authors: ["Chnoor M Rahman", "Tarik A Rashid", "Abeer Alsadoon", "Nebojsa Bacanin", "Polla Fattah"]
 date: 2020-02-19
 background: "/img/publication/journal.jpg"
 type: Article # Chapter, Book, Report
