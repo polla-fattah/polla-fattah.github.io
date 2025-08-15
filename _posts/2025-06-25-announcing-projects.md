@@ -4,7 +4,7 @@ title: "A National Revolution: AI and the Future of Kurdish Language"
 subtitle: "UKH and Kurdish Academy Launch Groundbreaking AI Platform for Kurdish Language Technology"
 excerpt: "Announcing the launch of a comprehensive AI platform for Kurdish language processing, featuring OCR, TTS, ASR, corpus, dictionary, and more - a collaborative effort between UKH's AIIC and the Kurdish Academy."
 date: 2025-06-25 10:00:00 +0300
-background: '/img/posts/2025-06-25-announcing-projects/background.png'
+background: '/img/posts/2025-06-25-announcing-projects/background.jpg'
 categories: [AI, Society]
 author: "Dr. Polla Fattah"
 ---
