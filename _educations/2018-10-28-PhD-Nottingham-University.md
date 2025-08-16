@@ -4,7 +4,7 @@ title: "PhD: Data Mining and Machine Learning"
 establishment: "Compute Science"
 rank: "PhD"
 final_work_label: "Dissertation"
-final_work: "Optimizing Rule-based Classification According to Items’ Behaviour in Temporal Data"
+final_work: "Optimizing Rule-based Classification According to Items' Behaviour in Temporal Data"
 permalink: "educations/PhD"
 awarding_body: "University of Nottingham"
 date: 2018-07-15
@@ -72,30 +72,30 @@ I have worked under the supervision of two of the most experienced researchers i
 
 ## Address
 
-  <div class="address">
-    <a style="text-decoration:none;" target="map-location" href="https://www.google.com/maps/place/School+of+Computer+Science/@52.9528771,-1.189258,17z/data=!3m1!4b1!4m5!3m4!1s0x4879c209bfffffff:0xaf426646771a25ac!8m2!3d52.9528771!4d-1.1870693">
+<div class="address-card">
+  <a style="text-decoration:none;" target="map-location" href="https://www.google.com/maps/place/School+of+Computer+Science/@52.9528771,-1.189258,17z/data=!3m1!4b1!4m5!3m4!1s0x4879c209bfffffff:0xaf426646771a25ac!8m2!3d52.9528771!4d-1.1870693">
     <ul>
-      <li style="list-style: none;">
+      <li>
           <i class="fas fa-map-marker"></i>
           <span class="address-label">School&nbsp;of&nbsp;Computer&nbsp;Science</span>
       </li>
-      <li style="list-style: none;">
+      <li>
           <i class="fas fa-university"></i>
           <span class="address-label">University&nbsp;of&nbsp;Nottingham</span>
       </li>
-      <li style="list-style: none;">
+      <li>
           <i class="fas fa-university"></i>
           <span class="address-label">Jubilee&nbsp;Campus</span>
       </li>
-      <li style="list-style: none;">
+      <li>
           <i class="fas fa-road"></i>
           <span class="address-label">Wollaton&nbsp;Road</span>
       </li>
-      <li style="list-style: none;">
+      <li>
           <i class="fas fa-city"></i>
           <span class="address-label">Nottingham,&nbsp;NG8&nbsp;1BB</span>
       </li>
-      <li style="list-style: none;">
+      <li>
           <i class="fas fa-map"></i>
           <span class="address-label">United&nbsp;Kingdom</span>
       </li>

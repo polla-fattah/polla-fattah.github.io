@@ -26,43 +26,46 @@ background: "/img/education/software.png"
 
 The BSc degree at the Salahaddin University-Erbil is four years long. Within these four year I have learned the following subjects:
 
-- First Year
-  - Electrical & Logic Design
-  - Computer Architecture I.
-  - Mathematics.
-  - Procedural Programming.
-  - Computer Applications.
-  - Engineering Drawing.
-  - Kurdology.
-  - Electronic Engineering Lab.
-- Second Year
-  - Object Oriented Programming.
-  - Computer Architecture II.
-  - Computer Networks.
-  - Digital Electronics.
-  - Data Structures.
-  - Database Systems.
-  - Numerical Analysis.
-  - Elective.
-  - Team Project.
-- Third Year
-  - Data Communication Systems.
-  - Engineering Analysis.
-  - Compilers.
-  - Software Engineering.
-  - Internet Programming.
-  - Computational Theory.
-  - Elective.
-  - Team Project (Web Design).
-- Fourth Year
-  - Computer Controlled Systems.
-  - Computer Networks.
-  - Computer Graphics.
-  - Artificial Intelligence.
-  - Operating Systems.
-  - Data Security.
-  - Internet Programming.
-  - Engineering Project.
+### First Year
+- Electrical & Logic Design
+- Computer Architecture I.
+- Mathematics.
+- Procedural Programming.
+- Computer Applications.
+- Engineering Drawing.
+- Kurdology.
+- Electronic Engineering Lab.
+
+### Second Year
+- Object Oriented Programming.
+- Computer Architecture II.
+- Computer Networks.
+- Digital Electronics.
+- Data Structures.
+- Database Systems.
+- Numerical Analysis.
+- Elective.
+- Team Project.
+
+### Third Year
+- Data Communication Systems.
+- Engineering Analysis.
+- Compilers.
+- Software Engineering.
+- Internet Programming.
+- Computational Theory.
+- Elective.
+- Team Project (Web Design).
+
+### Fourth Year
+- Computer Controlled Systems.
+- Computer Networks.
+- Computer Graphics.
+- Artificial Intelligence.
+- Operating Systems.
+- Data Security.
+- Internet Programming.
+- Engineering Project.
 
 ## Software Projects
 
@@ -102,30 +105,30 @@ My Final year project was under the supervision of [Mr Karim Zibari](mailto:kzib
 
 ## Address
 
-  <div class="address">
-    <a style="text-decoration:none;" target="maplocation" href="https://goo.gl/maps/gG4grzZZjPMcqU4Q6">
+<div class="address-card">
+  <a style="text-decoration:none;" target="maplocation" href="https://goo.gl/maps/gG4grzZZjPMcqU4Q6">
     <ul>
-      <li style="list-style: none;">
+      <li>
           <i class="fas fa-map-marker"></i>
           <span class="address-label">Software&nbsp;Engineerign</span>
       </li>
-      <li style="list-style: none;">
+      <li>
           <i class="fas fa-university"></i>
           <span class="address-label">Engineering&nbsp;College</span>
       </li>
-      <li style="list-style: none;">
+      <li>
           <i class="fas fa-university"></i>
           <span class="address-label">Salahaddin&nbsp;University-Erbil</span>
       </li>
-      <li style="list-style: none;">
+      <li>
           <i class="fas fa-road"></i>
           <span class="address-label">Kurkuk&nbsp;Road</span>
       </li>
-      <li style="list-style: none;">
+      <li>
           <i class="fas fa-city"></i>
           <span class="address-label">Erbil</span>
       </li>
-      <li style="list-style: none;">
+      <li>
           <i class="fas fa-map"></i>
           <span class="address-label">Iraq</span>
       </li>

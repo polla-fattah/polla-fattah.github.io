@@ -115,20 +115,91 @@ background: '/img/main/posts-bg.png'
 <!-- Pager -->
 {% if paginator.total_pages > 1 %}
 
-<div class="clearfix">
-
-  {% if paginator.previous_page %}
-  <a class="btn btn-bg float-left" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"> 🢀
-    Newer<span class="d-none d-md-inline"> Posts</span></a>
-  {% endif %}
-
-  {% if paginator.next_page %}
-  <a class="btn btn-bg float-right" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older<span class="d-none d-md-inline"> Posts</span> 🡺</a>
-  {% endif %}
-
+<div class="publication-navigation">
+  <div class="container">
+    <div class="nav-buttons">
+      {% if paginator.previous_page %}
+      <a class="nav-btn" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">
+        <i class="fas fa-chevron-left"></i> Newer Posts
+      </a>
+      {% else %}
+      <div></div>
+      {% endif %}
+      
+      <a class="nav-btn center" href="/posts/">
+        <i class="fas fa-list"></i> All Posts
+      </a>
+      
+      {% if paginator.next_page %}
+      <a class="nav-btn" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">
+        Older Posts <i class="fas fa-chevron-right"></i>
+      </a>
+      {% else %}
+      <div></div>
+      {% endif %}
+    </div>
+  </div>
 </div>
 
 {% endif %}
+
+<style>
+  .publication-navigation {
+    background: #f8f9fa;
+    padding: 40px 0;
+    border-top: 1px solid #e9ecef;
+    margin-top: 60px;
+  }
+
+  .nav-buttons {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 20px;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .nav-btn {
+    background: #26272b;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    text-align: center;
+    border: none;
+    display: inline-block;
+  }
+
+  .nav-btn:hover {
+    background: #495057;
+    color: white;
+    text-decoration: none;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  .nav-btn.center {
+    background: #495057;
+  }
+
+  .nav-btn.center:hover {
+    background: #26272b;
+  }
+
+  @media (max-width: 768px) {
+    .nav-buttons {
+      grid-template-columns: 1fr;
+      gap: 15px;
+    }
+    
+    .nav-btn {
+      width: 100%;
+    }
+  }
+</style>
 
   </div>
 </div>
