@@ -1,6 +1,6 @@
 ---
 layout: contact
-picture: 
+picture: /img/jobs/ukh-Logo.png
 ogimage: /img/og_img/ukh.png
 name: Polla Fattah
 jobTitle: Lecturer

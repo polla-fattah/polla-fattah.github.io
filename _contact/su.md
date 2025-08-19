@@ -1,6 +1,6 @@
 ---
 layout: contact
-picture: /img/Polla-Fattah-SUE.png
+picture: /img/jobs/sue-Logo.png
 ogimage: /img/og_img/su.png
 name: Polla Fattah
 jobTitle: Head of Data Analysis

@@ -1,6 +1,6 @@
 ---
 layout: contact
-picture: /img/Polla-Fattah3.png
+picture: /img/jobs/sg-Logo.png
 ogimage: /img/og_img/sg.png
 name: Polla Fattah
 jobTitle: Software Consultant
