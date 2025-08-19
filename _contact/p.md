@@ -8,6 +8,7 @@ email: mailto:polla.fattah@gmail.com
 phone: tel:+9647504463750
 description: Polla Fattah Academic and Developer. Explore his projects, publications, and connect via email, GitHub, Twitter, or LinkedIn.
 permalink: /p/
+bgcolor: "black"
 vcffile: /assets/Polla_Fattah_UKH.vcf
 contacts:
 

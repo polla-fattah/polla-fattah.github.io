@@ -8,6 +8,7 @@ email: mailto:polla.fattah@su.edu.krd
 phone: tel:+9647504463750
 description: Polla Fattah, Head of the Data Analysis Center at Salahaddin University-Erbil, leads data-driven research, curriculum development, and AI initiatives. Connect via email, GitHub, Twitter, or LinkedIn.
 permalink: /su/
+bgcolor: "#88181c"
 vcffile: /assets/Polla_Fattah_SUE.vcf
 contacts:
   - title: Lecturer
