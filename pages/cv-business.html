@@ -50,17 +50,16 @@ permalink: /business/cv/
 
 
     @media print{
-
-      body{ 
+      body{
         width: 210mm;
-    height: 297mm;
-        background-color:#FFFFFF; 
-        background-image:none; 
-        color:#000000 
-    }
-    header, footer{ 
-        display: none;
-    }
+        height: 297mm;
+        background-color:#FFFFFF;
+        background-image:none;
+        color:#000000;
+      }
+      header, footer, nav.navbar, #mainNav, .site-footer{
+        display: none !important;
+      }
       #ad{ display:none;}
       #contentarea{ width:100%;}
     }

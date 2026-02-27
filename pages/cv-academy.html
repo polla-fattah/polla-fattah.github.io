@@ -29,23 +29,39 @@ permalink: /academy/cv/
     ul { margin: 0 0 32px 17px; }
 
     @media print{
-      body{ 
-        background-color:#FFFFFF; 
-        background-image:none; 
+      body{
+        background-color:#FFFFFF;
+        background-image:none;
         color:#000000;
         padding: 30px;
-
-    }
-    header, footer{ 
-        display: none;
-    }
+      }
+      header, footer, nav.navbar, #mainNav, .site-footer{
+        display: none !important;
+      }
       #ad{ display:none;}
       #contentarea{ width:100%;}
     }
     .fn{
         color: #006699;
     }
- </style>
+    #cv-download-word-btn {
+      margin-bottom: 20px;
+      padding: 10px 20px;
+      font-size: 1rem;
+      background: #006699;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    #cv-download-word-btn:hover { background: #005080; }
+    @media print {
+      #cv-export-actions { display: none !important; }
+    }
+  </style>
+  <p id="cv-export-actions">
+    <button type="button" id="cv-download-word-btn">Download as Word</button>
+  </p>
 <div id="page-wrap">
     <div id="contact-info" class="vcard">    
         <h1 class="fn">Dr. Polla Fattah</h1>
@@ -74,9 +90,19 @@ permalink: /academy/cv/
 
         
         <h1 class="cvh1">Teaching</h1>
-        {% for e in site.lectures reversed %}        
+        {% assign teaching_lectures = site.lectures | where_exp: "item", "item.type != 'training'" %}
+        {% for e in teaching_lectures reversed %}
         <div class='element cv-normal' style='text-indent: -50px; margin-left: 60px'>
-            <strong>{{e.title}}({{e.year}}): </strong> 
+            <strong>{{e.title}}({{e.year}}): </strong>
+            {{ e.university }}, {{ e.department }}
+        </div>
+        {% endfor %}
+
+        <h1 class="cvh1">Training / Professional Development</h1>
+        {% assign training_lectures = site.lectures | where_exp: "item", "item.type == 'training'" %}
+        {% for e in training_lectures reversed %}
+        <div class='element cv-normal' style='text-indent: -50px; margin-left: 60px'>
+            <strong>{{e.title}}({{e.year}}): </strong>
             {{ e.university }}, {{ e.department }}
         </div>
         {% endfor %}
@@ -141,3 +167,57 @@ permalink: /academy/cv/
             </div>
             {% endfor %}
 </div>
+
+<script>
+(function() {
+  var btn = document.getElementById('cv-download-word-btn');
+  if (!btn) return;
+
+  var cvStyles = [
+    '#page-wrap { width: 100%; margin: 40px auto 60px; }',
+    '.cvh1 { margin: 20px 0 15px 0; font-size: 1.5em; font-weight: 600; border-bottom: 1px solid #999; color: #006699; }',
+    'h2 { font-size: 20px; margin: 0 0 6px 0; position: relative; }',
+    '.element { margin: 0 0 14px 0; font-size: 1.1em; font-weight: normal; padding: 0 0 0.5em 0.7em; }',
+    '.element strong { color: #24a49d; }',
+    'ul { margin: 0 0 32px 17px; }',
+    '.fn { color: #006699; }',
+    'body { font-family: Georgia, serif; color: #000; padding: 20px; }',
+    'a { color: #006699; }'
+  ].join('\n');
+
+  function exportToWord() {
+    var wrap = document.getElementById('page-wrap');
+    if (!wrap) return;
+    var content = wrap.innerHTML;
+
+    var wordHtml = [
+      '<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word">',
+      '<head>',
+      '<meta charset="UTF-8">',
+      '<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">',
+      '<!--[if gte mso 9]>',
+      '<xml><w:WordDocument><w:View>Print</w:View><w:Zoom>100</w:Zoom></w:WordDocument></xml>',
+      '<![endif]-->',
+      '<title>Academic CV - Polla Fattah</title>',
+      '<style>' + cvStyles + '</style>',
+      '</head>',
+      '<body>',
+      content,
+      '</body>',
+      '</html>'
+    ].join('');
+
+    var blob = new Blob(['\ufeff' + wordHtml], { type: 'application/msword' });
+    var url = URL.createObjectURL(blob);
+    var a = document.createElement('a');
+    a.href = url;
+    a.download = 'Academic-CV-Polla-Fattah.doc';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  }
+
+  btn.addEventListener('click', exportToWord);
+})();
+</script>

@@ -244,9 +244,12 @@ permalink: /academy/lectures/
       </ul>
     </div>
 
-    <!-- Lectures Grid -->
+    <!-- Courses Taught -->
+    {% assign course_lectures = site.lectures | where_exp: "item", "item.type != 'training'" %}
+    {% if course_lectures.size > 0 %}
+    <h2 class="mt-5 mb-4">Courses taught</h2>
     <div class="lectures-grid">
-      {% for item in site.lectures reversed %}
+      {% for item in course_lectures reversed %}
       <a href="{{ item.url | prepend: site.baseurl | replace: '//', '/' }}" class="lecture-card">
         <h3 class="lecture-title">{{ item.title }}</h3>
         {% if item.subtitle %}
@@ -260,6 +263,28 @@ permalink: /academy/lectures/
       </a>
       {% endfor %}
     </div>
+    {% endif %}
+
+    <!-- Training / Professional Development -->
+    {% assign training_lectures = site.lectures | where_exp: "item", "item.type == 'training'" %}
+    {% if training_lectures.size > 0 %}
+    <h2 class="mt-5 mb-4">Training / Professional Development</h2>
+    <div class="lectures-grid">
+      {% for item in training_lectures reversed %}
+      <a href="{{ item.url | prepend: site.baseurl | replace: '//', '/' }}" class="lecture-card">
+        <h3 class="lecture-title">{{ item.title }}</h3>
+        {% if item.subtitle %}
+        <p class="lecture-subtitle">{{ item.subtitle }}</p>
+        {% else %}
+        <p class="lecture-subtitle">{{ item.excerpt | strip_html | truncatewords: 15 }}</p>
+        {% endif %}
+        <div class="lecture-meta">
+          📍 {{ item.university }} • 📅 {{ item.year }}
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+    {% endif %}
 
   </div> <!-- End container -->
 </div> <!-- End content-section -->

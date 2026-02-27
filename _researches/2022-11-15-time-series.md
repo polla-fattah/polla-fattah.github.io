@@ -17,6 +17,7 @@ publications:
   - "measuring-behavioural-change-players-public-goods-game"
   - "clustering-human-behaviour-public-good-experiment"
   - "measuring-micro-changes-over-time-clustering"
+  - "new-approach-cohesion-measurement-region-based-clustering-validation"
 ---
 
 <p>Time series analysis research focuses on developing sophisticated methodologies for understanding temporal data patterns, enabling accurate forecasting and trend analysis across various domains.</p>
