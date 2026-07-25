@@ -3,12 +3,12 @@ layout: job
 title: "Head of Data Analysis Unit"
 organization: "Research Center, University of Salahaddin-Erbil"
 organization-short: "SUE"
-date: 2023-01-01
-start_date: 2023
+date: 2025-09-01
+start_date: 2025
 end_date: Now
 background: "/img/jobs/academy.jpg"
 category: academy
-permalink: /job/part-time-lecturer-ukh
+permalink: /job/head-of-data-analysis-unit
 ---
 
 ## General Information
