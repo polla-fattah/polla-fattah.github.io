@@ -22,6 +22,21 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
 
+# NOTE: setting `exclude` replaces Jekyll's defaults, so they are repeated here.
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  # Kept in the repo for reference, but not published to the built site.
+  - unused-images
+
 collections:
   awards:
     output: true
