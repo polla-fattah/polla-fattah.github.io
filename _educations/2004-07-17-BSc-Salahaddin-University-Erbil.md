@@ -11,7 +11,7 @@ date: 2004-07-15
 start_date: 2000-10-01
 end_date: 2004-07-15
 
-background: "/img/education/software.png"
+background: "/img/academy/educations/software.png"
 ---
 
 ## Salahaddin University-Erbil
@@ -97,7 +97,7 @@ This is a command line application for managing a library. you might ask why usi
 
 ## Transcript
 
-I have graduated ranking 2nd on the college of engineering for 2004 graduates. The transcript of my BSc is available [here](/img/education/Bsc.pdf){:target="Bsc"}.
+I have graduated ranking 2nd on the college of engineering for 2004 graduates. The transcript of my BSc is available [here](/img/academy/educations/bsc.pdf){:target="Bsc"}.
 
 ## References
 

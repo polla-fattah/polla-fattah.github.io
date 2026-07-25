@@ -4,7 +4,7 @@ title: "Advancing Offline Handwritten Text Recognition: A Systematic Review of D
 name: "advancing-offline-handwritten-text-recognition-data-augmentation-generation-techniques"
 authors: ["Yassin Hussein Rassul", "Aram M Ahmed", "Polla Fattah", "Bryar A Hassan", "arwa", "Tarik A Rashid", "Joan Lu"]
 date: 2025-07-01
-background: "/img/publication/journal.jpg"
+background: "/img/academy/publications/journal.jpg"
 type: "Preprint"
 publisher: "arXiv"
 page: ""

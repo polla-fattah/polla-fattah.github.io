@@ -4,7 +4,7 @@ title: "Web-based Interface for Linux Commands"
 organization: "TU Berlin"
 description: "Create a web-based interface for linux commands using GWT."
 date: 2004-10-01
-background: "/img/projects/library.jpg"
+background: "/img/business/projects/library.jpg"
 category: application # application, webapp, website,
 my-role: "Developer"
 source: ""

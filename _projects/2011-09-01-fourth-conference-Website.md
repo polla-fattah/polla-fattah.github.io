@@ -4,7 +4,7 @@ title: "Conference Website"
 organization: "University of Salahaddin-Erbil, Software Engineering"
 description: "Building a website for Salahaddin University-Erbil’s fourth conference."
 date: 2011-09-01
-background: "/img/projects/library.jpg"
+background: "/img/business/projects/library.jpg"
 category: application # application, webapp, website,
 my-role: "Developer"
 source: "https://github.com/polla-fattah/SUE_Conferance_Website"

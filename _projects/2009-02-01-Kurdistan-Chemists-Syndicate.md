@@ -4,7 +4,7 @@ title: "Kurdistan Chemists Syndicate website"
 organization: "Kurdish Chemists Syndicate"
 description: "Design and implement a website for Kurdish Chemists Syndicate."
 date: 2009-02-01
-background: "/img/projects/library.jpg"
+background: "/img/business/projects/library.jpg"
 category: application # application, webapp, website,
 my-role: "Developer"
 source: ""

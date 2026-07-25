@@ -4,7 +4,7 @@ title: Optimization of Association Rule Mining
 name: "optimization-association-rule-mining"
 authors: ["Polla Fatah", "Ibrahim Hamarash"]
 date: 2015-09-08
-background: "/img/publication/journal.jpg"
+background: "/img/academy/publications/journal.jpg"
 type: Article # Chapter, Book, Report
 publisher: "Internet Technologies and Applications (ITA)"
 page: ""

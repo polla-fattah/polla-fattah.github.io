@@ -3,7 +3,7 @@ layout: lecture
 title: Data Structure
 subtitle: Using C++
 date: 2019-10-01
-background: /img/lecture/data-structure.png
+background: /img/academy/lectures/data-structure.png
 university: Salahaddin University-Erbil
 department: Software Engineering Dept.
 level: BSc

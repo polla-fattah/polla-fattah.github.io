@@ -6,7 +6,7 @@ organization-short: "SefinTel"
 date: 2007-01-01
 start_date: 2007
 end_date: 2008
-background: "/img/jobs/business.jpg"
+background: "/img/business/jobs/business.jpg"
 category: business
 permalink: /job/it-manager
 ---

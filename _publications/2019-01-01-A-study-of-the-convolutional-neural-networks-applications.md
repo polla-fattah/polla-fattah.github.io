@@ -4,7 +4,7 @@ title: A study of the convolutional neural networks applications
 name: "study-convolutional-neural-networks-applications"
 authors: ["Ahmed S Shamsaldin", "Polla Fattah", "Tarik A Rashid", "Nawzad K Al-Salihi"]
 date: 2019-01-01
-background: "/img/publication/journal.jpg"
+background: "/img/academy/publications/journal.jpg"
 type: Article # Chapter, Book, Report
 publisher: ""
 page: ""

@@ -4,7 +4,7 @@ title: "Python Game"
 organization: "University of Nottingham"
 description: "Manage a team of developers at Nottingham to Implement a game using Python."
 date: 2015-09-01
-background: "/img/projects/library.jpg"
+background: "/img/business/projects/library.jpg"
 category: application # application, webapp, website,
 my-role: "Developer & Team Leader"
 source: "https://github.com/polla-fattah/Flappy-Bird-Variation"

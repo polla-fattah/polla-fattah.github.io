@@ -5,7 +5,7 @@ subtitle: "Exploring quantum-inspired neural networks and hybrid quantum-classic
 date: 2024-01-10
 category: "Emerging Technologies"
 status: "ongoing"
-background: "/img/main/academy-bg.jpg"
+background: "/img/backgrounds/academy-bg.jpg"
 permalink: /academy/research/quantum-computing/
 
 # CROSS-REFERENCES - REMEMBER TO UPDATE THESE WHEN CHANGES OCCUR:

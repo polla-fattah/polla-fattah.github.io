@@ -4,7 +4,7 @@ title: "Android Media Player"
 organization: "University of Nottingham"
 description: "Create a media player for Android using Java."
 date: 2016-02-01
-background: "/img/projects/library.jpg"
+background: "/img/business/projects/library.jpg"
 category: application # application, webapp, website,
 my-role: "Developer"
 source: "https://github.com/polla-fattah/Simple-Media-Player"

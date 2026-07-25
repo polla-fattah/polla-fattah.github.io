@@ -3,7 +3,7 @@ layout: lecture
 title: Distributed Database
 subtitle: ""
 date: 2024-02-01
-background: /img/lecture/database.png
+background: /img/academy/lectures/database.png
 university: Salahaddin University-Erbil
 department: Software Engineering Dept.
 level: MSc

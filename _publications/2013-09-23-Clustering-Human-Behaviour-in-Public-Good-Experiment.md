@@ -4,7 +4,7 @@ title: Clustering Human Behaviour in Public Good Experiment
 name: "clustering-human-behaviour-public-good-experiment"
 authors: ["Fattah, Polla", "Uwe Aickelin", "Christian Wagner"]
 date: 2013-09-23
-background: "/img/publication/journal.jpg"
+background: "/img/academy/publications/journal.jpg"
 type: Report
 publisher: ""
 page: ""

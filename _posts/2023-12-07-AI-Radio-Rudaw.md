@@ -4,7 +4,6 @@ title: "Radio Rudaw Interview: The Future of AI and Education"
 subtitle: "In-depth Discussion about AI's Role in Modern Education"
 excerpt: "A comprehensive radio interview on Radio Rudaw discussing artificial intelligence, its impact on education, and the future of learning"
 date: 2023-12-07 15:06:00 +0300
-background: "/img/posts/Kurdistan Talk/wideimage.jpg"
 categories: ["Media Appearance", "AI", "Education", "Radio Interview"]
 author: "Polla Fattah"
 usemathjax: false

@@ -4,7 +4,7 @@ title: "Personal Page"
 organization: "Personal"
 description: "This webpage"
 date: 2022-01-15
-background: "/img/projects/personal.png"
+background: "/img/business/projects/personal.png"
 category: application # application, webapp, website,
 my-role: "Supervisor"
 source: "https://github.com/polla-fattah/polla-fattah.github.io"

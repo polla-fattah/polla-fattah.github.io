@@ -6,7 +6,7 @@ organization-short: "UoN"
 date: 2012-01-01
 start_date: 2012
 end_date: 2016
-background: "/img/jobs/academy.jpg"
+background: "/img/business/jobs/academy.jpg"
 category: academy
 permalink: /job/teaching-assistant
 ---

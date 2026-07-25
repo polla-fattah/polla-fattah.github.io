@@ -11,7 +11,7 @@ date: 2008-07-15
 start_date: 2000-10-01
 end_date: 2008-07-15
 
-background: "/img/education/IT.jpg"
+background: "/img/academy/educations/it.jpg"
 ---
 
 ## Salahaddin University-Erbil
@@ -46,7 +46,7 @@ You can find the MS OfficeWord version of my Thesis in the [GitHub repository](h
 
 ## Transcript
 
-The transcript of my MSc is available [here]("/img/education/MScTranscript.jpg"){:target="Transcript"}.
+The transcript of my MSc is available [here]("/img/academy/educations/msc-transcript.jpg"){:target="Transcript"}.
 
 ## References
 

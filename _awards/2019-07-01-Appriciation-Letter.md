@@ -4,7 +4,7 @@ title: "Appreciation Letter"
 awardingBody: "Salahaddin University's President"
 subtitle: "Appreciation Letter from the president of Salahaddin University-Erbil for excellence teaching and research at the University"
 date: 2019-07-01
-background: "/img/awards/awards_bg.jpg"
+background: "/img/academy/awards/awards-bg.jpg"
 ---
 
 ## Overview

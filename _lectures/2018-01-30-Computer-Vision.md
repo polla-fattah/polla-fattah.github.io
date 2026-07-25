@@ -3,7 +3,7 @@ layout: lecture
 title: Computer Vision
 subtitle: Theory and Applications
 date: 2018-01-30
-background: /img/lecture/computer-vision.jpg
+background: /img/academy/lectures/computer-vision.jpg
 university: University of Kurdistan Hewlêr
 department: Computer Engineering Dept.
 level: MSc

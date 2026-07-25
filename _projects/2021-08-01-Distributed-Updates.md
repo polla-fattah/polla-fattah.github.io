@@ -4,7 +4,7 @@ title: "Distributed Updates"
 organization: "SmartGate"
 description: "A small system to distribute software updates using command line"
 date: 2021-08-01
-background: "/img/projects/commandline.jpg"
+background: "/img/business/projects/commandline.jpg"
 category: Command line application # application, webapp, website,
 my-role: "Developer"
 source: ""

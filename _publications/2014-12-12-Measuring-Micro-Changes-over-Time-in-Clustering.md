@@ -4,7 +4,7 @@ title: Measuring Micro Changes over Time in Clustering
 name: "measuring-micro-changes-over-time-clustering"
 authors: ["Polla Fattah"]
 date: 2014-12-12
-background: "/img/publication/conference.jpg"
+background: "/img/academy/publications/conference.jpg"
 type: Conference
 publisher: "IMA Group Annual Seminar"
 page: ""

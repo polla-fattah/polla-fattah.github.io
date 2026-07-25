@@ -4,7 +4,7 @@ title: "Thanks Letter"
 awardingBody: "Salahaddin University's President"
 subtitle: "Thanks Letter from the president of Salahaddin University-Erbil for successful online teaching"
 date: 2020-06-09
-background: "/img/awards/awards_bg.jpg"
+background: "/img/academy/awards/awards-bg.jpg"
 ---
 
 ## Overview

@@ -1,7 +1,7 @@
 ---
 layout: contact
-picture: /img/jobs/sg-Logo.png
-ogimage: /img/og_img/sg.png
+picture: /img/business/jobs/sg-logo.png
+ogimage: /img/brand/og/sg.png
 name: Polla Fattah
 jobTitle: Software Consultant
 email: mailto:polla.fattah@inforr.co.uk

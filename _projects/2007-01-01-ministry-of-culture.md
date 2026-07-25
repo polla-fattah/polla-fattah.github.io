@@ -4,7 +4,7 @@ title: "Ministry of Culture's Website"
 organization: "Ministry of Culture, KRG"
 description: "Design and implement a website for Ministry of Culture"
 date: 2007-01-01
-background: "/img/projects/library.jpg"
+background: "/img/business/projects/library.jpg"
 category: application # application, webapp, website,
 my-role: "Developer"
 source: ""

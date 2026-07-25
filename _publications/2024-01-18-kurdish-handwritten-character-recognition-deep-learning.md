@@ -4,7 +4,7 @@ title: "Kurdish Handwritten Character Recognition using Deep Learning Techniques
 name: "kurdish-handwritten-character-recognition-deep-learning"
 authors: ["isra", "Polla Fattah"]
 date: 2024-01-18
-background: "/img/publication/journal.jpg"
+background: "/img/academy/publications/journal.jpg"
 type: "Journal Article"
 publisher: "Pattern Recognition"
 page: ""

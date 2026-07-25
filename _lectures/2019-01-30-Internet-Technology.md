@@ -3,7 +3,7 @@ layout: lecture
 title: Internet Technology
 subtitle: Web Development and Applications
 date: 2009-01-30
-background: /img/lecture/internet.jpg
+background: /img/academy/lectures/internet.jpg
 university: Koya University
 department: Computer Engineering Dept.
 level: BSc

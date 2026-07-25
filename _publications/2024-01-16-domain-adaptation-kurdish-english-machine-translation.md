@@ -4,7 +4,7 @@ title: "Domain Adaptation in Low-Resource Kurdish–English Machine Translation"
 name: "domain-adaptation-kurdish-english-mt"
 authors: ["bnar", "Polla Fattah"]
 date: 2024-01-16
-background: "/img/publication/journal.jpg"
+background: "/img/academy/publications/journal.jpg"
 type: "Journal Article"
 publisher: "Computational Linguistics"
 page: ""

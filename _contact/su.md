@@ -1,7 +1,7 @@
 ---
 layout: contact
-picture: /img/jobs/sue-Logo.png
-ogimage: /img/og_img/su.png
+picture: /img/business/jobs/sue-logo.png
+ogimage: /img/brand/og/su.png
 name: Polla Fattah
 jobTitle: Head of Data Analysis
 email: mailto:polla.fattah@su.edu.krd

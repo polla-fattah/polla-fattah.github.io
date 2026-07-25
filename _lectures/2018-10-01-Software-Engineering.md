@@ -3,7 +3,7 @@ layout: lecture
 title: Software Engineering
 subtitle: Principles and Practices
 date: 2018-10-01
-background: /img/lecture/se.jpg
+background: /img/academy/lectures/se.jpg
 university: Salahaddin University-Erbil
 department: Electrical Engineering Dept.
 level: BSc

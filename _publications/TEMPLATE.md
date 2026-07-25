@@ -4,7 +4,7 @@ title: "Your Publication Title Here"
 name: "publication-id"  # Unique identifier for cross-referencing (lowercase, hyphens)
 authors: ["Author1", "Author2", "Polla Fattah"]
 # date: YYYY-MM-DD  # Replace with actual date when creating new publication
-background: "/img/publication/journal.jpg"
+background: "/img/academy/publications/journal.jpg"
 type: "Conference Paper"  # or "Journal Article", "Report", etc.
 publisher: "Publisher Name"
 page: ""

@@ -5,7 +5,7 @@ subtitle: "Building systems to convert Kurdish speech to text using modern neura
 date: 2023-04-01
 category: "Kurdish Language Research"
 status: "ongoing"
-background: "/img/main/academy-bg.jpg"
+background: "/img/backgrounds/academy-bg.jpg"
 permalink: /academy/research/kurdish-asr/
 
 # CROSS-REFERENCES - REMEMBER TO UPDATE THESE WHEN CHANGES OCCUR:

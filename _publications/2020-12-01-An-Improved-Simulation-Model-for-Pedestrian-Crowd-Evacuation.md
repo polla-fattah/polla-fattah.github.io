@@ -4,7 +4,7 @@ title: An Improved Simulation Model for Pedestrian Crowd Evacuation
 name: "improved-simulation-model-pedestrian-crowd-evacuation"
 authors: ["Danial A. Muhammed", "Tarik A. Rashid", "Abeer Alsadoon", "Nebojsa Bacanin", "Polla Fattah", "Mokhtar Mohammadi", "Indradip Banerjee"] 
 date: 2020-12-01
-background: "/img/publication/journal.jpg"
+background: "/img/academy/publications/journal.jpg"
 type: Article # Chapter, Book, Report
 publisher: "MDPI"
 page: ""

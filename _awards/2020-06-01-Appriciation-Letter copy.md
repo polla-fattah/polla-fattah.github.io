@@ -4,7 +4,7 @@ title: "Appreciation Letter"
 awardingBody: "Ministry of Higher Education"
 subtitle: "Appreciation Letter from the  Minister of Higher Education, for continuing the work of the University at the Corona times"
 date: 2020-06-01
-background: "/img/awards/awards_bg.jpg"
+background: "/img/academy/awards/awards-bg.jpg"
 ---
 
 ## Overview

@@ -4,7 +4,7 @@ title: "Salahaddin University-Erbil's Website"
 organization: "University of Salahaddin-Erbil"
 description: "Design and implement Salahaddin University-Erbil website."
 date: 2014-10-01
-background: "/img/projects/library.jpg"
+background: "/img/business/projects/library.jpg"
 category: application # application, webapp, website,
 my-role: "Developer and development team manager."
 source: "https://github.com/polla-fattah/Salahaddin-University-Web"

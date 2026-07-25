@@ -4,7 +4,7 @@ title: "Evaluation Metrics in Low-Resource MT: Insights from Using Automatic and
 name: "evaluation-metrics-low-resource-mt-kurdish"
 authors: ["bnar", "Polla Fattah"]
 date: 2024-01-17
-background: "/img/publication/journal.jpg"
+background: "/img/academy/publications/journal.jpg"
 type: "Conference Paper"
 publisher: "Machine Translation Summit"
 page: ""

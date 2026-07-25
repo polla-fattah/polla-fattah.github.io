@@ -4,7 +4,6 @@ title: "Notary System 2.0"
 organization: "Ministry of Justice, Notary Offices"
 description: "Recreate Notary System from scratch using Laravel, Vue.js, and PostgreSQL."
 date: 2023-03-20
-background: "/img/projects/notary-system-2.jpg"
 category: webapp
 my-role: "Project Leader"
 technologies:

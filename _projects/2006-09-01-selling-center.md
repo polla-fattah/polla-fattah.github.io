@@ -4,7 +4,7 @@ title: "Selling Point"
 organization: "Korek Telecom"
 description: "Create web-based selling centre application for Korek Telecom."
 date: 2006-09-01
-background: "/img/projects/library.jpg"
+background: "/img/business/projects/library.jpg"
 category: application # application, webapp, website,
 my-role: "Developer"
 source: ""

@@ -4,7 +4,7 @@ title: "Local Network and Web-based Services"
 organization: "University of Salahaddin-Erbil, Electrical Engineering"
 description: "Design and manage an internal network infrastructure and website for Electrical Engineering Dept. at Salahaddin University-Erbil."
 date: 2011-07-01
-background: "/img/projects/library.jpg"
+background: "/img/business/projects/library.jpg"
 category: application # application, webapp, website,
 my-role: "Developer & IT"
 source: ""

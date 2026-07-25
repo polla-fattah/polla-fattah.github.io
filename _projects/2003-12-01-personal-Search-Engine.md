@@ -4,7 +4,7 @@ title: "Personal Search Engine"
 organization: "University of Salahaddin-Erbil, Software Engineering"
 description: "Creating Personal Search Engine using Java."
 date: 2003-12-01
-background: "/img/projects/search.jpg"
+background: "/img/business/projects/search.jpg"
 category: application # application, webapp, website,
 my-role: "Developer"
 source: "https://github.com/polla-fattah/SearchEngine"

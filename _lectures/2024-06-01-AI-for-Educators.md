@@ -4,7 +4,7 @@ title: AI for Educators
 subtitle: Integrating AI in teaching (Trainer of Trainers)
 date: 2024-06-01
 type: training
-background: /img/lecture/background.jpg
+background: /img/academy/lectures/background.jpg
 university: University of Salahaddin-Erbil
 department: Professional Development for Educators
 level: Professional Development

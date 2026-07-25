@@ -4,7 +4,7 @@ title: "University Webapp"
 organization: "Tishk International University"
 description: " Supervise a project for university staff management system"
 date: 2018-05-01
-background: "/img/projects/library.jpg"
+background: "/img/business/projects/library.jpg"
 category: application # application, webapp, website,
 my-role: "Supervisor"
 source: ""

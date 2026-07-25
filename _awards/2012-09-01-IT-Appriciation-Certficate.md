@@ -4,7 +4,7 @@ title: "Certificate of Excellence"
 awardingBody: "Salahaddin University-Erbil"
 subtitle: "Appreciation Certificate for Excellence at administrating the Salahaddin University-Erbil’s website and IT infrastructure."
 date: 2012-09-01
-background: "/img/awards/awards_bg.jpg"
+background: "/img/academy/awards/awards-bg.jpg"
 ---
 
 ## Overview

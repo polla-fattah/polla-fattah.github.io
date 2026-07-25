@@ -4,7 +4,7 @@ title: "Ministry of Higher Education's Website"
 organization: "Ministry of Higher Education, KRG"
 description: "Design and implement a website for Ministry of Higher Education"
 date: 2007-04-01
-background: "/img/projects/library.jpg"
+background: "/img/business/projects/library.jpg"
 category: application # application, webapp, website,
 my-role: "Developer"
 source: ""

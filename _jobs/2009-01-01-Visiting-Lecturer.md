@@ -6,7 +6,7 @@ organization-short: "Koya University"
 date: 2009-01-01
 start_date: 2009
 end_date: 2010
-background: "/img/jobs/academy.jpg"
+background: "/img/business/jobs/academy.jpg"
 category: academy
 permalink: /job/visiting-lecturer-koya
 ---

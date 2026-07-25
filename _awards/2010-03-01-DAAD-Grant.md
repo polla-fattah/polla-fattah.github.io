@@ -4,7 +4,7 @@ title: "Training Grant"
 awardingBody: "DAAD"
 subtitle: "Grant for Training in IT Administration at TU Berlin"
 date: 2010-03-01
-background: "/img/awards/awards_bg.jpg"
+background: "/img/academy/awards/awards-bg.jpg"
 ---
 
 ## Overview

@@ -4,7 +4,7 @@ title: Optimising Rule-Based Classification in Temporal Data
 name: "optimising-rule-based-classification-temporal-data"
 authors: ["Polla Fattah", "Uwe Aickelin", "Christian Wagner"]
 date: 2016-07-20
-background: "/img/publication/journal.jpg"
+background: "/img/academy/publications/journal.jpg"
 type: Conference
 publisher: "ZANCO Journal of Pure and Applied Sciences"
 page: ""

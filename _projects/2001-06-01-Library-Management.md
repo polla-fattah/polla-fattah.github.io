@@ -4,7 +4,7 @@ title: "Library Management System"
 organization: "University of Salahaddin-Erbil, Software Engineering"
 description: "Creating Library Management System using C++."
 date: 2002-06-01
-background: "/img/projects/library.jpg"
+background: "/img/business/projects/library.jpg"
 category: application # application, webapp, website, game
 my-role: "Development Team Leader"
 source: "https://github.com/polla-fattah/Library"

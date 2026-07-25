@@ -6,7 +6,7 @@ organization-short: "SUE"
 date: 2004-01-01
 start_date: 2004
 end_date: 2006
-background: "/img/jobs/academy.jpg"
+background: "/img/business/jobs/academy.jpg"
 category: academy
 permalink: /job/software-engineer-sue
 ---

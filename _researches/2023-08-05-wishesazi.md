@@ -5,7 +5,7 @@ subtitle: "Developing systematic approaches for creating new technical and scien
 date: 2023-08-05
 category: "Kurdish Language Research"
 status: "ongoing"
-background: "/img/main/academy-bg.jpg"
+background: "/img/backgrounds/academy-bg.jpg"
 permalink: /academy/research/wishesazi/
 
 # CROSS-REFERENCES - REMEMBER TO UPDATE THESE WHEN CHANGES OCCUR:

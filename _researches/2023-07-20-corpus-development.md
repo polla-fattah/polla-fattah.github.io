@@ -5,7 +5,7 @@ subtitle: "Building comprehensive text collections and language databases for Ku
 date: 2023-07-20
 category: "Kurdish Language Research"
 status: "ongoing"
-background: "/img/main/academy-bg.jpg"
+background: "/img/backgrounds/academy-bg.jpg"
 permalink: /academy/research/corpus-development/
 
 # CROSS-REFERENCES - REMEMBER TO UPDATE THESE WHEN CHANGES OCCUR:

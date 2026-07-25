@@ -4,7 +4,7 @@ title: "Measure Changes in Behavior"
 organization: "University of Nottingham"
 description: "Measure changes in behavior of users of public good simulation for researchers of economic school at the University of Nottingham using customized algorithm"
 date: 2013-12-01
-background: "/img/projects/library.jpg"
+background: "/img/business/projects/library.jpg"
 category: application # application, webapp, website,
 my-role: "Data Analyst"
 source: ""

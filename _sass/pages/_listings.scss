@@ -22,10 +22,18 @@
   font-size: 1.5rem;
   color: $ink-700;
   transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
 
   &:hover {
     color: $accent-dark;
     transform: scale(1.2);
+  }
+
+  // Inline SVG logos (for tools Font Awesome has no icon for, e.g. Flutter)
+  svg {
+    width: 1.5rem;
+    height: 1.5rem;
   }
 }
 

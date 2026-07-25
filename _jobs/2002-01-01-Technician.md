@@ -6,7 +6,7 @@ organization-short: "Wan"
 date: 2002-01-01
 start_date: 2002
 end_date: 2003
-background: "/img/jobs/business.jpg"
+background: "/img/business/jobs/business.jpg"
 category: business
 permalink: /job/technician
 ---

@@ -4,7 +4,6 @@ title: "Live Discussion on AI and ChatGPT - Rudaw TV"
 subtitle: "Exploring the Revolution of Artificial Intelligence and Large Language Models"
 excerpt: "A live television appearance on Rudaw TV discussing ChatGPT, artificial intelligence, and their impact on society and education"
 date: 2023-12-07 15:00:00 +0300
-background: "/img/posts/Kurdistan Talk/wideimage.jpg"
 categories: ["Media Appearance", "AI", "ChatGPT", "Education"]
 author: "Polla Fattah"
 usemathjax: false

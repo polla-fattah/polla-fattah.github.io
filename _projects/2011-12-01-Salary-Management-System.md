@@ -4,7 +4,7 @@ title: "HR Management System"
 organization: "University of Salahaddin-Erbil, College Engineering"
 description: "Human Resource Management Database for Engineering College at Salahaddin University."
 date: 2011-12-01
-background: "/img/projects/library.jpg"
+background: "/img/business/projects/library.jpg"
 category: application # application, webapp, website,
 my-role: "Database and System Designer"
 source: ""

@@ -4,7 +4,7 @@ title: An Extensive Dataset of Handwritten Central Kurdish Isolated Characters
 name: "extensive-dataset-handwritten-central-kurdish-characters"
 authors: ["Rebin Ahmed", "Tarik Rashid", "Polla Fatah", "Abeer Alsadoon", "Seyedali Mirjaliligh"]
 date: 2021-12-01
-background: "/img/publication/journal.jpg"
+background: "/img/academy/publications/journal.jpg"
 type: Article # Chapter, Book, Report
 publisher: "Data in Brief"
 page: ""

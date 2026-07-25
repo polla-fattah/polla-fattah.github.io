@@ -3,7 +3,7 @@ layout: lecture
 title: Engineering Analysis
 subtitle: Mathematical Foundations for Software Engineering
 date: 2019-10-01
-background: /img/lecture/database.png
+background: /img/academy/lectures/database.png
 university: Salahaddin University-Erbil
 department: Software Engineering Dept.
 level: BSc

@@ -5,7 +5,7 @@ subtitle: "Various medical applications and genetic analysis using computational
 date: 2023-10-08
 category: "Medical Research"
 status: "completed"
-background: "/img/main/academy-bg.jpg"
+background: "/img/backgrounds/academy-bg.jpg"
 permalink: /academy/research/general-medical/
 
 # CROSS-REFERENCES - REMEMBER TO UPDATE THESE WHEN CHANGES OCCUR:

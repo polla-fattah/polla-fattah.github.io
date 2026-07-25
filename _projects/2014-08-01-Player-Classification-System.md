@@ -4,7 +4,7 @@ title: "User Classification System"
 organization: "University of Nottingham"
 description: "Classifying users of public good simulation for researchers at the economic school using own developed algorithm."
 date: 2014-08-01
-background: "/img/projects/library.jpg"
+background: "/img/business/projects/library.jpg"
 category: application # application, webapp, website,
 my-role: "Data Analysis"
 source: ""

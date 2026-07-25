@@ -5,7 +5,7 @@ subtitle: "Developing systems to digitize and recognize Kurdish text from printe
 date: 2023-01-15
 category: "Kurdish Language Research"
 status: "completed"
-background: "/img/main/academy-bg.jpg"
+background: "/img/backgrounds/academy-bg.jpg"
 permalink: /academy/research/kurdish-ocr/
 
 # CROSS-REFERENCES - REMEMBER TO UPDATE THESE WHEN CHANGES OCCUR:

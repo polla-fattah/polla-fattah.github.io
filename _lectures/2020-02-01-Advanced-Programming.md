@@ -3,7 +3,7 @@ layout: lecture
 title: Advanced Programming
 subtitle: Using Java
 date: 2020-02-02
-background: /img/lecture/java.jpg
+background: /img/academy/lectures/java.jpg
 university: Salahaddin University-Erbil
 department: Software Engineering Dept.
 level: BSc

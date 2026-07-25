@@ -4,7 +4,7 @@ title: "Multi-Factor Classification Using Deep Learning for X-ray Images"
 name: "multi-factor-classification-deep-learning-xray-images"
 authors: ["Alaa", "Polla Fattah"]
 date: 2024-01-20
-background: "/img/publication/journal.jpg"
+background: "/img/academy/publications/journal.jpg"
 type: "Journal Article"
 publisher: "Computerized Medical Imaging and Graphics"
 page: ""

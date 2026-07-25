@@ -4,7 +4,7 @@ title: "Web App"
 organization: "University of Salahaddin-Erbil, Software Engineering"
 description: "Design and implement a web based application for Software Engineering Dept. at Salahaddin University."
 date: 2004-09-01
-background: "/img/projects/library.jpg"
+background: "/img/business/projects/library.jpg"
 category: application # application, webapp, website,
 my-role: "Developer"
 source: ""

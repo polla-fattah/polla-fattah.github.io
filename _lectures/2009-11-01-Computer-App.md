@@ -3,7 +3,7 @@ layout: lecture
 title: Computer Applications
 subtitle: Essential Computing Skills for Engineering
 date: 2009-11-01
-background: /img/lecture/apps.webp
+background: /img/academy/lectures/apps.webp
 university: Salahaddin University-Erbil
 department: Electrical Engineering Dept.
 level: BSc

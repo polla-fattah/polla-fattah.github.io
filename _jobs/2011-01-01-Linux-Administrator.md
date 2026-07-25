@@ -6,7 +6,7 @@ organization-short: "7NetLayers"
 date: 2010-01-01
 start_date: 2010
 end_date: 2012
-background: "/img/jobs/business.jpg"
+background: "/img/business/jobs/business.jpg"
 category: business
 permalink: /job/linux-administrator
 ---

@@ -11,7 +11,7 @@ date: 2000-07-15 23:45:13  +0300
 start_date: 1996-09-01 23:45:13  +0300
 end_date: 2000-07-01 23:45:13 +0300
 
-background: "/img/education/kurdistanyKwran.jpg"
+background: "/img/academy/educations/kurdistany-kwran.jpg"
 ---
 
 ## Kudistan High School for Boys
@@ -40,7 +40,7 @@ While the main focus was in Scientific subjects, we have also learned other subj
 
 ## Final Year Certificate
 
-The diploma certificate can be found in this [link](/img/education/DeplomaCertificate.jpg){:target="DeplomaCertificate"}. And yes I know I was ugly ;)
+The diploma certificate can be found in this [link](/img/academy/educations/deploma-certificate.jpg){:target="DeplomaCertificate"}. And yes I know I was ugly ;)
 
 ## Address
 

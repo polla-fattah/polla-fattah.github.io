@@ -5,7 +5,7 @@ subtitle: "Developing translation systems between Kurdish and other languages us
 date: 2023-05-15
 category: "Kurdish Language Research"
 status: "completed"
-background: "/img/main/academy-bg.jpg"
+background: "/img/backgrounds/academy-bg.jpg"
 permalink: /academy/research/machine-translation/
 
 # CROSS-REFERENCES - REMEMBER TO UPDATE THESE WHEN CHANGES OCCUR:

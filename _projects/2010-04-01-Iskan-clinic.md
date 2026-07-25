@@ -4,7 +4,7 @@ title: "Iskan Clinic"
 organization: "Iskan Clinic"
 description: "Design and implement a web based patient record system for 'Iskan Clinic'."
 date: 2010-04-01
-background: "/img/projects/library.jpg"
+background: "/img/business/projects/library.jpg"
 category: application # application, webapp, website,
 my-role: "Developer"
 source: "https://github.com/polla-fattah/Iskan_Clinic"

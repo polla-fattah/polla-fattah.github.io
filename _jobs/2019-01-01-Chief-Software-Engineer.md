@@ -6,7 +6,7 @@ organization-short: "InfoRR"
 date: 2019-01-01
 start_date: 2019
 end_date: 2021
-background: "/img/jobs/business.jpg"
+background: "/img/business/jobs/business.jpg"
 category: business
 permalink: /job/chief-software-engineer-inforr
 ---

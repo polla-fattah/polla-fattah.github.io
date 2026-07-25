@@ -5,7 +5,7 @@ subtitle: "Developing computer-aided diagnosis systems for medical images, parti
 date: 2023-09-12
 category: "Medical Research"
 status: "ongoing"
-background: "/img/main/academy-bg.jpg"
+background: "/img/backgrounds/academy-bg.jpg"
 permalink: /academy/research/medical-imaging/
 
 # CROSS-REFERENCES - REMEMBER TO UPDATE THESE WHEN CHANGES OCCUR:

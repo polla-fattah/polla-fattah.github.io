@@ -4,7 +4,7 @@ title: "AI playing Dots-and Boxes Game"
 organization: "University of Nottingham"
 description: " Leading a team for creating an AI method for playing Dots-and-Boxes game."
 date: 2016-08-01
-background: "/img/projects/library.jpg"
+background: "/img/business/projects/library.jpg"
 category: application # application, webapp, website,
 my-role: "Developer"
 source: "https://github.com/polla-fattah/DotsBoxs"

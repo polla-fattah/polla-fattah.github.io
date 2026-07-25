@@ -5,7 +5,7 @@ subtitle: "Creating natural-sounding speech synthesis systems for Kurdish langua
 date: 2023-03-20
 category: "Kurdish Language Research"
 status: "ongoing"
-background: "/img/main/academy-bg.jpg"
+background: "/img/backgrounds/academy-bg.jpg"
 permalink: /academy/research/kurdish-tts/
 
 # CROSS-REFERENCES - REMEMBER TO UPDATE THESE WHEN CHANGES OCCUR:

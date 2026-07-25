@@ -4,7 +4,7 @@ title: Improving Kurdish Web Mining through Tree Data Structure and Porter's Ste
 name: "improving-kurdish-web-mining-tree-data-structure-porters-stemmer"
 authors: ["Ari M Saeed", "Tarik A Rashid", "Arazo M Mustafa", "Polla Fattah", "Birzo Ismael"]
 date: 2016-01-01
-background: "/img/publication/conference.jpg"
+background: "/img/academy/publications/conference.jpg"
 type: Article
 citation: Saeed, Ari M., Tarik A. Rashid, Arazo M. Mustafa, Polla Fattah, and Birzo Ismael. "Improving Kurdish web mining through tree data structure and Porter’s Stemmer algorithms." UKH Journal of Science and Engineering 2, no. 1 (2018); 48-54.
 publisher: "UKH Journal of Science and Engineering"

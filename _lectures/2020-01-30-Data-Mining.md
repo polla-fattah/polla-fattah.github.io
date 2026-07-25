@@ -3,7 +3,7 @@ layout: lecture
 title: Data Mining
 subtitle: With Python
 date: 2020-01-30
-background: /img/lecture/data-mining.jpg
+background: /img/academy/lectures/data-mining.jpg
 university: Salahaddin University-Erbil
 department: Software Engineering Dept.
 level: MSc

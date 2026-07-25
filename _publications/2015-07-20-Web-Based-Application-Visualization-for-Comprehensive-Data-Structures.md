@@ -4,7 +4,7 @@ title: Web Based Application Visualization for Comprehensive Data Structures
 name: "web-based-application-visualization-comprehensive-data-structures"
 authors: ["Ihab Ahmed Najm", "Nayif Mohammed Hammash", "Mahamod Ismail", "Polla Fatah"]
 date: 2015-07-20
-background: "/img/publication/journal.jpg"
+background: "/img/academy/publications/journal.jpg"
 type: Article # Chapter, Book, Report
 publisher: "Journal of Theoretical and Applied Information Technology"
 volume: ""

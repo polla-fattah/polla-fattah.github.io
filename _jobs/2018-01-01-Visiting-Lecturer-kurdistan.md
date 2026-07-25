@@ -6,7 +6,7 @@ organization-short: "UKH"
 date: 2018-01-01
 start_date: 2018
 end_date: 2020
-background: "/img/jobs/academy.jpg"
+background: "/img/business/jobs/academy.jpg"
 category: academy
 permalink: /job/visiting-lecturer-ukh
 ---

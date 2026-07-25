@@ -4,7 +4,7 @@ title: "Chat Application"
 organization: "University of Salahaddin-Erbil, Software Engineering"
 description: "Design and implement a chat application as final year project."
 date: 2004-07-01
-background: "/img/projects/chat.jpg"
+background: "/img/business/projects/chat.jpg"
 category: application # application, webapp, website,
 my-role: "Developer"
 source: "https://github.com/polla-fattah/Chat-Application"

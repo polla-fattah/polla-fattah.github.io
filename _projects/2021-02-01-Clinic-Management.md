@@ -4,7 +4,7 @@ title: "Clinic Management System"
 organization: "Private Healthcare Provider"
 description: "Manage patient appointments, medical services profiles, and patient information with ease."
 date: 2021-02-01
-background: "/img/projects/clinic1.png"
+background: "/img/business/projects/clinic1.png"
 category: application
 my-role: "Lead Developer"
 technologies:
@@ -62,7 +62,7 @@ Doctors and their assistants have access to the patient management system, which
 - Searching for available patients
 - The application suggests medication based on the patients' age and symptoms.
 
-![Clinic Management System Dashboard](/img/projects/clinic2.png){:class="img-fluid"}
+![Clinic Management System Dashboard](/img/business/projects/clinic2.png){:class="img-fluid"}
 
 The image above shows the dashboard of the Clinic Management System, where healthcare providers can view and manage patient appointments, medical services profiles, and patient information.
 

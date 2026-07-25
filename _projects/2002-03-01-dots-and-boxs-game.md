@@ -5,7 +5,7 @@ organization: "University of Salahaddin-Erbil, Software Engineering"
 description: "Creating Dots-and-Boxes Game using Visual Basic."
 date: 2002-03-01
 finish-date: 2003
-background: "/img/jobs/business.jpg" # business.jpg academy.jpg
+background: "/img/business/jobs/business.jpg" # business.jpg academy.jpg
 category: game # application, webapp, website, game
 my-role: "Developer"
 source: "https://github.com/polla-fattah/Dot-and-Box-The-Game"

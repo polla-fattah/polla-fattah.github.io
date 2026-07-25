@@ -4,7 +4,7 @@ title: "PhD Scholarship"
 awardingBody: "Ministry of Higher Education, KRG"
 subtitle: "KRG’s scholarship award for PhD degree."
 date: 2012-04-01
-background: "/img/awards/awards_bg.jpg"
+background: "/img/academy/awards/awards-bg.jpg"
 ---
 
 ## Overview

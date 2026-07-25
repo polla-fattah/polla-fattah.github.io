@@ -5,7 +5,7 @@ subtitle: "Developing comprehensive methodologies for market trend analysis and 
 date: 2023-11-15
 category: "Data Analysis"
 status: "completed"
-background: "/img/main/academy-bg.jpg"
+background: "/img/backgrounds/academy-bg.jpg"
 permalink: /academy/research/market-analysis/
 
 # CROSS-REFERENCES - REMEMBER TO UPDATE THESE WHEN CHANGES OCCUR:

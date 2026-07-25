@@ -4,7 +4,7 @@ title: "web-based video management system"
 organization: "7NetLayers"
 description: "Develop a video management web based system for 7NetLayers company."
 date: 2012-05-01
-background: "/img/projects/library.jpg"
+background: "/img/business/projects/library.jpg"
 category: application # application, webapp, website,
 my-role: "Developer"
 source: "https://github.com/polla-fattah/Web-Portal"

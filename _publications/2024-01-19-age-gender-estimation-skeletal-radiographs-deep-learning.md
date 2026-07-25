@@ -4,7 +4,7 @@ title: "Age and Gender Estimation from Skeletal Radiographs Using Deep Learning"
 name: "age-gender-estimation-skeletal-radiographs-deep-learning"
 authors: ["Alaa", "Polla Fattah"]
 date: 2024-01-19
-background: "/img/publication/journal.jpg"
+background: "/img/academy/publications/journal.jpg"
 type: "Journal Article"
 publisher: "Medical Image Analysis"
 page: ""

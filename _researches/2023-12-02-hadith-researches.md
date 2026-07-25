@@ -5,7 +5,7 @@ subtitle: "Computational approaches to analyzing Hadith texts and developing dig
 date: 2023-12-01
 category: "Religious Studies"
 status: "ongoing"
-background: "/img/main/academy-bg.jpg"
+background: "/img/backgrounds/academy-bg.jpg"
 permalink: /academy/research/hadith-researches/
 
 # CROSS-REFERENCES - REMEMBER TO UPDATE THESE WHEN CHANGES OCCUR:

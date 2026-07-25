@@ -5,7 +5,7 @@ subtitle: "Creating intelligent tools to detect and correct spelling errors in K
 date: 2023-06-10
 category: "Kurdish Language Research"
 status: "ongoing"
-background: "/img/main/academy-bg.jpg"
+background: "/img/backgrounds/academy-bg.jpg"
 permalink: /academy/research/spell-checking/
 
 # CROSS-REFERENCES - REMEMBER TO UPDATE THESE WHEN CHANGES OCCUR:

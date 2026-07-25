@@ -1,7 +1,7 @@
 ---
 layout: contact
-picture: /img/polla-circular.png
-ogimage: /img/og_img/p.png
+picture: /img/brand/logo-circular.png
+ogimage: /img/brand/og/p.png
 name: Polla Fattah
 jobTitle: Software Engineer
 email: mailto:polla.fattah@gmail.com

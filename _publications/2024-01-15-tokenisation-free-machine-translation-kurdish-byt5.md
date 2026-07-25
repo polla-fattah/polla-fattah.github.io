@@ -4,7 +4,7 @@ title: "Tokenisation-Free Machine Translation for Central Kurdish using the ByT5
 name: "tokenisation-free-machine-translation-kurdish-byt5"
 authors: ["bnar", "Polla Fattah"]
 date: 2024-01-15
-background: "/img/publication/journal.jpg"
+background: "/img/academy/publications/journal.jpg"
 type: "Conference Paper"
 publisher: "International Conference on Natural Language Processing"
 page: ""

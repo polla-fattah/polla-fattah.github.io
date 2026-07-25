@@ -4,7 +4,7 @@ title: A Survey on Dragonfly Algorithm and Its Applications in Engineering
 name: "survey-dragonfly-algorithm-applications-engineering"
 authors: ["Chnoor M Rahman", "Tarik A Rashid", "Abeer Alsadoon", "Nebojsa Bacanin", "Polla Fattah"]
 date: 2020-02-19
-background: "/img/publication/journal.jpg"
+background: "/img/academy/publications/journal.jpg"
 type: Article # Chapter, Book, Report
 publisher: "Evolutionary Intelligence"
 page: ""

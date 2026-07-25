@@ -6,7 +6,7 @@ organization-short: "SUE"
 date: 2014-01-01
 start_date: 2014
 end_date: 2015
-background: "/img/jobs/business.jpg"
+background: "/img/business/jobs/business.jpg"
 category: business
 permalink: /job/leading-developer-sue
 ---

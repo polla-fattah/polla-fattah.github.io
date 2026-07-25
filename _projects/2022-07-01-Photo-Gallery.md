@@ -4,12 +4,11 @@ title: "Photo Gallery"
 organization: "Free Lancer"
 description: "Manage images with their information in a stand-alone and portable application."
 date: 2022-07-01
-background: "/img/projects/image-manager.jpg"
 category: application
 my-role: "Sole Developer"
 technologies:
   - fa: false
-    icon: "flutter"
+    icon: '<svg viewBox="0 0 256 317" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path fill="currentColor" d="M157.666 0 0 157.667l48.8 48.8L255.332 0zM156.567 145.397l-84.9 84.9 48.984 49.716 48.71-48.71 85.97-85.906z"/><path fill="currentColor" d="m120.652 280.013 37.106 37.107h97.574l-85.865-85.817z"/></svg>'
     name: "Flutter"
 ---
 
@@ -63,4 +62,4 @@ The application is able to export a selection of images as a PDF, allowing users
 
 Overall, the Image Manager application provides a powerful and efficient way for users to manage their images with ease and flexibility.
 
-![GalleryApp](/img/projects/gallery.png){:class="img-fluid"}
+![GalleryApp](/img/business/projects/gallery.png){:class="img-fluid"}

@@ -5,7 +5,7 @@ subtitle: "Using machine learning to analyze growth patterns and behavioral data
 date: 2023-02-10
 category: "Medical Research"
 status: "ongoing"
-background: "/img/main/academy-bg.jpg"
+background: "/img/backgrounds/academy-bg.jpg"
 permalink: /academy/research/autism-detection/
 
 # CROSS-REFERENCES - REMEMBER TO UPDATE THESE WHEN CHANGES OCCUR:

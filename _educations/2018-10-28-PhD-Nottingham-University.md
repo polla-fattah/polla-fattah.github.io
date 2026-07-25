@@ -11,7 +11,7 @@ date: 2018-07-15
 start_date: 2012-10-01
 end_date: 2018-09-15
 
-background: "/img/education/Nottingham-University-Jubilee-Campusc.jpg"
+background: "/img/academy/educations/nottingham-university-jubilee-campusc.jpg"
 ---
 
 ## University of Nottingham
@@ -64,7 +64,7 @@ You can find the latex version of my Dissertation in the [GitHub repository](htt
 
 ## Certificate
 
-The certificate of my PhD is available [here](/img/education/phd-certificate.png){:target="Certificate"}.
+The certificate of my PhD is available [here](/img/academy/educations/phd-certificate.png){:target="Certificate"}.
 
 ## References
 

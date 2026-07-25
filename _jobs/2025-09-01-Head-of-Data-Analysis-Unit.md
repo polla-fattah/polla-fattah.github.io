@@ -6,7 +6,7 @@ organization-short: "SUE"
 date: 2025-09-01
 start_date: 2025
 end_date: Now
-background: "/img/jobs/academy.jpg"
+background: "/img/business/jobs/academy.jpg"
 category: academy
 permalink: /job/head-of-data-analysis-unit
 ---

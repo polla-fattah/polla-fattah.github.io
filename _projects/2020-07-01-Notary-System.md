@@ -4,7 +4,7 @@ title: "Notary System"
 organization: "Ministry of Justice, Notary Offices"
 description: "Supervise the Quality of Services of the Notary system of the KRG"
 date: 2020-07-01
-background: "/img/projects/library.jpg"
+background: "/img/business/projects/library.jpg"
 category: application # application, webapp, website,
 my-role: "Software Consultant"
 source: ""

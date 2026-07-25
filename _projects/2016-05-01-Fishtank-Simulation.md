@@ -4,7 +4,7 @@ title: "Fish-Tank Simulation"
 organization: "University of Nottingham"
 description: "Leading a team of developers to create a simulation for fish in a tank using openGL."
 date: 2016-05-01
-background: "/img/projects/library.jpg"
+background: "/img/business/projects/library.jpg"
 category: application # application, webapp, website,
 my-role: "Developer & Team Leader"
 source: "https://github.com/polla-fattah/Fish-Tank-OpenGL"

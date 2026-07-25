@@ -4,7 +4,7 @@ title: "web-based game management system"
 organization: "7NetLayers"
 description: "Develop a game management web based system for 7NetLayers company."
 date: 2012-08-01
-background: "/img/projects/library.jpg"
+background: "/img/business/projects/library.jpg"
 category: application # application, webapp, website,
 my-role: "Developer"
 source: "https://github.com/polla-fattah/Game-Portal"

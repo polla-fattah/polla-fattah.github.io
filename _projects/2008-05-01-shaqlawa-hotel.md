@@ -4,7 +4,7 @@ title: "Shaqlawa Hotel"
 organization: "Shaqlawa Hotel"
 description: "Design web based database system for 'Shaqlawa Hotel'."
 date: 2008-05-01
-background: "/img/projects/library.jpg"
+background: "/img/business/projects/library.jpg"
 category: application # application, webapp, website,
 my-role: "Developer"
 source: ""

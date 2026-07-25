@@ -6,7 +6,7 @@ organization-short: "AwroSoft"
 date: 2006-01-01
 start_date: 2006
 end_date: 2007
-background: "/img/jobs/business.jpg"
+background: "/img/business/jobs/business.jpg"
 category: business
 permalink: /job/software-engineer-awrosoft
 ---

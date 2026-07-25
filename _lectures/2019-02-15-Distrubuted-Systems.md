@@ -3,7 +3,7 @@ layout: lecture
 title: Distributed Systems
 subtitle: Design and Implementation
 date: 2019-02-15
-background: /img/lecture/distributed-systems.jpg
+background: /img/academy/lectures/distributed-systems.jpg
 university: Tishk International University
 department: Department of Computer Engineering
 level: BSc

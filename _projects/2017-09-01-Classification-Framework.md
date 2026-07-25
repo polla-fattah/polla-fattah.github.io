@@ -4,7 +4,7 @@ title: "Classification Framework"
 organization: "University of Nottingham"
 description: "Create a framework to compare different methods of classification."
 date: 2017-09-01
-background: "/img/projects/library.jpg"
+background: "/img/business/projects/library.jpg"
 category: application # application, webapp, website,
 my-role: "Data Analyst"
 source: "https://github.com/polla-fattah/RuleBased_Classification"

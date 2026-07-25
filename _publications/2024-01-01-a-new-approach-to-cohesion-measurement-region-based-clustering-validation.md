@@ -4,7 +4,7 @@ title: "A New Approach to Cohesion Measurement: Region-Based Clustering Validati
 name: "new-approach-cohesion-measurement-region-based-clustering-validation"
 authors: ["sakar", "Polla Fattah"]
 date: 2024-01-01
-background: "/img/publication/journal.jpg"
+background: "/img/academy/publications/journal.jpg"
 type: "Journal Article"
 publisher: "ZANCO Journal of Pure and Applied Sciences"
 page: "49-62"
