@@ -130,6 +130,31 @@ The system is now self-documenting and maintainable! 🎉
 
 For detailed maintenance procedures, see `MAINTENANCE_CHECKLIST.md`.
 
+## Styling Architecture
+
+All CSS lives in `_sass/` and compiles into a single stylesheet (`assets/main.css`, entry point `assets/main.scss`). **Never add `<style>` blocks or extra `<link rel="stylesheet">` tags to HTML files.**
+
+```
+_sass/
+├── styles.scss           # Master import file (order matters)
+├── base/
+│   ├── _variables.scss   # Design tokens: colors, fonts, radii, shadows, breakpoints
+│   └── _typography.scss  # Global type rules (Inter everywhere)
+├── components/           # Reusable pieces: hero, cards, buttons, sections,
+│                         # navbar, footer, timeline, gallery, media, …
+├── layouts/              # _entry.scss (all detail pages), _related.scss,
+│                         # _contact-card.scss (vCard pages), _home.scss
+└── pages/                # Page-specific leftovers (about, business, cv, …)
+```
+
+Key conventions:
+- **Change colors/fonts once** in `_sass/base/_variables.scss` (navy ink + gold accent palette).
+- **Heroes**: `<div class="hero has-art" style="--hero-image: url('/img/heroes/<name>.svg')">`. One class, one size — every hero shares the same min-height and centered layout; portraits/badges inside use `.profile-image` (150px everywhere). The branded SVG artworks and circular badges live in `img/heroes/`; a detail page's `background:` front matter still overrides with a photo (`has-image`).
+- **Detail layouts** (post, publication, job, …) share `.entry-content` / `.entry-navigation` styles and the `entry-navigation.html` / `author-credit.html` / `author-list.html` includes.
+- **Cards**: use `.card-item` (+ `--link`, `--accent`), `.mini-card`, `.pub-card`, `.panel` — don't invent new one-off card styles.
+- **Grids**: `.grid-layout rows-2|rows-3|rows-4|rows-auto` (collapse to one column on mobile).
+- **Buttons**: `.btn-pill` (+ `--secondary`, `--ghost`, `--accent`).
+
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
