@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Academy badge — matches the homepage logo: dark circle, solid gold emblem -->
+  <circle cx="50" cy="50" r="50" fill="#1c1c1e"/>
+  <g fill="#c9a04e">
+    <!-- Mortarboard top -->
+    <polygon points="50,26 16,42 50,58 84,42"/>
+    <!-- Cap base -->
+    <path d="M32 51.5 v10.5 c0 5 8 9 18 9 s18 -4 18 -9 V51.5 L50 60 z"/>
+    <!-- Tassel -->
+    <rect x="79.6" y="43" width="4.4" height="16" rx="2.2"/>
+    <circle cx="81.8" cy="61.5" r="3.4"/>
+  </g>
+</svg>

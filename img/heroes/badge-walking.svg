@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Walking badge — matches the homepage logo: dark circle, solid gold emblem -->
+  <circle cx="50" cy="50" r="50" fill="#1c1c1e"/>
+  <!-- Head -->
+  <circle cx="53" cy="24" r="6.5" fill="#c9a04e"/>
+  <!-- Body and limbs -->
+  <g fill="none" stroke="#c9a04e" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Torso -->
+    <path d="M51 33 L47 50"/>
+    <!-- Front leg -->
+    <path d="M47 50 L56 61 L58 76"/>
+    <!-- Back leg -->
+    <path d="M47 50 L43 63 L34 73"/>
+    <!-- Front arm -->
+    <path d="M50 37 L60 46"/>
+    <!-- Back arm -->
+    <path d="M50 37 L40 45"/>
+  </g>
+</svg>

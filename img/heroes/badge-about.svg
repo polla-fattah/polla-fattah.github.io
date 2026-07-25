@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- About badge — matches the homepage logo: dark circle, solid gold emblem -->
+  <circle cx="50" cy="50" r="50" fill="#1c1c1e"/>
+  <g fill="#c9a04e">
+    <!-- Head -->
+    <circle cx="50" cy="38" r="13"/>
+    <!-- Shoulders -->
+    <path d="M26 78 c0 -14 11 -22 24 -22 s24 8 24 22 v1 H26 z"/>
+  </g>
+</svg>
