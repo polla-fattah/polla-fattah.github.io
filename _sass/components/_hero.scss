@@ -14,6 +14,10 @@
 //   .has-image     photo behind a dark gradient overlay, set via --hero-image
 // ==========================================================================
 
+// Gap between the hero text and the .hero-actions button row. Shared by the
+// real row and the phantom placeholder below so the two can never drift.
+$hero-actions-gap: 40px;
+
 .hero {
   position: relative;
   overflow: hidden;
@@ -79,6 +83,20 @@
   z-index: 2;
   max-width: 800px;
   margin: 0 auto;
+
+  // Phantom button row: pages without .hero-actions (and without the meta
+  // chips that fill the same slot) still reserve its height, so the portrait
+  // and heading land at the same spot on every page. The nbsp inherits the
+  // hero's font metrics and repeats .btn-pill's vertical padding, so this
+  // stays in step automatically if the button style changes.
+  &:not(:has(.hero-actions)):not(:has(.hero-meta))::after {
+    content: '\00a0';
+    display: block;
+    margin-top: $hero-actions-gap;
+    padding: 12px 0;
+    border: 1px solid transparent; // matches .btn-pill--ghost's border
+    visibility: hidden;
+  }
 }
 
 // Circular portrait/badge inside a hero — same size on every page
@@ -112,7 +130,7 @@
   gap: 20px;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 40px;
+  margin-top: $hero-actions-gap;
 }
 
 // Glassy stat chips inside a hero
