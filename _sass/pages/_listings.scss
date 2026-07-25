@@ -1,0 +1,68 @@
+// ==========================================================================
+// Listing-page extras shared by projects / developer pages.
+// ==========================================================================
+
+.technologies-label {
+  font-size: 0.8rem;
+  color: $text-muted;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.tech-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: center;
+}
+
+.tech {
+  font-size: 1.5rem;
+  color: $ink-700;
+  transition: all 0.3s ease;
+
+  &:hover {
+    color: $accent-dark;
+    transform: scale(1.2);
+  }
+}
+
+@media (max-width: $bp-md) {
+  .tech-icons {
+    gap: 10px;
+  }
+}
+
+// Universities list (lectures page)
+.university-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  li {
+    margin-bottom: 12px;
+    padding-left: 25px;
+    position: relative;
+
+    &::before {
+      content: '🎓';
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
+
+  a {
+    color: $ink-800;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: $accent-dark;
+      text-decoration: none;
+    }
+  }
+}

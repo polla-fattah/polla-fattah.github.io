@@ -6,795 +6,191 @@ permalink: /academy/
 ---
 
 <!-- Hero Section -->
-<div class="hero-section">
+<div class="hero has-art" style="--hero-image: url('/img/heroes/academy.svg')">
   <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-8">
-        <div class="hero-content">
-          <img src="/img/academy/education.jpg" alt="Education" class="profile-image">
-          <h1 class="hero-title">Education Journey</h1>
-          <p class="hero-subtitle">PhD in Computer Science from the University of Nottingham, with previous degrees from Salahaddin University-Erbil.</p>
-          
-          <!-- Navigation Links -->
-          <div class="hero-navigation">
-            <a href="/academy/educations" class="hero-nav-btn">Education</a>
-            <a href="/academy/publications" class="hero-nav-btn">Publications</a>
-            <a href="/academy/researches" class="hero-nav-btn">Researches</a>
-          </div>
-        </div>
+    <div class="hero-content">
+      <img src="/img/heroes/badge-academy.svg" alt="Education" class="profile-image">
+      <h1>Education Journey</h1>
+      <p class="hero-subtitle">PhD in Computer Science from the University of Nottingham, with previous degrees from Salahaddin University-Erbil.</p>
+
+      <div class="hero-actions">
+        <a href="/academy/educations" class="btn-pill btn-pill--ghost">Education</a>
+        <a href="/academy/publications" class="btn-pill btn-pill--ghost">Publications</a>
+        <a href="/academy/researches" class="btn-pill btn-pill--ghost">Researches</a>
       </div>
     </div>
   </div>
 </div>
 
 <!-- Content Section -->
-<div class="content-section">
+<div class="content-section content-section--alt">
   <div class="container">
 
-<style>
-  /* Hero Section Styles */
-  .hero-section {
-    background: linear-gradient(135deg, #26272b 0%, #2a2d33 25%, #2d3748 60%, #1a202c 100%);
-    color: white;
-    padding: 80px 0;
-    margin-bottom: 0;
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .hero-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.1);
-    z-index: 1;
-  }
-  
-  .hero-content {
-    position: relative;
-    z-index: 2;
-    text-align: center;
-  }
-  
-  .profile-image {
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    border: 4px solid rgba(255, 255, 255, 0.3);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
-    margin-top: 60px;
-    margin-bottom: 30px;
-  }
-  
-  .hero-title {
-    font-size: 3.5rem;
-    font-weight: 700;
-    margin-bottom: 15px;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-  
-  .hero-subtitle {
-    font-size: 1.3rem;
-    font-weight: 300;
-    margin-bottom: 40px;
-    opacity: 0.9;
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
-    line-height: 1.6;
-  }
-
-  /* Hero Navigation Styles */
-  .hero-navigation {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 30px;
-    flex-wrap: wrap;
-  }
-
-  .hero-nav-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: rgba(255, 255, 255, 0.2);
-    color: white;
-    padding: 12px 30px;
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    border-radius: 15px;
-    text-decoration: none;
-    font-weight: 500;
-    backdrop-filter: blur(10px);
-    width: 140px;
-    height: 50px;
-  }
-
-  .hero-nav-btn:hover {
-    background: rgba(255, 255, 255, 0.3);
-    color: white;
-    text-decoration: none;
-  }
-
-  .content-section {
-    background-color: #f8f9fa;
-    padding: 60px 0;
-  }
-
-
-  .research-card:hover {
-    transform: translateY(-8px) scale(1.02);
-    box-shadow: 0 25px 50px rgba(0,0,0,0.15);
-  }
-  
-  .research-card:hover .fas.fa-arrow-right {
-    transform: translateX(3px);
-  }
-  
-  .research-card:hover div[style*="background: #f8f9fa"] {
-    background: #26272b !important;
-  }
-  
-  .research-card:hover div[style*="background: #f8f9fa"] i {
-    color: white !important;
-  }
-
-  .btn:hover {
-    background: #1a1d21 !important;
-    transform: translateY(-2px);
-  }
-  
-
-
-  @media (max-width: 768px) {
-    .hero-section {
-      padding: 60px 0;
-    }
-    .hero-title {
-      font-size: 2.5rem;
-    }
-    .hero-subtitle {
-      font-size: 1.1rem;
-    }
-    .profile-image {
-      width: 150px;
-      height: 150px;
-    }
-    .hero-navigation {
-      gap: 15px;
-      margin-top: 25px;
-    }
-    .hero-nav-btn {
-      width: 140px;
-      height: 50px;
-    }
-  }
-
-  .main_heading {
-    margin: 30px 0px;
-  }
-
-  .main_heading h1 {
-    font-size: 45px;
-    font-weight: 300;
-    text-align: center;
-    line-height: 45px;
-    color: #777;
-  }
-
-  .underline {
-    display: inline-block;
-    width: 160px;
-    height: 2px;
-    background-color: #26272b;
-  }
-
-
-
-  /* Features CSS */
-  .features-div {
-    cursor: arrow;
-    text-align: center;
-    -webkit-transition: all .15s linear;
-    -moz-transition: all .15s linear;
-    -ms-transition: all .15s linear;
-    -o-transition: all .15s linear;
-    transition: all .15s linear;
-  }
-
-  .features-div:hover p,
-  .features-div:hover i,
-  .features-div:hover h4 {
-    color: #26272b;
-    font-weight: 600;
-
-  }
-
-  .features-div p {
-    text-align: justify;
-
-  }
-
-  .features-div i {
-    font-size: 35px;
-    font-weight: 300;
-    color: #26272b;
-  }
-
-  .features-div h4 {
-    color: #393939;
-    font-weight: 400;
-  }
-
-  .features-div p {
-    color: #636363;
-    font-size: 17px;
-    font-weight: 300;
-    line-height: 25px;
-  }
-
-  .more-features-div {
-    margin-top: 20px;
-    overflow: hidden;
-  }
-
-  .more-feature-div {
-
-    /*  border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;	*/
-    margin-bottom: 0px;
-    padding: 20px 0px;
-  }
-
-  .more-feature-div .col-md-6 img {
-    width: 100%;
-  }
-
-
-  .more-features-div-icon {
-    float: left;
-    width: 60px;
-    height: 60px;
-    padding-top: 6px;
-    background: #26272b;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-    font-size: 30px;
-    color: #fff;
-    line-height: 45px;
-    text-align: center;
-  }
-
-  .more-features-div-heading {
-    float: right;
-    width: 86%;
-    margin-top: 0;
-    font-weight: 400;
-  }
-
-  .more-features-div-description {
-    float: right;
-    width: 86%;
-    font-weight: 300;
-  }
-
-  /* Services CSS */
-  .services-box-gray {
-    background: #f8f8f8;
-    box-shadow: 1px 1px 1px #ddd;
-  }
-
-  /* Lecture card hover effects */
-  .col-md-4.link-no-decoration {
-    transition: background-color 0.3s ease;
-    border-radius: 8px;
-  }
-
-  .col-md-4.link-no-decoration:hover {
-    background-color: rgba(0, 0, 0, 0.05);
-  }
-
-  .col-md-4.services-box-gray:hover {
-    background-color: rgba(0, 0, 0, 0.08);
-  }
-
-  .services-box {
-    text-align: center;
-    padding: 15px 0px;
-  }
-
-  .services-box i {
-    line-height: 75px;
-    font-size: 50px;
-  }
-
-  .services-box h4 {
-    font-size: 18px;
-    font-weight: 400;
-    padding-top: 15px;
-    color: #26272b;
-    text-shadow: 1px 1px 3px #D6D9CA;
-
-  }
-
-  .services-box p {
-    font-size: 15px;
-    font-weight: 300;
-    line-height: 25px;
-  }
-
-  /* Honours & Awards CSS */
-
-  .pricing-box {
-    background: #f8f8f8;
-    text-align: center;
-    margin-bottom: 0px;
-    box-shadow: 2px 2px 2px #ddd;
-  }
-
-  .pricing-box:hover {
-    box-shadow: inset 20px 2px 2px #26272b;
-  }
-
-  .pricing-box-price {
-    position: relative;
-    padding: 40px 0 5px 0;
-    background: #eee;
-    font-size: 25px;
-    color: #555;
-    line-height: 25px;
-  }
-
-
-  .pricing-box h3 {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding: 5px 20px 50px 20px;
-    background: #eee;
-    color: #888;
-    font-size: 18px;
-  }
-
-  .pricing-box h4 {
-    margin-top: 0;
-    margin-bottom: 2px;
-    padding: 10px 20px;
-    background: #e8e8e8;
-    font-size: 16px;
-    line-height: 30px;
-    font-weight: 300;
-  }
-
-
-
-  .pricing-box-sign-up {
-    padding: 25px 0;
-  }
-
-  .pricing-box-best .pricing-box-price,
-  .pricing-box-best div {
-    background: #c0c0c0;
-    color: #2c3e50;
-  }
-
-  .pricing-box-best .pricing-box-price span {
-    color: #2c3e50;
-  }
-
-  .pricing-box-best h3 {
-    background: #c0c0c0;
-    color: #2c3e50;
-  }
-
-  .pricing-box-best h4 {
-    background: #c0c0c0;
-    color: #2c3e50;
-  }
-
-  /* Publication */
-  .publication-bg {
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-    margin: 30px 0px;
-    text-align: center;
-    padding: 40px 20px;
-    font-size: 16px;
-    line-height: 1.6;
-    font-weight: 400;
-    border-radius: 12px;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
-    border: 1px solid #e9ecef;
-    transition: all 0.3s ease;
-  }
-  
-
-  
-  .publication-bg h1 {
-    color: #2c3e50;
-    font-weight: 700;
-    margin-bottom: 20px;
-  }
-  
-  .publication-bg p {
-    color: #5a6c7d;
-    max-width: 800px;
-    margin: 0 auto;
-    font-size: 18px;
-    line-height: 1.7;
-  }
-
-  .link-no-decoration {
-    text-decoration: none;
-  }
-
-  .link-no-decoration:hover {
-    text-decoration: none;
-  }
-
-  /* Universities */
-  .Universities-box {
-    padding-top: 30px;
-    padding-bottom: 15px;
-    text-align: center;
-
-  }
-
-  .Universities-box:hover {
-    text-decoration: none;
-  }
-
-  .Universities-box h3 {
-    font-size: 16px;
-    font-weight: 400;
-  }
-
-  .Universities-box p {
-    padding: 0px;
-    margin: 0px;
-    width: 200px;
-    -webkit-transition: all .3s linear;
-    -moz-transition: all .3s linear;
-    -ms-transition: all .3s linear;
-    -o-transition: all .3s linear;
-    transition: all .3s linear;
-  }
-
-  .Universities-box p img {
-    -webkit-transition: all .3s linear;
-    -moz-transition: all .3s linear;
-    -ms-transition: all .3s linear;
-    -o-transition: all .3s linear;
-    transition: all .3s linear;
-  }
-
-  .Universities-box p:hover {
-    box-shadow: 0 3px 5px rgb(0 0 0 / 0.1);
-  }
-
-  .Universities-box p:hover img {
-    scale: 1.02;
-  }
-
-  .curson_default {
-    cursor: default;
-  }
-</style>
-
-
-
-
-<!-- Services -->
-
-<div class="container" id="Services">
-  <div class="row">
-    <div class="col-md-12">
-      <div class="main_heading">
-        <a href="/academy/lectures/" class="link-no-decoration">
-          <h1>Lectures</h1>
+    <!-- Lectures -->
+    <section id="Services">
+      <div class="section-header">
+        <h2><a href="/academy/lectures/">Lectures</a></h2>
+      </div>
+
+      <div class="grid-layout rows-3">
+        <a class="mini-card" href="/academy/lecture/data-mining/">
+          <div class="card-title">Data Mining</div>
+          <div class="card-text">Data Mining studies algorithms and computational paradigms that allow computers to find patterns and regularities in databases</div>
         </a>
-        <div class="text-center"><span class="underline"></span></div>
+        <a class="mini-card" href="/academy/lecture/computer-vision/">
+          <div class="card-title">Computer Vision</div>
+          <div class="card-text">The aim is to give students a firm understanding of the theory underlying the processing and interpretation of visual information</div>
+        </a>
+        <a class="mini-card" href="/academy/lecture/advanced-programming/">
+          <div class="card-title">Advanced Programming</div>
+          <div class="card-text">This course introduces advanced concepts of programming languages. It also introduces many tools that are used in software engineering</div>
+        </a>
+        <a class="mini-card" href="/academy/lecture/advanced-database/">
+          <div class="card-title">Advanced Database</div>
+          <div class="card-text">This course is a comprehensive study of the internals of modern database management systems</div>
+        </a>
+        <a class="mini-card" href="/academy/lecture/data-structure/">
+          <div class="card-title">Data Structures</div>
+          <div class="card-text">This course is an introductory course to various data structures that can be used in computer science with different algorithms</div>
+        </a>
+        <a class="mini-card" href="/academy/lecture/ai/">
+          <div class="card-title">Artificial Intelligence</div>
+          <div class="card-text">This is an introductory course converging basic Artificial Intelligence (AI) concepts and its implementation</div>
+        </a>
       </div>
-    </div><!-- End col-md-12 -->
-  </div><!-- End row -->
+    </section>
 
-  <div class="row">
-    <a class="col-md-4 col-sm-6 link-no-decoration" href="/academy/lecture/data-mining/">
-      <div class="services-box">
-        <h4>Data Mining</h4>
-        <p>Data Mining studies algorithms and computational paradigms that allow computers to find patterns and
-          regularities in databases</p>
-      </div>
-    </a><!-- End col-md-4-->
-    <a class="col-md-4 services-box-gray col-sm-6  link-no-decoration" href="/academy/lecture/computer-vision/">
-      <div class="services-box">
-        <h4>Computer Vision</h4>
-        <p>The aim is to give students a firm understanding of the theory underlying the processing and interpretation
-          of visual information</p>
-      </div>
-    </a><!-- End col-md-4-->
-    <a class="col-md-4 col-sm-6 link-no-decoration" href="/academy/lecture/advanced-programming/">
-      <div class="services-box">
-        <h4>Advanced Programming</h4>
-        <p>This course introduces advanced concepts of programming languages. It also introduces many tools that are
-          used in software engineering</p>
-      </div>
-    </a><!-- End col-md-4-->
-    <a class="col-md-4 services-box-gray col-sm-6  link-no-decoration" href="/academy/lecture/advanced-database/">
-      <div class="services-box">
-        <h4>Advanced Database</h4>
-        <p>This course is a comprehensive study of the internals of modern database management systems </p>
-      </div>
-    </a><!-- End col-md-4-->
-    <a class="col-md-4 col-sm-6 link-no-decoration" href="/academy/lecture/data-structure/">
-      <div class="services-box">
-        <h4>Data Structures</h4>
-        <p>This course is an introductory course to various data structures that can be used in computer science with
-          different algorithms</p>
-      </div>
-    </a><!-- End col-md-4-->
-    <a class="col-md-4 services-box-gray col-sm-6  link-no-decoration" href="/academy/lecture/ai/">
-      <div class="services-box">
-        <h4>Artificial Intelligence</h4>
-        <p>This is an introductory course converging basic Artificial Intelligence (AI) concepts and its implementation
+    <!-- Research -->
+    <section id="Research" class="mt-5 pt-5">
+      <div class="section-header">
+        <h2><a href="/academy/researches/">Research</a></h2>
+        <p>
+          My research focuses on <strong>data mining</strong>, <strong>machine learning</strong>, and <strong>artificial intelligence</strong>.
+          I explore innovative approaches to solve complex problems in computer science and collaborate with students and research
+          groups across various domains including robotics and computer vision.
         </p>
       </div>
-    </a><!-- End col-md-4-->
-  </div>
 
-</div><!-- End container -->
-
-<!-- End Services -->
-
-<!-- Research Section -->
-<div class="container" id="Research" style="margin-top: 120px; position: relative;">
-  <!-- Elegant background accent -->
-  <div style="position: absolute; top: -20px; left: 50%; transform: translateX(-50%); width: 200px; height: 4px; background: linear-gradient(90deg, transparent, #26272b, transparent); opacity: 0.3;"></div>
-  
-  <div class="row">
-    <a href="/academy/researches/" class="link-no-decoration"><div class="col-md-12">
-      <div class="main_heading" style="position: relative; z-index: 2;">
-        <h1 style="position: relative;">Research</h1>
-        <div class="text-center"><span class="underline" style="background: linear-gradient(90deg, #26272b, #495057); height: 3px;"></span></div>
-        <!-- Decorative elements -->
-      </div></a>
-    </div><!-- End col-md-12 -->
-  </div><!-- End row -->
-
-  <div class="row" style="margin-top: 40px;">
-    <div class="col-md-12">
-      <div style="text-align: center; padding: 30px 40px; background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%); border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); position: relative; overflow: hidden;">
-        <!-- Subtle pattern overlay -->
-        <p style="font-size: 1.2rem; color: #495057; line-height: 1.8; margin: 0; position: relative; z-index: 1; font-weight: 300; letter-spacing: 0.5px;">
-          My research focuses on <strong style="color: #26272b;">data mining</strong>, <strong style="color: #26272b;">machine learning</strong>, and <strong style="color: #26272b;">artificial intelligence</strong>. I explore innovative approaches to solve complex problems in computer science and collaborate with students and research groups across various domains including robotics and computer vision.
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <div class="row" style="margin-top: 50px;">
-    {% assign sorted_researches = site.researches | sort: 'date' | reverse %}
-    {% for research in sorted_researches limit:3 %}
-    <div class="col-md-4" style="margin-bottom: 40px;">
-      <div class="research-card" style="height: 100%; background: white; border-radius: 20px; overflow: hidden; box-shadow: 0 15px 35px rgba(0,0,0,0.08); transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94); position: relative; border: 1px solid rgba(0,0,0,0.05);">
-        <!-- Card accent line -->
-        <div style="position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, #26272b, #495057);"></div>
-        
-        <div style="padding: 35px 30px;">
-                          <a href="{{ research.permalink | prepend: site.baseurl | replace: '//', '/' }}" class="link-no-decoration" style="display: block; height: 100%;">
-            <!-- Research icon -->
-            <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #f8f9fa, #e9ecef); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
-              <i class="fas fa-flask" style="color: #26272b; font-size: 20px;"></i>
-            </div>
-            
-            <h3 style="color: #26272b; margin-bottom: 18px; font-size: 1.4rem; font-weight: 600; line-height: 1.3; letter-spacing: -0.5px;">{{ research.title }}</h3>
-            
+      <div class="grid-layout rows-3">
+        {% assign sorted_researches = site.researches | sort: 'date' | reverse %}
+        {% for research in sorted_researches limit:3 %}
+        <a href="{{ research.permalink | relative_url }}" class="card-item card-item--link panel--bar">
+          <div class="card-content">
+            <div class="card-icon"><i class="fas fa-flask"></i></div>
+            <h3 class="card-title">{{ research.title }}</h3>
             {% if research.subtitle %}
-            <p style="color: #6c757d; margin-bottom: 20px; line-height: 1.7; font-size: 0.95rem;">{{ research.subtitle }}</p>
+            <p class="card-text">{{ research.subtitle }}</p>
             {% else %}
-            <p style="color: #6c757d; margin-bottom: 20px; line-height: 1.7; font-size: 0.95rem;">{{ research.excerpt | strip_html | truncatewords: 20 }}</p>
+            <p class="card-text">{{ research.excerpt | strip_html | truncatewords: 20 }}</p>
             {% endif %}
-            
-            <div style="display: flex; align-items: center; justify-content: space-between; margin-top: auto; padding-top: 15px; border-top: 1px solid #f1f3f4;">
-              <p style="color: #adb5bd; font-size: 0.85rem; margin: 0; display: flex; align-items: center;">
-                <i class="fas fa-calendar-alt" style="margin-right: 6px;"></i> {{ research.date | date: '%B %Y' }}
-              </p>
-              <div style="width: 30px; height: 30px; background: #f8f9fa; border-radius: 50%; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease;">
-                <i class="fas fa-arrow-right" style="color: #26272b; font-size: 12px;"></i>
-              </div>
+            <div class="card-footer card-footer--split">
+              <span><i class="fas fa-calendar-alt"></i> {{ research.date | date: '%B %Y' }}</span>
+              <span><i class="fas fa-arrow-right"></i></span>
             </div>
-          </a>
-        </div>
-      </div>
-    </div>
-    {% endfor %}
-  </div><!-- End row -->
-
-
-
-</div><!-- End container -->
-
-
-
-<!-- Publications -->
-<div class="publication-bg" id="Call-to-Publication">
-  <a class="container link-no-decoration" href="/academy/publications">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="main_heading">
-          <h1>Publications</h1>
-          <div class="text-center"><span class="underline"></span></div>
-        </div>
-      </div><!-- End col-md-12 -->
-    </div><!-- End row -->
-
-    <div class="col-md-12">
-      <p>
-        Most of my publications are in the field of data mining and machine learning. However, I have
-        some other publications that I have done with students and research groups in other fields like Robotics and
-        Computer Vision.
-      </p>
-    </div><!-- End col-md-12-->
-
-  </a><!-- End container -->
-</div>
-
-<!-- End Publications -->
-
-<!-- Students -->
-<div class="container" id="Students">
-  <div class="row">
-    <div class="col-md-12">
-      <div class="main_heading">
-        <a href="/academy/students/" class="link-no-decoration">
-          <h1>Research Students</h1>
-        </a>
-        <div class="text-center"><span class="underline"></span></div>
-      </div>
-    </div><!-- End col-md-12 -->
-  </div><!-- End row -->
-
-  <div class="col-md-12">
-    <p>
-      I have the privilege of supervising MSc students in various research areas including artificial intelligence, 
-      machine learning, natural language processing, computer vision, and healthcare applications. These talented 
-      researchers contribute to cutting-edge projects and advance our understanding of technology applications.
-    </p>
-  </div><!-- End col-md-12-->
-
-</div><!-- End container -->
-
-<!-- End Students -->
-
-<!-- Honours & Awards -->
-
-<div class="container" id="Price">
-  <div class="row">
-    <div class="col-md-12">
-      <div class="main_heading">
-        <a href="/academy/awards/" class="link-no-decoration">
-          <h1>Honours & Awards</h1>
-        </a>
-        <div class="text-center"><span class="underline"></span></div>
-      </div>
-    </div><!-- End col-md-12 -->
-  </div><!-- End row -->
-
-  <div class="row">
-
-    <div class="col-md-4">
-      <div class="pricing-box">
-        <a class="link-no-decoration" href="/academy/award/2010-03-01-DAAD-Grant/">
-          <div class="pricing-box-price">
-            Grant
           </div>
-          <div style="background-color: #eeeeee;">from</div>
-          <h3>DAAD</h3>
-          <h4>2010</h4>
         </a>
+        {% endfor %}
       </div>
-    </div><!-- End col-dm-4 -->
+    </section>
 
-    <div class="col-md-4 pricing-box-best">
-      <div class="pricing-box">
-        <a class="link-no-decoration" href="/academy/award/2012-04-01-Twanasazi/">
-
-          <div class="pricing-box-price">
-            Scholarship
+    <!-- Publications -->
+    <section id="Call-to-Publication" class="mt-5">
+      <a class="link-no-decoration" href="/academy/publications">
+        <div class="panel panel--bar" style="text-align: center;">
+          <div class="section-header">
+            <h2>Publications</h2>
           </div>
-          <div>from</div>
-          <h3>Ministry</h3>
-          <h4>2012</h4>
+          <p>
+            Most of my publications are in the field of data mining and machine learning. However, I have
+            some other publications that I have done with students and research groups in other fields like Robotics and
+            Computer Vision.
+          </p>
+        </div>
+      </a>
+    </section>
+
+    <!-- Students -->
+    <section id="Students" class="mt-5">
+      <div class="section-header">
+        <h2><a href="/academy/students/">Research Students</a></h2>
+        <p>
+          I have the privilege of supervising MSc students in various research areas including artificial intelligence,
+          machine learning, natural language processing, computer vision, and healthcare applications. These talented
+          researchers contribute to cutting-edge projects and advance our understanding of technology applications.
+        </p>
+      </div>
+    </section>
+
+    <!-- Honours & Awards -->
+    <section id="Price" class="mt-5">
+      <div class="section-header">
+        <h2><a href="/academy/awards/">Honours &amp; Awards</a></h2>
+      </div>
+
+      <div class="grid-layout rows-3">
+        <a class="card-item card-item--link" href="/academy/award/2010-03-01-DAAD-Grant/">
+          <div class="card-content" style="text-align: center;">
+            <span class="card-badge">Grant</span>
+            <h3 class="card-title">DAAD</h3>
+            <p class="card-subtitle">2010</p>
+          </div>
+        </a>
+        <a class="card-item card-item--link card-item--accent" href="/academy/award/2012-04-01-Twanasazi/">
+          <div class="card-content" style="text-align: center;">
+            <span class="card-badge">Scholarship</span>
+            <h3 class="card-title">Ministry</h3>
+            <p class="card-subtitle">2012</p>
+          </div>
+        </a>
+        <a class="card-item card-item--link" href="/academy/award/2021-12-20-Certificate-of-Excellence/">
+          <div class="card-content" style="text-align: center;">
+            <span class="card-badge">Certificate</span>
+            <h3 class="card-title">Minister</h3>
+            <p class="card-subtitle">2021</p>
+          </div>
         </a>
       </div>
-    </div><!-- End col-dm-4 -->
+    </section>
 
-    <div class="col-md-4">
-      <div class="pricing-box">
-        <a class="link-no-decoration" href="/academy/award/2021-12-20-Certificate-of-Excellence/">
+    <!-- Universities -->
+    <section id="Universities" class="mt-5">
+      <div class="section-header">
+        <h2><a href="/jobs?category=academy">Universities</a></h2>
+      </div>
 
-          <div class="pricing-box-price">Certificate</div>
-          <div style="background-color: #eeeeee;">from</div>
-          <h3>Minister</h3>
-          <h4>2021</h4>
+      <div class="logo-grid">
+        <a href="/job/lecturer-sue">
+          <img src="/img/academy/sue-logo.png" alt="Salahaddin University-Erbil">
+        </a>
+        <a href="/job/teaching-assistant">
+          <img src="/img/academy/nottingham-logo.png" alt="University of Nottingham">
+        </a>
+        <a href="https://www.tu.berlin/en/" target="Technische_Universität_Berlin">
+          <img src="/img/academy/tub-logo.png" alt="Technische Universität Berlin">
+        </a>
+        <a href="/job/visiting-lecturer-tiu">
+          <img src="/img/academy/tiu-logo.png" alt="Tishk International University">
+        </a>
+        <a href="/job/visiting-lecturer-ukh">
+          <img src="/img/academy/ukh-logo.png" alt="University of Kurdistan Hawler">
+        </a>
+        <a href="/job/visiting-lecturer-koya">
+          <img src="/img/academy/koya-logo.png" alt="Koya University">
         </a>
       </div>
-    </div><!-- End col-dm-4 -->
-  </div><!-- End row -->
+    </section>
 
-</div><!-- End container -->
-
-<!-- End Honours & Awards -->
-
-<!-- Universities -->
-<div class="container" id="Universities" style="margin-top: 100px;">
-  <div class="row">
-    <div class="col-md-12">
-      <div class="main_heading">
-        <h1><a href="/jobs?category=academy" class="link-no-decoration">Universities</a></h1>
-        <div class="text-center"><span class="underline"></span></div>
+    <!-- Official CV -->
+    <section class="mt-5">
+      <div class="section-header">
+        <h2><a href="/academy/cv/">Official CV</a></h2>
+        <p>
+          I have had the opportunity to develop skills in both the academic and business sectors, which has led me to
+          create two separate Curriculum Vitae.
+          <a href="/academy/cv/">This CV</a> highlights my academic background, including my education, research, and teaching experiences.
+        </p>
       </div>
-    </div><!-- End col-md-12 -->
-  </div><!-- End row -->
+    </section>
 
-
-  <div class="row">
-    <a class="col-md-4 Universities-box" href="/job/lecturer-sue">
-      <p>
-        <img src="/img/academy/sue-logo.png" alt="Salahaddin University-Erbil" width="150">
-      </p>
-    </a>
-    <a class="col-md-4 Universities-box" href="/job/teaching-assistant">
-      <p>
-        <img src="/img/academy/nottingham-logo.png" alt="University of Nottingham" width="150">
-      </p>
-    </a>
-    <a class="col-md-4 Universities-box" href="https://www.tu.berlin/en/" target="Technische_Universität_Berlin">
-      <p>
-        <img src="/img/academy/tub-logo.png" alt="Technische Universität Berlin" width="150">
-      </p>
-    </a>
-    <a class="col-md-4 Universities-box" href="/job/visiting-lecturer-tiu">
-      <p>
-        <img src="/img/academy/tiu-logo.png" alt="Tishk International University" width="150">
-      </p>
-    </a>
-    <a class="col-md-4 Universities-box" href="/job/visiting-lecturer-ukh">
-      <p>
-        <img src="/img/academy/ukh-logo.png" alt="University of Kurdistan Hawler" width="150">
-      </p>
-    </a>
-
-    <a class="col-md-4 Universities-box" href="/job/visiting-lecturer-koya">
-      <p>
-        <img src="/img/academy/koya-logo.png" alt="koya university" width="150">
-      </p>
-    </a>
-
-
-  </div><!-- End row -->
-
-
-
-
-</div><!-- End container -->
-
-
-<div style="margin-top: 60px;">
-  <div class="main_heading">
-    <a  href="/academy/cv/" class="link-no-decoration">
-      <h1>Official CV</h1>
-    </a>
-    <div class="text-center"><span class="underline"></span></div>
   </div>
-  <p style="padding: 20px; width: 100%; text-align: center;">
-      I have had the opportunity to develop skills in both the academic and business sectors, which has led me to
-      create two separate Curriculum Vitae.
-      <a href="/academy/cv/">This CV</a> highlights my academic background, including my education, research, and teaching experiences.
-  </p>
 </div>
-
-  </div> <!-- End container -->
-</div> <!-- End content-section -->

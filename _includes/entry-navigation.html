@@ -1,0 +1,32 @@
+{% comment %}
+  Prev / next / back-to-listing navigation for detail pages.
+  Params:
+    back_url   — listing page URL (required)
+    back_label — button label (required)
+    back_icon  — Font Awesome icon name (optional, default fa-list)
+{% endcomment %}
+<div class="entry-navigation">
+  <div class="container">
+    <div class="nav-buttons">
+      {% if page.previous.url %}
+      <a class="btn-pill" href="{{ page.previous.url | relative_url }}" title="{{ page.previous.title }}">
+        <i class="fas fa-chevron-left"></i> Previous
+      </a>
+      {% else %}
+      <div></div>
+      {% endif %}
+
+      <a class="btn-pill btn-pill--secondary" href="{{ include.back_url }}">
+        <i class="fas {{ include.back_icon | default: 'fa-list' }}"></i> {{ include.back_label }}
+      </a>
+
+      {% if page.next.url %}
+      <a class="btn-pill" href="{{ page.next.url | relative_url }}" title="{{ page.next.title }}">
+        Next <i class="fas fa-chevron-right"></i>
+      </a>
+      {% else %}
+      <div></div>
+      {% endif %}
+    </div>
+  </div>
+</div>

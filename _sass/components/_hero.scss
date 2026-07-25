@@ -1,0 +1,208 @@
+// ==========================================================================
+// Hero — the dark banner at the top of every page. ONE height everywhere:
+// every hero matches the home page (min-height + centered content).
+//
+//   <div class="hero has-art" style="--hero-image: url('/img/heroes/….svg')">
+//     <div class="container">
+//       <div class="hero-content"> <h1>…</h1> <p class="hero-subtitle">…</p>
+//         <div class="hero-meta"> <div class="meta-item">…</div> … </div>
+//       </div>
+//     </div>
+//   </div>
+//
+//   .has-art       branded SVG artwork behind the content (no extra overlay)
+//   .has-image     photo behind a dark gradient overlay, set via --hero-image
+// ==========================================================================
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  color: $white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 610px;
+  padding: 110px 0 70px;
+  background-image: $hero-gradient;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  > .container {
+    width: 100%;
+  }
+
+  &.has-image {
+    background-image: $hero-image-overlay, var(--hero-image);
+  }
+
+  // Branded SVG artwork (img/heroes/*) — already dark, no overlay needed
+  &.has-art {
+    background-image: var(--hero-image);
+  }
+
+  h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    line-height: 1.15;
+  }
+
+  .hero-subtitle,
+  .subtitle {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    opacity: 0.9;
+    line-height: 1.6;
+  }
+
+  // Byline under the title (publication authors, student university…)
+  .hero-byline {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    opacity: 0.9;
+    font-style: italic;
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      font-weight: 500;
+    }
+  }
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+// Circular portrait/badge inside a hero — same size on every page
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 30px;
+  border: 5px solid rgba($white, 0.2);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.hero-meta {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+// Call-to-action row inside a hero
+.hero-actions {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+// Glassy stat chips inside a hero
+.hero-stats {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+
+  .stat-item {
+    text-align: center;
+    background: rgba($white, 0.15);
+    padding: 25px;
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    border: 2px solid rgba($white, 0.3);
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+
+    &:hover {
+      transform: translateY(-5px);
+      background: rgba($white, 0.25);
+      border-color: rgba($white, 0.5);
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  .stat-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    display: block;
+    color: $accent;
+  }
+
+  .stat-label {
+    font-size: 1rem;
+    opacity: 0.9;
+  }
+}
+
+.meta-item {
+  background: rgba($white, 0.1);
+  padding: 10px 20px;
+  border-radius: 25px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba($white, 0.2);
+  font-size: 0.9rem;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+@media (max-width: $bp-md) {
+  .hero {
+    min-height: 480px;
+    padding: 95px 0 55px;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .profile-image {
+    width: 120px;
+    height: 120px;
+  }
+
+  .hero .hero-subtitle,
+  .hero .subtitle {
+    font-size: 1.1rem;
+  }
+
+  .hero .hero-byline {
+    font-size: 1rem;
+  }
+
+  .hero-meta {
+    gap: 15px;
+  }
+
+  .hero-stats {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .meta-item {
+    font-size: 0.8rem;
+    padding: 8px 15px;
+  }
+}

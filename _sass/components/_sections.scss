@@ -1,0 +1,227 @@
+// ==========================================================================
+// Page sections & headers — shared rhythm for all listing/landing pages.
+// ==========================================================================
+
+.content-section {
+  padding: 80px 0;
+
+  &--alt {
+    background: $surface;
+  }
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 50px;
+
+  &.left {
+    text-align: left;
+  }
+}
+
+.section-title,
+.section-header h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: $heading;
+  margin-bottom: 20px;
+  position: relative;
+  text-align: inherit;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+      color: $accent-dark;
+      text-decoration: none;
+    }
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    width: 70px;
+    height: 4px;
+    background: $accent;
+    border-radius: 2px;
+    margin: 14px auto 0;
+  }
+}
+
+.section-header.left h2::after,
+.section-title.left::after {
+  margin-left: 0;
+}
+
+.section-subtitle,
+.section-header p {
+  text-align: inherit;
+  font-size: 1.15rem;
+  color: $text-muted;
+  max-width: 600px;
+  margin: 0 auto 40px;
+}
+
+// White panel — boxed content block on gray sections
+.panel {
+  background: $white;
+  padding: 40px;
+  border-radius: $radius;
+  box-shadow: $shadow-sm;
+  margin-bottom: 40px;
+  border: 1px solid $border;
+
+  h2 {
+    color: $heading;
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+  }
+
+  p {
+    color: $text-soft;
+    line-height: 1.7;
+    margin-bottom: 25px;
+    font-size: 1.1rem;
+  }
+}
+
+// Panel with a gradient top bar
+.panel--bar {
+  position: relative;
+  overflow: hidden;
+  border-radius: $radius-lg;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(45deg, $ink-800, $accent);
+  }
+}
+
+// Icon + title header inside a panel
+.panel-head {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+
+  .panel-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    color: $accent;
+    margin-right: 20px;
+    background: linear-gradient(45deg, $ink-800, $ink-600);
+    flex-shrink: 0;
+  }
+
+  h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: $heading;
+    margin: 0;
+  }
+}
+
+// Row of small stat boxes at the bottom of a panel
+.stat-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-top: 25px;
+  padding-top: 20px;
+  border-top: 1px solid $border;
+}
+
+.stat-box {
+  text-align: center;
+  flex: 1;
+  background: $surface;
+  border: 1px solid $border;
+  border-radius: $radius-lg;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: $accent-soft;
+    border-color: $accent;
+  }
+
+  .number {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: $ink-800;
+    display: block;
+  }
+
+  .label {
+    font-size: 0.9rem;
+    color: $text-muted;
+  }
+}
+
+.section-divider {
+  height: 3px;
+  width: 60px;
+  background: $accent;
+  margin: 20px auto;
+}
+
+// Simple responsive card grid
+.grid-layout {
+  display: grid;
+  gap: 30px;
+  margin: 0 auto;
+
+  // `rows-N` puts N cards side by side in one row ("columns-N" kept as alias)
+  &.rows-2,
+  &.columns-2 { grid-template-columns: repeat(2, 1fr); }
+  &.rows-3,
+  &.columns-3 { grid-template-columns: repeat(3, 1fr); }
+  &.rows-4,
+  &.columns-4 { grid-template-columns: repeat(4, 1fr); }
+  &.rows-auto,
+  &.columns-auto { grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); }
+}
+
+@media (max-width: $bp-md) {
+  .content-section {
+    padding: 60px 0;
+  }
+
+  .panel {
+    padding: 25px;
+  }
+
+  .panel-head {
+    flex-direction: column;
+    text-align: center;
+
+    .panel-icon {
+      margin-right: 0;
+      margin-bottom: 15px;
+    }
+  }
+
+  .stat-row {
+    flex-direction: column;
+  }
+
+  .section-title,
+  .section-header h2 {
+    font-size: 2rem;
+  }
+
+  .grid-layout {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+}

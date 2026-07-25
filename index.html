@@ -2,175 +2,54 @@
 layout: home
 background: '/img/main/ai.jpg'
 ---
-<link rel="stylesheet" type="text/css" href="/assets/post-card.css" />
 
-
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-
-.projects-section {
-  padding: 80px 0;
-  margin-top: 0;
-}
-
-.section-heading {
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 20px;
-  text-align: center;
-  color: #333;
-  font-family: 'Inter', sans-serif;
-}
-
-.section-subtitle {
-  text-align: center;
-  color: #666;
-  font-size: 1.1rem;
-  margin-bottom: 60px;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
-  margin-top: 40px;
-}
-
-.project-card {
-  background: white;
-  border-radius: 15px;
-  padding: 30px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
-  transition: all 0.3s ease;
-  border: 1px solid #f0f0f0;
-  position: relative;
-  overflow: hidden;
-}
-
-.project-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 4px;
-  background: linear-gradient(135deg, #4a5568 0%, #2d3748 100%);
-}
-
-.project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
-}
-
-.project-number {
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  background: linear-gradient(135deg, #4a5568 0%, #2d3748 100%);
-  color: white;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 40px;
-  font-weight: 600;
-  margin-bottom: 20px;
-  font-size: 1.1rem;
-}
-
-.project-title {
-  font-size: 1.4rem;
-  font-weight: 600;
-  margin-bottom: 15px;
-  color: #333;
-}
-
-.project-title a {
-  color: #333;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.project-title a:hover {
-  color: #4a5568;
-  text-decoration: none;
-}
-
-.project-description {
-  color: #666;
-  line-height: 1.6;
-  font-size: 1rem;
-}
-
-@media (max-width: 768px) {
-  .projects-section {
-    padding: 60px 0;
-  }
-  .section-heading {
-    font-size: 2rem;
-  }
-  .projects-grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-  .project-card {
-    padding: 25px;
-  }
-}
-</style>
-
-<div class="projects-section">
+<div class="content-section">
   <div class="container">
     <div class="row">
       <div class="col-lg-10 mx-auto">
-        <h2 class="section-heading">Featured Projects</h2>
-        <p class="section-subtitle">Innovative solutions at the intersection of technology, research, and social impact</p>
-        
-        <div class="projects-grid">
-          <div class="project-card">
-            <div class="project-number">01</div>
-            <h3 class="project-title">
-              <a href="https://openhadith.org" target="_blank">Open Hadith</a>
-            </h3>
-            <p class="project-description">
-              Converging traditional Hadith research with machine learning to create accessible digital archives and intelligent search capabilities for Islamic scholarship.
-            </p>
+        <div class="section-header">
+          <h2>Featured Projects</h2>
+          <p>Innovative solutions at the intersection of technology, research, and social impact</p>
+        </div>
+
+        <div class="grid-layout">
+          <div class="card-item panel--bar">
+            <div class="card-content">
+              <div class="project-number">01</div>
+              <h3 class="card-title">
+                <a href="https://openhadith.org" target="_blank">Open Hadith</a>
+              </h3>
+              <p class="card-text">
+                Converging traditional Hadith research with machine learning to create accessible digital archives and intelligent search capabilities for Islamic scholarship.
+              </p>
+            </div>
           </div>
-          
-          <div class="project-card">
-            <div class="project-number">02</div>
-            <h3 class="project-title">
-              <a href="https://data.krd" target="_blank">Data.krd</a>
-            </h3>
-            <p class="project-description">
-              Making Kurdish-focused datasets available for machine learning research, supporting language preservation and technological advancement in the Kurdish community.
-            </p>
+
+          <div class="card-item panel--bar">
+            <div class="card-content">
+              <div class="project-number">02</div>
+              <h3 class="card-title">
+                <a href="http://kailab.org/" target="_blank">KAILAB</a>
+              </h3>
+              <p class="card-text">
+                A collaborative research space fostering innovation in AI and data mining, bringing together researchers and practitioners to advance the field.
+              </p>
+            </div>
           </div>
-          
-          <div class="project-card">
-            <div class="project-number">03</div>
-            <h3 class="project-title">
-              <a href="http://kailab.org/" target="_blank">KAILAB</a>
-            </h3>
-            <p class="project-description">
-              A collaborative research space fostering innovation in AI and data mining, bringing together researchers and practitioners to advance the field.
-            </p>
-          </div>
-          
-          <div class="project-card">
-            <div class="project-number">04</div>
-            <h3 class="project-title">
-              <a href="http://ourquran.org/" target="_blank">Our Quran</a>
-            </h3>
-            <p class="project-description">
-              Leveraging computer science and data analysis to serve the Quran through digital tools, analytics, and accessible interfaces for study and research.
-            </p>
+
+          <div class="card-item panel--bar">
+            <div class="card-content">
+              <div class="project-number">03</div>
+              <h3 class="card-title">
+                <a href="http://ourquran.org/" target="_blank">Our Quran</a>
+              </h3>
+              <p class="card-text">
+                Leveraging computer science and data analysis to serve the Quran through digital tools, analytics, and accessible interfaces for study and research.
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
 </div>
-
-

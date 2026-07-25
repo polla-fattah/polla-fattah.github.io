@@ -1,155 +1,39 @@
 ---
 layout: default
 ---
-<style>
-  .hero-section {
-    background: linear-gradient(135deg, #26272b 0%, #2a2d33 25%, #2d3748 60%, #1a202c 100%);
-    color: white;
-    padding: 80px 0;
-    margin-bottom: 0;
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .hero-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.1);
-    z-index: 1;
-  }
-  
-  .hero-content {
-    position: relative;
-    z-index: 2;
-    text-align: center;
-  }
-  
-  .profile-image {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 4px solid rgba(255, 255, 255, 0.3);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
-    margin-top: 60px;
-    margin-bottom: 30px;
-  }
-  
-  .name {
-    font-size: 3.5rem;
-    font-weight: 700;
-    margin-bottom: 15px;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-  
-  .tagline {
-    font-size: 1.3rem;
-    font-weight: 300;
-    margin-bottom: 30px;
-    opacity: 0.9;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    line-height: 1.6;
-  }
-  
-  .cta-buttons {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 40px;
-  }
-  
-  .cta-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: rgba(255, 255, 255, 0.2);
-    color: white;
-    padding: 12px 30px;
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    border-radius: 15px;
-    text-decoration: none;
-    font-weight: 500;
-    backdrop-filter: blur(10px);
-    width: 140px;
-    height: 50px;
-  }
-  
-  .cta-btn:hover {
-    background: rgba(255, 255, 255, 0.3);
-    color: white;
-    text-decoration: none;
-  }
-  
-  @media (max-width: 768px) {
-    .hero-section {
-      padding: 60px 0;
-    }
-    .name {
-      font-size: 2.5rem;
-    }
-    .tagline {
-      font-size: 1.1rem;
-    }
-    .profile-image {
-      width: 120px;
-      height: 120px;
-    }
-    .cta-buttons {
-      gap: 15px;
-      margin-top: 25px;
-    }
-    .cta-btn {
-      width: 140px;
-      height: 50px;
-    }
-  }
-</style>
 
-<div class="hero-section">
+<div class="hero has-art" style="--hero-image: url('/img/heroes/default.svg')">
   <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-md-10 mx-auto">
-        <div class="hero-content">
-          <img src="{{"/img/polla-circular.png" | relative_url }}" class="profile-image" alt="Polla Fattah">
-          <h1 class="name">Polla Fattah</h1>
-          <p class="tagline">Academic Researcher & Technology Consultant<br>Specializing in AI, Data Science, and Digital Innovation</p>
-          <div class="cta-buttons">
-            <a href="/business/projects" class="cta-btn">Projects</a>
-            <a href="/academy/publications" class="cta-btn">Publications</a>
-            <a href="/contacts" class="cta-btn">Contact</a>
-          </div>
-        </div>
+    <div class="hero-content">
+      <img src="{{ "/img/polla-circular.png" | relative_url }}" class="profile-image" alt="Polla Fattah">
+      <h1>Polla Fattah</h1>
+      <p class="hero-subtitle">Academic Researcher &amp; Technology Consultant<br>Specializing in AI, Data Science, and Digital Innovation</p>
+      <div class="hero-actions">
+        <a href="/business/projects" class="btn-pill btn-pill--ghost">Projects</a>
+        <a href="/academy/publications" class="btn-pill btn-pill--ghost">Publications</a>
+        <a href="/contacts" class="btn-pill btn-pill--ghost">Contact</a>
       </div>
     </div>
   </div>
 </div>
 
-  <div class="container" style="padding: 80px 0;">
+<div class="content-section">
+  <div class="container">
     <div class="row">
       <div class="col-lg-10 mx-auto">
 
         {{ content }}
 
         <!-- Home Post List -->
-        <div style="text-align: center; margin-bottom: 60px; padding-top: 40px;">
-          <h2 class="section-heading" style="font-size: 2.5rem; font-weight: 700; color: #333; margin-bottom: 20px; font-family: 'Inter', sans-serif;">Recent Posts</h2>
-          <p style="color: #666; font-size: 1.1rem; max-width: 600px; margin: 0 auto; line-height: 1.6;">Latest insights on AI, technology, and research</p>
+        <div class="section-header" style="padding-top: 40px;">
+          <h2>Recent Posts</h2>
+          <p>Latest insights on AI, technology, and research</p>
         </div>
-        <link rel="stylesheet" type="text/css" href="/assets/post-card.css" />
 
-        {% for post in site.posts limit : 3 %}
-
+        {% for post in site.posts limit: 3 %}
         <div class="blog-card {% cycle '', 'alt' %}">
           <div class="meta">
-            <div class="photo" style="background-image: url({{post.background}})"></div>
- 
+            <div class="photo" style="background-image: url({{ post.background }})"></div>
           </div>
           <div class="description">
             <h1>{{ post.title }}</h1>
@@ -158,30 +42,20 @@ layout: default
                 {{ post.subtitle }}
               {% endif %}
             </h2>
-            <p> {{ post.excerpt }}</p>
+            <p>{{ post.excerpt }}</p>
             <p class="read-more">
-              <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}#">Read&nbsp;More</a>
+              <a href="{{ post.url | relative_url }}#">Read&nbsp;More</a>
             </p>
           </div>
         </div>
         {% endfor %}
 
         <!-- Pager -->
-        <div class="clearfix" style="text-align: center; margin-top: 50px;">
-          <a href="{{"/posts" | relative_url }}" style="
-            background: linear-gradient(135deg, #4a5568 0%, #2d3748 100%);
-            color: white;
-            padding: 15px 35px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: 500;
-            transition: all 0.3s ease;
-            display: inline-block;
-            box-shadow: 0 5px 15px rgba(74, 85, 104, 0.3);
-          " onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 25px rgba(74, 85, 104, 0.4)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 5px 15px rgba(74, 85, 104, 0.3)';">View All Posts →</a>
+        <div class="clearfix text-center" style="margin-top: 50px;">
+          <a href="{{ "/posts" | relative_url }}" class="btn-pill">View All Posts &rarr;</a>
         </div>
 
       </div>
     </div>
-
   </div>
+</div>

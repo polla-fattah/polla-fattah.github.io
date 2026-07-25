@@ -1,0 +1,118 @@
+// ==========================================================================
+// Developer skills page — icon tiles grouped by skill set.
+// (Tiles were `.card`/`.row` before, which clobbered Bootstrap — now scoped.)
+// ==========================================================================
+
+.skills-section {
+  margin-bottom: 4rem;
+  padding: 2rem;
+  background: $surface;
+  border-radius: $radius-lg;
+  box-shadow: $shadow-sm;
+}
+
+.skill-tiles {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0 20px;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.skill-tile {
+  width: 80px;
+  height: 80px;
+  border: none;
+  background: $white;
+  border-radius: $radius-lg;
+  box-shadow: $shadow-sm;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba($ink-800, 0.05), rgba($ink-600, 0.05));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  &:hover {
+    transform: translateY(-8px) scale(1.1);
+    box-shadow: $shadow-lg;
+    text-decoration: none;
+
+    &::before {
+      opacity: 1;
+    }
+  }
+
+  svg,
+  img,
+  i {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    z-index: 2;
+  }
+}
+
+.skillName {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: $ink-600;
+  transition: all 0.3s ease;
+  display: block;
+  margin-top: 10px;
+  min-height: 35px;
+  text-align: center;
+}
+
+@media screen and (max-width: $bp-md) {
+  .skillName {
+    font-size: 1.1rem;
+    min-height: 30px;
+  }
+
+  .skill-tile {
+    width: 70px;
+    height: 70px;
+
+    svg,
+    img,
+    i {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  .skill-tiles {
+    gap: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .skill-tile {
+    width: 60px;
+    height: 60px;
+
+    svg,
+    img,
+    i {
+      width: 35px;
+      height: 35px;
+    }
+  }
+}

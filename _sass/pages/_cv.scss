@@ -1,0 +1,162 @@
+// ==========================================================================
+// CV pages (/academy/cv/ and /business/cv/) — print-friendly paper design
+// shared by both CVs.
+// ==========================================================================
+
+.cv-page {
+  #page-wrap {
+    width: 100%;
+    max-width: 800px;
+    margin: 40px auto 60px;
+  }
+
+  .cvh1 {
+    margin: 20px 0 15px;
+    padding: 0 0 10px;
+    font-size: 1.5em;
+    font-weight: 600;
+    border-bottom: 1px solid #999;
+    color: $ink-800;
+  }
+
+  h2 {
+    font-size: 20px;
+    margin: 0 0 6px;
+    position: relative;
+
+    span {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      font-style: italic;
+      font-family: Georgia, serif;
+      font-size: 16px;
+      color: #999;
+      font-weight: normal;
+    }
+  }
+
+  .fn {
+    color: $ink-800;
+  }
+
+  .element {
+    margin: 0 0 14px;
+    font-size: 1.1em;
+    font-weight: normal;
+    padding: 0 0 0.5em 0.7em;
+
+    strong {
+      color: $accent-dark;
+    }
+  }
+
+  // Hanging-indent entries (publication lists, awards…)
+  .hang {
+    text-indent: -50px;
+    margin-left: 60px;
+  }
+
+  .hang-lg {
+    text-indent: -80px;
+    margin-left: 90px;
+  }
+
+  ul {
+    margin: 0 0 32px 17px;
+  }
+
+  .clear {
+    clear: both;
+  }
+
+  // Objective / intro paragraph
+  .cv-objective p {
+    font-family: Georgia, serif;
+    font-style: italic;
+    color: $text;
+    text-align: justify;
+  }
+
+  // Definition-list layout (business CV)
+  dt {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: right;
+    padding: 0 26px 0 0;
+    width: 100px;
+    float: left;
+    height: 100px;
+    border-right: 1px solid #999;
+    color: $ink-800;
+  }
+
+  dd {
+    width: calc(100% - 130px);
+    float: right;
+
+    &.clear {
+      float: none;
+      margin: 0;
+      height: 15px;
+      width: auto;
+    }
+
+    strong,
+    div h2 {
+      color: $accent-dark;
+    }
+  }
+
+  .job {
+    margin: 0 0 32px 17px;
+  }
+
+  #cv-download-word-btn {
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background: $ink-800;
+    color: $white;
+    border: none;
+    border-radius: $radius-sm;
+    cursor: pointer;
+
+    &:hover {
+      background: $ink-600;
+    }
+  }
+}
+
+@page {
+  size: A4;
+  margin: 0;
+}
+
+@media print {
+  body {
+    width: 210mm;
+    background-color: $white;
+    background-image: none;
+    color: #000;
+    padding: 30px;
+  }
+
+  header,
+  footer,
+  nav.navbar,
+  #mainNav,
+  .site-footer,
+  #cv-export-actions {
+    display: none !important;
+  }
+
+  #ad {
+    display: none;
+  }
+
+  #contentarea {
+    width: 100%;
+  }
+}

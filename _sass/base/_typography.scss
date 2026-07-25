@@ -1,0 +1,29 @@
+// ==========================================================================
+// Global typography — Inter for body/UI, Fraunces for display headings.
+// ==========================================================================
+
+body {
+  font-family: $font-sans;
+  color: $text;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-sans;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+a {
+  color: $ink-600;
+
+  &:hover,
+  &:focus {
+    color: $accent-dark;
+  }
+}

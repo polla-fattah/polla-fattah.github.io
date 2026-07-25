@@ -1,0 +1,258 @@
+// ==========================================================================
+// Timeline — vertical career/history timeline (ported from assets/timeline.css).
+// ==========================================================================
+
+.timeline {
+  position: relative;
+  padding: 0;
+  width: 100%;
+  margin-top: 20px;
+  list-style-type: none;
+
+  &::before {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    content: ' ';
+    display: block;
+    width: 2px;
+    height: 100%;
+    margin-left: -1px;
+    background: linear-gradient(
+      to bottom,
+      rgba(213, 213, 213, 0) 0%,
+      rgb(213, 213, 213) 8%,
+      rgb(213, 213, 213) 92%,
+      rgba(213, 213, 213, 0) 100%
+    );
+    z-index: 5;
+  }
+
+  .hexa {
+    border: 0;
+    text-align: center;
+    font-size: 22px;
+    background: $ink-700;
+    color: $white;
+    width: 16px;
+    height: 10px;
+    position: absolute;
+    z-index: 5;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: -30px;
+    margin-top: 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-left: 8px solid transparent;
+      border-right: 8px solid transparent;
+      border-bottom: 4px solid $ink-700;
+      top: -4px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-left: 8px solid transparent;
+      border-right: 8px solid transparent;
+      border-top: 4px solid $ink-700;
+      bottom: -4px;
+    }
+  }
+}
+
+.direction-l,
+.direction-r {
+  float: none;
+  width: 100%;
+  text-align: center;
+}
+
+.flag-wrapper {
+  text-align: center;
+  position: relative;
+}
+
+.flag {
+  position: relative;
+  display: inline;
+  background: $white;
+  font-weight: 600;
+  z-index: 15;
+  padding: 6px 10px;
+  text-align: left;
+  border-radius: 5px;
+  margin-top: 2em;
+}
+
+.direction-l .flag::after,
+.direction-r .flag::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -15px;
+  height: 0;
+  width: 0;
+  margin-left: -8px;
+  border: solid transparent;
+  border-bottom-color: $white;
+  border-width: 8px;
+  pointer-events: none;
+}
+
+.direction-l .flag {
+  box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
+}
+
+.direction-r .flag {
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
+}
+
+.time-wrapper {
+  display: block;
+  position: relative;
+  margin: 4px 0 0 0;
+  z-index: 14;
+  line-height: 1em;
+  vertical-align: middle;
+  color: $white;
+}
+
+.time {
+  background: $ink-700;
+  display: inline-block;
+  padding: 8px;
+}
+
+.desc {
+  position: relative;
+  margin: 1em 0 0 0;
+  padding: 1em;
+  background: rgb(254, 254, 254);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+  z-index: 15;
+}
+
+.direction-l .desc,
+.direction-r .desc {
+  position: relative;
+  margin: 1em 1em 0 1em;
+  padding: 1em;
+  z-index: 15;
+}
+
+@media (min-width: $bp-md) {
+  .timeline {
+    width: 660px;
+    margin: 20px auto 0;
+
+    li::after {
+      content: "";
+      display: block;
+      height: 0;
+      clear: both;
+      visibility: hidden;
+    }
+
+    .hexa {
+      left: -28px;
+      right: auto;
+      top: 8px;
+    }
+
+    .direction-l .hexa {
+      left: auto;
+      right: -28px;
+    }
+  }
+
+  .direction-l {
+    position: relative;
+    width: 310px;
+    float: left;
+    text-align: right;
+  }
+
+  .direction-r {
+    position: relative;
+    width: 310px;
+    float: right;
+    text-align: left;
+  }
+
+  .flag-wrapper {
+    display: inline-block;
+  }
+
+  .flag {
+    font-size: 18px;
+    color: $ink-700;
+    margin-top: 2em;
+  }
+
+  .direction-l .flag::after {
+    left: auto;
+    right: -16px;
+    top: 50%;
+    margin-top: -8px;
+    border: solid transparent;
+    border-left-color: rgb(254, 254, 254);
+    border-width: 8px;
+  }
+
+  .direction-r .flag::after {
+    top: 50%;
+    margin-top: -8px;
+    border: solid transparent;
+    border-right-color: rgb(254, 254, 254);
+    border-width: 8px;
+    left: -8px;
+  }
+
+  .time-wrapper {
+    display: inline;
+    vertical-align: middle;
+    margin: 0;
+  }
+
+  .direction-l .time-wrapper {
+    float: left;
+  }
+
+  .direction-r .time-wrapper {
+    float: right;
+  }
+
+  .time {
+    padding: 5px 10px;
+  }
+
+  .direction-r .desc {
+    margin: 4em 0 0 0;
+  }
+}
+
+@media (min-width: $bp-lg) {
+  .timeline {
+    width: 800px;
+    margin: 20px auto 0;
+  }
+
+  .direction-l {
+    width: 380px;
+  }
+
+  .direction-r {
+    width: 380px;
+  }
+}

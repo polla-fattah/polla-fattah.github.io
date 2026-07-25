@@ -1,0 +1,48 @@
+// ==========================================================================
+// Design tokens — the single source of truth for colors, type, and spacing.
+// Change values here, everything downstream follows.
+// ==========================================================================
+
+// Brand palette (navy ink + gold from the logo)
+$ink-900: #1a202c; // darkest navy — hero gradient end
+$ink-800: #1f2530; // primary dark — buttons, headings on light
+$ink-700: #2d3748; // slate navy — hero gradient mid
+$ink-600: #495057; // slate gray — secondary buttons, links
+$accent: #c9973f; // brand gold
+$accent-dark: #a87c2f; // gold, pressed/hover
+$accent-soft: rgba(201, 151, 63, 0.12); // gold tint for backgrounds
+
+// Neutrals
+$white: #fff;
+$surface: #f8f9fa; // alternate section background
+$border: #e9ecef;
+$text: #343a40; // default body text
+$text-soft: #5a6c7d; // long-form paragraph text
+$text-muted: #6c757d;
+$heading: #2c3e50; // content headings
+
+// Typography — one simple sans everywhere; hierarchy comes from size/weight
+$font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  "Helvetica Neue", Arial, sans-serif;
+$font-display: $font-sans;
+
+// Radii
+$radius-sm: 6px;
+$radius: 10px;
+$radius-lg: 16px;
+$radius-pill: 50rem;
+
+// Shadows
+$shadow-sm: 0 2px 6px rgba($ink-900, 0.06);
+$shadow-md: 0 8px 25px rgba($ink-900, 0.09);
+$shadow-lg: 0 20px 40px rgba($ink-900, 0.14);
+
+// Hero backgrounds
+$hero-gradient: linear-gradient(135deg, rgba(31, 37, 48, 0.95), rgba(45, 55, 72, 0.9));
+$hero-image-overlay: linear-gradient(rgba(26, 32, 44, 0.55), rgba(26, 32, 44, 0.72));
+
+// Breakpoints
+$bp-sm: 576px;
+$bp-md: 768px;
+$bp-lg: 992px;
+$bp-xl: 1200px;

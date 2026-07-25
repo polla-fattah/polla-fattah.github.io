@@ -1,0 +1,141 @@
+// ==========================================================================
+// Entry — shared skeleton for every detail page (post, publication, award,
+// education, job, lecture, research, project, student, contact).
+// Replaces ten nearly identical per-layout style blocks.
+// ==========================================================================
+
+.entry-content {
+  background: $white;
+  padding: 80px 0;
+  position: relative;
+
+  .container {
+    max-width: 800px;
+  }
+
+  h2 {
+    color: $heading;
+    font-weight: 600;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid $border;
+  }
+
+  h3 {
+    color: $ink-600;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
+
+  p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: $text-soft;
+  }
+
+  ul {
+    margin-bottom: 25px;
+  }
+
+  li {
+    margin-bottom: 8px;
+    color: $text-soft;
+  }
+
+  // Academic pages (publications, students…) justify their body text
+  &--justify p {
+    text-align: justify;
+  }
+}
+
+// Markdown footnotes (posts)
+.footnotes {
+  font-size: 0.7em;
+  margin-top: 1em;
+
+  ol li p {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+}
+
+.reversefootnote::before {
+  color: red;
+}
+
+.entry-navigation {
+  background: $surface;
+  padding: 40px 0;
+  border-top: 1px solid $border;
+}
+
+.nav-buttons {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 20px;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.author-credit {
+  text-align: right;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid $border;
+
+  a {
+    color: $ink-600;
+    text-decoration: none;
+    font-weight: 500;
+
+    &:hover {
+      color: $accent-dark;
+      text-decoration: none;
+    }
+  }
+}
+
+// Tag-style chips linking to related people/pages (research team, students…)
+.chip-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.chip {
+  display: inline-block;
+  background: $surface;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  color: $ink-600;
+  border: 1px solid $border;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: $accent-soft;
+    border-color: $accent;
+    color: $ink-800;
+    text-decoration: none;
+  }
+
+  small {
+    font-size: 0.8rem;
+    color: $text-muted;
+    margin-left: 8px;
+  }
+}
+
+@media (max-width: $bp-md) {
+  .entry-content {
+    padding: 60px 0;
+  }
+
+  .nav-buttons {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+}

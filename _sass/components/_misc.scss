@@ -1,0 +1,128 @@
+// ==========================================================================
+// Misc shared bits (ported from assets/css/common-pages.css).
+// ==========================================================================
+
+.page-title {
+  font-size: 45px;
+  font-weight: 300;
+  text-align: center;
+  color: $text-muted;
+  margin: 50px 0;
+}
+
+// Simple page header/body (page & page-narrow layouts)
+.page-heading {
+  margin-top: 170px;
+  text-align: center;
+  color: $text;
+
+  h1 {
+    font-size: 60px;
+  }
+
+  .subheading {
+    font-size: 20px;
+    color: $text-muted;
+  }
+}
+
+.page-body {
+  margin: 30px 0 200px;
+
+  &--flush {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: $bp-md) {
+  .page-heading {
+    margin-top: 120px;
+
+    h1 {
+      font-size: 2.5rem;
+    }
+  }
+}
+
+// Plain link helper (no underline, inherits color)
+.link-no-decoration {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+// Grid of partner/university logos
+.logo-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $white;
+    border: 1px solid $border;
+    border-radius: $radius;
+    padding: 25px 35px;
+    transition: all 0.3s ease;
+
+    &:hover {
+      box-shadow: $shadow-md;
+      transform: translateY(-3px);
+      border-color: $accent;
+    }
+  }
+
+  img {
+    max-width: 150px;
+    height: auto;
+  }
+}
+
+// Post previews (paginated archive)
+.post-preview {
+  padding: 25px 0;
+  border-bottom: 1px solid $border;
+
+  a {
+    text-decoration: none;
+    color: $text;
+  }
+
+  &:hover a {
+    color: $accent-dark;
+  }
+}
+
+.post-title {
+  font-size: 30px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.post-subtitle {
+  font-weight: 300;
+  margin: 0 0 10px;
+  color: #565656;
+}
+
+.post-meta {
+  font-size: 18px;
+  font-style: italic;
+  margin-top: 0;
+  color: $text-muted;
+}
+
+@media (max-width: $bp-md) {
+  .post-title {
+    font-size: 24px;
+  }
+
+  .post-subtitle {
+    font-size: 18px;
+  }
+}

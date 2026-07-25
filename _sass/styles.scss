@@ -1,2 +1,44 @@
-// Import Core Clean Blog SCSS
+// ==========================================================================
+// Site stylesheet — compiled by Jekyll via assets/main.scss.
+// Order matters: tokens → vendor theme (Bootstrap + Clean Blog) → overrides.
+// ==========================================================================
+
+// 1. Design tokens (must come first — vendor variables reference them)
+@import "base/variables";
+
+// 2. Vendor theme (Bootstrap + Start Bootstrap Clean Blog)
 @import "../assets/vendor/startbootstrap-clean-blog/scss/styles.scss";
+
+// 3. Base
+@import "base/typography";
+
+// 4. Components
+@import "components/buttons";
+@import "components/hero";
+@import "components/sections";
+@import "components/cards";
+@import "components/blog-card";
+@import "components/timeline";
+@import "components/gallery";
+@import "components/hover-grid";
+@import "components/navbar";
+@import "components/footer";
+@import "components/media";
+@import "components/organisations";
+@import "components/cross-references";
+@import "components/misc";
+
+// 5. Layouts
+@import "layouts/entry";
+@import "layouts/related";
+@import "layouts/contact-card";
+@import "layouts/home";
+
+// 6. Page-specific styles
+@import "pages/about";
+@import "pages/business";
+@import "pages/contacts";
+@import "pages/developer";
+@import "pages/jobs";
+@import "pages/listings";
+@import "pages/cv";

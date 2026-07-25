@@ -1,0 +1,23 @@
+{% comment %}
+  Renders a comma-separated author list, linking authors that are
+  supervised students to their student page.
+  Params: authors — array of author names
+{% endcomment %}
+{% for author in include.authors %}
+  {%- assign is_student = false -%}
+  {%- assign student_link = "" -%}
+  {%- assign student_title = "" -%}
+  {%- for student in site.students -%}
+    {%- if student.title == author or student.name == author -%}
+      {%- assign is_student = true -%}
+      {%- assign student_link = student.permalink -%}
+      {%- assign student_title = student.title -%}
+      {%- break -%}
+    {%- endif -%}
+  {%- endfor -%}
+  {%- if is_student -%}
+    <a href="{{ student_link | relative_url }}">{{ student_title }}</a>{% unless forloop.last %}, {% endunless %}
+  {%- else -%}
+    {{ author }}{% unless forloop.last %}, {% endunless %}
+  {%- endif -%}
+{% endfor %}

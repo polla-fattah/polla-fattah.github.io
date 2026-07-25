@@ -2,254 +2,15 @@
 layout: default
 ---
 
-<style>
-  .student-hero {
-    background: linear-gradient(135deg, rgba(38, 39, 43, 0.9), rgba(73, 80, 87, 0.9)), url('/img/main/academy-bg.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    padding: 120px 0 80px;
-    color: white;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .student-hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.1);
-  }
-
-  .student-hero-content {
-    position: relative;
-    z-index: 2;
-    max-width: 800px;
-    margin: 0 auto;
-  }
-
-  .student-hero h1 {
-    font-size: 2.8rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    line-height: 1.2;
-  }
-
-  .student-hero .university {
-    font-size: 1.2rem;
-    margin-bottom: 1.5rem;
-    opacity: 0.9;
-    font-style: italic;
-  }
-
-  .student-meta {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 30px;
-    flex-wrap: wrap;
-  }
-
-  .meta-item {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 10px 20px;
-    border-radius: 25px;
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    font-size: 0.9rem;
-  }
-
-  .student-content {
-    background: white;
-    padding: 80px 0;
-    position: relative;
-  }
-
-  .student-content .container {
-    max-width: 800px;
-  }
-
-  .student-content h2 {
-    color: #2c3e50;
-    font-weight: 600;
-    margin-top: 40px;
-    margin-bottom: 20px;
-    padding-bottom: 10px;
-    border-bottom: 2px solid #e9ecef;
-  }
-
-  .student-content h3 {
-    color: #495057;
-    font-weight: 500;
-    margin-top: 30px;
-    margin-bottom: 15px;
-  }
-
-  .student-content p {
-    line-height: 1.8;
-    margin-bottom: 20px;
-    color: #5a6c7d;
-    text-align: justify;
-  }
-
-  .student-content ul {
-    margin-bottom: 25px;
-  }
-
-  .student-content li {
-    margin-bottom: 8px;
-    color: #5a6c7d;
-  }
-
-  .student-navigation {
-    background: #f8f9fa;
-    padding: 40px 0;
-    border-top: 1px solid #e9ecef;
-  }
-
-  .nav-buttons {
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
-    gap: 20px;
-    align-items: center;
-    max-width: 800px;
-    margin: 0 auto;
-  }
-
-  .nav-btn {
-    background: #26272b;
-    color: white;
-    padding: 12px 25px;
-    border-radius: 25px;
-    text-decoration: none;
-    font-weight: 500;
-    transition: all 0.3s ease;
-    text-align: center;
-    border: none;
-    display: inline-block;
-  }
-
-  .nav-btn:hover {
-    background: #495057;
-    color: white;
-    text-decoration: none;
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-  }
-
-  .nav-btn.center {
-    background: #495057;
-  }
-
-  .nav-btn.center:hover {
-    background: #26272b;
-  }
-
-  .status-badge {
-    display: inline-block;
-    padding: 4px 12px;
-    border-radius: 20px;
-    font-size: 0.8rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-  }
-
-  .status-badge.active {
-    background: #f39c12;
-    color: white;
-  }
-
-  .status-badge.completed {
-    background: #27ae60;
-    color: white;
-  }
-
-  .publications-list {
-    background: #f8f9fa;
-    padding: 20px;
-    border-radius: 10px;
-    margin-top: 20px;
-  }
-
-  .publications-list h4 {
-    color: #2c3e50;
-    margin-bottom: 15px;
-    font-weight: 600;
-  }
-
-  .publications-list ul {
-    list-style: none;
-    padding: 0;
-  }
-
-  .publications-list li {
-    padding: 10px 0;
-    border-bottom: 1px solid #e9ecef;
-    margin-bottom: 0;
-  }
-
-  .publications-list li:last-child {
-    border-bottom: none;
-  }
-
-  .publications-list a {
-    color: #495057;
-    text-decoration: none;
-    font-weight: 500;
-  }
-
-  .publications-list a:hover {
-    color: #26272b;
-    text-decoration: underline;
-  }
-
-  @media (max-width: 768px) {
-    .student-hero {
-      padding: 100px 0 60px;
-    }
-
-    .student-hero h1 {
-      font-size: 2rem;
-    }
-
-    .student-hero .university {
-      font-size: 1rem;
-    }
-
-    .student-meta {
-      gap: 15px;
-    }
-
-    .meta-item {
-      font-size: 0.8rem;
-      padding: 8px 15px;
-    }
-
-    .student-content {
-      padding: 60px 0;
-    }
-
-    .nav-buttons {
-      grid-template-columns: 1fr;
-      gap: 15px;
-    }
-  }
-</style>
-
-<div class="student-hero">
+<div class="hero {% if page.background %}has-image{% else %}has-art{% endif %}"
+     style="--hero-image: url('{{ page.background | default: '/img/heroes/students.svg' }}')">
   <div class="container">
-    <div class="student-hero-content">
+    <div class="hero-content">
       <h1>{{ page.title }}</h1>
       {% if page.university %}
-      <p class="university">{{ page.university }}</p>
+      <p class="hero-byline">{{ page.university }}</p>
       {% endif %}
-      <div class="student-meta">
+      <div class="hero-meta">
         <div class="meta-item">
           <i class="fas fa-graduation-cap"></i> {{ page.level }}
         </div>
@@ -266,92 +27,40 @@ layout: default
   </div>
 </div>
 
-<div class="student-content">
+<div class="entry-content entry-content--justify">
   <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <h2 class="section-heading">Student Information</h2>
-        
-        <ul style="list-style: none; padding: 0;">
-          <li style="margin-bottom: 8px; padding: 8px 12px; background: #f8f9fa; border-radius: 6px; border-left: 3px solid #26272b;">
-            <i class="fas fa-user" style="color: #26272b; margin-right: 8px;"></i>
-            <strong>Name:</strong> {{ page.title }}
-          </li>
-          <li style="margin-bottom: 8px; padding: 8px 12px; background: #f8f9fa; border-radius: 6px; border-left: 3px solid #26272b;">
-            <i class="fas fa-graduation-cap" style="color: #26272b; margin-right: 8px;"></i>
-            <strong>Level:</strong> {{ page.level }}
-          </li>
-          <li style="margin-bottom: 8px; padding: 8px 12px; background: #f8f9fa; border-radius: 6px; border-left: 3px solid #26272b;">
-            <i class="fas fa-university" style="color: #26272b; margin-right: 8px;"></i>
-            <strong>University:</strong> {{ page.university }}
-          </li>
-          <li style="margin-bottom: 8px; padding: 8px 12px; background: #f8f9fa; border-radius: 6px; border-left: 3px solid #26272b;">
-            <i class="fas fa-book" style="color: #26272b; margin-right: 8px;"></i>
-            <strong>Subject:</strong> {{ page.subject }}
-          </li>
-          <li style="margin-bottom: 8px; padding: 8px 12px; background: #f8f9fa; border-radius: 6px; border-left: 3px solid #26272b;">
-            <i class="fas fa-search" style="color: #26272b; margin-right: 8px;"></i>
-            <strong>Research Area:</strong> {{ page.research_area }}
-          </li>
-          <li style="margin-bottom: 8px; padding: 8px 12px; background: #f8f9fa; border-radius: 6px; border-left: 3px solid #26272b;">
-            <i class="fas fa-info-circle" style="color: #26272b; margin-right: 8px;"></i>
-            <strong>Status:</strong> {{ page.status }}
-          </li>
-          <li style="margin-bottom: 8px; padding: 8px 12px; background: #f8f9fa; border-radius: 6px; border-left: 3px solid #26272b;">
-            <i class="fas fa-user-tie" style="color: #26272b; margin-right: 8px;"></i>
-            <strong>Supervisor:</strong> {{ page.supervisor }}
-          </li>
-          <li style="margin-bottom: 8px; padding: 8px 12px; background: #f8f9fa; border-radius: 6px; border-left: 3px solid #26272b;">
-            <i class="fas fa-calendar" style="color: #26272b; margin-right: 8px;"></i>
-            <strong>Duration:</strong> {{ page.start_date }} - {{ page.end_date }}
-          </li>
-        </ul>
+    <h2 class="section-heading">Student Information</h2>
 
-        {{ content }}
-        
-        {% if page.publications %}
-        <div class="publications-list">
-          <h4>Publications</h4>
-          <ul>
-            {% for pub_id in page.publications %}
-              {% assign publication = site.publications | where: "name", pub_id | first %}
-              {% if publication %}
-              <li>
-                <a href="{{ publication.permalink | prepend: site.baseurl | replace: '//', '/' }}">{{ publication.title }}</a>
-                <br><small>{{ publication.date | date: '%Y' }} - {{ publication.type }}</small>
-              </li>
-              {% endif %}
-            {% endfor %}
-          </ul>
-        </div>
-        {% endif %}
-      </div>
+    <ul class="info-list">
+      <li><i class="fas fa-user"></i><strong>Name:</strong> {{ page.title }}</li>
+      <li><i class="fas fa-graduation-cap"></i><strong>Level:</strong> {{ page.level }}</li>
+      <li><i class="fas fa-university"></i><strong>University:</strong> {{ page.university }}</li>
+      <li><i class="fas fa-book"></i><strong>Subject:</strong> {{ page.subject }}</li>
+      <li><i class="fas fa-search"></i><strong>Research Area:</strong> {{ page.research_area }}</li>
+      <li><i class="fas fa-info-circle"></i><strong>Status:</strong> {{ page.status }}</li>
+      <li><i class="fas fa-user-tie"></i><strong>Supervisor:</strong> {{ page.supervisor }}</li>
+      <li><i class="fas fa-calendar"></i><strong>Duration:</strong> {{ page.start_date }} - {{ page.end_date }}</li>
+    </ul>
+
+    {{ content }}
+
+    {% if page.publications %}
+    <div class="publications-list">
+      <h4>Publications</h4>
+      <ul>
+        {% for pub_id in page.publications %}
+          {% assign publication = site.publications | where: "name", pub_id | first %}
+          {% if publication %}
+          <li>
+            <a href="{{ publication.permalink | relative_url }}">{{ publication.title }}</a>
+            <br><small>{{ publication.date | date: '%Y' }} - {{ publication.type }}</small>
+          </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
     </div>
+    {% endif %}
   </div>
 </div>
 
-<div class="student-navigation">
-  <div class="container">
-    <div class="nav-buttons">
-      {% if page.previous.url %}
-      <a class="nav-btn" href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" title="{{ page.previous.title }}">
-        <i class="fas fa-chevron-left"></i> Previous
-      </a>
-      {% else %}
-      <div></div>
-      {% endif %}
-      
-      <a class="nav-btn center" href="/academy/students/">
-        <i class="fas fa-list"></i> All Students
-      </a>
-      
-      {% if page.next.url %}
-      <a class="nav-btn" href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" title="{{ page.next.title }}">
-        Next <i class="fas fa-chevron-right"></i>
-      </a>
-      {% else %}
-      <div></div>
-      {% endif %}
-    </div>
-  </div>
-</div>
+{% include entry-navigation.html back_url="/academy/students/" back_label="All Students" %}

@@ -1,0 +1,92 @@
+// ==========================================================================
+// About page — daily-rituals habit cards.
+// ==========================================================================
+
+.habits-section {
+  margin: 80px 0;
+  text-align: center;
+}
+
+.habits-intro {
+  max-width: 600px;
+  margin: 0 auto 40px;
+  color: $text-muted;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.habits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.habit-card {
+  background: $white;
+  border-radius: $radius-lg;
+  padding: 40px 30px;
+  box-shadow: $shadow-md;
+  transition: all 0.3s ease;
+  border: 1px solid #f0f0f0;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(135deg, $ink-800, $accent);
+  }
+
+  &:hover {
+    transform: translateY(-10px);
+    box-shadow: $shadow-lg;
+  }
+}
+
+.habit-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+
+  img {
+    width: 72px;
+    height: 72px;
+  }
+}
+
+.habit-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: $heading;
+}
+
+.habit-description {
+  color: $text-muted;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.habits-note {
+  margin-top: 40px;
+  color: $text-muted;
+  font-style: italic;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: $bp-md) {
+  .habits-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .habit-card {
+    padding: 30px 20px;
+  }
+}

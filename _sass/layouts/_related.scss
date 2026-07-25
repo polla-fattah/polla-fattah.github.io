@@ -1,0 +1,317 @@
+// ==========================================================================
+// Related-content blocks on detail pages: research team grids, linked
+// publication cards, student info lists.
+// ==========================================================================
+
+.related-section {
+  margin-top: 40px;
+  padding-top: 30px;
+  border-top: 2px solid $border;
+
+  > h2 {
+    color: $heading;
+    margin-bottom: 20px;
+    font-weight: 600;
+
+    i {
+      margin-right: 10px;
+      color: $accent-dark;
+    }
+  }
+}
+
+// People (research team) cards
+.people-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.person-card {
+  background: $surface;
+  border-radius: $radius-lg;
+  padding: 20px;
+  border: 1px solid $border;
+  transition: all 0.3s ease;
+
+  &:hover {
+    box-shadow: $shadow-md;
+  }
+
+  &.is-missing {
+    opacity: 0.7;
+
+    p {
+      margin: 0;
+      color: $text-muted;
+      font-style: italic;
+    }
+  }
+
+  .person-head {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  .person-avatar {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, $ink-800, $ink-600);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    flex-shrink: 0;
+    // color/size on the box: Font Awesome swaps <i> for <svg>, which inherits
+    color: $white;
+    font-size: 20px;
+  }
+
+  h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: $heading;
+
+    a {
+      color: inherit;
+      text-decoration: none;
+
+      &:hover {
+        color: $accent-dark;
+      }
+    }
+  }
+
+  .person-sub {
+    margin: 5px 0 0;
+    color: $text-muted;
+    font-size: 0.9rem;
+  }
+
+  .person-focus {
+    margin: 0;
+    color: $ink-600;
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .status-badge {
+    margin-top: 10px;
+  }
+}
+
+// Linked publication cards
+.pub-list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.pub-card {
+  background: $white;
+  border-radius: $radius;
+  padding: 25px;
+  border: 2px solid $border;
+  box-shadow: $shadow-sm;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, $accent, $ink-600);
+  }
+
+  &:hover {
+    box-shadow: $shadow-md;
+  }
+
+  &.is-missing {
+    opacity: 0.7;
+
+    &::before {
+      content: none;
+    }
+
+    p {
+      margin: 0;
+      color: $text-muted;
+      font-style: italic;
+    }
+  }
+
+  .pub-head {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+  }
+
+  .pub-icon {
+    width: 45px;
+    height: 45px;
+    background: linear-gradient(135deg, $ink-600, $ink-800);
+    border-radius: $radius-sm;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    flex-shrink: 0;
+    // color/size on the box: Font Awesome swaps <i> for <svg>, which inherits
+    color: $accent;
+    font-size: 18px;
+  }
+
+  h3 {
+    margin: 0 0 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: $heading;
+    line-height: 1.4;
+
+    a {
+      color: inherit;
+      text-decoration: none;
+
+      &:hover {
+        color: $accent-dark;
+      }
+    }
+  }
+
+  .pub-authors {
+    margin: 0 0 8px;
+    color: $text-muted;
+    font-size: 0.9rem;
+    font-style: italic;
+
+    a {
+      color: $ink-600;
+      text-decoration: none;
+      font-weight: 500;
+    }
+  }
+
+  .pub-date {
+    margin: 0 0 8px;
+    color: $ink-600;
+    font-size: 0.85rem;
+
+    i {
+      margin-right: 5px;
+    }
+  }
+
+  .pub-abstract {
+    margin: 0;
+    color: $ink-600;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    border-top: 1px solid #f1f3f4;
+    padding-top: 12px;
+  }
+
+  .pub-tag {
+    display: inline-block;
+    background: $border;
+    color: $ink-600;
+    padding: 4px 10px;
+    border-radius: 15px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    margin-top: 12px;
+  }
+
+  // Footer row on listing cards (type badge + date)
+  .pub-meta {
+    font-size: 0.85rem;
+    color: $text-muted;
+    margin-top: auto;
+    padding-top: 12px;
+    border-top: 1px solid $border;
+  }
+
+  .pub-type {
+    background: $ink-600;
+    color: $white;
+    padding: 3px 10px;
+    border-radius: 15px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    display: inline-block;
+    margin-right: 8px;
+  }
+}
+
+// When used in listing grids, cards fill their row and stack content
+.grid-layout .pub-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+// Simple linked publications list (student pages)
+.publications-list {
+  background: $surface;
+  padding: 20px;
+  border-radius: $radius;
+  margin-top: 20px;
+
+  h4 {
+    color: $heading;
+    margin-bottom: 15px;
+    font-weight: 600;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  li {
+    padding: 10px 0;
+    border-bottom: 1px solid $border;
+    margin-bottom: 0;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  a {
+    color: $ink-600;
+    text-decoration: none;
+    font-weight: 500;
+
+    &:hover {
+      color: $accent-dark;
+      text-decoration: underline;
+    }
+  }
+}
+
+// Key-facts list (student info…)
+.info-list {
+  list-style: none;
+  padding: 0;
+
+  li {
+    margin-bottom: 8px;
+    padding: 8px 12px;
+    background: $surface;
+    border-radius: $radius-sm;
+    border-left: 3px solid $accent;
+
+    i {
+      color: $ink-800;
+      margin-right: 8px;
+    }
+  }
+}

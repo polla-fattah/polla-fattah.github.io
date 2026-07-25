@@ -5,234 +5,25 @@ permalink: /academy/lectures/
 ---
 
 <!-- Hero Section -->
-<div class="hero-section">
+<div class="hero has-art" style="--hero-image: url('/img/heroes/lectures.svg')">
   <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-8">
-        <div class="hero-content">
-          <img src="/img/lecture/background.jpg" alt="Teaching" class="profile-image">
-          <h1 class="hero-title">Teaching Portfolio</h1>
-          <p class="hero-subtitle">Sharing knowledge and inspiring minds through comprehensive academic lectures</p>
-        </div>
-      </div>
+    <div class="hero-content">
+      <img src="/img/lecture/background.jpg" alt="Teaching" class="profile-image">
+      <h1>Teaching Portfolio</h1>
+      <p class="hero-subtitle">Sharing knowledge and inspiring minds through comprehensive academic lectures</p>
     </div>
   </div>
 </div>
 
 <!-- Content Section -->
-<div class="content-section">
+<div class="content-section content-section--alt">
   <div class="container">
 
-<style>
-  /* Hero Section Styles */
-  .hero-section {
-    background: linear-gradient(135deg, #26272b 0%, #2a2d33 25%, #2d3748 60%, #1a202c 100%);
-    color: white;
-    padding: 80px 0;
-    margin-bottom: 0;
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .hero-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.1);
-    z-index: 1;
-  }
-  
-  .hero-content {
-    position: relative;
-    z-index: 2;
-    text-align: center;
-  }
-  
-  .profile-image {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 30px;
-    border: 5px solid rgba(255, 255, 255, 0.2);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-    transition: all 0.3s ease;
-  }
-  
-  .profile-image:hover {
-    transform: scale(1.05);
-    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.3);
-  }
-  
-  .hero-title {
-    font-size: 3.5rem;
-    font-weight: 700;
-    margin-bottom: 15px;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-  
-  .hero-subtitle {
-    font-size: 1.3rem;
-    font-weight: 300;
-    margin-bottom: 30px;
-    opacity: 0.9;
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
-    line-height: 1.6;
-  }
-
-  .content-section {
-    background-color: #f8f9fa;
-    padding: 60px 0;
-  }
-
-  @media (max-width: 768px) {
-    .hero-section {
-      padding: 60px 0;
-    }
-    .hero-title {
-      font-size: 2.5rem;
-    }
-    .hero-subtitle {
-      font-size: 1.1rem;
-    }
-    .profile-image {
-      width: 150px;
-      height: 150px;
-    }
-  }
-
-  /* Universities Section */
-  .universities-section {
-    background: white;
-    padding: 40px;
-    border-radius: 12px;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
-    margin-bottom: 40px;
-    border: 1px solid #e9ecef;
-  }
-
-  .universities-section h2 {
-    color: #2c3e50;
-    font-weight: 600;
-    margin-bottom: 20px;
-    font-size: 1.8rem;
-  }
-
-  .universities-section p {
-    color: #5a6c7d;
-    line-height: 1.7;
-    margin-bottom: 25px;
-    font-size: 1.1rem;
-  }
-
-  .university-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  .university-list li {
-    margin-bottom: 12px;
-    padding-left: 25px;
-    position: relative;
-  }
-
-  .university-list li::before {
-    content: '🎓';
-    position: absolute;
-    left: 0;
-    top: 0;
-  }
-
-  .university-list a {
-    color: #26272b;
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s ease;
-  }
-
-  .university-list a:hover {
-    color: #007bff;
-    text-decoration: none;
-  }
-
-  /* Lectures Grid */
-  .lectures-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 30px;
-    margin-top: 30px;
-  }
-
-  .lecture-card {
-    background: white;
-    border-radius: 12px;
-    padding: 30px;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
-    border: 1px solid #e9ecef;
-    transition: all 0.3s ease;
-    text-decoration: none;
-    color: inherit;
-    min-height: 280px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .lecture-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
-    text-decoration: none;
-    color: inherit;
-  }
-
-  .lecture-title {
-    color: #2c3e50;
-    font-size: 1.4rem;
-    font-weight: 600;
-    margin-bottom: 10px;
-    line-height: 1.3;
-  }
-
-  .lecture-subtitle {
-    color: #5a6c7d;
-    font-size: 1rem;
-    margin-bottom: 15px;
-    line-height: 1.5;
-  }
-
-  .lecture-meta {
-    color: #6c757d;
-    font-size: 0.9rem;
-    font-weight: 500;
-    border-top: 1px solid #e9ecef;
-    padding-top: 15px;
-    margin-top: 15px;
-    margin-top: auto;
-  }
-
-  @media (max-width: 768px) {
-    .lectures-grid {
-      grid-template-columns: 1fr;
-      gap: 20px;
-    }
-    
-    .universities-section {
-      padding: 25px;
-    }
-  }
-</style>
-
     <!-- Universities Section -->
-    <div class="universities-section">
+    <div class="panel">
       <h2>Teaching Experience</h2>
       <p>
-        Throughout my academic career, I have had the privilege of sharing knowledge across multiple prestigious universities. 
+        Throughout my academic career, I have had the privilege of sharing knowledge across multiple prestigious universities.
         My lectures stem from a genuine passion for teaching and a commitment to inspiring the next generation of learners.
       </p>
       <p><strong>Universities where I have lectured:</strong></p>
@@ -247,18 +38,20 @@ permalink: /academy/lectures/
     <!-- Courses Taught -->
     {% assign course_lectures = site.lectures | where_exp: "item", "item.type != 'training'" %}
     {% if course_lectures.size > 0 %}
-    <h2 class="mt-5 mb-4">Courses taught</h2>
-    <div class="lectures-grid">
+    <h2 class="section-title left mt-5 mb-4">Courses taught</h2>
+    <div class="grid-layout columns-auto">
       {% for item in course_lectures reversed %}
-      <a href="{{ item.url | prepend: site.baseurl | replace: '//', '/' }}" class="lecture-card">
-        <h3 class="lecture-title">{{ item.title }}</h3>
-        {% if item.subtitle %}
-        <p class="lecture-subtitle">{{ item.subtitle }}</p>
-        {% else %}
-        <p class="lecture-subtitle">{{ item.excerpt | strip_html | truncatewords: 15 }}</p>
-        {% endif %}
-        <div class="lecture-meta">
-          📍 {{ item.university }} • 📅 {{ item.year }}
+      <a href="{{ item.url | relative_url }}" class="card-item card-item--link">
+        <div class="card-content">
+          <h3 class="card-title">{{ item.title }}</h3>
+          {% if item.subtitle %}
+          <p class="card-text">{{ item.subtitle }}</p>
+          {% else %}
+          <p class="card-text">{{ item.excerpt | strip_html | truncatewords: 15 }}</p>
+          {% endif %}
+          <div class="card-footer">
+            <i class="fas fa-university"></i> {{ item.university }} &bull; <i class="fas fa-calendar"></i> {{ item.year }}
+          </div>
         </div>
       </a>
       {% endfor %}
@@ -268,23 +61,25 @@ permalink: /academy/lectures/
     <!-- Training / Professional Development -->
     {% assign training_lectures = site.lectures | where_exp: "item", "item.type == 'training'" %}
     {% if training_lectures.size > 0 %}
-    <h2 class="mt-5 mb-4">Training / Professional Development</h2>
-    <div class="lectures-grid">
+    <h2 class="section-title left mt-5 mb-4">Training / Professional Development</h2>
+    <div class="grid-layout columns-auto">
       {% for item in training_lectures reversed %}
-      <a href="{{ item.url | prepend: site.baseurl | replace: '//', '/' }}" class="lecture-card">
-        <h3 class="lecture-title">{{ item.title }}</h3>
-        {% if item.subtitle %}
-        <p class="lecture-subtitle">{{ item.subtitle }}</p>
-        {% else %}
-        <p class="lecture-subtitle">{{ item.excerpt | strip_html | truncatewords: 15 }}</p>
-        {% endif %}
-        <div class="lecture-meta">
-          📍 {{ item.university }} • 📅 {{ item.year }}
+      <a href="{{ item.url | relative_url }}" class="card-item card-item--link">
+        <div class="card-content">
+          <h3 class="card-title">{{ item.title }}</h3>
+          {% if item.subtitle %}
+          <p class="card-text">{{ item.subtitle }}</p>
+          {% else %}
+          <p class="card-text">{{ item.excerpt | strip_html | truncatewords: 15 }}</p>
+          {% endif %}
+          <div class="card-footer">
+            <i class="fas fa-university"></i> {{ item.university }} &bull; <i class="fas fa-calendar"></i> {{ item.year }}
+          </div>
         </div>
       </a>
       {% endfor %}
     </div>
     {% endif %}
 
-  </div> <!-- End container -->
-</div> <!-- End content-section -->
+  </div>
+</div>

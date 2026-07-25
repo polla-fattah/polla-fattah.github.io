@@ -1,0 +1,163 @@
+// ==========================================================================
+// Contacts page — contact method cards, social buttons, office map.
+// ==========================================================================
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-bottom: 60px;
+}
+
+.contact-card {
+  background: $white;
+  border-radius: $radius;
+  padding: 20px;
+  box-shadow: $shadow-sm;
+  transition: all 0.3s ease;
+  border: 1px solid $border;
+  text-align: center;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: $shadow-md;
+  }
+}
+
+.contact-icon {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, $ink-800, $ink-600);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 15px;
+  color: $accent;
+  font-size: 20px;
+}
+
+.contact-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: $heading;
+  margin-bottom: 12px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: $radius-sm;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: $surface;
+  }
+
+  a {
+    color: $ink-800;
+    text-decoration: none;
+    font-weight: 500;
+
+    &:hover {
+      color: $accent-dark;
+      text-decoration: none;
+    }
+  }
+}
+
+.social-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  gap: 20px;
+  max-width: 600px;
+  margin: 0 auto 60px;
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  background: $white;
+  border-radius: 50%;
+  box-shadow: $shadow-sm;
+  color: $ink-800;
+  font-size: 24px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  border: 1px solid $border;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: $shadow-md;
+    color: $accent-dark;
+    text-decoration: none;
+  }
+}
+
+.map-section {
+  background: $white;
+  border-radius: $radius-lg;
+  padding: 30px;
+  box-shadow: $shadow-sm;
+  border: 1px solid $border;
+  margin-top: 40px;
+}
+
+.address-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  align-items: center;
+}
+
+.address-info {
+  list-style: none;
+  padding: 0;
+
+  li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    color: $heading;
+  }
+
+  i,
+  svg {
+    width: 20px;
+    margin-right: 25px;
+    color: $accent-dark;
+  }
+}
+
+.map-container {
+  border-radius: $radius;
+  overflow: hidden;
+  box-shadow: $shadow-sm;
+
+  iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+  }
+}
+
+@media (max-width: $bp-md) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .social-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .address-grid {
+    grid-template-columns: 1fr;
+  }
+}

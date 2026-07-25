@@ -4,255 +4,62 @@ title: Jobs
 permalink: /jobs/
 ---
 
-<style>
-  .hero-section {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/img/jobs/jobs.png');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    height: 60vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-    position: relative;
-  }
-
-  .hero-content h1 {
-    font-size: 3.5rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-  }
-
-  .hero-content p {
-    font-size: 1.3rem;
-    margin-bottom: 0;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
-  }
-
-  .content-section {
-    background-color: #f8f9fa;
-    padding: 60px 0;
-  }
-
-  .headers{
-    text-align: center;
-    display: block;
-    font-weight: 400;
-    font-size: 2.5em;
-    color: rgb(46, 72, 155);
-    width: 100%;
-    margin: 1em 0px;
-  }
-
-  .explanation-section {
-    padding: 40px 0;
-    margin-bottom: 60px;
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-    border-radius: 15px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-  }
-
-  .explanation-section .headers {
-    color: #2c3e50;
-    margin-bottom: 30px;
-    position: relative;
-  }
-
-  .explanation-section .headers::after {
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80px;
-    height: 3px;
-    background: linear-gradient(90deg, #3498db, #2980b9);
-    border-radius: 2px;
-  }
-
-  .explanation-content {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 0 30px;
-  }
-
-  .explanation-content p {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    color: #34495e;
-    margin-bottom: 25px;
-    text-align: justify;
-  }
-
-  .explanation-content p:last-child {
-    margin-bottom: 0;
-  }
-
-  @media (max-width: 768px) {
-    .hero-content h1 {
-      font-size: 2.5rem;
-    }
-
-    .hero-content p {
-      font-size: 1.1rem;
-    }
-  }
-</style>
-
 <!-- Hero Section -->
-<section class="hero-section">
+<section class="hero has-art" style="--hero-image: url('/img/heroes/jobs.svg')">
   <div class="hero-content">
     <h1>Career Journey</h1>
-    <p>Bridging academia and industry through diverse professional experiences</p>
+    <p class="hero-subtitle">Bridging academia and industry through diverse professional experiences</p>
   </div>
 </section>
 
 <!-- Content Section -->
-<section class="content-section">
+<section class="content-section content-section--alt">
   <div class="container">
-    <div class="explanation-section">
-      <h1 class="headers">An Explanation</h1>
-      <div class="explanation-content">
-        <p>
-          I have worked in multiple jobs throughout the years, and an observant person can notice that I have held multiple jobs simultaneously. 
-          This is because of the flexible time requirements of my main career at the university, which includes teaching and other activities. 
-          This flexibility has enabled me to work other jobs, particularly those with flexible time requirements as well.
-        </p>
-        <p>
-          As a lecturer, I believe it is important to have knowledge about the business side of things so that I can provide practical knowledge to my students. 
-          As a developer, having connections with the university is also a plus as it allows me to provide businesses I work for with new research aspects if needed, 
-          and guarantees access to the best talents of new developers for them.
-        </p>
+    <div class="panel">
+      <div class="section-header">
+        <h2>An Explanation</h2>
       </div>
+      <p>
+        I have worked in multiple jobs throughout the years, and an observant person can notice that I have held multiple jobs simultaneously.
+        This is because of the flexible time requirements of my main career at the university, which includes teaching and other activities.
+        This flexibility has enabled me to work other jobs, particularly those with flexible time requirements as well.
+      </p>
+      <p>
+        As a lecturer, I believe it is important to have knowledge about the business side of things so that I can provide practical knowledge to my students.
+        As a developer, having connections with the university is also a plus as it allows me to provide businesses I work for with new research aspects if needed,
+        and guarantees access to the best talents of new developers for them.
+      </p>
     </div>
 
-<style>
-  .filter-button {
-  position: relative;
-  background-color: grey;
-  border: none;
-  font-size: 28px;
-  color: #FFFFFF;
-  padding: 20px;
-  width: 100px;
-  text-align: center;
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
-  text-decoration: none;
-  overflow: hidden;
-  cursor: pointer;
-}
-.filter-container{
-  display: flex;
-  width: 100%;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-}
-</style>
-
-
-
-
-<style>
-.job-card {
-
-  flex-grow: 1;
-  background: #fff;
-  border-radius: 5px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  padding: 0px 20px 20px 20px;
-  margin: 20px 10px;
-  height: 200px;
-  max-width: 270px;
-  min-width: 250px;
-  width: 100%;
-}
-.job-card:hover {
-  -webkit-transition: all 300ms linear;
-  -moz-transition: all 300ms linear;
-  -o-transition: all 300ms linear;
-  -ms-transition: all 300ms linear;
-  transition: all 300ms linear;
-  box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.2);
-  transform: scale(1.05);
-
-}
-.academy:hover{
-  background: #d0e3ee;
-
-}
-.business:hover{
-  background: #d0eedf;
-}
-.job-card a {
-  text-align: center;
-}
-.job-card a:hover {
-  text-decoration: none;
-}
-.job-container{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-.icon-style{
-  font-size: 3rem;
-  width: 100%; 
-  text-align: center; 
-  margin:20px 0px -20px 0px; 
-}
-
-.academy .icon-style, .academy .post-title, .academy .post-subtitle{
-  color:rgba(35, 116, 153, 0.486);
-}
-.business .icon-style, .business .post-title, .business .post-subtitle{
-  color:rgba(32, 148, 123, 0.486);
-}
-</style>
-<h1 id="jobsTitle" class="headers">All Jobs</h1>
-<div class="filter-container">
-  <button class="filter-button" id="academy" onClick="filterSelection('academy')"><i class="fas fa-user-graduate"></i></button>
-  <button class="filter-button" id="all" onClick="filterSelection('all')" style="background:#20747b;"><i class="fas fa-user"></i></button>
-  <button class="filter-button" id="business" onClick="filterSelection('business')"><i class="fas fa-user-tie"></i></button>
-</div>
-<div class="job-container">
-{% for item in site.jobs reversed  %}
-<article class="job-card post-preview {{item.category}}">
-  <a href="{{ item.url | prepend: site.baseurl | replace: '//', '/' }}" >
-    <div class="icon-style">
-      {% if item.category == 'academy' %}
-          <i class="fas fa-user-graduate"></i>
-      {% else %}
-          <i class="fas fa-user-tie"></i>
-      {% endif %}
+    <h2 id="jobsTitle" class="section-title">All Jobs</h2>
+    <div class="filter-container">
+      <button class="filter-button" id="academy" onClick="filterSelection('academy')" title="Academic jobs"><i class="fas fa-user-graduate"></i></button>
+      <button class="filter-button is-active" id="all" onClick="filterSelection('all')" title="All jobs"><i class="fas fa-user"></i></button>
+      <button class="filter-button" id="business" onClick="filterSelection('business')" title="Business jobs"><i class="fas fa-user-tie"></i></button>
     </div>
-    <h2 class="post-title">
 
-      {{ item.title }}
-    </h2>
-    <h3 class="post-subtitle">At {{ item.organization-short }}</h3>
-    <h3 class="post-subtitle">
-      From {{ item.start_date }} 
-      {% if item.end_date == 'Now' %}
-        till 
-      {% else %}
-        to
-      {% endif %}
-
-      {{ item.end_date }}</h3>
-
-  </a>    
-</article>
-{% endfor %}
-</div>
+    <div class="job-container">
+      {% for item in site.jobs reversed %}
+      <article class="job-card post-preview {{ item.category }}">
+        <a href="{{ item.url | relative_url }}">
+          <div class="icon-style">
+            {% if item.category == 'academy' %}
+            <i class="fas fa-user-graduate"></i>
+            {% else %}
+            <i class="fas fa-user-tie"></i>
+            {% endif %}
+          </div>
+          <h2 class="post-title">{{ item.title }}</h2>
+          <h3 class="post-subtitle">At {{ item.organization-short }}</h3>
+          <h3 class="post-subtitle">
+            From {{ item.start_date }}
+            {% if item.end_date == 'Now' %}till{% else %}to{% endif %}
+            {{ item.end_date }}
+          </h3>
+        </a>
+      </article>
+      {% endfor %}
+    </div>
   </div>
 </section>
 
@@ -266,50 +73,36 @@ permalink: /jobs/
     return decodeURIComponent(results[2].replace(/\+/g, ' '));
   }
 
-  function toggleButtons(category){
-      var color = category === "academy" ? "rgb(35, 116, 153)" : category === "business" ? "rgb(32, 148, 123)": "rgb(32, 116, 123)";
-      document.getElementById("all").style.backgroundColor = "grey";
-      document.getElementById("academy").style.backgroundColor = "grey";
-      document.getElementById("business").style.backgroundColor = "grey";
-      document.getElementById(category).style.backgroundColor = color;
+  function toggleButtons(category) {
+    ['all', 'academy', 'business'].forEach(function (id) {
+      document.getElementById(id).classList.toggle('is-active', id === category);
+    });
   }
 
-  function displayCategory(academyDisplay, businessDisplay) {
-      for (let el of document.querySelectorAll('.academy')) el.style.display = academyDisplay;
-      for (let el of document.querySelectorAll('.business' )) el.style.display = businessDisplay;
+  function displayCategory(showAcademy, showBusiness) {
+    for (let el of document.querySelectorAll('.job-card.academy')) el.classList.toggle('is-hidden', !showAcademy);
+    for (let el of document.querySelectorAll('.job-card.business')) el.classList.toggle('is-hidden', !showBusiness);
   }
-  function chooseCategory(category){
-    if(category == "academy"){
-      displayCategory("block", "none");
-    }
-    else if(category == "business"){
-      displayCategory("none", "block");
-    }
-    else {
-      displayCategory("block", "block");
-    } 
-  }
-  function changeTitle(category){
-    jobsTitle = document.getElementById("jobsTitle");
-    if(category == "academy"){
+
+  function changeTitle(category) {
+    var jobsTitle = document.getElementById("jobsTitle");
+    if (category === "academy") {
       jobsTitle.innerHTML = "Academic Jobs";
-    }
-    else if(category == "business"){
+    } else if (category === "business") {
       jobsTitle.innerHTML = "Business Jobs";
-    }
-    else {
+    } else {
       jobsTitle.innerHTML = "All Jobs";
     }
   }
+
   function filterSelection(category) {
     toggleButtons(category);
-    chooseCategory(category);
+    displayCategory(category !== "business", category !== "academy");
     changeTitle(category);
- 
   }
 
-  var category = getParameterByName('category'); 
+  var category = getParameterByName('category');
 
-  if(category === "academy" || category === "business") 
+  if (category === "academy" || category === "business")
     filterSelection(category);
 </script>

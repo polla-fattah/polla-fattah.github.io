@@ -1,8 +1,6 @@
-// Override Bootstrap typography variables
+// Override Bootstrap typography variables — fonts come from the site's
+// design tokens (_sass/base/_variables.scss), imported before this file.
 
-$font-family-base:  Roboto, Quicksand, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", "Lora", -apple-system, BlinkMacSystemFont, "Segoe UI";
+$font-family-base: $font-sans;
 
-$headings-font-family: "Open Sans", -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$headings-font-family: $font-sans;

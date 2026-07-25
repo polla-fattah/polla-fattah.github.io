@@ -4,371 +4,47 @@ title: Research
 permalink: /academy/researches/
 ---
 
-<style>
-  .hero-section {
-    background: linear-gradient(135deg, rgba(52, 73, 94, 0.8), rgba(44, 62, 80, 0.8)), url('/img/main/academy-bg.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    padding: 120px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .hero-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(45deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2));
-  }
-
-  .hero-content {
-    position: relative;
-    z-index: 2;
-  }
-
-  .hero-content h1 {
-    font-size: 3.5rem;
-    font-weight: 700;
-    margin-bottom: 1.5rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    color: white;
-  }
-
-  .hero-content p {
-    font-size: 1.3rem;
-    margin-bottom: 2rem;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .research-stats {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    margin-top: 30px;
-  }
-
-  .stat-item {
-    text-align: center;
-    background: rgba(255, 255, 255, 0.15);
-    padding: 25px;
-    border-radius: 20px;
-    backdrop-filter: blur(15px);
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    transition: all 0.3s ease;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-  }
-
-  .stat-item:hover {
-    transform: translateY(-5px);
-    background: rgba(255, 255, 255, 0.25);
-    border-color: rgba(255, 255, 255, 0.5);
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
-  }
-
-  .stat-number {
-    font-size: 2.5rem;
-    font-weight: 700;
-    display: block;
-  }
-
-  .stat-label {
-    font-size: 1rem;
-    opacity: 0.9;
-  }
-
-  .content-section {
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-    padding: 80px 0;
-    position: relative;
-  }
-
-  .section-header {
-    text-align: center;
-    margin-bottom: 60px;
-  }
-
-  .section-header h2 {
-    font-size: 3rem;
-    font-weight: 700;
-    color: #2c3e50;
-    margin-bottom: 20px;
-    position: relative;
-  }
-
-  .section-header h2::after {
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80px;
-    height: 4px;
-    background: linear-gradient(45deg, #26272b, #495057);
-    border-radius: 2px;
-  }
-
-  .section-header p {
-    font-size: 1.2rem;
-    color: #7f8c8d;
-    max-width: 700px;
-    margin: 0 auto;
-    line-height: 1.6;
-  }
-
-  .research-categories {
-    display: grid;
-    gap: 40px;
-    margin-top: 60px;
-  }
-
-  .research-category {
-    background: white;
-    border-radius: 20px;
-    padding: 40px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    transition: all 0.4s ease;
-    border: 1px solid #e9ecef;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .research-category::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 5px;
-    background: linear-gradient(45deg, #26272b, #495057);
-  }
-
-  .research-category:hover {
-    transform: translateY(-1px);
-  }
-
-  .category-header {
-    display: flex;
-    align-items: center;
-    margin-bottom: 30px;
-  }
-
-  .category-icon {
-    width: 60px;
-    height: 60px;
-    border-radius: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.8rem;
-    color: white;
-    margin-right: 20px;
-    background: linear-gradient(45deg, #26272b, #495057);
-  }
-
-  .category-title {
-    font-size: 2rem;
-    font-weight: 700;
-    color: #2c3e50;
-    margin: 0;
-  }
-
-  .research-projects {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 25px;
-    margin-top: 30px;
-  }
-
-  .research-project {
-    background: #f8f9fa;
-    border-radius: 15px;
-    padding: 25px;
-    border-left: 4px solid #26272b;
-    transition: all 0.3s ease;
-    position: relative;
-    cursor: pointer;
-  }
-
-  .research-project:hover {
-    background: #f1f3f4;
-    transform: scale(1.005);
-    border-left-color: #495057;
-  }
-
-  .project-link {
-    text-decoration: none;
-    color: inherit;
-    display: block;
-    height: 100%;
-    width: 100%;
-  }
-
-  .project-link:hover {
-    text-decoration: none;
-    color: inherit;
-  }
-
-  .project-title {
-    font-size: 1.3rem;
-    font-weight: 600;
-    color: #2c3e50;
-    margin-bottom: 10px;
-    transition: color 0.3s ease;
-  }
-
-  .project-description {
-    font-size: 1rem;
-    color: #5a6c7d;
-    line-height: 1.5;
-    margin-bottom: 15px;
-  }
-
-
-
-  .category-stats {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 25px;
-    padding-top: 20px;
-    border-top: 1px solid #e9ecef;
-  }
-
-  .stat-box {
-    text-align: center;
-    flex: 1;
-    background: rgba(255, 255, 255, 0.08);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    border-radius: 15px;
-    padding: 2rem;
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .stat-box::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.05), transparent);
-    transition: left 0.5s;
-  }
-
-  .stat-box:hover::before {
-    left: 100%;
-  }
-
-  .stat-box:hover {
-    background: rgba(255, 255, 255, 0.12);
-    border-color: rgba(255, 255, 255, 0.25);
-  }
-
-  .stat-box .number {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #26272b;
-    display: block;
-  }
-
-  .stat-box .label {
-    font-size: 0.9rem;
-    color: #7f8c8d;
-  }
-
-  @media (max-width: 768px) {
-    .hero-content h1 {
-      font-size: 2.5rem;
-    }
-
-    .hero-content p {
-      font-size: 1.1rem;
-    }
-
-    .research-stats {
-      flex-direction: column;
-      gap: 20px;
-    }
-
-    .research-projects {
-      grid-template-columns: 1fr;
-    }
-
-    .research-category {
-      padding: 25px;
-    }
-
-    .category-header {
-      flex-direction: column;
-      text-align: center;
-    }
-
-    .category-icon {
-      margin-right: 0;
-      margin-bottom: 15px;
-    }
-
-    .section-header h2 {
-      font-size: 2.2rem;
-    }
-  }
-</style>
-
 <!-- Hero Section -->
-<section class="hero-section">
-  <div class="hero-content">
-    <h1>Research Portfolio</h1>
-    <p>Exploring the intersection of technology, language, medicine, and emerging sciences through innovative research methodologies and student collaboration</p>
-    
-    {% comment %} Calculate dynamic statistics {% endcomment %}
-    {% assign total_categories = site.researches | map: 'category' | uniq | size %}
-    {% assign total_projects = site.researches | size %}
-    {% assign total_students_mentored = 0 %}
-    {% for research in site.researches %}
-      {% assign total_students_mentored = total_students_mentored | plus: research.students.size %}
-    {% endfor %}
-    
-    <div class="research-stats">
-      <div class="stat-item">
-        <span class="stat-number">{{ total_categories }}</span>
-        <span class="stat-label">Research Areas</span>
-      </div>
-      <div class="stat-item">
-        <span class="stat-number">{{ total_projects }}</span>
-        <span class="stat-label">Active Projects</span>
-      </div>
-      <div class="stat-item">
-        <span class="stat-number">{{ total_students_mentored }}</span>
-        <span class="stat-label">Students Mentored</span>
+<section class="hero has-art" style="--hero-image: url('/img/heroes/research.svg')">
+  <div class="container">
+    <div class="hero-content">
+      <h1>Research Portfolio</h1>
+      <p class="hero-subtitle">Exploring the intersection of technology, language, medicine, and emerging sciences through innovative research methodologies and student collaboration</p>
+
+      {% comment %} Calculate dynamic statistics {% endcomment %}
+      {% assign total_categories = site.researches | map: 'category' | uniq | size %}
+      {% assign total_projects = site.researches | size %}
+      {% assign total_students_mentored = 0 %}
+      {% for research in site.researches %}
+        {% assign total_students_mentored = total_students_mentored | plus: research.students.size %}
+      {% endfor %}
+
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-number">{{ total_categories }}</span>
+          <span class="stat-label">Research Areas</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">{{ total_projects }}</span>
+          <span class="stat-label">Active Projects</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">{{ total_students_mentored }}</span>
+          <span class="stat-label">Students Mentored</span>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
 <!-- Research Content -->
-<section class="content-section">
+<section class="content-section content-section--alt">
   <div class="container">
+    <div class="grid-layout">
 
-
-    <div class="research-categories">
-      
       {% comment %} Get all unique categories from research files {% endcomment %}
       {% assign all_categories = site.researches | map: 'category' | uniq | sort %}
-      
+
       {% for category in all_categories %}
         {% assign category_research = site.researches | where: "category", category %}
         {% assign completed_count = category_research | where: "status", "completed" | size %}
@@ -376,10 +52,10 @@ permalink: /academy/researches/
         {% for research in category_research %}
           {% assign total_students = total_students | plus: research.students.size %}
         {% endfor %}
-        
-        <div class="research-category">
-          <div class="category-header">
-            <div class="category-icon">
+
+        <div class="panel panel--bar">
+          <div class="panel-head">
+            <div class="panel-icon">
               {% comment %} Dynamic icon selection based on category keywords {% endcomment %}
               {% if category contains "Language" or category contains "Kurdish" %}
                 <i class="fas fa-language"></i>
@@ -405,39 +81,35 @@ permalink: /academy/researches/
                 <i class="fas fa-flask"></i>
               {% endif %}
             </div>
-            <h3 class="category-title">{{ category }}</h3>
+            <h3>{{ category }}</h3>
           </div>
-          
-          <div class="research-projects">
+
+          <div class="grid-layout columns-auto">
             {% for research in category_research %}
-            <div class="research-project">
-              <a href="{{ research.permalink | prepend: site.baseurl | replace: '//', '/' }}" class="project-link">
-                <div class="project-title">{{ research.title }}</div>
-                <div class="project-description">{{ research.subtitle }}</div>
-              </a>
-            </div>
+            <a href="{{ research.permalink | relative_url }}" class="mini-card">
+              <div class="card-title">{{ research.title }}</div>
+              <div class="card-text">{{ research.subtitle }}</div>
+            </a>
             {% endfor %}
           </div>
-         
-         <div class="category-stats">
-           <div class="stat-box">
-             <span class="number">{{ category_research.size }}</span>
-             <span class="label">Projects</span>
-           </div>
-           <div class="stat-box">
-             <span class="number">{{ total_students }}</span>
-             <span class="label">Students</span>
-           </div>
-           <div class="stat-box">
-             <span class="number">{{ completed_count }}</span>
-             <span class="label">Completed</span>
-           </div>
-         </div>
-       </div>
+
+          <div class="stat-row">
+            <div class="stat-box">
+              <span class="number">{{ category_research.size }}</span>
+              <span class="label">Projects</span>
+            </div>
+            <div class="stat-box">
+              <span class="number">{{ total_students }}</span>
+              <span class="label">Students</span>
+            </div>
+            <div class="stat-box">
+              <span class="number">{{ completed_count }}</span>
+              <span class="label">Completed</span>
+            </div>
+          </div>
+        </div>
       {% endfor %}
 
-
-      
     </div>
   </div>
 </section>

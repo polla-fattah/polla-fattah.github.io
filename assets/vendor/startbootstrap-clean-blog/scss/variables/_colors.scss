@@ -1,5 +1,6 @@
-// Custom color variables
+// Custom color variables — brand ink from the site's design tokens
+// (_sass/base/_variables.scss), imported before this file.
 
-$teal: #000000;
+$teal: #1f2530; // legacy alias, kept for vendor partials that reference it
 
-$primary: $teal;
+$primary: $ink-800;

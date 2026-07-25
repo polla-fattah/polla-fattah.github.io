@@ -1,23 +1,19 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <title>Polla Fattah - Contact</title>
-    <link rel="icon" type="image/x-icon" href="/img/icon.png">
-
-
-
   <meta charset="utf-8">
-
-  <title>Polla Fattah - {{ page.jobTitle }} | {{page.contacts[0].text}}</title>
-  <meta name="description" content="{{ page.description }}">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Polla Fattah - {{ page.jobTitle }} | {{ page.contacts[0].text }}</title>
+  <meta name="description" content="{{ page.description }}">
 
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="robots" content="index, follow">
 
   <link rel="canonical" href="https://polla.dev{{ page.permalink }}">
+  <link rel="icon" type="image/x-icon" href="/img/icon.png">
 
   <!-- Open Graph -->
   <meta property="og:title" content="Polla Fattah - {{ page.jobTitle }}">
@@ -35,277 +31,49 @@
   <meta name="twitter:description" content="{{ page.description }}">
   <meta name="twitter:image" content="https://polla.dev{{ page.ogimage }}">
 
-
-
-
-
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #353535;
-            min-height: 100vh;
-        }
-
-        .container {
-            width: 100%;
-            max-width: 600px;
-            margin: 20px auto;
-            text-align: center;
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
-            background-color: #fff;
-            border-radius: 10px;
-            overflow: hidden;
-        }
-        
-        .profile {
-            margin-bottom: 20px;
-            background: {{ page.bgcolor }};
-            padding: 40px 20px 20px 20px;
-            position: relative;
-        }
-
-        .profile-pic {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            margin-bottom: 15px;
-            border: 4px solid rgba(255, 255, 255, 0.3);
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-            transition: all 0.3s ease;
-        }
-
-        .profile-pic:hover {
-            transform: scale(1.05);
-            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
-        }
-
-        h1 {
-            font-size: 28px;
-            margin: 0;
-            color: #fff;
-            font-weight: 600;
-            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        h2 {
-            font-size: 18px;
-            margin: 8px 0;
-            color: rgba(255, 255, 255, 0.9);
-            font-weight: 400;
-        }
-
-        .contact-buttons {
-            display: flex;
-            justify-content: space-around;
-            margin: 20px 0;
-            width: 100%;
-
-
-        }
-        .contact-buttons {
-            display: flex;
-            justify-content: space-around;
-            margin: 20px 0;
-            width: 100%;
-
-        }
-
-        .contact-button{
-            background-color: rgba(255, 255, 255, 0.2);
-            color: #fff;
-            border: none;
-            padding: 15px 20px;
-            cursor: pointer;
-            width: 100%;
-            border-top: 1px solid rgba(255, 255, 255, 0.3);
-            text-decoration: none;
-            backdrop-filter: blur(10px);
-            transition: all 0.3s ease;
-        }
-        .contact-buttons > .contact-button:nth-child(1) {
-           border-radius: 7px 0 0 7px;
-         
-        }
-        .contact-buttons > .contact-button:nth-child(2) {
-           border-radius: 0 7px 7px 0;
-         
-        }
-
-        .contact-button:hover {
-            background-color: rgba(255, 255, 255, 0.199);
-            transition: all 0.3s ease;
-        }
-
-        .contact-button:visited {
-            text-decoration: none;
-
-        }
-
-        .contact-button:nth-child(1) {
-            border-right: 1px solid rgba(255, 255, 255, 0.3);
-        }
-
-        .contact-info {
-            text-align: left;
-            min-height: 500px;
-        }
-
-        .contact-item {
-            display: flex;
-            text-decoration: none;
-            align-items: center;
-            padding: 15px 20px;
-            margin: 0;
-            border-bottom: 1px solid #f0f0f0;
-            color: #333;
-            transition: all 0.3s ease;
-        }
-
-        .contact-item:visited {
-            text-decoration: none;
-        }
-
-        .contact-item:hover {
-            background-color: #f8f9ff;
-            border-bottom: 1px solid #000000;
-        }
-
-        .contact-item:last-child {
-            border-bottom: none;
-        }
-
-        .icon {
-            font-size: 22px;
-            margin-right: 15px;
-            color: {{ page.bgcolor }};
-            transition: all 0.3s ease;
-        }
-
-        .icon-big {
-            font-size: 24px;
-            color: white;
-        }
-
-        .contact-details {
-            padding: 5px 0;
-        }
-
-        .contact-details p {
-            margin: 0;
-        }
-
-        .contact-details p:first-child {
-            font-weight: 600;
-            margin-bottom: 3px;
-            color: #333;
-        }
-
-        .contact-details p:last-child {
-            color: #000000;
-            font-size: 14px;
-        }
-
-        .add-contact {
-            position: fixed;
-            font-size: 25px;
-            text-decoration: none;
-            background: {{ page.bgcolor }};
-            color: #fff;
-            border: none;
-            border-radius: 50%;
-            padding: 20px;
-            cursor: pointer;
-            bottom: 20px;
-            right: 20px;
-            transition: all 0.3s ease;
-        }
-
-        .add-contact:hover {
-    
-            background-color: #333;
-        }
-
-
-        /* Desktop view */
-        @media (min-width: 1024px) {
-            .container {
-                max-width: 450px;
-                margin: 40px auto;
-            }
-
-            .profile-pic {
-                width: 120px;
-                height: 120px;
-            }
-
-            .contact-button {
-                padding: 18px 30px;
-                font-size: 16px;
-            }
-
-            h1 {
-                font-size: 32px;
-            }
-
-            h2 {
-                font-size: 20px;
-            }
-
-            .contact-item {
-                padding: 18px 25px;
-            }
-        }
-    </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
 </head>
 
-<body>
-    <div class="container">
-        <div class="profile">
-            {% if page.picture %}
-            <img src="{{page.picture}}" alt="Polla Fattah" class="profile-pic">
-            {% else %}
-            <img src="/img/Polla-Fattah-image.jpg" alt="Polla Fattah" class="profile-pic">
-            {% endif %}
+<body class="vcard-page" style="--vcard-accent: {{ page.bgcolor }}">
+  <div class="vcard">
+    <div class="vcard-profile">
+      {% if page.picture %}
+      <img src="{{ page.picture }}" alt="Polla Fattah" class="profile-pic">
+      {% else %}
+      <img src="/img/Polla-Fattah-image.jpg" alt="Polla Fattah" class="profile-pic">
+      {% endif %}
 
-
-            <h1>{{ page.name }}</h1>
-            <h2>{{ page.jobTitle }}</h2>
-            <div class="contact-buttons">
-                <a href="{{ page.phone }}" class="contact-button">
-                    <div style="height: 20px;">
-                        <i class="fas fa-paper-plane icon-big"></i>
-                    </div>
-                    <div style="margin: 10px 0px 0px 0px ; font-size: 15px;">CALL</div>
-                </a>
-                <a href="{{ page.email }}" class="contact-button">
-                    <div style="height: 20px;">
-                        <i class="fas fa-envelope icon-big"></i>
-                    </div>
-                    <div style="margin: 10px 0px 0px 0px ;font-size: 15px;">EMAIL</div>
-                </a>
-            </div>
-        </div>
-        <div class="contact-info">
-
-            {% for contact in page.contacts %}
-            <a class="contact-item" href="{{ contact.url }}"  target="_{{ contact.text }}">
-                <i class="{{ contact.fa }}  icon"></i>
-                <div class="contact-details">
-                    <p>{{ contact.text }}</p>
-                    <p>{{ contact.title }}</p>
-                </div>
-            </a>
-            {% endfor %}
-
-        </div>
-        <div style="width: 100%; text-align: right;">
-            <a class="add-contact" href="{{ page.vcffile }}"><i class="fa fa-download"></i></a>
-        </div>
-
+      <h1>{{ page.name }}</h1>
+      <h2>{{ page.jobTitle }}</h2>
+      <div class="contact-buttons">
+        <a href="{{ page.phone }}" class="contact-button">
+          <div class="contact-button-icon"><i class="fas fa-paper-plane icon-big"></i></div>
+          <div class="contact-button-label">CALL</div>
+        </a>
+        <a href="{{ page.email }}" class="contact-button">
+          <div class="contact-button-icon"><i class="fas fa-envelope icon-big"></i></div>
+          <div class="contact-button-label">EMAIL</div>
+        </a>
+      </div>
     </div>
 
+    <div class="contact-info">
+      {% for contact in page.contacts %}
+      <a class="contact-item" href="{{ contact.url }}" target="_{{ contact.text }}">
+        <i class="{{ contact.fa }} icon"></i>
+        <div class="contact-details">
+          <p>{{ contact.text }}</p>
+          <p>{{ contact.title }}</p>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+
+    <div class="vcard-download">
+      <a class="add-contact" href="{{ page.vcffile }}"><i class="fa fa-download"></i></a>
+    </div>
+  </div>
 </body>
 
 </html>

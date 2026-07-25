@@ -5,201 +5,67 @@ background: '/img/main/posts-bg.png'
 ---
 
 <!-- Hero Section -->
-<div class="hero-section">
+<div class="hero has-art" style="--hero-image: url('/img/heroes/posts.svg')">
   <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-8">
-        <div class="hero-content">
-          <h1 class="hero-title">Blog Posts</h1>
-          <p class="hero-subtitle">Insights on AI, technology, research, and academic perspectives from Kurdistan and beyond.</p>
-        </div>
-      </div>
+    <div class="hero-content">
+      <h1>Blog Posts</h1>
+      <p class="hero-subtitle">Insights on AI, technology, research, and academic perspectives from Kurdistan and beyond.</p>
     </div>
   </div>
 </div>
 
 <!-- Content Section -->
-<div class="content-section">
+<div class="content-section content-section--alt">
   <div class="container">
 
-<style>
-  /* Hero Section Styles */
-  .hero-section {
-    background: linear-gradient(135deg, rgba(38, 39, 43, 0.9) 0%, rgba(42, 45, 51, 0.9) 25%, rgba(45, 55, 72, 0.9) 60%, rgba(26, 32, 44, 0.9) 100%), url('/img/main/posts-bg.png');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    color: white;
-    padding: 120px 0 80px 0;
-    margin-bottom: 0;
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .hero-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.3);
-    z-index: 1;
-  }
-  
-  .hero-content {
-    position: relative;
-    z-index: 2;
-    text-align: center;
-  }
-  
-  .hero-title {
-    font-size: 3.5rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  }
-  
-  .hero-subtitle {
-    font-size: 1.3rem;
-    font-weight: 300;
-    margin-bottom: 2rem;
-    opacity: 0.9;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-  }
-  
-  .content-section {
-    padding: 60px 0;
-    background: #f8f9fa;
-  }
-  
-  @media (max-width: 768px) {
-    .hero-title {
-      font-size: 2.5rem;
-    }
-    
-    .hero-subtitle {
-      font-size: 1.1rem;
-    }
-    
-    .hero-section {
-      padding: 100px 0 60px 0;
-    }
-  }
-</style>
+    {% for post in paginator.posts %}
+    <article class="blog-card {% cycle '', 'alt' %}">
+      <div class="meta">
+        <div class="photo" style="background-image: url({{ post.background }})"></div>
+      </div>
+      <div class="description">
+        <h1>{{ post.title }}</h1>
+        <h2>
+          {% if post.subtitle %}
+            {{ post.subtitle }}
+          {% endif %}
+        </h2>
+        <p>{{ post.excerpt }}</p>
+        <p class="read-more">
+          <a href="{{ post.url | relative_url }}#">Read&nbsp;More</a>
+        </p>
+      </div>
+    </article>
+    {% endfor %}
 
-<link rel="stylesheet" type="text/css" href="/assets/post-card.css" />
+    <!-- Pager -->
+    {% if paginator.total_pages > 1 %}
+    <div class="entry-navigation">
+      <div class="container">
+        <div class="nav-buttons">
+          {% if paginator.previous_page %}
+          <a class="btn-pill" href="{{ paginator.previous_page_path | relative_url }}">
+            <i class="fas fa-chevron-left"></i> Newer Posts
+          </a>
+          {% else %}
+          <div></div>
+          {% endif %}
 
+          <a class="btn-pill btn-pill--secondary" href="/posts/">
+            <i class="fas fa-list"></i> All Posts
+          </a>
 
-{% for post in paginator.posts %}
-<article class="blog-card {% cycle '', 'alt' %}">
-  <div class="meta">
-    <div class="photo" style="background-image: url({{post.background}})"></div>
-  </div>
-  <div class="description">
-    <h1>{{ post.title }}</h1>
-    <h2>
-      {% if post.subtitle %}
-        {{ post.subtitle }}
-      {% endif %}
-    </h2>
-    <p> {{ post.excerpt }}</p>
-    <p class="read-more">
-      <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}#">Read&nbsp;More</a>
-    </p>
-  </div>
-</article>
-{% endfor %}
-
-
-<!-- Pager -->
-{% if paginator.total_pages > 1 %}
-
-<div class="publication-navigation">
-  <div class="container">
-    <div class="nav-buttons">
-      {% if paginator.previous_page %}
-      <a class="nav-btn" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">
-        <i class="fas fa-chevron-left"></i> Newer Posts
-      </a>
-      {% else %}
-      <div></div>
-      {% endif %}
-      
-      <a class="nav-btn center" href="/posts/">
-        <i class="fas fa-list"></i> All Posts
-      </a>
-      
-      {% if paginator.next_page %}
-      <a class="nav-btn" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">
-        Older Posts <i class="fas fa-chevron-right"></i>
-      </a>
-      {% else %}
-      <div></div>
-      {% endif %}
+          {% if paginator.next_page %}
+          <a class="btn-pill" href="{{ paginator.next_page_path | relative_url }}">
+            Older Posts <i class="fas fa-chevron-right"></i>
+          </a>
+          {% else %}
+          <div></div>
+          {% endif %}
+        </div>
+      </div>
     </div>
-  </div>
-</div>
-
-{% endif %}
-
-<style>
-  .publication-navigation {
-    background: #f8f9fa;
-    padding: 40px 0;
-    border-top: 1px solid #e9ecef;
-    margin-top: 60px;
-  }
-
-  .nav-buttons {
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
-    gap: 20px;
-    align-items: center;
-    max-width: 800px;
-    margin: 0 auto;
-  }
-
-  .nav-btn {
-    background: #26272b;
-    color: white;
-    padding: 12px 25px;
-    border-radius: 25px;
-    text-decoration: none;
-    font-weight: 500;
-    transition: all 0.3s ease;
-    text-align: center;
-    border: none;
-    display: inline-block;
-  }
-
-  .nav-btn:hover {
-    background: #495057;
-    color: white;
-    text-decoration: none;
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-  }
-
-  .nav-btn.center {
-    background: #495057;
-  }
-
-  .nav-btn.center:hover {
-    background: #26272b;
-  }
-
-  @media (max-width: 768px) {
-    .nav-buttons {
-      grid-template-columns: 1fr;
-      gap: 15px;
-    }
-    
-    .nav-btn {
-      width: 100%;
-    }
-  }
-</style>
+    {% endif %}
 
   </div>
 </div>
