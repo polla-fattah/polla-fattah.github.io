@@ -9,6 +9,7 @@ categories: ["Research", "Robotics", "AI", "Graph Optimization", "Multi-Agent Sy
 author: "Polla Fattah"
 usemathjax: true
 project_url: "https://polla.dev/SW-DGO/"
+simulator_url: "https://polla.dev/SW-DGO/simulator.html"
 ---
 
 <div class="panel panel--bar" style="background: rgba(31, 37, 48, 0.04); border-left: 4px solid #a87c2f; padding: 1.25rem; margin: 1.5rem 0 2rem 0; border-radius: 6px;">

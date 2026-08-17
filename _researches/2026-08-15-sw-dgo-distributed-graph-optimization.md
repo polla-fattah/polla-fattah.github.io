@@ -7,6 +7,7 @@ category: "Autonomous Navigation & Multi-Agent Systems"
 status: "ongoing"
 background: "/img/backgrounds/academy-bg.jpg"
 project_url: "https://polla.dev/SW-DGO/"
+simulator_url: "https://polla.dev/SW-DGO/simulator.html"
 permalink: /academy/research/sw-dgo-distributed-graph-optimization/
 
 # CROSS-REFERENCES - REMEMBER TO UPDATE THESE WHEN CHANGES OCCUR:
