@@ -6,6 +6,7 @@ date: 2026-08-15
 category: "Autonomous Navigation & Multi-Agent Systems"
 status: "ongoing"
 background: "/img/backgrounds/academy-bg.jpg"
+project_url: "https://polla.dev/SW-DGO/"
 permalink: /academy/research/sw-dgo-distributed-graph-optimization/
 
 # CROSS-REFERENCES - REMEMBER TO UPDATE THESE WHEN CHANGES OCCUR:
@@ -15,6 +16,17 @@ permalink: /academy/research/sw-dgo-distributed-graph-optimization/
 students: []  # Student IDs (lowercase, no spaces)
 publications: []  # Add publication ID when accepted/published
 ---
+
+<div class="panel panel--bar" style="background: rgba(31, 37, 48, 0.04); border-left: 4px solid #a87c2f; padding: 1.25rem; margin-bottom: 2rem; border-radius: 6px;">
+  <h3 style="margin-top: 0; font-size: 1.2rem; color: #1f2530;"><i class="fas fa-external-link-alt"></i> Dedicated Project Portal</h3>
+  <p style="margin-bottom: 0.85rem;">Access the official live research website, interactive WebAssembly simulator, raw experiment datasets, and open-source repository:</p>
+  <a href="https://polla.dev/SW-DGO/" target="_blank" rel="noopener" class="btn-pill" style="display: inline-block; background: #1f2530; color: #fff; text-decoration: none; padding: 0.45rem 1.15rem; border-radius: 20px; font-weight: 600; margin-right: 0.5rem; font-size: 0.9rem;">
+    <i class="fas fa-globe"></i> Visit polla.dev/SW-DGO
+  </a>
+  <a href="https://polla.dev/SW-DGO/simulator.html" target="_blank" rel="noopener" class="btn-pill" style="display: inline-block; background: #a87c2f; color: #fff; text-decoration: none; padding: 0.45rem 1.15rem; border-radius: 20px; font-weight: 600; font-size: 0.9rem;">
+    <i class="fas fa-play-circle"></i> Launch Interactive Simulator
+  </a>
+</div>
 
 <p>
   Next-generation autonomous mobile robots (AMRs)—including smart retail shopping carts, mobile clinical pushchairs, and airport luggage trolleys—must route continuously through human-shared public spaces. Unlike isolated industrial warehouses, public service environments present unique multi-agent challenges: space is constrained by orthogonal shelving fixtures, corridors are frequently single-file, and human pedestrians move stochastically with browsing and loitering behaviors.

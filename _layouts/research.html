@@ -24,6 +24,11 @@ layout: default
           <i class="fas fa-info-circle"></i> {{ page.status | capitalize }}
         </div>
         {% endif %}
+        {% if page.project_url %}
+        <div class="meta-item">
+          <a href="{{ page.project_url }}" target="_blank" rel="noopener" style="color: inherit;"><i class="fas fa-external-link-alt"></i> Project Site</a>
+        </div>
+        {% endif %}
         <div class="meta-item">
           <i class="fas fa-clock"></i> {% include read_time.html content=page.content %}
         </div>

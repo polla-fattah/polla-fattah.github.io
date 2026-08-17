@@ -8,7 +8,19 @@ background: '/img/posts/2026-08-15-socially-weighted-distributed-graph-optimizat
 categories: ["Research", "Robotics", "AI", "Graph Optimization", "Multi-Agent Systems"]
 author: "Polla Fattah"
 usemathjax: true
+project_url: "https://polla.dev/SW-DGO/"
 ---
+
+<div class="panel panel--bar" style="background: rgba(31, 37, 48, 0.04); border-left: 4px solid #a87c2f; padding: 1.25rem; margin: 1.5rem 0 2rem 0; border-radius: 6px;">
+  <h3 style="margin-top: 0; font-size: 1.2rem; color: #1f2530;"><i class="fas fa-external-link-alt"></i> Dedicated Project Portal & Live Interactive Suite</h3>
+  <p style="margin-bottom: 0.85rem;">Access the official live research website, interactive WebAssembly planning simulator (Pyodide), 4,650-trial raw datasets, and open-source codebase:</p>
+  <a href="https://polla.dev/SW-DGO/" target="_blank" rel="noopener" class="btn-pill" style="display: inline-block; background: #1f2530; color: #fff; text-decoration: none; padding: 0.45rem 1.15rem; border-radius: 20px; font-weight: 600; margin-right: 0.5rem; font-size: 0.9rem;">
+    <i class="fas fa-globe"></i> Project Page: polla.dev/SW-DGO
+  </a>
+  <a href="https://polla.dev/SW-DGO/simulator.html" target="_blank" rel="noopener" class="btn-pill" style="display: inline-block; background: #a87c2f; color: #fff; text-decoration: none; padding: 0.45rem 1.15rem; border-radius: 20px; font-weight: 600; font-size: 0.9rem;">
+    <i class="fas fa-desktop"></i> Try Live WebAssembly Simulator
+  </a>
+</div>
 
 Autonomous service fleets are moving out of segregated industrial warehouses and straight into human-shared public spaces. From smart retail shopping carts escorting shoppers in supermarkets to mobile clinical pushchairs transporting patients in hospital wards and baggage trolleys navigating airport concourses, autonomous mobile robots (AMRs) must operate continuously alongside human pedestrians.
 
