@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 460"
+     role="img" aria-labelledby="heroTitle heroDesc" preserveAspectRatio="xMidYMid slice">
+  <title id="heroTitle">A fleet of autonomous carts routing around people</title>
+  <desc id="heroDesc">A leading cart detects a pedestrian cluster blocking an aisle and
+  broadcasts it over a peer-to-peer mesh. Two trailing carts receive the alert and divert
+  early, around the pedestrians' personal space, instead of driving into the blockage.</desc>
+
+  <defs>
+    <!-- Personal space as the graded cost it actually is, not a hard circle. -->
+    <radialGradient id="prox">
+      <stop offset="0%"   stop-color="#a89b63" stop-opacity="0.32"/>
+      <stop offset="45%"  stop-color="#8f8757" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#8f8757" stop-opacity="0"/>
+    </radialGradient>
+
+    <filter id="bloom" x="-25%" y="-25%" width="150%" height="150%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <!-- Roadmap lattice: context, deliberately faint. -->
+    <pattern id="lattice" width="150" height="115" patternUnits="userSpaceOnUse">
+      <path d="M0 57.5 H150 M75 0 V115" stroke="#565239" stroke-width="1" opacity="0.26"/>
+      <circle cx="75" cy="57.5" r="2.4" fill="#565239" opacity="0.5"/>
+    </pattern>
+
+    <!-- One cart: body, heading nose, wheels. Reused so the fleet reads as a fleet. -->
+    <g id="cart">
+      <rect x="-17" y="-12" width="30" height="24" rx="6"
+            fill="#323845" stroke="#d8cf9e" stroke-width="2.2"/>
+      <path d="M13 -6 L24 0 L13 6 Z" fill="#d8cf9e"/>
+      <circle cx="-9" cy="14" r="3.2" fill="#8f8757"/>
+      <circle cx="5"  cy="14" r="3.2" fill="#8f8757"/>
+    </g>
+
+    <!-- Broadcast: three arcs, widening outward. -->
+    <g id="signal" fill="none" stroke="#d8cf9e" stroke-linecap="round">
+      <path d="M0 -14 A 18 18 0 0 1 0 14"  stroke-width="2.2" opacity="0.95"/>
+      <path d="M0 -24 A 30 30 0 0 1 0 24"  stroke-width="2"   opacity="0.55"/>
+      <path d="M0 -34 A 42 42 0 0 1 0 34"  stroke-width="1.8" opacity="0.28"/>
+    </g>
+  </defs>
+
+  <rect width="1200" height="460" fill="#282d36"/>
+  <rect width="1200" height="460" fill="url(#lattice)"/>
+
+  <!-- The blockage: a cluster of pedestrians filling an aisle. -->
+  <g>
+    <circle cx="742" cy="150" r="104" fill="url(#prox)"/>
+    <circle cx="812" cy="196" r="86"  fill="url(#prox)"/>
+    <circle cx="700" cy="212" r="80"  fill="url(#prox)"/>
+    <g fill="#c4b884">
+      <circle cx="742" cy="150" r="7"/>
+      <circle cx="812" cy="196" r="7"/>
+      <circle cx="700" cy="212" r="7"/>
+    </g>
+  </g>
+
+  <!-- Socially blind shortest path: straight, and straight into the cluster. -->
+  <path d="M60 262 L1140 214"
+        fill="none" stroke="#6e6849" stroke-width="2"
+        stroke-dasharray="9 11" opacity="0.66"/>
+
+  <!-- The routes the fleet actually takes, diverting below the cluster. -->
+  <path d="M60 262 C 250 262, 300 372, 520 372 C 760 372, 880 300, 1140 214"
+        fill="none" stroke="#a89b63" stroke-width="2.8"
+        stroke-linecap="round" filter="url(#bloom)"/>
+  <path d="M170 330 C 330 400, 420 404, 560 380"
+        fill="none" stroke="#a89b63" stroke-width="2" opacity="0.5"
+        stroke-linecap="round" stroke-dasharray="1 0"/>
+
+  <!-- Mesh: the leader's observation travelling back to both trailing carts. -->
+  <g fill="none" stroke="#d8cf9e" stroke-width="1.4"
+     stroke-dasharray="4 10" opacity="0.68">
+    <path d="M596 214 Q 430 236 296 292"/>
+    <path d="M596 214 Q 372 150 176 268"/>
+    <path d="M296 292 Q 236 268 176 268"/>
+  </g>
+
+  <!-- Leading cart: has seen the cluster, is broadcasting, and has begun to turn. -->
+  <g transform="translate(596 214) rotate(-16)">
+    <use href="#cart"/>
+  </g>
+  <g transform="translate(626 196)"><use href="#signal"/></g>
+
+  <!-- Trailing carts: acting on the alert before the blockage is in their own range. -->
+  <g transform="translate(296 292) rotate(14)"><use href="#cart"/></g>
+  <g transform="translate(176 268) rotate(6)"><use href="#cart"/></g>
+
+  <!-- Sensing radius of a trailing cart: the blockage is well outside it. -->
+  <circle cx="296" cy="292" r="88" fill="none" stroke="#565239"
+          stroke-width="1.2" stroke-dasharray="3 7" opacity="0.5"/>
+
+  <!-- Endpoints. -->
+  <circle cx="60"   cy="262" r="5.5" fill="#d8cf9e" opacity="0.9"/>
+  <circle cx="1140" cy="214" r="5.5" fill="none" stroke="#d8cf9e"
+          stroke-width="2" opacity="0.9"/>
+</svg>

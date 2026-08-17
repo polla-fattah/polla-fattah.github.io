@@ -4,7 +4,7 @@ title: "Socially-Weighted Distributed Graph Optimization (SW-DGO): Navigating Au
 subtitle: "How proxemics-aware routing"
 excerpt: "Autonomous service fleets in supermarkets, hospitals, and airports face complex human crowds and narrow bottlenecks. SW-DGO framework enables socially compliant."
 date: 2026-08-15 10:00:00 +0300
-background: '/img/posts/2026-08-15-socially-weighted-distributed-graph-optimization/background.png'
+background: '/img/posts/2026-08-15-socially-weighted-distributed-graph-optimization/hero.svg'
 categories: ["Research", "Robotics", "AI", "Graph Optimization", "Multi-Agent Systems"]
 author: "Polla Fattah"
 usemathjax: true
