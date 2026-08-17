@@ -2,7 +2,7 @@
 layout: research
 title: "Socially-Weighted Distributed Graph Optimization (SW-DGO)"
 subtitle: "Distributed Dynamic Route Optimization (D²RO) for autonomous service fleets in crowded public environments"
-date: 2026-08-17
+date: 2026-08-15
 category: "Autonomous Navigation & Multi-Agent Systems"
 status: "ongoing"
 background: "/img/backgrounds/academy-bg.jpg"

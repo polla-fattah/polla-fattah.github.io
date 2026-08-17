@@ -3,8 +3,8 @@ layout: post
 title: "Socially-Weighted Distributed Graph Optimization (SW-DGO): Navigating Autonomous Fleets in Public Spaces"
 subtitle: "How proxemics-aware routing, V2V mesh telemetry, and incremental D* Lite graph repair solve crowd navigation and aisle deadlocks"
 excerpt: "Autonomous service fleets in supermarkets, hospitals, and airports face complex human crowds and narrow bottlenecks. Here is how our new SW-DGO framework enables socially compliant, real-time multi-agent routing."
-date: 2026-08-17 10:00:00 +0300
-background: '/img/posts/2026-08-17-socially-weighted-distributed-graph-optimization/background.png'
+date: 2026-08-15 10:00:00 +0300
+background: '/img/posts/2026-08-15-socially-weighted-distributed-graph-optimization/background.png'
 categories: ["Research", "Robotics", "AI", "Graph Optimization", "Multi-Agent Systems"]
 author: "Polla Fattah"
 usemathjax: true
@@ -85,17 +85,17 @@ graph TD
 Here are screenshots captured directly from our live WebAssembly interactive simulation suite running the actual Python planner compiled via Pyodide:
 
 {% include image.html 
-  url="/img/posts/2026-08-17-socially-weighted-distributed-graph-optimization/supermarket.png"
+  url="/img/posts/2026-08-15-socially-weighted-distributed-graph-optimization/supermarket.png"
   description="Figure 1: SW-DGO autonomous retail carts navigating parallel grocery aisles and Action Alley in a 36 x 24 m supermarket floorplan while maintaining continuous proxemic human discomfort halos."
 %}
 
 {% include image.html 
-  url="/img/posts/2026-08-17-socially-weighted-distributed-graph-optimization/hospital.png"
+  url="/img/posts/2026-08-15-socially-weighted-distributed-graph-optimization/hospital.png"
   description="Figure 2: Clinical hospital environment showing Emergency Trauma priority transfer (R_lock = ∞) and routine pushchairs yielding inside designated Turnout Alcoves (V_alcove)."
 %}
 
 {% include image.html 
-  url="/img/posts/2026-08-17-socially-weighted-distributed-graph-optimization/airport.png"
+  url="/img/posts/2026-08-15-socially-weighted-distributed-graph-optimization/airport.png"
   description="Figure 3: Airport departure concourse luggage fleet navigating high-density passenger clusters near security chokepoints and boarding gate piers."
 %}
 
