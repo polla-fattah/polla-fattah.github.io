@@ -123,9 +123,15 @@
 .book-card__cover {
   background: $ink-900;
   padding: 24px;
+  min-height: 408px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   img {
-    height: 360px;
+    display: block;
+    width: 100%;
+    height: 360px !important;
     object-fit: contain;
   }
 }
