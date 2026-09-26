@@ -23,14 +23,7 @@ permalink: /academy/books/
     <div class="grid-layout columns-3">
       {% assign books = site.books | sort: 'date' | reverse %}
       {% for book in books %}
-      <a class="card-item card-item--link book-card book-card--featured" href="{{ book.external_url }}" target="_blank" rel="noopener noreferrer">
-        <div class="card-image book-card__cover">
-          <img src="{{ book.cover | relative_url }}" alt="Front cover of {{ book.title }}">
-        </div>
-        <div class="card-content">
-          <div class="card-footer">Read the book <i class="fas fa-arrow-right"></i></div>
-        </div>
-      </a>
+      {% include book-card.html book=book %}
       {% endfor %}
     </div>
   </div>

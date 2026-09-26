@@ -1,0 +1,8 @@
+<a class="card-item card-item--link book-card book-card--featured" href="{{ include.book.external_url }}" target="_blank" rel="noopener noreferrer">
+  <div class="card-image book-card__cover">
+    <img src="{{ include.book.cover | relative_url }}" alt="Front cover of {{ include.book.title }}">
+  </div>
+  <div class="card-content">
+    <div class="card-footer">Read the book <i class="fas fa-arrow-right"></i></div>
+  </div>
+</a>
