@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+  <title id="title">Static site generator learning workflow</title>
+  <desc id="desc">A colorful card illustration showing Markdown content moving through Hugo and GitHub Pages.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#173241"/>
+      <stop offset="1" stop-color="#d66b4c"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="700" rx="28" fill="url(#bg)"/>
+  <circle cx="1010" cy="120" r="165" fill="#e2b866" opacity=".22"/>
+  <path d="M0 535c270-100 415 70 680-15s345-26 520 20v160H0Z" fill="#102430" opacity=".65"/>
+  <g transform="translate(100 140)">
+    <rect width="260" height="330" rx="16" fill="#f6ead0"/>
+    <text x="35" y="72" fill="#d66b4c" font-family="monospace" font-size="54" font-weight="bold">.md</text>
+    <path d="M38 120h174M38 158h140M38 196h170M38 234h112" stroke="#4e9f93" stroke-width="15" stroke-linecap="round"/>
+  </g>
+  <path d="M390 305h120" stroke="#f6ead0" stroke-width="16" stroke-linecap="round"/>
+  <path d="m486 270 45 35-45 35" fill="none" stroke="#f6ead0" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+  <g transform="translate(535 180)">
+    <rect width="300" height="250" rx="20" fill="#bfe2d6"/>
+    <text x="50" y="90" fill="#173241" font-family="Georgia, serif" font-size="48" font-weight="bold">HUGO</text>
+    <text x="50" y="140" fill="#173241" font-family="monospace" font-size="21">build + preview</text>
+    <path d="M50 180h200" stroke="#d66b4c" stroke-width="15" stroke-linecap="round"/>
+  </g>
+  <path d="M865 305h120" stroke="#f6ead0" stroke-width="16" stroke-linecap="round"/>
+  <path d="m961 270 45 35-45 35" fill="none" stroke="#f6ead0" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+  <g transform="translate(1010 218)">
+    <circle cx="55" cy="87" r="68" fill="#e2b866"/>
+    <path d="M55 33 72 72l43 4-33 28 10 42-37-23-37 23 10-42-33-28 43-4Z" fill="#173241"/>
+  </g>
+  <text x="100" y="610" fill="#f6ead0" font-family="Georgia, serif" font-size="37" font-weight="bold">Learn it. Version it. Publish it.</text>
+</svg>

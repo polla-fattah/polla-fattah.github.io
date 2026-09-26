@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Meeting new students to learn static site generation</title>
+  <desc id="desc">An editorial illustration of students collaborating around a laptop with Markdown, JSON, XML, Git, and deployment notes.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#172b3a"/>
+      <stop offset="0.62" stop-color="#214e5a"/>
+      <stop offset="1" stop-color="#d66b4c"/>
+    </linearGradient>
+    <linearGradient id="desk" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#e2b866"/>
+      <stop offset="1" stop-color="#f0d28f"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#0b1720" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <circle cx="1320" cy="115" r="210" fill="#f4d58b" opacity="0.16"/>
+  <circle cx="150" cy="770" r="270" fill="#71c5bd" opacity="0.14"/>
+  <path d="M0 665 C320 600 490 735 770 680 S1250 585 1600 650 V900 H0Z" fill="#102331" opacity="0.52"/>
+  <g filter="url(#shadow)">
+    <rect x="170" y="155" width="370" height="230" rx="18" fill="#f6ead0" transform="rotate(-7 170 155)"/>
+    <text x="220" y="230" fill="#173640" font-family="Georgia, serif" font-size="30" font-weight="bold" transform="rotate(-7 220 230)">STATIC WEB</text>
+    <text x="220" y="274" fill="#d66b4c" font-family="monospace" font-size="25" transform="rotate(-7 220 274)">.md   .xml   .json</text>
+    <path d="M220 305h245M220 330h180" stroke="#6ebbb5" stroke-width="12" stroke-linecap="round" transform="rotate(-7 220 305)"/>
+    <rect x="1130" y="180" width="280" height="190" rx="18" fill="#f6ead0" transform="rotate(8 1130 180)"/>
+    <text x="1185" y="255" fill="#173640" font-family="Georgia, serif" font-size="28" font-weight="bold" transform="rotate(8 1185 255)">PUBLISH</text>
+    <path d="M1180 295h175M1180 325h128" stroke="#d66b4c" stroke-width="12" stroke-linecap="round" transform="rotate(8 1180 295)"/>
+    <path d="M1230 355l44 42 82-96" fill="none" stroke="#4e9f93" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" transform="rotate(8 1230 355)"/>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="355" y="550" width="890" height="42" rx="21" fill="url(#desk)"/>
+    <rect x="425" y="470" width="700" height="105" rx="18" fill="#102b3a"/>
+    <rect x="458" y="495" width="634" height="55" rx="8" fill="#bfe2d6"/>
+    <text x="492" y="532" fill="#173640" font-family="monospace" font-size="25">git push origin main</text>
+    <path d="M385 592h830l-100 130H485Z" fill="#e2b866"/>
+    <path d="M570 640h460" stroke="#bd8d46" stroke-width="7" stroke-linecap="round"/>
+  </g>
+  <g>
+    <circle cx="315" cy="500" r="62" fill="#d88b6d"/>
+    <path d="M250 605c35-88 122-88 164 0v38H250Z" fill="#70b8b0"/>
+    <path d="M267 488c8-61 83-82 111-25-29-12-61-3-111 25Z" fill="#263a45"/>
+    <circle cx="1280" cy="500" r="62" fill="#b97855"/>
+    <path d="M1200 605c42-88 130-88 171 0v38h-171Z" fill="#e2b866"/>
+    <path d="M1220 474c28-55 91-52 119 0-42-14-73-4-119 0Z" fill="#172b3a"/>
+    <circle cx="800" cy="388" r="72" fill="#e2a071"/>
+    <path d="M700 490c51-90 150-90 202 0v73H700Z" fill="#d66b4c"/>
+    <path d="M720 360c24-81 131-85 164 10-58-33-112-29-164-10Z" fill="#213b4a"/>
+  </g>
+  <g fill="#f6ead0" font-family="monospace" font-size="22" font-weight="bold">
+    <text x="78" y="820">HUGO</text>
+    <text x="1390" y="760">SEO</text>
+    <text x="125" y="115">CI/CD</text>
+  </g>
+</svg>
