@@ -119,7 +119,7 @@ permalink: /academy/
         <a href="/academy/books/" class="btn-pill btn-pill--ghost">More Books</a>
       </div>
 
-      <div class="grid-layout rows-2">
+      <div class="grid-layout rows-3 book-grid">
         {% assign selected_books = site.books | where: 'featured', true %}
         {% for book in selected_books limit:3 %}
         {% include book-card.html book=book %}

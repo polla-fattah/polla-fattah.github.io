@@ -149,6 +149,29 @@
   padding-top: 0;
 }
 
+// The Academy's three featured books share one desktop row.
+.book-grid .book-card__cover {
+  min-height: 0;
+  height: clamp(320px, 34vw, 440px);
+  padding: 18px;
+
+  img {
+    height: 100% !important;
+    max-height: 100%;
+  }
+}
+
+@media (max-width: $bp-md) {
+  .book-grid .book-card__cover {
+    height: auto;
+
+    img {
+      height: auto !important;
+      max-height: none;
+    }
+  }
+}
+
 .card-item:hover .card-image img,
 .card-component:hover .card-image img {
   transform: scale(1.04);
