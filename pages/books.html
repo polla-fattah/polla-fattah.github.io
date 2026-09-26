@@ -20,7 +20,7 @@ permalink: /academy/books/
       <p>A growing collection of books covering research, data analysis, web development, and modern technology.</p>
     </div>
 
-    <div class="grid-layout columns-3">
+    <div class="grid-layout columns-2">
       {% assign books = site.books | sort: 'date' | reverse %}
       {% for book in books %}
       {% include book-card.html book=book %}
