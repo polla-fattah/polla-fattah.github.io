@@ -112,39 +112,27 @@ permalink: /academy/
     <!-- Selected Books -->
     <section id="Selected-Books" class="mt-5">
       <div class="section-header">
-        <h2>Selected Books</h2>
+        <h2><a href="/academy/books/">Selected Books</a></h2>
         <p>
           A selection of books and educational resources I have authored and developed.
         </p>
+        <a href="/academy/books/" class="btn-pill btn-pill--ghost">More Books</a>
       </div>
 
       <div class="grid-layout rows-3">
-        <a class="card-item card-item--link panel--bar" href="https://polla.dev/ssg-book/" target="_blank" rel="noopener noreferrer">
+        {% assign selected_books = site.books | where: 'featured', true %}
+        {% for book in selected_books limit:3 %}
+        <a class="card-item card-item--link book-card" href="{{ book.external_url }}" target="_blank" rel="noopener noreferrer">
+          <div class="card-image book-card__cover">
+            <img src="{{ book.cover | relative_url }}" alt="Front cover of {{ book.title }}">
+          </div>
           <div class="card-content">
-            <div class="card-icon"><i class="fas fa-book"></i></div>
-            <h3 class="card-title">SSG Book</h3>
-            <p class="card-text">A practical book about static site generators and modern web publishing.</p>
-            <div class="card-footer"><span>Read the book</span><i class="fas fa-arrow-right"></i></div>
+            <h3 class="card-title">{{ book.title }}</h3>
+            <p class="card-subtitle">{{ book.subtitle }}</p>
+            <div class="card-footer">Read the book <i class="fas fa-arrow-right"></i></div>
           </div>
         </a>
-
-        <a class="card-item card-item--link panel--bar" href="https://polla.dev/data2thesis_r/" target="_blank" rel="noopener noreferrer">
-          <div class="card-content">
-            <div class="card-icon"><i class="fas fa-book"></i></div>
-            <h3 class="card-title">Data2Thesis</h3>
-            <p class="card-text">A resource for working with data and developing a research thesis.</p>
-            <div class="card-footer"><span>Read the book</span><i class="fas fa-arrow-right"></i></div>
-          </div>
-        </a>
-
-        <a class="card-item card-item--link panel--bar" href="https://polla.dev/frontend-book/" target="_blank" rel="noopener noreferrer">
-          <div class="card-content">
-            <div class="card-icon"><i class="fas fa-book"></i></div>
-            <h3 class="card-title">Frontend Book</h3>
-            <p class="card-text">A practical introduction to frontend development and web technologies.</p>
-            <div class="card-footer"><span>Read the book</span><i class="fas fa-arrow-right"></i></div>
-          </div>
-        </a>
+        {% endfor %}
       </div>
     </section>
 

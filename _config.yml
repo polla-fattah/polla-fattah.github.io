@@ -50,6 +50,8 @@ collections:
   publications:
     output: true
     permalink: /academy/publication/:path/
+  books:
+    output: false
   lectures:
     output: true
     permalink: /academy/lecture/:path/

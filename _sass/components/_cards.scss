@@ -119,6 +119,21 @@
   }
 }
 
+// Cover-led book cards
+.book-card__cover {
+  background: $ink-900;
+  padding: 24px;
+
+  img {
+    height: 360px;
+    object-fit: contain;
+  }
+}
+
+.book-card .card-content {
+  padding-top: 20px;
+}
+
 .card-item:hover .card-image img,
 .card-component:hover .card-image img {
   transform: scale(1.04);
