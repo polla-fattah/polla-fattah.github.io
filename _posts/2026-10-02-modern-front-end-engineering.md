@@ -4,6 +4,7 @@ title: "Reading Modern Front-End Engineering Through Its Chapters"
 subtitle: "What eighteen chapter titles say about how the book wants you to think"
 excerpt: "A guided reading of the eighteen chapters of Modern Front-End Engineering, from browser internals to architectural decisions, with two diagrams from the book's ideas."
 date: 2026-10-02 10:00:00 +0300
+background: '/img/posts/2026-10-02-modern-front-end-engineering/banner.webp'
 categories: ["Books", "Web Development", "Front-End", "Software Architecture"]
 author: "Polla Fattah"
 usemathjax: false
@@ -46,11 +47,11 @@ The chapter titles show the shape of that argument. They move from the runtime, 
 
 {% include image.html url="/img/posts/2026-10-02-modern-front-end-engineering/cost-triangle.svg" description="The Web Rendering Cost Triangle: server and request cost, build and deployment cost, and client and device cost. Moving work away from one corner adds cost elsewhere" %}
 
-This is the most reusable idea in the book. SSG pays at build time, SSR pays on every request, and CSR pays on the user's device. The sections that follow, on incremental revalidation, hydration, streaming SSR, and hybrid topologies that go *beyond all-or-nothing hydration*, are variations on that trade. The chapter closes with *The Route-Specific Architectural Decision Matrix*, which says that one site can reasonably use different strategies for different routes.
+This is the most reusable idea in the book. As I read it, SSG pays mostly at build time, SSR pays on every request, and CSR pays on the user's device; the diagram places each strategy near the corner where it concentrates its cost. The sections that follow, on incremental revalidation, hydration, streaming SSR, and hybrid topologies that go *beyond all-or-nothing hydration*, are variations on that trade. The chapter closes with *The Route-Specific Architectural Decision Matrix*, which says that one site can reasonably use different strategies for different routes.
 
 ## Part 4: Scale and responsibility (Chapters 12–14)
 
-**12. Modern Build Systems, Development Tooling & Team Workflows.** The title includes *team workflows*, so it is not only about Vite. The sections cover native ESM and hot module replacement in development, bundler graph optimisation for production, fingerprinting and cache busting, source maps, and *Environment Boundaries: Build-Time vs. Runtime Configuration*. The final one prevents a real class of bug: secrets and settings that should have been decided at different times.
+**12. Modern Build Systems, Development Tooling & Team Workflows.** The title includes *team workflows*, so it is not only about Vite. The sections cover native ESM and hot module replacement in development, bundler graph optimisation for production, fingerprinting and cache busting, source maps, and *Environment Boundaries: Build-Time vs. Runtime Configuration*. The last of these draws a line between values fixed when the code is built and values read when it runs, a distinction that is easy to blur.
 
 **13. Front-End Security, Authentication & Browser Isolation.** The first section treats the browser as a security runtime and begins with origins and the same-origin policy. CORS is "demystified", and cross-site scripting gets its own section on anatomy, defence, and trusted sinks. The most instructive part is the comparison of where to store authentication tokens.
 

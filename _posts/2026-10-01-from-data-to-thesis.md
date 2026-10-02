@@ -4,13 +4,14 @@ title: "Inside From Data to Thesis: What the Chapters Teach"
 subtitle: "A chapter-by-chapter reading of the R book for non-technical researchers"
 excerpt: "A guided reading of the nineteen chapters of From Data to Thesis, with figures from the book showing the ideas that make a thesis defensible."
 date: 2026-10-01 10:00:00 +0300
+background: '/img/posts/2026-10-01-from-data-to-thesis/banner.webp'
 categories: ["Books", "Data Analysis", "R", "Research Methods"]
 author: "Polla Fattah"
 usemathjax: false
 project_url: "https://polla.dev/data2thesis_r/"
 ---
 
-{% include image.html url="/img/posts/2026-10-01-from-data-to-thesis/cover.webp" description="Cover of From Data to Thesis: Using R for Non-Technical Researchers" %}
+{% include image.html url="/img/posts/2026-10-01-from-data-to-thesis/cover.webp" description="Cover of From Data to Thesis: Using R for Non-Technical" %}
 
 Most statistics books are organised around methods. *From Data to Thesis* is organised around a person. The book follows Elaf, a new Master's student in Educational Psychology who noticed how tired her fellow students were, and turned that observation into a thesis about sleep, stress, supervisor support, and wellbeing. The data are a simulated study of 600 graduate students followed over four semesters, and the book says plainly that they are synthetic and not evidence about real students.
 
@@ -42,7 +43,7 @@ Even when nothing is happening, two groups almost never have identical averages.
 
 **6. Descriptive Statistics and Exploratory Data Analysis.** The title pairs two ideas that beginners treat as one. Sections on spread, shape, unusual values, and *Missing data* teach that describing a sample is an act of judgment. The section *Describing your sample in a thesis* shows how to turn it into the paragraph your examiners will actually read.
 
-**7. Hypothesis Testing and Statistical Inference.** The book builds the logic of testing through simulation before the formulas. Chapter 7 includes a permutation test, where the workshop labels are shuffled 5,000 times and no shuffle comes close to the observed difference. The same chapter explains power, with a result that is easy to miss: with 10 students per group, a real 5-point effect is detected only about 17% of the time.
+**7. Hypothesis Testing and Statistical Inference.** The book leans on simulation to make the logic of testing visible. Chapter 7 includes a permutation test, where the workshop labels are shuffled 5,000 times and no shuffle comes close to the observed difference. The same chapter explains power, with a result that is easy to miss: with 10 students per group, a real 5-point effect is detected only about 17% of the time.
 
 {% include image.html url="/img/posts/2026-10-01-from-data-to-thesis/power.png" description="Figure 7.3 in the book: power to detect a 5-point workshop effect by group size, simulated (points) and calculated (line). The dashed line marks 80%" %}
 
@@ -60,15 +61,15 @@ Reading this curve changes how a researcher thinks about "no significant differe
 
 **11. Introduction to Machine Learning in R.** The pivotal ideas are in the section titles: *Generalisation and overfitting*, *Designing a fair test*, and *Splitting the data*. Prediction is introduced as a question about new students, not the ones you already have, which reframes how success is measured.
 
-**12. Classification Models.** Random forests, k-nearest neighbours, and support vector machines are compared on the same dropout question. Titles such as *Comparing models fairly*, *Choosing the threshold*, and *Imbalanced outcomes* hint that the algorithm is rarely the hard part. Dropout is rare, so accuracy alone can look excellent while the model finds nobody who is at risk.
+**12. Classification Models.** Random forests, k-nearest neighbours, and support vector machines are compared on the same dropout question. Titles such as *Comparing models fairly*, *Choosing the threshold*, and *Imbalanced outcomes* hint that the algorithm is rarely the hard part. When an outcome like dropout is rare, a model can score high accuracy while missing most of the students who are actually at risk, which is why a section on imbalanced outcomes belongs here.
 
-**13. Predictive Regression.** Predicting final GPA brings regularised regression and boosting, and the section order matters: measure prediction error first, compare models, and only then run *The final test*. A held-out test set can be used once. After that it is part of your training.
+**13. Predictive Regression.** Predicting final GPA brings regularised regression and boosting, and the section order matters: measure prediction error first, compare models, and only then run *The final test*. The ordering suggests a rule worth keeping: a held-out test set is for one last, honest check, not for choosing between models.
 
 **14. Advanced Clustering.** *What counts as a group* is a philosophical question disguised as a section title. Gaussian mixture models and density-based clustering answer it differently, and *Evaluating a clustering* admits that there is no single score that proves a cluster is real.
 
 **15. Neural Networks.** The chapter starts with *A single neuron* and builds up. The section I most respect is *When neural networks are worth using*, an honest check on enthusiasm. Deep learning appears as an extension, not as the default.
 
-**16. Time Series Forecasting.** The case study uses counselling service data. Time series is where the "independent observations" assumption fails most obviously, so this chapter reuses the lesson from Chapter 10 in a different setting.
+**16. Time Series Forecasting.** The case study uses counselling service data. Time series is where the "independent observations" assumption fails most obviously, so this chapter echoes the lesson of Chapter 10 in a different setting.
 
 ## Part 4: Reproducible research and applications (Chapters 17–19)
 

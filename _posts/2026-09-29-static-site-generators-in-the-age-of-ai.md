@@ -4,6 +4,7 @@ title: "Reading the Hugo Book Through Its Chapter Titles"
 subtitle: "What Static Site Generators in the Age of AI teaches, one chapter at a time"
 excerpt: "A guided reading of the nineteen chapter titles in Static Site Generators in the Age of AI, and what each one quietly teaches about publishing, review, and keeping a website alive."
 date: 2026-09-29 10:00:00 +0300
+background: '/img/posts/2026-09-29-static-site-generators-in-the-age-of-ai/banner.webp'
 categories: ["Books", "Web Development", "Hugo", "AI Agents"]
 author: "Polla Fattah"
 usemathjax: false
@@ -12,7 +13,7 @@ project_url: "https://polla.dev/ssg-book/"
 
 {% include image.html url="/img/posts/2026-09-29-static-site-generators-in-the-age-of-ai/cover.webp" description="Cover of Static Site Generators in the Age of AI: Building and Maintaining Content with AI Agents" %}
 
-The first thing I notice about this book is how few chapter titles mention a technology. Hugo appears in a few of them, but the verbs do the real work: *write*, *organise*, *understand*, *track*, *recover*, *check*, *maintain*, *migrate*. Read in order, the titles describe a person growing from someone who has a folder of notes into someone who is responsible for a living website.
+Many of the chapter titles name a tool: Hugo, HTML, CSS, Git, GitHub Pages, JSON, CI/CD. But the verbs carry the meaning: *write*, *organise*, *understand*, *track*, *recover*, *check*, *maintain*, *migrate*. Read in order, the titles describe a person growing from someone who has a folder of notes into someone who is responsible for a living website, with each tool introduced only when that person needs it.
 
 This post reads the book through those titles. The aim is not a table of contents. For each group of chapters I want to ask what the title is really promising the reader, and what habit it is trying to build. The book is free to read at [polla.dev/ssg-book](https://polla.dev/ssg-book/).
 
@@ -48,7 +49,7 @@ The book assumes no prior HTML, Git, or command-line experience. It works becaus
 
 **9. Give Your Hugo Content a Consistent Structure.** The pivot here is that structure is requirements. A small shared front matter structure makes pages easier for people to compare, and it also gives the agent concrete rules to follow. Archetypes, the reusable starter files, are presented as a way to make the right thing the easy thing.
 
-**10. Use Hugo Templates to Display Your Content.** The chapter opens with a clear promise: change a project's description once, and Hugo can use it on the project page and in the Projects list. That is the case for templates in a sentence. One section, *Diagnose a context mistake*, prepares readers for the most common template error, using a value from the wrong scope.
+**10. Use Hugo Templates to Display Your Content.** The chapter opens with a clear promise: change a project's description once, and Hugo can use it on the project page and in the Projects list. That is the case for templates in a sentence. One section, *Diagnose a context mistake*, deals with a classic template problem: a template asking for a value in a place where that value is not available.
 
 **11. Build Reusable Hugo Layouts.** Reuse is taught by moving *one familiar component first*. The title of section 11.6, *Check a failure that a successful build can miss*, is one of my favourites in the book. A site can build without errors and still be wrong, which is why later chapters add checks.
 
