@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 520" role="img" aria-labelledby="t d" font-family="Inter, Arial, sans-serif">
+  <title id="t">Token storage: localStorage versus a Backend-for-Frontend</title>
+  <desc id="d">Left: a single-page app keeps bearer tokens in localStorage, so one XSS bug can read and exfiltrate them. Right: a backend-for-frontend keeps tokens on the server and gives the browser only an HttpOnly session cookie.</desc>
+  <rect width="1000" height="520" rx="20" fill="#f7f4ec"/>
+  <g fill="#173241" text-anchor="middle">
+    <text x="250" y="52" font-size="20" font-weight="700">Pattern A: tokens in localStorage</text>
+    <text x="750" y="52" font-size="20" font-weight="700">Pattern B: Backend-for-Frontend</text>
+
+    <rect x="80" y="86" width="340" height="86" rx="12" fill="#e8e1cf" stroke="#173241" stroke-width="2"/>
+    <text x="250" y="122" font-size="17" font-weight="700">Browser SPA</text>
+    <text x="250" y="148" font-size="14" fill="#4a5560">stores access + refresh token</text>
+
+    <path d="M250 172 V230" stroke="#173241" stroke-width="3" fill="none"/>
+    <path d="M240 220 L250 232 L260 220" stroke="#173241" stroke-width="3" fill="none"/>
+    <text x="250" y="214" font-size="13" fill="#4a5560" dx="95">Authorization: Bearer …</text>
+
+    <rect x="80" y="236" width="340" height="70" rx="12" fill="#e8e1cf" stroke="#173241" stroke-width="2"/>
+    <text x="250" y="278" font-size="17" font-weight="700">API</text>
+
+    <rect x="80" y="340" width="340" height="120" rx="12" fill="#f3d9d0" stroke="#b5503a" stroke-width="2"/>
+    <text x="250" y="376" font-size="16" font-weight="700" fill="#8a3524">One XSS bug or bad npm package</text>
+    <text x="250" y="402" font-size="14" fill="#8a3524">runs localStorage.getItem('token')</text>
+    <text x="250" y="426" font-size="14" fill="#8a3524">and sends the credentials away</text>
+
+    <rect x="580" y="86" width="340" height="86" rx="12" fill="#e8e1cf" stroke="#173241" stroke-width="2"/>
+    <text x="750" y="122" font-size="17" font-weight="700">Browser SPA</text>
+    <text x="750" y="148" font-size="14" fill="#4a5560">holds only an HttpOnly cookie</text>
+
+    <path d="M750 172 V210" stroke="#173241" stroke-width="3" fill="none"/>
+    <path d="M740 200 L750 212 L760 200" stroke="#173241" stroke-width="3" fill="none"/>
+
+    <rect x="580" y="214" width="340" height="86" rx="12" fill="#bfe2d6" stroke="#2f6f63" stroke-width="2"/>
+    <text x="750" y="250" font-size="17" font-weight="700">BFF (server)</text>
+    <text x="750" y="276" font-size="14" fill="#2f4f48">keeps tokens, calls the API</text>
+
+    <path d="M750 300 V330" stroke="#173241" stroke-width="3" fill="none"/>
+    <path d="M740 320 L750 332 L760 320" stroke="#173241" stroke-width="3" fill="none"/>
+
+    <rect x="580" y="334" width="340" height="70" rx="12" fill="#e8e1cf" stroke="#173241" stroke-width="2"/>
+    <text x="750" y="376" font-size="17" font-weight="700">API</text>
+
+    <text x="750" y="440" font-size="14" fill="#2f4f48">Script in the page cannot read the credential.</text>
+    <text x="750" y="462" font-size="14" fill="#2f4f48">The cost: you now run and secure a server.</text>
+  </g>
+  <path d="M500 76 V480" stroke="#bdb59f" stroke-width="2" stroke-dasharray="6 8"/>
+</svg>
