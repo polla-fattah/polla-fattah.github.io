@@ -6,4 +6,5 @@ date: 2026-03-01
 featured: true
 external_url: "https://polla.dev/frontend-book/"
 cover: "/img/academy/books/frontend-book.png"
+post: "2026-10-02-modern-front-end-engineering"
 ---

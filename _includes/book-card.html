@@ -1,8 +1,21 @@
-<a class="card-item card-item--link book-card book-card--featured" href="{{ include.book.external_url }}" target="_blank" rel="noopener noreferrer">
-  <div class="card-image book-card__cover">
+{% assign book_post = nil %}
+{% if include.book.post %}
+  {% for candidate in site.posts %}
+    {% if candidate.path contains include.book.post %}
+      {% assign book_post = candidate %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
+<div class="card-item book-card book-card--featured">
+  <a class="card-image book-card__cover" href="{{ include.book.external_url }}" target="_blank" rel="noopener noreferrer">
     <img src="{{ include.book.cover | relative_url }}" alt="Front cover of {{ include.book.title }}">
-  </div>
+  </a>
   <div class="card-content">
-    <div class="card-footer">Read the book <i class="fas fa-arrow-right"></i></div>
+    <div class="card-footer card-footer--split">
+      <a class="card-link" href="{{ include.book.external_url }}" target="_blank" rel="noopener noreferrer">Read the book</a>
+      {% if book_post %}
+      <a class="card-link" href="{{ book_post.url | relative_url }}">Chapter tour</a>
+      {% endif %}
+    </div>
   </div>
-</a>
+</div>

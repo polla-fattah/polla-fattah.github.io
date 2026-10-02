@@ -6,4 +6,5 @@ date: 2026-02-01
 featured: true
 external_url: "https://polla.dev/data2thesis_r/"
 cover: "/img/academy/books/data2thesis.png"
+post: "2026-10-01-from-data-to-thesis"
 ---
