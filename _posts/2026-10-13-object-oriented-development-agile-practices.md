@@ -3,15 +3,15 @@ layout: post
 title: "Designing Software That Can Change"
 subtitle: "A chapter-by-chapter tour of Object Oriented Development and Agile Practices"
 excerpt: "A tour of my book Object Oriented Development and Agile Practices, from object-oriented foundations and SOLID to testing, refactoring, flow metrics, continuous delivery, and responsible AI assistance."
-date: 2026-10-14 10:00:00 +0300
-background: "https://polla.dev/ood-agile-book/images/front-image.png"
+date: 2026-10-13 10:00:00 +0300
+background: '/img/posts/2026-10-13-object-oriented-development-agile-practices/banner.png'
 categories: ["Books", "Software Engineering", "Object-Oriented Design", "Agile"]
 author: "Polla Fattah"
 usemathjax: false
 project_url: "https://polla.dev/ood-agile-book/"
 ---
 
-{% include image.html url="https://polla.dev/ood-agile-book/images/front-image.png" description="Cover of Object Oriented Development and Agile Practices: Designing, Testing and Evolving Software with AI Assistance" %}
+{% include image.html url="/img/posts/2026-10-13-object-oriented-development-agile-practices/cover.png" description="Cover of Object Oriented Development and Agile Practices: Designing, Testing and Evolving Software with AI Assistance" %}
 
 Many software engineering books begin with language syntax and end with a collection of patterns. *Object Oriented Development and Agile Practices* begins with a different question: *how do we design software that can keep changing without becoming harder to understand?* The answer is a connected practice of object-oriented design, automated testing, refactoring, and short feedback loops.
 
