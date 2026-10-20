@@ -1,8 +1,8 @@
 ---
 layout: research
-title: "ASR (Automatic Speech Recognition)"
-subtitle: "Building systems to convert Kurdish speech to text using modern neural network architectures"
-date: 2023-04-01
+title: "Kurdish Automatic Speech Recognition (ASR)"
+subtitle: "Kurdish speech datasets, speech-to-text models, and dialect-aware recognition"
+date: 2026-04-01
 category: "Kurdish Language Research"
 status: "ongoing"
 background: "/img/backgrounds/academy-bg.jpg"

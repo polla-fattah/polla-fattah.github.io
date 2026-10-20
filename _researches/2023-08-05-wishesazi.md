@@ -1,8 +1,8 @@
 ---
 layout: research
-title: "Wishesazi (Word Creation)"
-subtitle: "Developing systematic approaches for creating new technical and scientific terms in Kurdish using fuzzy logic"
-date: 2023-08-05
+title: "Kurdish Scientific Terminology Standardization (Zarawesaz)"
+subtitle: "Scientific terminology development, expert voting and consensus, lexical standardization, and convergence between Kurdish dialects"
+date: 2025-06-15
 category: "Kurdish Language Research"
 status: "ongoing"
 background: "/img/backgrounds/academy-bg.jpg"

@@ -1,8 +1,8 @@
 ---
 layout: research
-title: "Corpus Development"
-subtitle: "Building comprehensive text collections and language databases for Kurdish NLP research"
-date: 2023-07-20
+title: "Kurdish Corpus Development and NLP Preprocessing Tools"
+subtitle: "Corpus compilation, text normalization, tokenization, data cleaning, and reusable Kurdish NLP resources"
+date: 2024-09-01
 category: "Kurdish Language Research"
 status: "ongoing"
 background: "/img/backgrounds/academy-bg.jpg"
@@ -15,6 +15,7 @@ permalink: /academy/research/corpus-development/
 students: ["fanar"]  # Student IDs (lowercase, no spaces)
 publications:
   - "improving-kurdish-web-mining-tree-data-structure-porters-stemmer"
+  - "comprehensive-review-sentiment-analysis-kurdish-social-media"
 ---
 
 <p>Corpus development for Kurdish language involves creating large-scale, annotated text collections that serve as the foundation for various natural language processing applications and linguistic research.</p>

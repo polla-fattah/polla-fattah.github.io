@@ -1,8 +1,8 @@
 ---
 layout: research
-title: "TTS (Text-to-Speech)"
-subtitle: "Creating natural-sounding speech synthesis systems for Kurdish language"
-date: 2023-03-20
+title: "Kurdish Text-to-Speech Synthesis (TTS)"
+subtitle: "Speech synthesis, Kurdish pronunciation resources, and natural-sounding voice generation"
+date: 2024-04-15
 category: "Kurdish Language Research"
 status: "ongoing"
 background: "/img/backgrounds/academy-bg.jpg"

@@ -1,10 +1,10 @@
 ---
 layout: research
-title: "OCR (Optical Character Recognition)"
-subtitle: "Developing systems to digitize and recognize Kurdish text from printed documents, handwritten text, and digital images"
-date: 2023-01-15
+title: "Kurdish Handwritten and Printed Text Recognition (OCR)"
+subtitle: "Handwritten Sorani recognition, printed text OCR, image preprocessing, line segmentation, and deep learning models such as TrOCR"
+date: 2024-04-01
 category: "Kurdish Language Research"
-status: "completed"
+status: "ongoing"
 background: "/img/backgrounds/academy-bg.jpg"
 permalink: /academy/research/kurdish-ocr/
 
@@ -18,6 +18,7 @@ publications:
   - "kurdish-handwritten-character-recognition-deep-learning-techniques"
   - "extensive-dataset-handwritten-central-kurdish-characters"
   - "advancing-offline-handwritten-text-recognition-data-augmentation-generation-techniques"
+  - "kurdish-handwritten-word-recognition-crnn-multi-backbone"
 ---
 
 <p>Optical Character Recognition (OCR) for Kurdish language represents a significant advancement in digitizing Kurdish textual content. This research focuses on developing robust systems capable of accurately recognizing and converting Kurdish text from various sources including printed documents, handwritten materials, and digital images.</p>

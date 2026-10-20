@@ -1,8 +1,8 @@
 ---
 layout: research
-title: "Spell Checking"
-subtitle: "Creating intelligent tools to detect and correct spelling errors in Kurdish text"
-date: 2023-06-10
+title: "Kurdish Spelling Correction and Orthographic Standardization"
+subtitle: "Spelling error detection, automatic correction, orthographic consistency, and normalization across Kurdish texts"
+date: 2025-09-15
 category: "Kurdish Language Research"
 status: "ongoing"
 background: "/img/backgrounds/academy-bg.jpg"

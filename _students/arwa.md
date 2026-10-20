@@ -11,6 +11,9 @@ status: "Completed"
 supervisor: "Dr. Polla Fattah"
 research_area: "Time Series Data Analysis of Displaced People"
 permalink: /student/arwa
+publications:
+  - "advancing-offline-handwritten-text-recognition-data-augmentation-generation-techniques"
+  - "framework-integration-blockchain-healthcare-records-kurdistan"
 ---
 
 

@@ -16,6 +16,7 @@ students: ["alaa"]  # Student IDs (lowercase, no spaces)
 publications:
   - "age-gender-estimation-skeletal-radiographs-deep-learning"
   - "multi-factor-classification-deep-learning-xray-images"
+  - "framework-integration-blockchain-healthcare-records-kurdistan"
 ---
 
 <p>General medical research encompasses a broad range of computational approaches applied to various medical domains, including genetic analysis, disease prediction, and healthcare data analytics.</p>

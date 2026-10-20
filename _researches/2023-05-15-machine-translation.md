@@ -1,8 +1,8 @@
 ---
 layout: research
-title: "Machine Translation"
-subtitle: "Developing translation systems between Kurdish and other languages using tokenization-free approaches"
-date: 2023-05-15
+title: "Low-Resource Neural Machine Translation (Kurdish–English)"
+subtitle: "Neural machine translation between Kurdish and English using limited parallel corpora and tokenization-free architectures"
+date: 2025-06-01
 category: "Kurdish Language Research"
 status: "completed"
 background: "/img/backgrounds/academy-bg.jpg"

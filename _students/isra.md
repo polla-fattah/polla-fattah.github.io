@@ -13,6 +13,7 @@ research_area: "Handwritten OCR (Optical Character Recognition) for Kurdish Lang
 permalink: /student/isra
 publications:
   - "kurdish-handwritten-character-recognition-deep-learning"
+  - "kurdish-handwritten-word-recognition-crnn-multi-backbone"
 ---
 
 

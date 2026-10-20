@@ -63,6 +63,28 @@ permalink: /academy/cv/
     </div>
     {% endfor %}
 
+    <h1 class="cvh1">Books</h1>
+    {% assign sorted_books = site.books | sort: 'date' | reverse %}
+    {% for b in sorted_books %}
+    <div class="element hang">
+      <strong>Polla Fattah;</strong>
+      "{{ b.title }}{% if b.subtitle %}: {{ b.subtitle }}{% endif %}";
+      {% if b.external_url %}<a href="{{ b.external_url }}" target="_blank" rel="noopener noreferrer">{{ b.external_url }}</a>;{% endif %}
+      <em>{{ b.date | date: '%Y' }}</em>
+    </div>
+    {% endfor %}
+
+    <h1 class="cvh1">Research Projects</h1>
+    {% assign sorted_researches = site.researches | sort: 'date' | reverse %}
+    {% for r in sorted_researches %}
+    <div class="element hang">
+      <strong>{{ r.date | date: '%Y' }}: </strong>
+      "{{ r.title }} &mdash; {{ r.subtitle }}";
+      {% if r.permalink %}<a href="{{ r.permalink | relative_url }}" target="_blank">Project Details</a>;{% endif %}
+      <em>Status: {{ r.status | capitalize }}</em>
+    </div>
+    {% endfor %}
+
     <h1 class="cvh1">Publications</h1>
     {% for e in site.publications reversed %}
     <div class="element hang">

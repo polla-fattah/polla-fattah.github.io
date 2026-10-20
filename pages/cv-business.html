@@ -74,6 +74,21 @@ permalink: /business/cv/
       </dd>
       <dd class="clear"></dd>
 
+      <dt>Books</dt>
+      <dd>
+        {% assign sorted_books = site.books | sort: 'date' | reverse %}
+        {% for b in sorted_books %}
+        <div class="d-flex mb-2">
+          <strong class="flex-shrink-0" style="width: 100px;">{{ b.date | date: "%Y" }}:</strong>
+          <div>
+            <strong>{{ b.title }}</strong>{% if b.subtitle %} &mdash; <em>{{ b.subtitle }}</em>{% endif %}
+            {% if b.external_url %} &middot; <a href="{{ b.external_url }}" target="_blank" rel="noopener noreferrer">View online</a>{% endif %}
+          </div>
+        </div>
+        {% endfor %}
+      </dd>
+      <dd class="clear"></dd>
+
       <dt>Projects</dt>
       <dd>
         {% for e in site.projects reversed %}
