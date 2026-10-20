@@ -3,7 +3,7 @@ layout: student
 title: "Fanar Rofoo"
 name: "fanar"
 level: "PhD"
-university: ""
+university: "Salahaddin University-Erbil"
 subject: "Kurdish Sentiment Analysis"
 start_date: 
 end_date: 
