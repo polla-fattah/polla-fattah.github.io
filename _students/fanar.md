@@ -5,8 +5,8 @@ name: "fanar"
 level: "PhD"
 university: "Salahaddin University-Erbil"
 subject: "Kurdish Sentiment Analysis"
-start_date: 
-end_date: 
+start_date: 2023
+end_date: 2026
 status: "Completed"
 supervisor: "Dr. Polla Fattah"
 research_area: "Sentiment Analysis for Central Kurdish (Sorani) Social Media Texts"
