@@ -15,8 +15,8 @@ link: ""
 # 1. When adding a student author, add their student ID here
 # 2. When this publication comes from a research project, add the project ID here
 # 3. Update the corresponding student/research files with this publication ID
-students: []
-research_projects: ["2023-07-20-corpus-development"]
+students: ["fanar"]
+research_projects: ["2025-09-01-kurdish-sentiment-analysis"]
 abstract: |
   This paper provides a comprehensive review of sentiment analysis (opinion mining) approaches and challenges in Kurdish social media texts. It systematically explores lexicon-based, machine learning, and deep learning architectures tailored for low-resource languages, addressing Kurdish dialectal variations (Sorani, Kurmanji), dual script systems (Arabic-based and Latin-based), data scarcity, and informal short-text preprocessing on digital platforms.
 ---

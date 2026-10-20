@@ -20,7 +20,7 @@ publications: []
 
 <h2 class="section-heading">Research Approach</h2>
 
-<p>The research investigates transformer-based language representations—including Kurdish-adapted BERT and sequence-to-sequence models—to handle Kurdish sentence structures and generate coherent summaries.</p>
+<p>The research investigates transformer-based language representations, including Kurdish-adapted BERT and sequence-to-sequence models, to handle Kurdish sentence structures and generate coherent summaries.</p>
 
 <h3>Key Features</h3>
 <ul>
