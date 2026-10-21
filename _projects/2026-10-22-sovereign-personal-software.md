@@ -3,7 +3,7 @@ layout: project
 title: "Sovereign Personal Software"
 organization: "Personal"
 description: "An open manifesto for software that people own, with an interactive seven-gate evaluator, an index of example tools, and recipes for leaving cloud services."
-date: 2026-10-22
+date: 2026-10-22 00:30:00 +0300
 background: "/img/business/projects/sovereign-personal-software.webp"
 category: website # application, webapp, website,
 my-role: "Author / Designer / Developer"
