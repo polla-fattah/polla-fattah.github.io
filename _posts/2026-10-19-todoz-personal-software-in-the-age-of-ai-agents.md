@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "ToDoz and the Rise of Personal Software"
-subtitle: "When AI makes code cheaper, software ownership and engineering judgment become more important"
-excerpt: "Why I built ToDoz, a local-first, self-hosted task manager, and what it says about a future where AI agents make personalised software affordable."
+subtitle: "ToDoz is sovereign software in practice: built with AI to lower the cost of development, not to add weight to the product"
+excerpt: "Why I built ToDoz to embody the principles of sovereign personal software, and how AI lowered the cost of building it without adding AI to the product."
 date: 2026-10-19 10:00:00 +0300
 background: '/img/posts/2026-10-19-todoz-personal-software-in-the-age-of-ai-agents/banner.webp'
 categories: ["Software Engineering", "AI", "Open Source", "Productivity"]
@@ -23,17 +23,19 @@ But AI coding agents are changing the economics of software development. A singl
 
 That question led me to build [ToDoz](https://todoz.polla.dev/).
 
-## Why I Built ToDoz
+## Why ToDoz Exists
 
-I wanted a straightforward task manager that worked according to my preferences: fast, offline-first, predictable, and under my control. I wanted my tasks available without an internet connection, synchronization through infrastructure I could operate myself, and no unnecessary dependence on subscriptions or AI services.
+I built ToDoz to put a set of ideas into practice. I believe software should keep working without a network, store my data in formats I control, behave predictably, and stay small enough to understand. Those ideas are the principles of [Sovereign Personal Software]({% post_url 2026-10-22-a-manifesto-for-sovereign-personal-software %}), and ToDoz is the application I built to test whether they could survive contact with a real product.
 
-With the assistance of AI coding agents, I developed ToDoz, an open-source task manager built using Flutter, SQLite, and a lightweight self-hosted synchronization service. It provides familiar features, including projects, subtasks, priorities, recurring tasks, reminders, filters, and multiple views. But ToDoz is not an attempt to outperform established productivity applications.
+So the requirements came from the philosophy: my tasks available without an internet connection, synchronization through infrastructure I can operate myself, and no dependence on subscriptions or AI services.
 
-**It is an experiment in building software around an individual's needs rather than adapting those needs to a commercial product.**
+ToDoz is an open-source task manager built with Flutter, SQLite, and a lightweight self-hosted synchronization service. It provides familiar features, including projects, subtasks, priorities, recurring tasks, reminders, filters, and multiple views. But it is not an attempt to outperform established productivity applications.
 
-## The Philosophy Behind ToDoz
+**It is an attempt to show that software can respect its owner and still be useful.**
 
-The application follows six principles that guide both its architecture and its boundaries.
+## The Philosophy ToDoz Is Built On
+
+The application follows six principles that guide both its architecture and its boundaries. I first wrote them down as [The ToDoz Philosophy](https://todoz.polla.dev/philosophy), and the standalone [manifesto]({% post_url 2026-10-22-a-manifesto-for-sovereign-personal-software %}) states them independently of any single application.
 
 **1. Sovereignty: Your data belongs to you.**
 
@@ -63,9 +65,15 @@ Software comes and goes, but personal records may remain valuable for decades. W
 
 These principles are more important than the technologies currently implementing them.
 
-## AI Can Write Code, but Engineering Still Matters
+## AI in the Build, Not in the Product
 
-One of the interesting aspects of ToDoz is that AI helped build an application deliberately designed not to depend on AI for its essential operations. I see no contradiction in that.
+AI coding agents lowered the cost of building ToDoz. They did not change what ToDoz is. The application contains no AI in its essential operations: recurring schedules, reminders, and filters run on deterministic, testable rules, and everything works with every AI service switched off.
+
+That separation matters. Used inside a product, AI adds dependencies, unpredictable behavior, and running costs. Used to build the product, it reduces development effort and leaves the software lighter. **I used AI to make ToDoz cheaper to build, not heavier to run.**
+
+Cheap code also tempts developers to add features, and features are where bloat begins. The ability to add a feature is never sufficient reason to add it. For ToDoz, deciding what the application should *not* do was as important as deciding what it should do.
+
+## Engineering Still Matters
 
 AI coding agents can accelerate implementation, generate interfaces, develop database schemas, and assist with testing. But they can also produce plausible code containing subtle defects. Synchronization, recurring schedules, authentication, and data recovery all involve engineering decisions that cannot be validated merely because generated code compiles or appears to work.
 
@@ -74,8 +82,6 @@ This experience reinforced an idea I have been considering for some time:
 **When code becomes cheaper to produce, the ability to make sound engineering decisions becomes more valuable.**
 
 The challenge increasingly shifts from writing every line of code to defining requirements, selecting architectures, evaluating trade-offs, and verifying correctness.
-
-For ToDoz, deciding what the application should *not* do was often as important as deciding what it should do.
 
 ## Independence Comes With Responsibility
 
@@ -101,7 +107,7 @@ Perhaps the defining engineering skill of the AI era will not be how quickly som
 
 I do not claim ToDoz is better than Todoist or any other established application. For many users, it will not be. Its significance to me is different.
 
-It represents the possibility of developing software around personal requirements while preserving ownership, predictability, simplicity, and control. AI made its development more practical. Software engineering principles made it worth developing carefully. Perhaps the most important consequence of AI-assisted development is not that we will produce more software, but that more people will be able to shape the software they use.
+It is a working demonstration that the principles can be implemented in a real application, and that AI can lower the cost of building such software without adding weight to it. AI made its development practical. The principles made it worth developing carefully. Perhaps the most important consequence of AI-assisted development is not that we will produce more software, but that more people will be able to shape the software they use.
 
 **Software no longer always needs a large market to justify its existence. Sometimes, one person with a sufficiently clear idea is enough.**
 
@@ -109,4 +115,4 @@ It represents the possibility of developing software around personal requirement
 
 *ToDoz is an open-source, AI-assisted personal task manager.*
 
-[Explore ToDoz](https://todoz.polla.dev/) · [Source Code](https://github.com/polla-fattah/ToDoz) · [The ToDoz Philosophy](https://todoz.polla.dev/philosophy)
+[Explore ToDoz](https://todoz.polla.dev/) · [Source Code](https://github.com/polla-fattah/ToDoz) · [The ToDoz Philosophy](https://todoz.polla.dev/philosophy) · [Sovereign Personal Software](https://sovereign.polla.dev/)
