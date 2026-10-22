@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "A Manifesto for Sovereign Personal Software"
-subtitle: "Six principles, seven tests, and a way to ask whether software respects the person who uses it"
-excerpt: "ToDoz was built to embody a set of principles. Here they are as a standalone manifesto, with an evaluator, an index of example tools, and recipes for leaving cloud services."
+subtitle: "Four foundational principles, an intellectual lineage across ten computing traditions, and an evidence-led methodology for asking whether software leaves authority with the user"
+excerpt: "ToDoz was built to test an idea in one domain. Here is the full philosophy and evaluation framework behind it: four foundational principles, ten intellectual lineages, five non-compensatory requirements, an index of well-behaved tools, and verifiable migration runbooks."
 date: 2026-10-22 00:30:00 +0300
 background: '/img/posts/2026-10-22-a-manifesto-for-sovereign-personal-software/banner.webp'
 categories: ["Software Engineering", "AI", "Open Source"]
@@ -11,63 +11,75 @@ usemathjax: false
 project_url: "https://sovereign.polla.dev/"
 ---
 
-I built [ToDoz]({% post_url 2026-10-19-todoz-personal-software-in-the-age-of-ai-agents %}) deliberately to embody a set of principles. I first wrote them down as the ToDoz Philosophy, but they have very little to do with task management.
+I built [ToDoz]({% post_url 2026-10-19-todoz-personal-software-in-the-age-of-ai-agents %}) deliberately to test a set of engineering convictions in a real application. While writing down the philosophy behind it, it became clear that the central problem has very little to do with task management alone.
 
-They describe how any application should treat the person who depends on it.
+It is about who holds effective authority over the software and records we depend on every day, and what happens to our work when a vendor, subscription, network service, or fashionable technology changes or disappears.
 
-So I published them as a standalone document: **[A Manifesto for Sovereign Personal Software](https://sovereign.polla.dev/).**
+So I separated the general philosophy and its verification rules from ToDoz and published them as a standalone work: **[A Manifesto for Sovereign Personal Software](https://sovereign.polla.dev/).**
 
-## From One Application to a Standard
+## From One Application to an Architecture-Neutral Framework
 
-ToDoz is the proof of concept: one application built to follow the principles, with AI used to lower the cost of building it rather than to add weight to the product. The manifesto states the principles independently of any application, so that they can be applied, and challenged, elsewhere.
+When I built ToDoz, I started with six product-level rules tailored to a fast, local task manager: sovereignty, locality, predictability, responsiveness, focused interoperability, and longevity.
 
-The six principles are the ones behind ToDoz: sovereignty, locality, predictability, responsiveness, focused interoperability, and longevity. The manifesto expands each of them, adds sections on architecture, AI without dependency, and synchronization, and lists what sovereign software refuses to become.
+Stepping back from a single application forced a cleaner distinction between **foundational philosophical principles** and **supporting engineering qualities**. A complex scientific tool or a parametric CAD system like FreeCAD or QGIS is not less sovereign because a heavy geometry rebuild takes longer than 100 milliseconds, or because it integrates many functions inside one workbench rather than splitting them into small UNIX-style programs. Similarly, deterministic execution is a vital engineering mechanism for ledgers and schedules, but the deeper principle is that consequential behavior remains transparent and governable by the user.
 
-Its central claim is short: **your data belongs to you, and your tools should remain useful without depending on someone else's infrastructure.**
+The manifesto therefore distills the philosophy into **four foundational principles**, in a deliberate conceptual order:
 
-## Seven Tests
+1. **Sovereignty: Authority belongs to the user.** Users retain practical, not merely contractual, control over their records, essential capabilities, cryptographic keys, and ability to leave or replace providers.
+2. **Longevity: Information outlives software.** Records and intellectual work remain accessible, interpretable, and recoverable across three dimensions: *data longevity* (bytes and metadata), *functional longevity* (continuing workflows in independent tools), and *knowledge longevity* (documented schemas, units, and provenance).
+3. **Locality: Independence is designed in.** Capabilities that can reasonably execute on user-controlled hardware do not depend on continuous remote permission. Where network services are inherent to the task, they are judged by *dependency proportionality and replaceability*.
+4. **Transparency and Control: Consequential behavior remains governable.** Users can understand, inspect, authorize, and reverse or contest significant actions taken on their behalf, whether by deterministic code, synchronization engines, or statistical AI models.
 
-Principles are easy to agree with and hard to apply. So the manifesto turns them into seven questions that any application, or any architectural decision, can be asked:
+The order expresses a relationship rather than a numerical ranking: **Sovereignty defines the goal; Longevity protects it across time; Locality provides a primary means of independence; Transparency and Control make authority meaningful in operation.**
 
-1. **The Offline Test (Air-Gap):** does primary functionality work with the network disabled?
-2. **The 100ms Test:** do common local interactions respond within 100 milliseconds?
-3. **The Longevity Test:** can users recover their raw data with standard tools if the application disappears?
-4. **The Responsibility Test:** does this capability belong in this tool, or in a separate one?
-5. **The Dependency Test:** does this avoid mandatory accounts, fragile dependency trees, and subscriptions?
-6. **The Predictability Test:** are state transitions specified, reproducible, and testable?
-7. **The Recovery and Security Test:** can users verify their backups and recover from failure?
+> *Software should serve people without claiming permanent custody over their information, choices, or work.*
 
-The site includes an interactive evaluator, so you can score a tool yourself and copy the result as a Markdown report. It also generates a pull request checklist from the same seven gates.
+## What This Builds On: Ten Intellectual Traditions
+
+None of these concerns began in a vacuum. Rather than claiming to invent user autonomy from scratch, the site includes a dedicated **[Intellectual Lineage](/lineage/)** section ([sovereign.polla.dev/lineage](https://sovereign.polla.dev/lineage/)) with ten in-depth dossiers examining how Sovereign Software builds on, and where it deliberately diverges from, four decades of prior movements:
+
+1. **Free Software (1983–Present):** Shares the commitment to user freedom, while distinguishing *operational independence* (when portable data and independent tools suffice) from cases where an irreplaceable application binary makes open source essential for functional longevity.
+2. **Digital Preservation & OAIS (1995–Present):** Adopts the standard that preserved information must remain *independently understandable*, extending it from static post-hoc archives to active software evaluation.
+3. **Interoperability & the Right to Exit (2000s–Present):** Moves from regulatory policy to concrete empirical exit verification.
+4. **IndieWeb (2010–Present):** Extends self-owned publishing principles beyond personal websites to scientific, engineering, and financial workspaces.
+5. **MyData (2014–Present):** Shifts focus from institutional personal data held by banks and hospitals to the primary custody of authored intellectual work.
+6. **Solid (2016–Present):** Evaluates practical outcomes rather than mandating a single RDF/Linked Data pod protocol.
+7. **Design Justice (2016–Present):** Recognizes that "the user" is not monolithic in multi-user and institutional software, introducing explicit **perspective roles** (*Individual User*, *Project Contributor*, *Workspace Collaborator*, and *Institutional Custodian*) so accountable shared governance is not confused with vendor lock-in.
+8. **Local-First Software (2019–Present):** Builds directly on Kleppmann et al.'s seven ideals, while remaining architecture-neutral beyond CRDTs and separating UI latency targets from core eligibility.
+9. **Permacomputing (2020–Present):** Values computational thrifty resilience while accommodating heavy scientific, engineering, and media domains.
+10. **AI Governance & NIST AI RMF (2021–Present):** Translates high-level AI trustworthiness principles into concrete boundaries against AI-induced custody traps and silent external dependencies.
+
+## Evidence Before Any Numerical Score: How Software Is Evaluated
+
+An early temptation in software evaluation is to assign percentage weights and compute a single score out of 100. The problem with weighted arithmetic is that it is compensatory: a fast, polished application could fail data export completely and still pass with a high numerical score.
+
+The **[Methodology](https://sovereign.polla.dev/methodology/)** therefore rejects arbitrary weights and tier badges in favor of a falsifiable, **non-compensatory assessment**:
+
+- **Five Domain Preservation Profiles:** Before testing, an assessment declares its baseline domain profile (`vcs_core`, `knowledge_notes`, `cad_engineering`, `finance_tasks`, or `research_bibliographic`) so that what counts as "essential records", "essential capabilities", and "acceptable loss on exit" is fixed up front.
+- **Five Fundamental Eligibility Requirements (`E1–E5`):** Independent access to essential records (`E1`), practicable exit and migration (`E2`), independent interpretation and recovery after provider withdrawal (`E3`), continuing authority and custody over already-created work without revocable permission (`E4`), and governability of consequential actions (`E5`). A verified failure on any of these five requirements cannot be offset by strengths elsewhere.
+- **Seven Engineering Verification Procedures (`T1–T7`) and a Six-Stage Lab Protocol:** Hands-on tests covering ownership and exit (`T1`), clean-machine backup and restoration (`T2`), isolated network-cutout simulation (`T3`), operational transparency (`T4`), security and custody boundaries (`T5`), interoperability and maintainability (`T6`), and human experience (`T7` as supporting quality).
+- **Deterministic Precedence:** From the recorded evidence and confidence levels, the framework computes one of five qualified determinations: *Fails a fundamental requirement*, *Insufficient evidence*, *Does not meet the proposed core standard*, *Partially aligned*, or *Meets the proposed core requirements*.
 
 ## What Is on the Site
 
-- **The manifesto,** with a reading and print edition and a downloadable Markdown file.
-- **An index of example tools** that fit the principles, from Git and SQLite to Beancount and KiCad, with the data format each one uses.
-- **The 7-gate evaluator,** described above.
-- **Escape hatches,** short recipes for moving data out of cloud services into plain, durable files.
-
-The ratings in the index are my own editorial judgments, not formal audits. The recipes are starting points, and you should test them against your own data before relying on them.
+- **[The Manifesto](https://sovereign.polla.dev/)**, along with a clean **[Reading & Print Edition](https://sovereign.polla.dev/read/)**, a downloadable Markdown file (`sovereign-software-manifesto.md`), and a self-hosted **[Presentation Deck](https://sovereign.polla.dev/slides/)**.
+- **[The Intellectual Lineage](https://sovereign.polla.dev/lineage/)**, with ten detailed movement dossiers ordered chronologically from 1983 to the present.
+- **[The Evaluation Methodology](https://sovereign.polla.dev/methodology/)** (`sovereign-software-methodology.md`), specifying the domain profiles, decision thresholds, six-stage laboratory protocol, two-assessor reconciliation rules, and worked examples.
+- **[The Sovereign Index](https://sovereign.polla.dev/directory/)**, cataloging well-known reference tools across six disciplines—such as **Git**, **Jujutsu**, and **SQLite** in core infrastructure; **Obsidian**, **Logseq**, **Org-mode**, and **Typst** in knowledge work; **Beancount**, **hledger**, **KeePassXC**, and **Pass** in finance and custody; **Zotero**, **Paperless-ngx**, and **calibre** in research; **KiCad**, **FreeCAD**, and **OpenSCAD** in engineering; and **Syncthing**, **restic**, **BorgBackup**, **NixOS**, and **GNU Guix** in systems and recovery—each with its storage substrate, extraction command, and empirical verification plan.
+- **[Escape Hatches](https://sovereign.polla.dev/escape-hatches/)**, providing four-stage migration runbooks (*Extract &rarr; Audit Completeness &rarr; Normalize into a Durable Substrate &rarr; Cut Over & Freeze*) for moving work out of cloud silos across all six domains, with explicit caveats on what metadata or workflow state is lost during migration.
 
 ## The Site Follows Its Own Rules
 
-A manifesto about independence should not depend on other people's servers, so the site loads nothing from third parties. The fonts and styles are hosted with the site, there are no trackers or cookies, and only two pages use any JavaScript at all.
-
-The response-time figures in the manifesto come from long-standing usability research, and the references are listed on the page. I describe them as practical guidelines rather than laws, because they apply best to direct interaction. A CAD model that takes seconds to rebuild is not necessarily a failure, as long as the interface stays responsive and the user can cancel.
-
-## An Opinion, Not a Standard
-
-I want to be clear about what this is. It is a position, supported by experience and by the sources I cite. It is not an official standard, and the tests are an aid to judgment, not a certification.
-
-If you disagree with a principle, find an error, or know a tool that belongs in the index, the source is open and I would like to hear from you.
+A site arguing for software independence should practice what it preaches. It is built as a static Hugo site that makes **zero third-party network requests**: all fonts and stylesheets are self-hosted, there are no analytics scripts, cookies, or external embeds, and JavaScript runs only on the Sovereign Index pages to filter entries and compute determinations directly in the browser. Automated tests verify cross-file consistency, run the methodology's worked examples through the evaluation engine, and scan the generated HTML to guarantee that no external requests slip in.
 
 ## Final Thoughts
 
-AI is making it cheaper to write software. That makes the question of what software should do for its owner more important, not less.
+AI is making software faster to produce, while cloud platforms are making user custody easier to surrender. That makes the question of authority more urgent, not less:
 
-**Applications are temporary. Human information deserves a longer life.**
+**When the software, vendor, network, or fashionable technology changes, does the person still retain meaningful control over their work?**
 
 ---
 
-*Sovereign Personal Software is an open manifesto, released under CC BY 4.0.*
+*Sovereign Personal Software is an open manifesto and evaluation framework, released under CC BY 4.0.*
 
-[Read the Manifesto](https://sovereign.polla.dev/) · [Reading Edition](https://sovereign.polla.dev/read/) · [Source Code](https://github.com/polla-fattah/sovereign-software)
+[Read the Manifesto](https://sovereign.polla.dev/) · [Methodology](https://sovereign.polla.dev/methodology/) · [Lineage](https://sovereign.polla.dev/lineage/) · [Sovereign Index](https://sovereign.polla.dev/directory/) · [Escape Hatches](https://sovereign.polla.dev/escape-hatches/) · [Slides](https://sovereign.polla.dev/slides/) · [Source Code](https://github.com/polla-fattah/sovereign-software)
