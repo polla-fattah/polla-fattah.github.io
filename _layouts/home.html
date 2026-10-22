@@ -33,7 +33,7 @@ layout: default
         {% for post in site.posts limit: 3 %}
         <div class="blog-card {% cycle '', 'alt' %}">
           <div class="meta">
-            <div class="photo" style="background-image: url({{ post.background }})"></div>
+            <div class="photo" style="background-image: url({{ post.background }}); background-position: {{ post.background_position | default: 'center center' }}"></div>
           </div>
           <div class="description">
             <h1>{{ post.title }}</h1>
