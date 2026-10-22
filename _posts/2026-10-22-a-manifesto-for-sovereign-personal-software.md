@@ -4,7 +4,7 @@ title: "A Manifesto for Sovereign Personal Software"
 subtitle: "Four foundational principles, an intellectual lineage across ten computing traditions, and an evidence-led methodology for asking whether software leaves authority with the user"
 excerpt: "ToDoz was built to test an idea in one domain. Here is the full philosophy and evaluation framework behind it: four foundational principles, ten intellectual lineages, five non-compensatory requirements, an index of well-behaved tools, and verifiable migration runbooks."
 date: 2026-10-22 00:30:00 +0300
-background: '/img/posts/2026-10-22-a-manifesto-for-sovereign-personal-software/banner.webp'
+background: '/img/posts/2026-10-22-a-manifesto-for-sovereign-personal-software/banner.webp?v=2'
 categories: ["Software Engineering", "AI", "Open Source"]
 author: "Polla Fattah"
 usemathjax: false

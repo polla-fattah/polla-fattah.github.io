@@ -4,7 +4,7 @@ title: "Sovereign Personal Software"
 organization: "Personal"
 description: "An open manifesto and evidence-led evaluation framework for software that remains under human authority, with ten intellectual lineage dossiers, an index of reference tools, and verifiable cloud-exit runbooks."
 date: 2026-10-22 00:30:00 +0300
-background: "/img/business/projects/sovereign-personal-software.webp"
+background: "/img/business/projects/sovereign-personal-software.webp?v=2"
 category: website # application, webapp, website,
 my-role: "Author / Designer / Developer"
 source: "https://github.com/polla-fattah/sovereign-software"
