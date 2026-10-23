@@ -120,7 +120,7 @@ permalink: /academy/
       </div>
 
       <div class="grid-layout rows-3 book-grid">
-        {% assign selected_books = site.books | where: 'featured', true %}
+        {% assign selected_books = site.books | where: 'featured', true | sort: 'date' | reverse %}
         {% for book in selected_books limit:3 %}
         {% include book-card.html book=book %}
         {% endfor %}
