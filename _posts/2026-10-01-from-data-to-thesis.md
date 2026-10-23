@@ -4,14 +4,14 @@ title: "Inside From Data to Thesis"
 subtitle: "A chapter-by-chapter tour of my R book for non-technical researchers"
 excerpt: "A tour of the nineteen chapters of my book From Data to Thesis, with figures from the book showing the ideas that make a thesis defensible."
 date: 2026-10-01 10:00:00 +0300
-background: '/img/posts/2026-10-01-from-data-to-thesis/banner.webp?v=2'
+background: '/img/posts/2026-10-01-from-data-to-thesis/banner.webp'
 categories: ["Books", "Data Analysis", "R", "Research Methods"]
 author: "Polla Fattah"
 usemathjax: false
 project_url: "https://polla.dev/data2thesis_r/"
 ---
 
-{% include image.html url="/img/posts/2026-10-01-from-data-to-thesis/cover.webp?v=2" description="Cover of From Data to Thesis: Using R for Non-Technical" %}
+{% include image.html url="/img/posts/2026-10-01-from-data-to-thesis/cover.webp" description="Cover of From Data to Thesis: Using R for Non-Technical" %}
 
 Most statistics books are organised around methods. I organised *From Data to Thesis* around a person. The book follows Elaf, a new Master's student in Educational Psychology who noticed how tired her fellow students were, and turned that observation into a thesis about sleep, stress, supervisor support, and wellbeing. The data are a simulated study of 600 graduate students followed over four semesters, and the book says plainly that they are synthetic and not evidence about real students.
 

@@ -4,14 +4,14 @@ title: "Why Software Engineering for AI Starts with Change"
 subtitle: "The ideas behind Object Oriented Development and Agile Practices"
 excerpt: "A perspective on why object-oriented design, testing, refactoring, and agile feedback matter for anyone building software around AI and data."
 date: 2026-10-13 10:00:00 +0300
-background: '/img/posts/2026-10-13-object-oriented-development-agile-practices/banner.png?v=2'
+background: '/img/posts/2026-10-13-object-oriented-development-agile-practices/banner.png'
 categories: ["Books", "Software Engineering", "Object-Oriented Design", "Agile"]
 author: "Polla Fattah"
 usemathjax: false
 project_url: "https://polla.dev/ood-agile-book/"
 ---
 
-{% include image.html url="/img/posts/2026-10-13-object-oriented-development-agile-practices/cover.png?v=2" description="Cover of Object Oriented Development and Agile Practices: Designing, Testing and Evolving Software with AI Assistance" %}
+{% include image.html url="/img/posts/2026-10-13-object-oriented-development-agile-practices/cover.png" description="Cover of Object Oriented Development and Agile Practices: Designing, Testing and Evolving Software with AI Assistance" %}
 
 AI projects are often introduced through models, datasets, and impressive demonstrations. Yet the difficult part of an AI-enabled system usually begins after the demonstration: a requirement changes, a data source times out, a policy becomes more complicated, or another engineer has to make a change without breaking the assumptions hidden in the code.
 

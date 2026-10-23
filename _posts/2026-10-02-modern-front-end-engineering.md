@@ -4,14 +4,14 @@ title: "Inside Modern Front-End Engineering"
 subtitle: "A chapter-by-chapter tour of how the book moves from the browser to architectural decisions"
 excerpt: "A tour of the eighteen chapters of my book Modern Front-End Engineering, from browser internals to architectural decisions, with two diagrams of its key ideas."
 date: 2026-10-02 10:00:00 +0300
-background: '/img/posts/2026-10-02-modern-front-end-engineering/banner.webp?v=2'
+background: '/img/posts/2026-10-02-modern-front-end-engineering/banner.webp'
 categories: ["Books", "Web Development", "Front-End", "Software Architecture"]
 author: "Polla Fattah"
 usemathjax: false
 project_url: "https://polla.dev/frontend-book/"
 ---
 
-{% include image.html url="/img/posts/2026-10-02-modern-front-end-engineering/cover.webp?v=2" description="Cover of Modern Front-End Engineering: From Browser Fundamentals to Production Architecture" %}
+{% include image.html url="/img/posts/2026-10-02-modern-front-end-engineering/cover.webp" description="Cover of Modern Front-End Engineering: From Browser Fundamentals to Production Architecture" %}
 
 Front-end books tend to age quickly when they are organised around a framework. I organised *Modern Front-End Engineering* around a question instead: *what is the browser doing, and what does that mean for the decisions you make?* The thesis is that understanding the platform should guide framework choices, rather than framework syntax dictating how you see the platform. React and Vue appear as comparisons, not as the point.
 
