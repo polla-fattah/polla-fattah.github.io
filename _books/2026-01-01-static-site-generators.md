@@ -5,6 +5,6 @@ description: "A practical guide to building and maintaining content with static 
 date: 2026-01-01
 featured: false
 external_url: "https://polla.dev/ssg-book/"
-cover: "/img/academy/books/ssg-book.webp"
+cover: "/img/academy/books/ssg-book.webp?v=2"
 post: "2026-09-29-static-site-generators-in-the-age-of-ai"
 ---

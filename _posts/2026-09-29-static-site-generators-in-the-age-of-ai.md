@@ -4,14 +4,14 @@ title: "Inside Static Site Generators in the Age of AI"
 subtitle: "How the nineteen chapters take a reader from a folder of notes to a site they can maintain"
 excerpt: "A chapter-by-chapter tour of my book Static Site Generators in the Age of AI: what each chapter teaches, and why the chapters come in this order."
 date: 2026-09-29 10:00:00 +0300
-background: '/img/posts/2026-09-29-static-site-generators-in-the-age-of-ai/banner.webp'
+background: '/img/posts/2026-09-29-static-site-generators-in-the-age-of-ai/banner.webp?v=2'
 categories: ["Books", "Web Development", "Hugo", "AI Agents"]
 author: "Polla Fattah"
 usemathjax: false
 project_url: "https://polla.dev/ssg-book/"
 ---
 
-{% include image.html url="/img/posts/2026-09-29-static-site-generators-in-the-age-of-ai/cover.webp" description="Cover of Static Site Generators in the Age of AI: Building and Maintaining Content with AI Agents" %}
+{% include image.html url="/img/posts/2026-09-29-static-site-generators-in-the-age-of-ai/cover.webp?v=2" description="Cover of Static Site Generators in the Age of AI: Building and Maintaining Content with AI Agents" %}
 
 This is a tour of my book *Static Site Generators in the Age of AI*, which is free to read at [polla.dev/ssg-book](https://polla.dev/ssg-book/). This post goes through what each chapter covers and why the chapters come in this order.
 

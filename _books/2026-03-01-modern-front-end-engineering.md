@@ -5,6 +5,6 @@ description: "A guide to the foundations, practices, and architecture behind mod
 date: 2026-03-01
 featured: true
 external_url: "https://polla.dev/frontend-book/"
-cover: "/img/academy/books/frontend-book.png"
+cover: "/img/academy/books/frontend-book.png?v=2"
 post: "2026-10-02-modern-front-end-engineering"
 ---

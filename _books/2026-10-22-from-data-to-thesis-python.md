@@ -6,4 +6,5 @@ date: 2026-10-22
 featured: true
 external_url: "https://polla.dev/data2thesis_python/"
 cover: "/img/academy/books/data2thesis-python.png"
+post: "2026-10-23-from-data-to-thesis-python"
 ---

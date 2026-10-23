@@ -5,6 +5,6 @@ description: "A practical guide that follows a research project from messy data 
 date: 2026-02-01
 featured: true
 external_url: "https://polla.dev/data2thesis_r/"
-cover: "/img/academy/books/data2thesis.png"
+cover: "/img/academy/books/data2thesis.png?v=2"
 post: "2026-10-01-from-data-to-thesis"
 ---
