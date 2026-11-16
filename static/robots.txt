@@ -1,0 +1,38 @@
+# Standard Search Engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# AI Search & Assistant Crawlers (ChatGPT, Perplexity, Claude, Gemini, Apple)
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Default rule for all other well-behaved bots
+User-agent: *
+Allow: /
+
+# Sitemap location (verify if your SSG outputs sitemap.xml or sitemap-index.xml)
+Sitemap: https://polla.dev/sitemap.xml

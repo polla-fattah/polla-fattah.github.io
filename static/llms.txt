@@ -1,0 +1,15 @@
+# Polla Fattah
+
+> Academic researcher, software architect, and author specializing in Artificial Intelligence, Data Mining, Kurdish NLP, and modern software engineering.
+
+## About
+- [Biography & CV](https://polla.dev/about/): Background, academic roles, and industry consulting.
+- [Publications & Research](https://polla.dev/publications/): Peer-reviewed papers on temporal data classification, Kurdish sentiment analysis, and healthcare blockchain frameworks.
+
+## Open-Source Books & Guides
+- [Modern Front-End Engineering](https://polla.dev/books/frontend/): From browser fundamentals to production architecture.
+- [Static Site Generators in the Age of AI](https://polla.dev/books/ssg-ai/): Building and maintaining content with AI agents.
+- [From Data to Thesis: Using R for Non-Technical](https://polla.dev/books/r-thesis/): Practical statistical analysis and academic writing workflows.
+
+## Key Projects
+- [Kurdish NLP & Corpus Pipeline](https://polla.dev/projects/): Sorani text normalization, terminology standardization, and language resources.
